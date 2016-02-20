@@ -43,7 +43,7 @@ Steps:
 <a name="originalphysicalmedia"></a>
 ## Original physical media  
 
-Note: This is a broad category that might include, e.g., floppy disks, optical media (CDs/DVDs), computers, internal hard drives, backup tape formats such as LTO, etc. For assistance in correctly identifying media types, please see the [Computer Media Identification Guide](guides/mediaIDGuide.docx).  
+Note: This is a broad category that might include, e.g., floppy disks, optical media (CDs/DVDs), computers, internal hard drives, backup tape formats such as LTO, etc. For assistance in correctly identifying media types, please see the [Computer Media Identification Guide](cca-digitalprocessingmanual/guides/mediaIDGuide.docx).  
 
 Steps:  
 
