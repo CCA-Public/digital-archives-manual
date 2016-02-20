@@ -175,7 +175,7 @@ Steps for imaging physical media with FTK Imager:
 * If all looks good, repeat this process with the next disk until all media has been imaged.  Once all media has been imaged, copy the entire project folder from the Catalogers drive into the "Dépôts" folder and alert the Digital Archivist.    
 
 <a name="rawingest"></a>
-## Ingesting "raw" versement data into digital repository  
+## Ingesting "raw" accession data into digital repository  
 
 Once data from all of the network transfer, temporary media, and original media in an accession has been stabilized, the digital component of the accession is ingested into CCA's Archivematica-based digital repository.  The aim of this step is to retain and safely store a copy of the data exactly as it arrived at CCA in the digital repository.  
 
