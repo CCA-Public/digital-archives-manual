@@ -26,7 +26,7 @@ This is the CCA's processing manual for born-digital archives. It functions as a
       * [Disk imaging original physical media](guides/stabilization.md/#diskimaging)  
          * [Disk imaging with Guymager](#guymager)  
          * [Disk imaging with FTK Imager](#ftkimager)  
-   * [Ingesting "raw" versement data into digital repository](guides/stabilization.md/#rawingest)  
+   * [Ingesting "raw" accession data into digital repository](guides/stabilization.md/#rawingest)  
 * **[Pre-processing: Triage and evaluation](guides/triage.md)**
       * [Extracting files from packages and disk images](guides/triage.md/#diskimageextract)
          * [Extracting files from disk images with Bitcurator](guides/triage.md/#bitcuratorfiles)
