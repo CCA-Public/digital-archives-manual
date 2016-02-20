@@ -1,0 +1,24 @@
+{
+    "Source-organization" : { 
+		"fieldRequired" : true,
+		"defaultValue" : "Centre Canadien d'Architecture"
+		}, 
+    "Organization-address" : {
+		"fieldRequired" : true,
+		"defaultValue" : "1920 rue Baile, Montreal, Quebec, Canada"
+		},
+    "Contact-name" : { 
+		"fieldRequired" : true
+		},
+    "Bag-identifier" : { 
+		"fieldRequired" : true
+		},
+    "Versement" : { 
+		"fieldRequired" : true
+		},
+    "Content-process" : { 
+		"fieldRequired" : true,
+		"defaultValue" : "born digital",
+		"valueList" : ["born digital","conversion","web capture"]
+		}
+}
