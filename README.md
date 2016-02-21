@@ -76,7 +76,7 @@ The accession-to-access workflow for making born-digital archives available to r
 
 The detailed guides in this manual give more precise instructions for how to complete each stage of the workflow. While these should generally apply, it is important to note that because of the early digital material CCA collects and its interest in notoriously difficult media such as computer-aided design, some cases may require a different approach that will be clarified in pre-processing.  
 
-A few general principles to keep in mind when stabilizing and processing born-digital materials:  
+A few general principles to keep in mind when processing born-digital materials:  
 
 * The general principles of archival theory and management (original order, respect du fonds, aggregate description) apply to born-digital materials to the same degree that they apply to analogue materials.  
 * Few fonds consist of solely born-digital material. When digital material exists alongside records in other formats, make sure that your decisions and actions make sense within the fonds as a whole.  
