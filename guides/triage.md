@@ -179,6 +179,6 @@ At the end of the process, these reports will be shared with the processor and u
 ## Moving files to processing location  
 
 Once the files are ready to be arranged and described and preliminary reporting has been completed, working copies of the files are moved to a folder in the Catalogers network share. Each project folder within this share should contain the following folders:  
-* **pro/:** Leave this blank for now. This is where you will save processed groupes to from Bagger during the arrangement step.  
-* **raw/:** Where the unprocessed working files are moved to, consulted, and arranged from.
+* **pro/:** Leave this blank for now. This is where you will save processed groupes if the processing plan calls for any rearrangement or manual file format normalization. 
+* **raw/:** Consultation copies of files for processing.
 * **ref/:** Any reference documentation (including reports but also documentation from donors and other divisions at CCA such as Programmes and Publications) that may assist the processor in understanding the material at hand.
