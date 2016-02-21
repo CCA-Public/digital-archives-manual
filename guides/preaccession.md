@@ -7,4 +7,4 @@ This guide describes pre-accession procedures and standards for digital archives
 <a name="transferguide"></a>  
 ## Transfer guide for donors  
 
-Download file: [Transfer Guide](github.com/timothyryanwalsh/cca-digitalprocessingmanual/guides/ccaDonorTransferGuide.docx)
+Download file: [Transfer Guide](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/guides/ccaDonorTransferGuide.docx)
