@@ -1,4 +1,6 @@
-# Description of born-digital archives
+# Description of born-digital archives  
+
+TIM: SPLIT INTO TWO SECTIONS - WORKING IN SPREADSHEET; ENTERING INTO TMS  
 
 Once the arrangement of the accession(s) being processed has been finalized, it is time to think in greater detail about the second half of processing: description. This guide describes CCA's standards for description of born-digital records in The Museum System (TMS), and includes:
 
