@@ -76,9 +76,10 @@ The accession-to-access workflow for making born-digital archives available to r
 
 The detailed guides in this manual give more precise instructions for how to complete each stage of the workflow. While these should generally apply, it is important to note that because of the early digital material CCA collects and its interest in notoriously difficult media such as computer-aided design, some cases may require a different approach that will be clarified in pre-processing.  
 
-A few general principles apply in stabilizing and processing born-digital materials:  
+A few general principles to keep in mind when stabilizing and processing born-digital materials:  
 
 * The general principles of archival theory and management (original order, respect du fonds, aggregate description) apply to born-digital materials to the same degree that they apply to analogue materials.  
+* Few fonds consist of solely born-digital material. When digital material exists alongside records in other formats, make sure that your decisions and actions make sense within the fonds as a whole.  
 * As with analogue materials, the fundamental goal of processing work is to make materials available for researchers in a timely fashion and provide our users with the appropriate tools to search, identify, select, and obtain materials that meet their research needs.  
 * As with analogue materials, we should be flexible in our arrangement practices to best meet our users' needs. Often this will mean co-locating records of different formats together in the same series and project files. However, the realities of a particular set of born-digital files and other factors may necessitate other approaches to arrangement on a case-by-case basis.  
 * Born-digital materials already contain much of their own description and can be algorithmically processed in ways that analogue materials cannot. Let machines do the tasks that machines are best at and focus your efforts on the tasks that humans excel at (namely, analysis of content and context).  
