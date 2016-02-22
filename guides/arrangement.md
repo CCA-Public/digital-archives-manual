@@ -58,22 +58,23 @@ One of these factors is how the material arrived at CCA: as one or a few large t
 <a name="existingorganization"></a>  
 ### Existing organization  
 
-* Is the existing order meaningful? Original? Does the existing order reflect a conscious records management approach or was it just a result of the material constraints of the storage media?  
-* Is the existing order self-evident or accessible for researchers?  
+Another factor to consider is the existing organization of the material. Does the existing order appear to be meaningful? Is there evidence that this constitutes an original order, as used by the records creator? Does the existing order reflect a conscious management approach or is it just the result of material contraints of storage media (e.g. a backup split between many floppy disks or CDs due to limited storage speace of each)? Documentation from the record creators and/or donation sources can greatly help in making these determinations.  
+
+The original order of material must also be balanced against user needs. Is the existing order self-evident or accessible for researchers? Can it be made accessible through your file-level description? If the answer to both of these questions is no, the situation may call for rearrangement or an alternative processing approach.  
+
+In cases where any rearrangement occurs, we will make information about the existing organization of files at time of transfer available to researchers via alternate means, such as searchable Excel documents attached to the fonds-level record.  
 
 <a name="context"</a>
 ### Context of creation and active use  
 
-* Relationship with analogue/physical materials  
-* File types & external references  
-* Influence of personal or corporate records management practices  
+An additional factor to consider is the context of the files' creation and use. What relationships, if any, do the digital materials have with analogue and physical materials in the fonds? Were records in different formats kept together when the records were in active use?  
+
+What are the relationships between the files in the accession? Do the files link to external references (e.g. a title block used in a number of AutoCAD files)? If so, what work must be done to ensure that we do not break the links to such external resources?  
 
 <a name="nature"></a>
 ### Nature of archival collection to which they belong    
 
-* Fonds?  
-* Project archive?  
-* Are we expecting additional accessions?  
+Another factor to consider when thinking about arrangement is the nature of the archive to which the records belong. Did the CCA acquire the full fonds of this creator, or do the records belong to a project archive/assembled collection? Does CCA expect to receive additional accessions that will need to be integrated into the archive at a later date?  
 
 <a name="accessrequirements"></a>  
 ### Access requirements  
