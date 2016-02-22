@@ -15,7 +15,7 @@ This guide describes CCA standards for accessioning and stabilizing born-digital
 <a="triageoverview"></a>  
 ## General overview  
 
-In general, digital content arrives at CCA in one of three ways: as a network transfer, on temporary physical transfer media, or on original physical storage media. A single accession (versement) may contain digital files that arrived at CCA via any or all of these methods.    
+In general, digital content arrives at CCA in one of three ways: as a network transfer (e.g. FTP, Dropbox, WeTransfer), on temporary physical transfer media (e.g. USB thumb drive, external hard drive), or on original physical storage media. A single accession (versement) may contain digital files that arrived at CCA via any or all of these methods.    
 
 The following procedures describe how CCA accessions and stabilizes contents from each of these delivery methods, as well as how CCA ingests the total "raw" contents of an accession into its digital repository once all of the preparatory steps have been completed.  
 
