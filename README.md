@@ -16,8 +16,6 @@ This is the CCA's processing manual for born-digital archives. It functions as a
 <a name="details"></a>  
 ### Detailed guides  
 
-* **[Pre-accession](guides/preaccession.md)**  
-    * [Data transfer guide for donors](guides/preaccession.md/#donorguide)
 * **[Accession and stabilization](guides/stabilization.md)**
     * [Network transfers](guides/stabilization.md/#networktransfer)
     * [Temporary physical media](guides/stabilization.md/#temporarymedia)
