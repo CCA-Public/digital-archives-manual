@@ -41,7 +41,7 @@ As noted above, arrangement practices will vary depending on a number of factors
 One of these factors is how the material arrived at CCA: as one or a few large transfer(s) (such as a hard drive or a network transfer) or spread across many smaller pieces of storage media (such as floppy disks or CDs). The realities of how born-digital records were stored and arrive at CCA sets the parameters for our approach to arrangement during processing.  
 
 <a name="largetransfers"></a>  
-#### As large transfers
+##### As large transfers
 
 * (For instance, the entire contents of a hard drive or a large network transfer)  
 * More likely to retain original organizational structure  
@@ -49,7 +49,7 @@ One of these factors is how the material arrived at CCA: as one or a few large t
 * Higher-level description and less manual arrangement in processing might be preferable 
 
 <a name="spreadtransfers"></a>
-#### Spread across smaller storage media
+##### Spread across smaller storage media
 
 * Was the material spread across various media out of necessity, or does this reflect an organizational choice?  
 * More likely to have detailed relationship to specific physical material (e.g. floppy in a folder with correspondence or project records)  
