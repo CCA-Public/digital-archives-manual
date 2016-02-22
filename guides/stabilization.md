@@ -26,19 +26,14 @@ The following procedures describe how CCA accessions and stabilizes contents fro
 
 Steps:  
 
-1. Staff memember receives files via, e.g., FTP, Dropbox, or WeTransfer or identifies CCA files to be transferred to the Institutional Archives.  
-2. Person receiving files notifies Registrar and Digital Archivist and moves the content to the "Dépôt numérique" folder.  
-3. Registrar creates accession (versement) record and notifies Digital Archivist.  
-4. Digital Archivist virus scans content, packages files as a 7zip or similar package named after the versement, and moves the package into Shipping Space folder named after versement.  
+UPDATE WHEN APPROVED  
 
 <a name="temporarymedia"></a>
 ## Temporary physical media
 
 Steps:  
 
-1. Registrar creates accession record(s).  
-2. Digital archivist virus scans content, packages files as a 7zip or similar package named after the versement, and moves the package into Shipping Space folder named after versement.     
-3. After content is transferred, Digital Archivist reformats (wipes) media. Media is returned to donor or repurposed at CCA as appropriate.  
+UPDATE WHEN APPROVED   
 
 <a name="originalphysicalmedia"></a>
 ## Original physical media  
@@ -47,40 +42,37 @@ Note: This is a broad category that might include, e.g., floppy disks, optical m
 
 Steps:  
 
-1. Registrar creates accession record(s).   
-2. When possible, digital media is [separated](#idandremoval) from physical materials and stored in cool vault shelving. Staff must use Digital Media Removal Sheets when removing digital media from boxes or folders.  
-3. Physical media is virus scanned and then [disk imaged](#diskimaging) by Digital Archivist or processor.   
-4. Digital Archivist moves disk images into Shipping Space folder named after versement.  
-4. After disk images have been transferred to the digital Shipping Space, the media and container are marked as transferred and returned to the cool vault media shelving.  
-5. Digital Archivist and Archivist or relevant Chef/Curator assess media for artefactual value and confirm appraisal with Associate Director, Collections. If media have artefactual value, they are kept permanently at CCA. If media do not have artefactual value, they are destroyed or returned to the donor after cataloguing is complete and all files have been ingested into Archivematica.  
+UPDATE WHEN APPROVED   
 
 <a name="idandremoval"></a>
 ### Identifying and separating physical media in Collection
 
 Steps:  
 
-1. Print (on brightly colored paper, if possible) and complete out two copies of the [CCA Digital Media Removal Sheet](forms/removalSheetTemplate.docx).  
+1. Print (on brightly colored paper, if possible) and complete out two copies of the CCA Digital Media Removal Sheet -- LINK FILE HERE!.  
 2. Leave one of the copies of the Removal Sheet in the box or folder where you found the media, as close to where the media was found as possible.  
 3. Put the media and the second copy of the completed Digital Media Removal Sheet in a new envelope or box and store this container in cool vault shelving.  
 4. Create a TMS record for the new container:
     * Object number: "(accession number).DM##", e.g. "AR2013.0050.DM01"  
-    * Link the container record as an "Est composé de" child of the versement.  
+    * Link the container record as an child of the versement, using the "Est composé de" association.  
 5. Label the new container:
     * Object number  
     * Fonds or Collection number (when appropriate)  
     * Name of fonds or collection (short name is okay, e.g. you can write "Siza" instead of "Alvaro Siza fonds")  
-6. If the media in the container already have ARCH numbers, link the ARCH records to the DM container record as "Est composé de" children.  
-7. Give the new container to the Registrar for localization or (to be discussed with Registrar) put it in digital media shelving and send location information to Registrar for entry in TMS.  
+6. If the media in the container already have ARCH, DR, or PH numbers, link the ARCH/DR/PH records to the DM container record as children with the "Est composé de" association.  
+7. Give information about the new container to the Registrar, as per usual localisation procedures.  
 
 <a name="diskimaging"></a>
 ### Disk imaging original physical media  
 
-At CCA, we capture the contents of original physical media as forensic disk images. A disk image is a computer file that is an exact replica of the contents of a disk or other digital storage volume as that information is stored on the medium. In other words, a disk image is an exact digital copy of digital information as it exists in a particular physical form. Because disk images can be stored redundantly, backed up, and audited in ways that physical carriers like DVDs or external hard drives cannot, they are a much better suited for preservation of digital information over time, while retaining all characteristics of the original physical media as a storage volume.  
+At CCA, we capture the contents of original physical media as forensic disk images. A disk image is a computer file that is an exact replica of the contents of a disk or other digital storage volume as that information exists on a particular physical storage medium. Because disk images can be stored redundantly, backed up, and audited in ways that physical carriers like DVDs or external hard drives cannot, they are a much better suited for preservation of digital information over time, while retaining all characteristics of the original physical media as a storage volume.  
+
+Except when circumstances require different solutions, CCA prefers the [Expert Witness Compression Format (also known as EWF or E01)](https://github.com/libyal/libewf/blob/master/documentation/Expert%20Witness%20Compression%20Format%20%28EWF%29.asciidoc) disk image format.  
 
 **Note: In order to ensure that the source media is unchanged by the process of data capture and transfer, hard drives and removable media drives should always be connected to the capture workstation through a hardware write-blocker.**  
 
 At CCA we typically use one of two tools for creating disk images of media: [Guymager](#guymager) or [FTK Imager](#ftkimager). Regardless of which tool you use, always complete the following steps first:  
-1. Give each piece of media an identifier if it doesn't have one already. This does not need to be an ARCH number or entered as an object record in TMS - it is primarily for keeping track of media during the course of processing, and localisation will typically already be handled at the container level. The identifier should be written on the media with a felt tip pen or (very lightly) in pencil.  
+1. Give each piece of media an ARCH number identifier if it doesn't have one already, and create a corresponding "Record for Management Need" object record in TMS. The identifier should be written on the media or its case with a felt tip pen or (very lightly) in pencil.  
 2. Take an identification photo of the media and save it to a folder named "versement_mediaPhotos", replacing any full stops or colons with underscores - e.g. "AR2015_0050_mediaPhotos". Save this folder to your project folder in H:\Acquisitions et traitement.  
 
 <a name="guymager"></a>
