@@ -71,14 +71,15 @@ Except when circumstances require different solutions, CCA prefers the [Expert W
 
 **Note: In order to ensure that the source media is unchanged by the process of data capture and transfer, hard drives and removable media drives should always be connected to the capture workstation through a hardware write-blocker.**  
 
-At CCA we typically use one of two tools for creating disk images of media: [Guymager](#guymager) or [FTK Imager](#ftkimager). Regardless of which tool you use, always complete the following steps first:  
+We will typically use one of two tools for creating disk images of media: [Guymager](#guymager) or [FTK Imager](#ftkimager). Regardless of which tool you use, always complete the following steps first:  
+
 1. Give each piece of media an ARCH number identifier if it doesn't have one already, and create a corresponding "Record for Management Need" object record in TMS. The identifier should be written on the media or its case with a felt tip pen or (very lightly) in pencil.  
 2. Take an identification photo of the media and save it to a folder named "versement_mediaPhotos", replacing any full stops or colons with underscores - e.g. "AR2015_0050_mediaPhotos". Save this folder to your project folder in H:\Acquisitions et traitement.  
 
 <a name="guymager"></a>
 #### Disk imaging with Guymager  
 
-Guymager is an open source disk imaging utility found in the Bitcurator enviornment, and the preferred tool for disk imaging at CCA. At CCA we use Guymager to create disk images in the Expert Witness (E01) format.  
+Guymager is an open source disk imaging utility found in the Bitcurator environment, and the preferred tool for disk imaging at CCA. At CCA we use Guymager to create disk images in the Expert Witness (E01) format.  
 
 Before starting to create disk images from an accession, create a folder on the Bitcurator desktop in which you will save your work.  
 
