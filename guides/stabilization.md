@@ -26,40 +26,43 @@ The following procedures describe how CCA accessions and stabilizes contents fro
 
 Steps:  
 
-* **Staff member who receives the transfer** (note: who receives files and how should also be streamlined and better documented in future)  
+* **Staff member who receives the transfer**  
+  * *Note: Who receives files and how should also be streamlined and better documented in future*
   * Notify Registrar and Digital Archivist  
   * Move files into a new folder in Digital Shipping Space (or, if staff member does not have access to Digital Shipping Space, into "Dépot numérique" network folder)  
-* **Registrar**: Create accession records  
+* **Registrar: Create accession records**  
   * For Archives, create only a versement record (no versement objet or ARCH records). Include a brief identifying note for the accession in "Description du contenu" (e.g. the name of the Dropbox folder)  
   * For Photo/P&D, create groupe or pièce records as usual  
-* **Digital Archivist**: Ingest  
+* **Digital Archivist: Ingest**  
   * Add brief descriptive note about content to versement "Description du contenu"  
   * Package content according to BagIt specification and ingest into Archivematica according to procedures for ingesting "raw" data  
   * Inform Registrar when ingest is completed  
   * Delete copy of files from Digital Shipping Space/Dépot numérique  
-* **Registrar**: Add "Digital Repository" as location to accession (e.g. versement) record  
+* **Registrar**  
+  * Add "Digital Repository" as location to accession (e.g. versement) record  
 
 <a name="temporarymedia"></a>
 ## Temporary physical media
 
 Steps:  
 
-* **Registrar**: Create accession records  
+* **Registrar: Create accession records**  
   * For Archives, create only a versement record (no versement objet or ARCH records). Include a brief note in "Description du contenu" indicating how the files arrived (e.g. "Files arrived at CCA on a 64GB USB thumb drive")  
   * For Photo/P&D, create groupe or pièce records as usual  
-* **Digital Archivist**: Ingest  
+* **Digital Archivist: Ingest**  
   * Add brief descriptive note regarding content to versement "Description du contenu"  
   * Transfer files to Digital Shipping Space, saving content in folder named after accession (versement) number  
   * Package content according to BagIt specification and ingest into Archivematica according to pceodures for ingesting "raw" data  
   * Inform Registrar when ingest is completed  
   * Delete copy of files from Digital Shipping Space  
   * Reformat (erase) media and return to donor or repurpose as appropriate
- * **Registrar**: Add "Digital Repository" as location to accession (versement) record  
+ * **Registrar**  
+  * Add "Digital Repository" as location to accession (versement) record  
 
 <a name="originalphysicalmedia"></a>
 ## Original physical media  
 
-Note: This is a broad category that might include, e.g., floppy disks, optical media (CDs/DVDs), computers, internal hard drives, backup tape formats such as LTO, etc. For assistance in correctly identifying media types, please see the [Computer Media Identification Guide](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/guides/mediaIDGuide.docx).  
+*Note: This is a broad category that might include, e.g., floppy disks, optical media (CDs/DVDs), computers, internal hard drives, backup tape formats such as LTO, etc. For assistance in correctly identifying media types, please see the [Computer Media Identification Guide](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/guides/mediaIDGuide.docx).*  
 
 Steps:  
 
