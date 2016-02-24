@@ -63,7 +63,26 @@ Note: This is a broad category that might include, e.g., floppy disks, optical m
 
 Steps:  
 
-UPDATE WHEN APPROVED   
+* **Registrar**  
+  * Create accession records as described below  
+  * Determine if it is possible to separate digital media on arrival
+   * IF YES: Registrar separates digital media from physical materials upon arrival (stored in cool vault shelving) and creates “DM” versement objet records for containers of digital media (see [Identifying and separating physical media in Collection](#idandremoval). All staff should use Digital Media Removal Sheets when removing digital media from original boxes or folders. The media is localized at the level of these DM containers.  
+   * IF NO: Registrar makes note in the “Description du contenu“ field of versement objet records that they contain digital media that should be separated. This material will then be separated by a technician, archivist, or cataloguer at a later date.  
+* **Digital Archivist** (note: there may be a gap following Registrar's steps)  
+  * Oversee disk imaging of media and transfer of files to Digital Shipping Space  
+  * Ensure that all digital material related to an accession is located in a folder named after the accession in the Digital Shipping Space  
+  * Package the content according to the BagIt specification and ingests this material into Archivematica according to procedures for ingesting “raw” data  
+  * Inform Registrar when ingest is completed  
+  * Delete copy of files from Digital Shipping Space  
+* **Registrar**: Add "Digital Repository" as location to accession (versement) record  
+* **Digital Archivist, Archivist/Chef/Curator, Associate Director**  
+  * During or after processing, Digital Archivist and either the Archivist or appropriate Curator/Chef assess media for artefactual value and confirm with Associate Director, Collection. There are three possible results to this assessment:  
+   * Media have artefactual value and will be kept permanently at CCA in their entirety  
+   * Media have artefactual value and a sample will be kept permanently at CCA  
+   * Media do not have artefactual value and will be destroyed or returned to the donor  
+  * Any media that are kept at CCA are retained solely for their artefactual value, not as storage media or “backups” of digital files in the CCA collection. The description and arrangement of these objects should be discussed with the Digital Archivist and appropriate Archivist/Head/Cataloguer  
+* **Registrar**: Any time media are returned or destroyed, the Registrar will make a note of the action taken in the appropriate accession (e.g. versement) record. Please consult Digital Archivist on how to responsibly destroy digital media  
+
 
 <a name="idandremoval"></a>
 ### Identifying and separating physical media in Collection
