@@ -64,7 +64,7 @@ Once your processing spreadsheet is finalized, use the following instructions to
 | Archive constituent | Add an "Archive" constituent to every record within an archive. |  
 | Object count/Nombre de l'objet | "1" |  
 | Object name/Nom de l'objet | "file" |  
-| Object type (ISAD?) | "Object type" attribute | digital/numérique |  
+| "Object type" attribute | digital/numérique |  
 
 ##### Elements of archival description  
 
