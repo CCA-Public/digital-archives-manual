@@ -57,9 +57,8 @@ Once your processing spreadsheet is finalized, use the following instructions to
 | TMS field | Value |
 | ------- | ------- |
 | Department/Département| "Archives" |
-| Virtual Object/Objet virtuel | No (unchecked) |
-| Status flags/Indicateurs du status de l'objet (while processing) | "record for management need" |
-| Status flags/Indicateurs du status de l'objet (processing complete) | "inventaire" and "Y processed" (note: Y flags to be replaced by flex field) |
+| Virtual Object/Objet virtuel | No (unchecked) |  
+| Status flags/Indicateurs du status de l'objet | "inventaire" and "Y processed" (note: Y flags to be replaced by flex field) |
 | Credit line/Ligne de credit | Enter as usual |  
 | Alternate number | Enter fonds number (AP###) as an alternate number for all records within an archive. |  
 | Archive constituent | Add an "Archive" constituent to every record within an archive. |  
