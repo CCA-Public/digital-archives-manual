@@ -63,6 +63,9 @@ Once your processing spreadsheet is finalized, use the following instructions to
 | Credit line/Ligne de credit | Enter as usual |  
 | Alternate number | Enter fonds number (AP###) as an alternate number for all records within an archive. |  
 | Archive constituent | Add an "Archive" constituent to every record within an archive. |  
+| Object count/Nombre de l'objet | "1" |  
+| Object name/Nom de l'objet | "file" |  
+| Object type (ISAD?) | "Object type" attribute | digital/numérique |  
 
 ##### Elements of archival description  
 
@@ -72,10 +75,7 @@ Once your processing spreadsheet is finalized, use the following instructions to
 | Level of description (ISAD 3.1.4) | Classification | "groupe" |
 | Title (ISAD 3.1.2) | Title/Titre | Supplied or original title, according to standard Titling Procedures. Do not use a file or directory name as a title. |
 | Dates (ISAD 3.1.3) | Dates | Inclusive dates of creation for the material being described. Your best sources of information about dates are likely to be the last modified dates of files (not folders) and the contents of the records themselves. Enter the date value in the "Date" field within "Désignation date" and hit Tab to auto-populate "Date de début" and "Date de fin". Use "ca. " and make an educated guess where there is a doubt as to the exact year(s) of creation. When you are really unsure as to the date, it is always better to give a wide range (e.g. "ca. 1970-2000") than no date at all. Do not enter "Date d'effet" or "Dates historiques". | 
-| Extent and medium (ISAD 3.1.5) | "Collation" text entry | Enter a full extent statement, using the following form: "x files, y folders (z KB/MB/GB/TB)", e.g. "350 files, 15 folders (2.3 GB)". If there are no folders, simply omit this information from the line, e.g. "350 files (18 MB)". |
-| Extent (continued) | Object count/Nombre de l'objet | Enter the number of digital files in the group. |
-| Extent (continued) | Object name/Nom de l'objet | "digital file(s)" |
-| Object type (ISAD?) | "Object type" attribute | digital/numérique |  
+| Extent and medium (ISAD 3.1.5) | "Collation" text entry | Enter a full extent statement, using the following form: "x files, y folders (z KB/MB/GB/TB)", e.g. "350 files, 15 folders (2.3 GB)". If there are no folders, simply omit this information from the line, e.g. "350 files (18 MB)". |  
 
 <a name="groupoptionalelements"></a>  
 #### Optional elements of description  
