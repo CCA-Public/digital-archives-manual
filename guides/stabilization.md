@@ -44,7 +44,17 @@ Steps:
 
 Steps:  
 
-UPDATE WHEN APPROVED   
+* **Registrar**: Create accession records  
+  * For Archives, create only a versement record (no versement objet or ARCH records). Include a brief note in "Description du contenu" indicating how the files arrived (e.g. "Files arrived at CCA on a 64GB USB thumb drive")  
+  * For Photo/P&D, create groupe or pièce records as usual  
+* **Digital Archivist**: Ingest  
+  * Add brief descriptive note regarding content to versement "Description du contenu"  
+  * Transfer files to Digital Shipping Space, saving content in folder named after accession (versement) number  
+  * Package content according to BagIt specification and ingest into Archivematica according to pceodures for ingesting "raw" data  
+  * Inform Registrar when ingest is completed  
+  * Delete copy of files from Digital Shipping Space  
+  * Reformat (erase) media and return to donor or repurpose as appropriate
+ * **Registrar**: Add "Digital Repository" as location to accession (versement) record  
 
 <a name="originalphysicalmedia"></a>
 ## Original physical media  
