@@ -78,14 +78,16 @@ Steps:
   * Package the content according to the BagIt specification and ingests this material into Archivematica according to procedures for ingesting “raw” data  
   * Inform Registrar when ingest is completed  
   * Delete copy of files from Digital Shipping Space  
-* **Registrar**: Add "Digital Repository" as location to accession (versement) record  
+* **Registrar**
+  * Add "Digital Repository" as location to accession (versement) record  
 * **Digital Archivist, Archivist/Chef/Curator, Associate Director**  
   * During or after processing, Digital Archivist and either the Archivist or appropriate Curator/Chef assess media for artefactual value and confirm with Associate Director, Collection. There are three possible results to this assessment:  
    * Media have artefactual value and will be kept permanently at CCA in their entirety  
    * Media have artefactual value and a sample will be kept permanently at CCA  
    * Media do not have artefactual value and will be destroyed or returned to the donor  
   * Any media that are kept at CCA are retained solely for their artefactual value, not as storage media or “backups” of digital files in the CCA collection. The description and arrangement of these objects should be discussed with the Digital Archivist and appropriate Archivist/Head/Cataloguer  
-* **Registrar**: Any time media are returned or destroyed, the Registrar will make a note of the action taken in the appropriate accession (e.g. versement) record. Please consult Digital Archivist on how to responsibly destroy digital media  
+* **Registrar**
+  * Any time media are returned or destroyed, the Registrar will make a note of the action taken in the appropriate accession (e.g. versement) record. Please consult Digital Archivist on how to responsibly destroy digital media  
 
 
 <a name="idandremoval"></a>
