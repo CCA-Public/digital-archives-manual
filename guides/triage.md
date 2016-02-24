@@ -32,27 +32,27 @@ Steps:
 
 * Open the Bitcurator Disk Image Access tool from the "Forensics Tools" folder on the Bitcurator desktop.  
 
-![bcaccess1](media/photos/bcaccess1.png)  
+![bcaccess1](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/media/photos/bcaccess1.png)  
 
 * Choose "Open disk image" from the top menu panel. In the pop-up window, select the correct disk image and then press "Open".  
 
-![bcaccess2](media/photos/bcaccess2.png)  
+![bcaccess2](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/media/photos/bcaccess2.png)  
 
 * If the disk image is read successfully, you will see "Done" as the last line in the Messages pane, and a path to the disk image in the main (white) pane. If you wish, you can open the tree by clicking on the arrow to the left of "Disk Image" to navigate the contents of the disk image.  
 
-![bcaccess3](media/photos/bcaccess3.png)  
+![bcaccess3](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/media/photos/bcaccess3.png)  
 
 * Choose "Select All" from the top menu panel to select all of the files stored on the disk.  
 
-![bcaccess4](media/photos/bcaccess4.png)  
+![bcaccess4](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/media/photos/bcaccess4.png)  
 
 * Once all files have been selected, choose "Export selections" from the top menu and create a folder in your project folder on the desktop (putting the disk's identifier in place of "FOLDER NAME HERE" in the below example.)  
 
-![bcaccess5](media/photos/bcaccess5.png)  
+![bcaccess5](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/media/photos/bcaccess5.png)  
 
 * The Disk Image Access Interface logs its progress in the Messages pane. If the process is successful, you will see a list of the exported files followed by the line "Copied checked files to the directory: <PATH>".  
 
-![bcaccess6](media/photos/bcaccess6.png)  
+![bcaccess6](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/media/photos/bcaccess6.png)  
 
 * Just to be sure, visually verify that files have been copied to the Desktop folder you created. If all looks good, you can choose "Close disk image" from the top menu of the Disk Image Access Interface and start the process over for the next disk.  
 
@@ -67,46 +67,46 @@ Steps:
 
 * Right-click on the disk image. From the Scripts menu, choose "Mount Disk Image".  
 
-![mountscript1](media/photos/mountscript1.png)  
+![mountscript1](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/media/photos/mountscript1.png)  
 
 * If the script was able to successfully mount the disk image, you will see a new drive available on the Desktop and in the dock on the left-hand side of the screen.  
 
-![mountscript2](media/photos/mountscript2.png)  
+![mountscript2](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/media/photos/mountscript2.png)  
 
 * Click on the drive icon on the dock (or the desktop). This will allow you access to the files on the disk through the graphical user interface. From here, copy and paste the root directory or any files into a new folder in your project folder on the desktop (named after the disk's identifier).  
 
-![mountscript3](media/photos/mountscript3.png)  
+![mountscript3](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/media/photos/mountscript3.png)  
 
 Note: As you can see from the terminal window in the screenshot below, the Mount Disk Image script works by mounting the disk in the /media directory. The image will remain mounted as a drive in this directory until you unmount the disk image. **Please be sure to unmount the disk image after you have finished copying all files.** In order to unmount the disk image, right-click on the disk image file. From the Scripts menu, choose "Unmount Disk Image". If you are unsure if the image has been unmounted, you can open a Terminal and enter first "cd /media", then "ls". If you see the disk's identifier listed in the results, the disk image has not yet been unmounted.  
 
-![mountscript4](media/photos/mountscript4.png)  
+![mountscript4](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/media/photos/mountscript4.png)  
 
 <a name="ftkimagerfiles"></a>  
 ### Extracting files from disk images with FTK Imager  
 
 * From the File menu, select "Add Evidence Item..."  
 
-![ftkextract1](media/photos/ftkextract1.jpg)  
+![ftkextract1](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/media/photos/ftkextract1.jpg)  
 
 * In the Select Source menu, select "Image File" and then press "Next".  
 
-![ftkextract2](media/photos/ftkextract2.jpg)  
+![ftkextract2](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/media/photos/ftkextract2.jpg)  
 
 * In the Evidence Source Selection menu, click "Browse", find the disk image file you would like to extract files from, then press "Open" and "Finish".  
 
-![ftkextract3](media/photos/ftkextract3.jpg)  
+![ftkextract3](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/media/photos/ftkextract3.jpg)  
 
 * You should now see the media listed in the Evidence Tree window. In the Evidence Tree (not the File List, as pictured below), right-click on the root folder you would like to extract and choose "Export Files...".  
 
-![ftkextract4](media/photos/ftkextract4.jpg)  
+![ftkextract4](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/media/photos/ftkextract4.jpg)  
 
 * Select a Destination for the files that you are extracting.  
 
-![ftkextract5](media/photos/ftkextract5.jpg)  
+![ftkextract5](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/media/photos/ftkextract5.jpg)  
 
 * If the process is successful, you should see an "Export Results" pop-up with details on the number of folders, files, and bytes copied. If the process was successful, press "OK" and visually verify through the file explorer that the files have been saved in the location you intended. If all looks good, note that files have been extracted in the versement stabilization spreadsheet, and move on to the next disk image. If there were any errors, make a note of this in the versement stabilization spreadsheet and consult the Digital Archivist.  
 
-![ftkextract6](media/photos/ftkextract6.jpg)  
+![ftkextract6](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/media/photos/ftkextract6.jpg)  
 
 <a name="hfsfiles"></a>
 ### Extracting files from images of Hierarchical File System (HFS) disks   
