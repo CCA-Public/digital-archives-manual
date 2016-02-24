@@ -26,7 +26,18 @@ The following procedures describe how CCA accessions and stabilizes contents fro
 
 Steps:  
 
-UPDATE WHEN APPROVED  
+* **Staff member who receives the transfer** (note: who receives files and how should also be streamlined and better documented in future)  
+  * Notify Registrar and Digital Archivist  
+  * Move files into a new folder in Digital Shipping Space (or, if staff member does not have access to Digital Shipping Space, into "Dépot numérique" network folder)  
+* **Registrar**: Create accession records  
+  * For Archives, create only a versement record (no versement objet or ARCH records). Include a brief identifying note for the accession in "Description du contenu" (e.g. the name of the Dropbox folder)  
+  * For Photo/P&D, create groupe or pièce records as usual  
+* **Digital Archivist**: Ingest  
+  * Add brief descriptive note about content to versement "Description du contenu"  
+  * Package content according to BagIt specification and ingest into Archivematica according to procedures for ingesting "raw" data  
+  * Inform Registrar when ingest is completed  
+  * Delete copy of files from Digital Shipping Space/Dépot numérique  
+* **Registrar**: Add "Digital Repository" as location to accession (e.g. versement) record  
 
 <a name="temporarymedia"></a>
 ## Temporary physical media
