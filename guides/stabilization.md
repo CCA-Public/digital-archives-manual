@@ -8,7 +8,7 @@ This guide describes CCA standards for accessioning and stabilizing born-digital
 * [Original physical media](#originalphysicalmedia)  
   * [Identifying and separating physical media in Collection](#idandremoval)  
   * [Disk imaging original physical media](#diskimaging)  
-    * [Disk imaging with Guymager](#guymager)  
+    * [Disk imaging with Guymager (Bitcurator)](#guymager)  
     * [Disk imaging with FTK Imager](#ftkimager)  
 * [Ingesting "raw" versement data into digital repository](#rawingest)  
 
@@ -123,7 +123,7 @@ We will typically use one of two tools for creating disk images of media: [Guyma
 2. Take an identification photo of the media and save it to a folder named "versement_mediaPhotos", replacing any full stops or colons with underscores - e.g. "AR2015_0050_mediaPhotos". Save this folder to your project folder in H:\Acquisitions et traitement.  
 
 <a name="guymager"></a>
-#### Disk imaging with Guymager  
+#### Disk imaging with Guymager (Bitcurator)  
 
 Guymager is an open source disk imaging utility found in the Bitcurator environment, and the preferred tool for disk imaging at CCA. At CCA we use Guymager to create disk images in the Expert Witness (E01) format.  
 
