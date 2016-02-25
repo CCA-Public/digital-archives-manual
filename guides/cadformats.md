@@ -1,4 +1,4 @@
-# Guide to Computer Aided Design formats  
+# CAD, BIM, and 3D modeling formats  
 
 lorem ipsum intro text  
 
@@ -21,5 +21,6 @@ lorem ipsum intro text
 **For each:**
 - Summary 
 - What software to use to view files on our machines  
+- Reverse compatibility  
 - How to manipulate files/move around in software  
 - Of note  
