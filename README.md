@@ -97,7 +97,7 @@ A few general principles to keep in mind when processing born-digital materials:
    * The "raw ingest" Archivematica pipeline is set not to extract packages, examine contents, or normalize files; creates and stores an AIP only.  
 3. Pre-processing triage and evaluation:  
    * Digital Archivist downloads AIPs containing raw data of all accessions to be processed.  
-   * Digital Archivist or processor extracts files from 7zips and disk images as necessary.  
+   * Digital Archivist, technician, or processor extracts files from packages and disk images as necessary.  
    * Digital Archivist triages and evaluates content, creating reports for use by processor.  
    * Digital Archivist moves working copies of files to network location that archivists and cataloguers can access.  
 4. Arrangement and description:
