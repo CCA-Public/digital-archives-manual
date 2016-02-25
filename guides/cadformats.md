@@ -1,1 +1,23 @@
+# Guide to Computer Aided Design Formats  
 
+lorem ipsum intro text  
+
+* AutoCAD (.dwg, .dxf)  
+* Revit (.rvt)  
+* 3DS Max (.3ds)  
+* Rhinoceros (.3dm, .slt*)  
+* Microstation (.dgn)  
+* Maya (.ma, .mb)  
+* Form-Z (.fmz)  
+* CATIA (.CATPart, .CATProduct, others)  
+* Digital Project (.CATPart, .CATProduct)  
+* SolidWorks (.SLDPRT)  
+* SketchUp (.skp)  
+* Alias (.wire)  
+* etc.  
+
+**For each:**
+- Summary 
+- What software to use to view files on our machines  
+- How to manipulate files/move around in software  
+- Of note  
