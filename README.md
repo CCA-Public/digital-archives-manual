@@ -63,7 +63,7 @@ This is the CCA's processing manual for born-digital archives. It functions as a
    * [Access](guides/ongoing.md/#access)  
 * **[CAD, BIM, and 3D modeling formats](guides/cadformats.md)**
 * **[Additional resources](guides/resources.md)**  
-   * [Required reading: aka Digital Preservation 101](guides/resources.md/#digipresbasics)  
+   * [Reading material](guides/resources.md/#readings)  
    * [Digital storage media identification and information](guides/resources.md/#media)  
    * [File format identification and information](guides/resources.md/#formats)  
    * [Digital preservation tools](guides/resources.md/#tools)  
