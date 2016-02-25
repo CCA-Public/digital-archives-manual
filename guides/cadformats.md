@@ -2,10 +2,12 @@
 
 lorem ipsum intro text  
 
+**Formats:**  
+
 * AutoCAD (.dwg, .dxf)  
 * Revit (.rvt)  
 * 3DS Max (.3ds)  
-* Rhinoceros (.3dm, .slt*)  
+* Rhinoceros (.3dm)  
 * Microstation (.dgn)  
 * Maya (.ma, .mb)  
 * Form-Z (.fmz)  
@@ -14,7 +16,7 @@ lorem ipsum intro text
 * SolidWorks (.SLDPRT)  
 * SketchUp (.skp)  
 * Alias (.wire)  
-* etc.  
+* Stereolithography (.stl)*
 
 **For each:**
 - Summary 
