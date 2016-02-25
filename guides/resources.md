@@ -2,19 +2,28 @@
 
 Helpful resources, including:  
 
-* [Required reading: aka Digital Preservation 101](#digipresbasics)  
+* [Reading material](#readings)  
 * [Digital storage media identification and information](#media)  
 * [File format identification and information](#formats)  
 * [Digital preservation tools](#tools)  
 * [Preservation of computer-aided design](#cadpres)  
 * [General resources](#general)  
 
-<a name="digipresbasics"></a>  
-## Required reading: aka Digital Preservation 101  
+<a name="readings"></a>  
+## Reading material
+
+#### Digital Preservation 101  
 
 * Lavoie, Brian. "[The Open Archival Information System (OAIS) Reference Model: Introductory Guide (2nd Edition)](http://www.dpconline.org/component/docman/doc_download/1359-dpctw14-02)," DPC Technology Watch Report, 2014.  
 * Trace, Ciaran. "[Beyond the Magic to the Mechanism: Computers, Materiality, and What it Means for Records to Be 'Born Digital'](https://www.ischool.utexas.edu/~cbtrace/pubs/CBT_Archivaria_2011.pdf)," Archivaria 72, 2011.  
-* Callahan, Maureen. "[The Value of Archival Description Considered](https://icantiemyownshoes.wordpress.com/2014/04/04/the-value-of-archival-description-considered/)," Chaos->Order, 2014. NOTE: Not strictly a digital preservation read, but something that anyone arranging and describing archives should read and occasionally revisit.  
+
+#### On archival description  
+
+* Callahan, Maureen. "[The Value of Archival Description Considered](https://icantiemyownshoes.wordpress.com/2014/04/04/the-value-of-archival-description-considered/)," Chaos->Order, 2014: Not strictly a digital preservation read, but something that anyone arranging and describing archives should read and occasionally revisit.  
+
+#### On code/software  
+
+* Ford, Paul. ["What is code?"](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/), Bloomberg Businessweek, June 11, 2015: Quite possibly the best (and most interesting) explanatory piece of how code/software work ever written.  
 
 <a name="media"></a>  
 ## Digital storage media identification and information  
