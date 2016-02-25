@@ -101,10 +101,11 @@ A few general principles to keep in mind when processing born-digital materials:
    * Digital Archivist triages and evaluates content, creating reports for use by processor.  
    * Digital Archivist moves working copies of files to network location that archivists and cataloguers can access.  
 4. Arrangement and description:
-   * Processor describes in standard processing spreadsheet, adding descriptive metadata (title, scope and content, etc.) to pre-generated technical metadata (dates, file types, etc.).
-   * Digital archivist creates Bags for ingest corresponding to described groups.
-   * Processing spreadsheet is imported into AtoM to create finding aid through which files in DIP will be accessible.
-   * Descriptive metadata is copied and pasted from spreadsheet into TMS.
+   * Processor drafts fonds, series, and project-level descriptions in Word documents. Once fonds is fully described, these are the first records entered into AtoM/TMS.  
+   * Processor enters file-level description in standard processing spreadsheet, adding descriptive metadata (title, scope and content, etc.) to pre-generated technical metadata (dates, file types, etc.).  
+   * Digital archivist creates Bags for ingest corresponding to described groups.  
+   * Processing spreadsheet is imported into AtoM to create finding aid through which files in DIP will be accessible.  
+   * Description is copied and pasted from spreadsheet into TMS.  
 5. Processed SIPs are ingested into Archivematica:  
    * This is performed by the Digital Archivist for now, but may become one of the processor's responsibilities when developments in Archivematica and CCA's general IT infrastructure allow.  
    * The "processed ingest" Archivematica pipeline is set to extract packages, examine contents, and noramlize files; creates and stores AIPs and DIPs.  
