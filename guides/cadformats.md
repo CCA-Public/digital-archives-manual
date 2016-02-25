@@ -1,4 +1,4 @@
-# Guide to Computer Aided Design Formats  
+# Guide to Computer Aided Design formats  
 
 lorem ipsum intro text  
 
