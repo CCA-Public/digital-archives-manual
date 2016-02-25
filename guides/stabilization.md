@@ -32,7 +32,7 @@ Steps:
   * Move files into a new folder in Digital Shipping Space (or, if staff member does not have access to Digital Shipping Space, into "Dépot numérique" network folder)  
 * **Registrar: Create accession records**  
   * For Archives, create only a versement record (no versement objet or ARCH records). Include a brief identifying note for the accession in "Description du contenu" (e.g. the name of the Dropbox folder)  
-  * For Photo/P&D, create groupe or pièce records as usual  
+  * **For Photo/P&D, create groupe or pièce records as usual**  
 * **Digital Archivist: Ingest**  
   * Add brief descriptive note about content to versement "Description du contenu"  
   * Package content according to BagIt specification and ingest into Archivematica according to procedures for ingesting "raw" data  
@@ -48,7 +48,7 @@ Steps:
 
 * **Registrar: Create accession records**  
   * For Archives, create only a versement record (no versement objet or ARCH records). Include a brief note in "Description du contenu" indicating how the files arrived (e.g. "Files arrived at CCA on a 64GB USB thumb drive")  
-  * For Photo/P&D, create groupe or pièce records as usual  
+  * **For Photo/P&D, create groupe or pièce records as usual**  
 * **Digital Archivist: Ingest**  
   * Add brief descriptive note regarding content to versement "Description du contenu"  
   * Transfer files to Digital Shipping Space, saving content in folder named after accession (versement) number  
