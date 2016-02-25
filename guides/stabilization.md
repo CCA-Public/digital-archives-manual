@@ -218,7 +218,9 @@ Steps for imaging physical media with FTK Imager:
 
 Once data from all of the network transfer, temporary media, and original media in an accession has been stabilized, the digital component of the accession is ingested into CCA's Archivematica-based digital repository.  The aim of this step is to retain and safely store a copy of the data exactly as it arrived at CCA in the digital repository.  
 
-This SIP (Submission Information Package, in OAIS parlance) is composed of all files, archive packages, and disk images in the Shipping Space that correspond to an accession. It is named according to the convention "(versement number)_raw". --ADD NOTE ABOUT SUBMISSION DOCUMENTATION--  
+This SIP (Submission Information Package, in OAIS parlance) is composed of all files, archive packages, and disk images in the Shipping Space that correspond to an accession. It is named according to the convention "(versement number)_raw".  
+
+-- SUBMISSION DOCUMENTATION?--  
 
 For the ingest of raw unprocessed data, Archivematica is set not to extract packages, examine contents, or normalize any files. An AIP is created and stored, but no DIP is created. These settings must be manually selected for now, but eventually these will be fixed settings in a separate Archivematica pipeline used exclusively for ingest of "raw" data.  
 
