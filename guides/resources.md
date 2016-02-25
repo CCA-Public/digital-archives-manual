@@ -23,7 +23,7 @@ Helpful resources, including:
 
 #### On code/software  
 
-* Ford, Paul. ["What is code?"](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/), Bloomberg Businessweek, June 11, 2015: Quite possibly the best (and most interesting) explanatory piece of how code/software work ever written.  
+* Ford, Paul. ["What is code?"](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/), Bloomberg Businessweek, June 11, 2015: Quite possibly the best (and most interesting) piece on the nature of code/software ever written.  
 
 <a name="media"></a>  
 ## Digital storage media identification and information  
