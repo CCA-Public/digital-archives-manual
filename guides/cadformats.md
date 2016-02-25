@@ -1,4 +1,4 @@
-# CAD, BIM, and 3D modeling formats  
+# CAD, BIM, and 3D modeling software/file formats  
 
 lorem ipsum intro text  
 
