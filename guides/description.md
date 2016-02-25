@@ -45,7 +45,7 @@ INSERT CHART/PICTURES
 <a name="tmsentry"></a>  
 ### Entering file-level description in TMS  
 
-Once your processing spreadsheet is finalized, use the following instructions to enter the information into TMS, copying and pasting from the spreadsheet when possible.  
+Once your processing spreadsheet is finalized, use the following instructions to enter the information into TMS, copying and pasting from the spreadsheet when possible. This can be done most efficiently by making use of Models that pre-populate new records with consistent information such as nom de l'objet, status flags, and credit line.  
 
 **Please do not enter data into any TMS fields that are not listed in the Required or Optional sections below.**  
 
