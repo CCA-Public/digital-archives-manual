@@ -95,7 +95,7 @@ Steps:
 
 Steps:  
 
-1. Print (on brightly colored paper, if possible) and complete out two copies of the [CCA Digital Media Removal Sheet](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/forms/Digital.Media.Removal.Sheet.pdf).  
+1. Print (on blue acid-free paper) and complete out two copies of the [CCA Digital Media Removal Sheet](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/forms/Digital.Media.Removal.Sheet.pdf).  
 2. Leave one of the copies of the Removal Sheet in the box or folder where you found the media, as close to where the media was found as possible.  
 3. Put the media and the second copy of the completed Digital Media Removal Sheet in a new envelope or box and store this container in cool vault shelving.  
 4. Create a TMS record for the new container:
