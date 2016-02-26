@@ -44,13 +44,13 @@ File-level description should be entered and reviewed in spreadsheets (one sprea
 | ------ | ------------ | --------- | ----- |
 | Accession number | n/a | Yes | Versement number |
 | Parent | n/a | Yes | Identifier of parent (e.g. series) |
-| Identifier | 3.1.1 | Yes | Identifier of file (groupe) |
+| Identifier | 3.1.1 | Yes | Identifier of file (groupe). This should be an archival number composed of the fonds, series, subseries, dossier, and group numbers, as applicable (e.g. "AP500.S1.1996.D1.001" or "AP174.S2.001") |
 | Title | 3.1.2 | Yes | Supplied or original title, according to standard Titling Procedures. Do not use a file or directory name as a title. |
 | Creators | 3.2.1 | No | Enter the file's creator if different than higher-level records (optional at file level) |
 | Date expression | 3.1.3 | Yes | Enter a free-text date expression, according to CCA's standard archival procedures for dates |
 | Date start, Date end | 3.1.3 | Yes | Enter machine-readable beginning and end dates in ISO8601 format. Acceptable date formats: YYYY-MM-DD, YYYY-MM, YYYY. If the file has only a single date (e.g. 1990 or 1990-01-20), enter this in both Date start and Date end. |
 | Level of description | 3.1.4 | Yes | "File" |
-| Extent and medium | 3.1.5 | Yes | This information will be script-generated. Verify but do not modify except when discussed with Digital Archivist. |
+| Extent and medium | 3.1.5 | Yes | This information will be script-generated, in the form "x digital files, y folders (z bytes/KB/MB/GB/TB)" or "x digital files (y bytes/KB/MB/GB/TB)". Unless value is "EMPTY", do not modify except when discussed with Digital Archivist. |
 | Scope and content | 3.3.1 | Yes | Add a Scope and Content note if title information needs to be supplemented, content falls outside scope of your higher level description, or to call attention to records of note. Because groupes of born-digital records are often voluminous and internally complex, detailed scope and content notes will be more common for this material than for other formats. For groups of born-digital records, the scope and content note field in your processing spreadsheet will be pre-populated with the following script-generated information. Verify and edit these lines as needed, and make sure they are at the end of your note: *"Original directory name: [NAME]". "Prevalent file types: .ext, .ext, .ext” (up to 5 extensions, sorted from most common to least)* |
 | Arrangement | 3.3.4 | No | Not necessary at file level but can be used to indicate manual re-arrangement when it has been done for some files but not others within the same series. |
 | Conditions governing access | 3.4.1 | No | Only enter at file-level when conditions governing access differ from general conditions set at higher level. |
@@ -58,7 +58,7 @@ File-level description should be entered and reviewed in spreadsheets (one sprea
 | Language | 3.4.3 | No | Do not enter at file level except under rare circumstances and when discussed with an Archivist. |
 | Finding aids | 3.4.5 | No | Do not enter at file level except under rare circumstances and when discussed with an Archivist. |
 | Related units of description | 3.5.3 | No | Do not enter at file level except under rare circumstances and when discussed with an Archivist. |
-| General note | 3.6.1 | No | Do not enter at file level except under rare circumstances and when discussed with an Archivist. |
+| Note | 3.6.1 | No | Do not enter at file level except under rare circumstances and when discussed with an Archivist. |
 | Subject access points | ? | ? | "Object type"? Separate multiple values with pipes |
 | Place access points | ? | ? | ? |
 | Name access points | ? | ? | ? |  
@@ -67,14 +67,12 @@ File-level description should be entered and reviewed in spreadsheets (one sprea
 <a name="tmsentry"></a>  
 ### Entering file-level description in TMS  
 
-Once your processing spreadsheet is finalized, use the following instructions to enter the information into TMS, copying and pasting from the spreadsheet when possible. This can be done most efficiently by making use of Models that pre-populate new records with consistent information such as nom de l'objet, status flags, and credit line.  
+Once your processing spreadsheet is finalized, use the following instructions to enter the information into TMS, copying and pasting from the spreadsheet when possible. This can be done most efficiently by making use of Models that pre-populate new records with consistent information such as nom de l'objet, status flags, and credit line. The only types of information entered into TMS that will not be in your spreadsheet should be associations and the elements in [Internal management elements](#internalmanagement) below.
 
 **Please do not enter data into any TMS fields that are not listed in the Required or Optional sections below.**  
 
-<a name="grouprequiredelements"></a>  
-#### Required elements of description  
-
-##### Internal management information  
+<a name="internalmanagement"></a>
+#### Internal management information  
 
 | TMS field | Value |
 | ------- | ------- |
@@ -88,39 +86,27 @@ Once your processing spreadsheet is finalized, use the following instructions to
 | Object name/Nom de l'objet | "file" |  
 | "Object type" attribute | digital/numérique |  
 
-##### Elements of archival description  
+<a name="archivalelements"></a>
+#### Elements of archival description  
 
-| Element of description | TMS field | Value |
+| Column in spreadsheet | TMS field | Instructions |
 | ------- | ------- | ------- |
-| Identifier (ISAD 3.1.1) | Object number/Numéro de l'objet | Archival number composed of the fonds, series, subseries, dossier, and group numbers, as applicable (e.g. "AP500.S1.1996.D1.001" or "AP174.S2.001") |
-| Level of description (ISAD 3.1.4) | Classification | "groupe" |
-| Title (ISAD 3.1.2) | Title/Titre | Supplied or original title, according to standard Titling Procedures. Do not use a file or directory name as a title. |
-| Dates (ISAD 3.1.3) | Dates | Inclusive dates of creation for the material being described. Your best sources of information about dates are likely to be the last modified dates of files (not folders) and the contents of the records themselves. Enter the date value in the "Date" field within "Désignation date" and hit Tab to auto-populate "Date de début" and "Date de fin". Use "ca. " and make an educated guess where there is a doubt as to the exact year(s) of creation. When you are really unsure as to the date, it is always better to give a wide range (e.g. "ca. 1970-2000") than no date at all. Do not enter "Date d'effet" or "Dates historiques". | 
-| Extent and medium (ISAD 3.1.5) | "Collation" text entry | Enter a full extent statement, using the following form: "x files, y folders (z KB/MB/GB/TB)", e.g. "350 files, 15 folders (2.3 GB)". If there are no folders, simply omit this information from the line, e.g. "350 files (18 MB)". |  
-
-<a name="groupoptionalelements"></a>  
-#### Optional elements of description  
-
-##### Optional elements that may be used somewhat frequently   
-
-| Element of description | TMS field | Value |
-| ----- | ----- | ----- |
-| Scope and content note (ISAD 3.3.1) | Content description/Description du contenu | Include a scope and content note if the title needs to be supplemented to be properly understood, if content falls outside the scope of higher-level (e.g. series and project) descriptions, or to call attention to records of note. Because born-digital records are typically described in large aggregate groupes, the scope and content note may be the best place to give researchers a clear sense of what they can expect to find within any particular file. Your scope and content note should follow the archives-wide guidelines for Writing Scope and Content Notes. For groups of born-digital records, your scope and content note can also include: **Original directory and file names:** Use the form "Original directory name: [NAME]". or "Original file name: [NAME]". **Prevalent file types:** Give a short listing of prevalent file-types. For any original directories, this information will be available to you in the reports supplied by the Digital Archivist. Use the form "Prevalent file types: .extension, .extension, .extension" using all lower-case letters for file extensions. |  
-| System of arrangement (ISAD 3.3.4) | "1.8B13-classement" text entry | Specify the internal structure, order and/or the system of classification of the unit of description. Note how these have been treated by the archivist. For electronic records, record or reference information on system design. (ISAD 3.3.4) |  
-
-##### Optional elements that should be used rarely  
-Please discuss with Digital Archivist or Archivist before regularly including the following fields in your group-level descriptions.  
-
-| Element of description | TMS field | Value |
-| ----- | ----- | ----- |
-| Constituents (ISAD?) | Personne(s) et institution(s) | For groups, add constituents only in rare cases, and only then when the person you wish to call attention to has not already been added as a constituent in a higher level of description (e.g. in project, series, or fonds-level records). |
-| Language of material being described (ISAD 3.4.3) | "1.8B14-langue" text entry | Note the language(s) of the material in the file or item if this differs from the note given at the series or fonds level; e.g. "Records in this file are in Spanish." |
-| Finding aids (ISAD 3.4.5) | "1.8B17-instruments de recherche" text entry | Use this field to record the availability of finding aids, inventories, and other discoverability tools external to TMS. |
-| Related units of description (ISAD 3.5.3) | "1.8B20-docs reliés fonds different" text entry | Use this field to record related records in other fonds as well as other CCA resources including (but not limited to) recordings of lectures, library holdings, photography collections, and prints and drawings. |
-| Conditions governing access (ISAD 3.4.1) | "1.8B16a-restrictions à la consultation" text entry | Enter detailed information about restrictions on access here. NOTE: If the material has restrictions, you should also ensure that the record includes a Restriction status flag. |
-| Conditions governing reproduction (ISAD 3.4.2) | "1.8B16c-restric. à l'utilis. et repro." text entry | Input information about limitations on use and reproduction such as copyright only if it is already known (i.e. do not conduct research solely for the purposes of adding this note) and if it is not already captured at a higher level of description. |
-| General note (ISAD 3.6.1) | "1.8B21-générale" text entry | Enter any notes not belonging to the above required or optional fields that are intended for public display. |
-| General note - non-public | "**Note générale non-destinée au public" text entry | Enter any notes not belonging to the above required or optional fields that are not suitable for public display. |  
+| Accession number | Elements reliés | Link object to versement via "Provient de" association type |
+| Parent | Elements reliés | Link object to versement via "Est inclus dans" association type |
+| Identifier | Object number/Numéro de l'objet | Copy and paste from spreadsheet |
+| Title | Title/Titre | Copy and paste from spreadsheet |
+| Creators | Personne(s) et institution(s) | Enter people/corporate bodies as Constituents with appropriate role (e.g. architect, architectural firm, model maker) |
+| Dates | Dates | Enter the date value within "Désignation date". START AND END DATES? |
+| Level of description | Classification | "groupe" |
+| Extent and medium | "Collation" text entry | Copy and paste from spreadsheet |
+| Scope and content | Content description/Description du contenu | Copy and paste from spreadsheet |
+| Arrangement | "1.8B13-classement" text entry | Copy and paste from spreadsheet (if applicable) |
+| Conditions governing access | "1.8B16a-restrictions à la consultation" text entry | Copy and paste from spreadsheet (if appliable) |
+| Conditions governing reproduction | "1.8B16c-restric. à l'utilis. et repro." text entry | Copy and paste from spreadsheet (if applicable) |
+| Language | "1.8B14-langue" text entry | Copy and paste from spreadsheet (if applicable) |
+| Finding aids | "1.8B17-instruments de recherche" text entry | Copy and paste from spreadsheet (if applicable) |
+| Related units of description | "1.8B20-docs reliés fonds different" text entry | Copy and paste from spreadsheet (if applicable) |
+| Note | "1.8B21-générale" text entry | Copy and paste from spreadsheet |  
 
 #### Unresolved questions  
 
