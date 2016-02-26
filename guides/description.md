@@ -45,8 +45,6 @@ File-level description should be entered and reviewed in spreadsheets (one sprea
 | Accession number | n/a | Yes | Versement number |
 | Parent | n/a | Yes | Identifier of parent (e.g. series) |
 | Identifier | 3.1.1 | Yes | Identifier of file (groupe). This should be an archival number composed of the fonds, series, subseries, dossier, and group numbers, as applicable (e.g. "AP500.S1.1996.D1.001" or "AP174.S2.001") |
-| Folder number | n/a | No | n/a |
-| Box number | n/a | No | n/a |
 | Title | 3.1.2 | Yes | Supplied or original title, according to standard Titling Procedures. Do not use a file or directory name as a title. |
 | Creators | 3.2.1 | No | Enter the file's creator if different than higher-level records (optional at file level) |
 | Date expression | 3.1.3 | Yes | Enter a free-text date expression, according to CCA's standard archival procedures for dates |
@@ -61,11 +59,14 @@ File-level description should be entered and reviewed in spreadsheets (one sprea
 | Finding aids | 3.4.5 | No | Do not enter at file level except under rare circumstances and when discussed with an Archivist. |
 | Related units of description | 3.5.3 | No | Do not enter at file level except under rare circumstances and when discussed with an Archivist. |
 | Note | 3.6.1 | No | Do not enter at file level except under rare circumstances and when discussed with an Archivist. |
+| Folder number | n/a | No | n/a |
+| Box number | n/a | No | n/a |
 | Subject access points | ? | ? | "Object type"? Separate multiple values with pipes |
 | Place access points | ? | ? | ? |
 | Name access points | ? | ? | ? |  
 | Description status | n/a | No | Leave blank |
 | Level of detail | n/a | No | Leave blank |
+
 
 
 <a name="tmsentry"></a>  
