@@ -48,9 +48,9 @@ This is the CCA's processing manual for born-digital archives. It functions as a
       * [Fonds-, series-, and project-level description](guides/description.md/#higherlevel)
       * [File ("groupe")-level description](guides/description.md/#groupdesc)
           * [Entering file-level description in processing spreadsheets](guides/description.md/#spreadsheetentry)  
-          * [Entering file-level description in TMS](guides/description.md/#tmsentry)  
-             * [Required elements of description](guides/description.md/#grouprequiredelements)  
-             * [Optional elements of description](guides/description.md/#groupoptionalelements)  
+           * [Entering file-level description in TMS](guides/description.md/#tmsentry)  
+               * [Internal management information](guides/description.md/#internalmanagement)  
+               * [Elements of archival description](guides/description.md/#archivalelements)  
       * [Item ("pièce")-level description](guides/description.md/#itemdesc)  
 * **[Ingest](guides/ingest.md)**
      * [Archivematica processing configuration for ingest of "raw" data](guides/ingest.md/#rawingestconfig)  
