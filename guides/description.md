@@ -40,7 +40,13 @@ Note that all directories of digital content should be described as files/groupe
 
 File-level description should be entered and reviewed in spreadsheets (one spreadsheet per series or project, depending on volume). These spreadsheets will be used to import description directly into AtoM once descriptions have been finalized.  
 
-INSERT CHART/PICTURES  
+| Column | ISAD element | Value |
+| ------ | ------------ | ----- |
+| Accession Number | n/a | Versement number |
+| Parent ID | n/a | Identifier of parent (e.g. series) |
+| Identifier | ISAD 3.1.1 | Identifier of file (groupe) |
+| Title | ISAD 3.1.2 | Supplied or original title, according to standard Titling Procedures. Do not use a file or directory name as a title. |
+
 
 <a name="tmsentry"></a>  
 ### Entering file-level description in TMS  
@@ -105,6 +111,7 @@ Please discuss with Digital Archivist or Archivist before regularly including th
 * Subjects  
 * Form/digital object types (as tag?)  
 * How to resolve creator vs. name access points  
+* Add something about linking to versement in TMS  
 
 <a name="itemdesc"></a>  
 ## Item ("pièce")-level description  
