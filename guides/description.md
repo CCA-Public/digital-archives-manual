@@ -40,12 +40,37 @@ Note that all directories of digital content should be described as files/groupe
 
 File-level description should be entered and reviewed in spreadsheets (one spreadsheet per series or project, depending on volume). These spreadsheets will be used to import description directly into AtoM once descriptions have been finalized.  
 
-| Column | ISAD element | Value |
-| ------ | ------------ | ----- |
-| Accession Number | n/a | Versement number |
-| Parent ID | n/a | Identifier of parent (e.g. series) |
-| Identifier | ISAD 3.1.1 | Identifier of file (groupe) |
-| Title | ISAD 3.1.2 | Supplied or original title, according to standard Titling Procedures. Do not use a file or directory name as a title. |
+| Column | ISAD element | Required? | Value |
+| ------ | ------------ | --------- | ----- |
+| Accession Number | n/a | Yes | Versement number |
+| Parent ID | n/a | Yes | Identifier of parent (e.g. series) |
+| Identifier | 3.1.1 | Yes | Identifier of file (groupe) |
+| Title | 3.1.2 | Yes | Supplied or original title, according to standard Titling Procedures. Do not use a file or directory name as a title. |
+| Creators | 3.2.1 | No | Enter the file's creator if different than higher-level records (optional at file level) |
+| Date expression | 3.1.3 | Yes | Enter a free-text date expression, according to CCA's standard archival procedures for dates |
+| Date start, Date end | 3.1.3 | Yes | Enter machine-readable beginning and end dates in ISO8601 format. Acceptable date formats: YYYY-MM-DD, YYYY-MM, YYYY. If the file has only a single date (e.g. 1990 or 1990-01-20), enter this in both Date start and Date end. |
+| Level of description | 3.1.4 | Yes | "File" |
+| Extent and medium | 3.1.5 | Yes | This information will be script-generated. Verify but do not modify except when discussed with Digital Archivist. |
+| Scope and content | 3.3.1 | Yes | Add a Scope and Content note if title information needs to be supplemented, content falls outside scope of your higher level description, or to call attention to records of note. Because groupes of born-digital records are often voluminous and internally complex, detailed scope and content notes will be more common for this material than for other formats.  
+
+For groups of born-digital records, the scope and content note field in your processing spreadsheet will be pre-populated with the following script-generated information. Verify and edit these lines as needed, and make sure they are at the end of your note:  
+
+Original directory name (if applicable):  
+"Original directory name: [NAME]"  
+
+Prevalent file types:  
+"Prevalent file types: .ext, .ext, .ext”  
+(up to 5 extensions, sorted from most common to least) |
+| Arrangement | 3.3.4 | No | Not necessary at file level but can be used to indicate manual re-arrangement when it has been done for some files but not others within the same series. |
+| Conditions governing access | 3.4.1 | No | Only enter at file-level when conditions governing access differ from general conditions set at higher level. |
+| Conditions governing reproduction | 3.4.2 | No | Only enter at file-level when conditions governing reproduction differ from general conditions set at higher level. |
+| Language | 3.4.3 | No | Do not enter at file level except under rare circumstances and when discussed with an Archivist. |
+| Finding aids | 3.4.5 | No | Do not enter at file level except under rare circumstances and when discussed with an Archivist. |
+| Related units of description | 3.5.3 | No | Do not enter at file level except under rare circumstances and when discussed with an Archivist. |
+| General note | 3.6.1 | No | Do not enter at file level except under rare circumstances and when discussed with an Archivist. |
+| Subject access points | ? | ? | ? |
+| Place access points | ? | ? | ? |
+| Name access points | ? | ? | ? |  
 
 
 <a name="tmsentry"></a>  
