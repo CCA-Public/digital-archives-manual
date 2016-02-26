@@ -42,7 +42,7 @@ File-level description should be entered and reviewed in spreadsheets (one sprea
 
 | Column | ISAD element | Required? | Value |
 | ------ | ------------ | --------- | ----- |
-| Accession Number | n/a | Yes | Versement number |
+| Accession number | n/a | Yes | Versement number |
 | Parent ID | n/a | Yes | Identifier of parent (e.g. series) |
 | Identifier | 3.1.1 | Yes | Identifier of file (groupe) |
 | Title | 3.1.2 | Yes | Supplied or original title, according to standard Titling Procedures. Do not use a file or directory name as a title. |
@@ -59,7 +59,7 @@ File-level description should be entered and reviewed in spreadsheets (one sprea
 | Finding aids | 3.4.5 | No | Do not enter at file level except under rare circumstances and when discussed with an Archivist. |
 | Related units of description | 3.5.3 | No | Do not enter at file level except under rare circumstances and when discussed with an Archivist. |
 | General note | 3.6.1 | No | Do not enter at file level except under rare circumstances and when discussed with an Archivist. |
-| Subject access points | ? | ? | ? |
+| Subject access points | ? | ? | "Object type"? Separate multiple values with pipes |
 | Place access points | ? | ? | ? |
 | Name access points | ? | ? | ? |  
 
