@@ -92,8 +92,8 @@ lorem ipsum
 <a name="rhino"></a>  
 ## Rhinoceros  
 
-**Associated file extensions:** .3dm
-**Vendor:** 
+**Associated file extensions:** .3dm  
+**Vendor:** Robert McNeel & Associates  
 
 #### Summary  
 
