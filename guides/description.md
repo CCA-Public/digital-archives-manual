@@ -7,8 +7,8 @@ Once the arrangement of the accession(s) being processed has been finalized, it 
 * [File ("groupe")-level description](#groupdesc)
     * [Entering file-level description in processing spreadsheets](#spreadsheetentry)  
     * [Entering file-level description in TMS](#tmsentry)  
-       * [Required elements of description](#grouprequiredelements)  
-       * [Optional elements of description](#groupoptionalelements)  
+       * [Internal management information](#internalmanagement)  
+       * [Elements of archival description](#archivalelements)  
 * [Item ("pièce")-level description](#itemdesc)
 
 <a name="#descriptionprincipleandpractice"></a>  
