@@ -62,6 +62,8 @@ File-level description should be entered and reviewed in spreadsheets (one sprea
 | Subject access points | ? | ? | "Object type"? Separate multiple values with pipes |
 | Place access points | ? | ? | ? |
 | Name access points | ? | ? | ? |  
+| Description status | n/a | No | Leave blank |
+| Level of detail | n/a | No | Leave blank |
 
 
 <a name="tmsentry"></a>  
