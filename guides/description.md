@@ -103,7 +103,7 @@ The only types of information you should enter into TMS that will not be found i
 | Extent and medium | "Collation" text entry | Copy and paste from spreadsheet |
 | Scope and content | Content description/Description du contenu | Copy and paste from spreadsheet |
 | Arrangement | "1.8B13-classement" text entry | Copy and paste from spreadsheet (if applicable) |
-| Conditions governing access | "1.8B16a-restrictions à la consultation" text entry | Copy and paste from spreadsheet (if appliable) |
+| Conditions governing access | "1.8B16a-restrictions à la consultation" text entry | Copy and paste from spreadsheet (if applicable) |
 | Conditions governing reproduction | "1.8B16c-restric. à l'utilis. et repro." text entry | Copy and paste from spreadsheet (if applicable) |
 | Language | "1.8B14-langue" text entry | Copy and paste from spreadsheet (if applicable) |
 | Finding aids | "1.8B17-instruments de recherche" text entry | Copy and paste from spreadsheet (if applicable) |
