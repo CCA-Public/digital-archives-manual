@@ -80,7 +80,7 @@ The only types of information you should enter into TMS that will not be found i
 | ------- | ------- |
 | Department/Département| "Archives" |
 | Virtual Object/Objet virtuel | No (unchecked) |  
-| Status flags/Indicateurs du status de l'objet | "inventaire" and "Y processed" (note: Y flags to be replaced by flex field) |
+| Status flags/Indicateurs du status de l'objet | "inventaire" |
 | Credit line/Ligne de credit | Enter as usual |  
 | Alternate number | Enter fonds number (AP###) as an alternate number for all records within an archive. |  
 | Archive constituent | Add an "Archive" constituent to every record within an archive. |  
