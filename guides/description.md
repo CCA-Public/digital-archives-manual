@@ -67,7 +67,9 @@ File-level description should be entered and reviewed in spreadsheets (one sprea
 <a name="tmsentry"></a>  
 ### Entering file-level description in TMS  
 
-Once your processing spreadsheet is finalized, use the following instructions to enter the information into TMS, copying and pasting from the spreadsheet when possible. This can be done most efficiently by making use of Models that pre-populate new records with consistent information such as nom de l'objet, status flags, and credit line. The only types of information entered into TMS that will not be in your spreadsheet should be associations and the elements in [Internal management elements](#internalmanagement) below.  
+Once your processing spreadsheet is finalized, use the following instructions to enter the information into TMS, copying and pasting from the spreadsheet when possible. This can be done most efficiently by making use of Models that pre-populate new records with consistent information such as nom de l'objet, status flags, and credit line.  
+
+The only types of information you should enter into TMS that will not be found in your processing spreadsheet are  associations and the elements in [Internal management information](#internalmanagement) below.  
 
 <a name="internalmanagement"></a>
 #### Internal management information  
