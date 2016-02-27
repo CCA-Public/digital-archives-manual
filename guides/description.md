@@ -1,6 +1,6 @@
 # Description of born-digital archives  
 
-Once the arrangement of the accession(s) being processed has been finalized, it is time to think in greater detail about the second half of processing: description. This guide describes CCA's standards for description of born-digital records in The Museum System (TMS), and includes:
+Once the processing plan is set and the overall arrangement of the accession(s) being processed has been finalized, it is time to think in greater detail about the second half of processing: description. This guide describes CCA's standards for description of born-digital records in The Museum System (TMS), and includes:
 
 * [Principles and practical guidelines for description of born-digital archives](#descriptionprincipleandpractice)  
 * [Fonds-, series-, and project-level description](#higherlevel)
