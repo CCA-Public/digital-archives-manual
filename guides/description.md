@@ -30,7 +30,7 @@ INSERT CHART/GUIDELINES AND LINK TO CAD PAGE
 
 Your higher level (fonds-, series-, and project-level) descriptions should follow the guidelines set out for these levels of description in the overall CCA Archives Processing Manual.  
 
-Fonds and series records should be entered directly into AtoM. Projects can be entered manually or entered via spreadsheet once the Projects series level record is created. Project records (even if description is incomplete) must be in AtoM before file-level descriptions are imported.  
+Fonds and series records should be entered directly into AtoM. Projects can be entered manually or entered via spreadsheet once the Projects series record is created. Project records (even if description is incomplete) must be in AtoM before file-level descriptions are imported.  
 
 Lines about digital materials in Collation statements in fonds-, series-, and dossier-level records should take the following form: "x digital files (y KB/MB/GB)", e.g. "1,760 digital files (50.3 GB)".  
 
