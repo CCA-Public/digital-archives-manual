@@ -3,6 +3,7 @@
 Once the processing plan is set and the overall arrangement of the accession(s) being processed has been finalized, it is time to think in greater detail about the second half of processing: description. This guide describes CCA's standards for description of born-digital records in spreadsheets (eventually to be imported into AtoM) and The Museum System (TMS), and includes:
 
 * [Principles and practical guidelines for description of born-digital archives](#descriptionprincipleandpractice)  
+* [Preferred terminology](#terminology)  
 * [Fonds-, series-, and project-level description](#higherlevel)
 * [File ("groupe")-level description](#groupdesc)
     * [Entering file-level description in processing spreadsheets](#spreadsheetentry)  
@@ -18,8 +19,11 @@ Once the processing plan is set and the overall arrangement of the accession(s) 
 * "Let the bits describe themselves": Machine-actionable information such as extent, file formats, and filesystem metadata should be captured automatically, never calculated by hand, and rarely transcribed.  
 * Born-digital records may not reflect traditional Stage and Purpose architectural terminology/practice - don't force terminology where it doesn't fit.  
 * Description will be entered and updated in processing spreadsheets that can later be imported into AtoM. Entering this data in TMS will require some fields to be manually entered, but you should copy and paste from your processing spreadsheet when possible. Make sure that any revisions to your description are completed prior to entering data into TMS.  
-* Preferred terminology  
-    * INSERT CHART OF PREFERRED TERMINOLOGY FOR DIGITAL OBJECT TYPES  
+
+<a name="terminology"></a>  
+## Preferred terminology  
+
+INSERT CHART/GUIDELINES AND LINK TO CAD PAGE  
 
 <a name="higherlevel"></a>  
 ## Fonds-, series-, and project-level description  
