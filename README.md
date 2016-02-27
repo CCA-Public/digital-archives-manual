@@ -45,6 +45,7 @@ This is the CCA's processing manual for born-digital archives. It functions as a
       * [The exception: Extensible processing of born-digital records](guides/arrangement.md/#extensible)  
 * **[Description](guides/description.md)**
       * [Principles and practical guidelines for description of born-digital archives](guides/description.md/#descriptionprincipleandpractice)
+      * [Preferred terminology](guides/description.md/#terminology)  
       * [Fonds-, series-, and project-level description](guides/description.md/#higherlevel)
       * [File ("groupe")-level description](guides/description.md/#groupdesc)
           * [Entering file-level description in processing spreadsheets](guides/description.md/#spreadsheetentry)  
