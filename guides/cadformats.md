@@ -9,7 +9,7 @@ lorem ipsum intro text
 * [Microstation (.dgn)](#microstation)  
 * [Maya (.ma, .mb)](#maya)  
 * [Alias (.wire)](#alias)
-* [Form-Z (.fmz](#formz)  
+* [Form-Z (.fmz)](#formz)  
 * [CATIA (.CATPart, .CATProduct, others)](#catia)  
 * [Digital Project (.CATPart, .CATProduct)](#digitalproject)  
 * [SolidWorks (.SLDPRT)](#solidworks)  
