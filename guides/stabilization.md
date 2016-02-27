@@ -56,7 +56,7 @@ Steps:
   * Inform Registrar when ingest is completed  
   * Delete copy of files from Digital Shipping Space  
   * Reformat (erase) media and return to donor or repurpose as appropriate
- * **Registrar**  
+* **Registrar**  
   * Add "Digital Repository" as location to accession (versement) record  
 
 <a name="originalphysicalmedia"></a>
