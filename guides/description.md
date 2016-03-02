@@ -25,7 +25,7 @@ Once the processing plan is set and the overall arrangement of the accession(s) 
 
 For preferred terminology for CAD/BIM software and file formats, see [CAD, BIM, and 3D modeling software/file formats](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/guides/cadformats.md).  
 
-More generally:  
+For other types of digital files, privilege the terms in the "Preferred terminology" column below:    
 
 | Type of file | Examples | Preferred terminology | Alternate terms (for reference, do not use) |  
 | :----------: | :------: | :-------------------: | :-------------: |
