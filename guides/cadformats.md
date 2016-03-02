@@ -1,6 +1,6 @@
 # CAD, BIM, and 3D modeling software/file formats  
 
-lorem ipsum intro text  
+Vendor-specific formats:  
 
 * [AutoCAD (.dwg, .dxf, .dwf)](#autocad)
 * [Revit (.rvt)](#revit)
@@ -13,13 +13,18 @@ lorem ipsum intro text
 * [CATIA (.CATPart, .CATProduct, others)](#catia)  
 * [Digital Project (.CATPart, .CATProduct)](#digitalproject)  
 * [SolidWorks (.SLDPRT)](#solidworks)  
-* [SketchUp (.skp)](#sketchup)   
+* [SketchUp (.skp)](#sketchup)  
+
+Vendor-neutral formats:  
+
 * [STL (.stl)](#stl)  
 * [IGES (.iges)](#iges)  
 * [STEP (.step)](#step)  
 
+## Vendor-specific formats  
+
 <a name="autocad"></a>  
-## AutoCAD  
+### AutoCAD  
 
 **Associated file extensions**: .dwg, .dxf, .dwf  
 **Vendor:** AutoDesk  
@@ -49,7 +54,7 @@ lorem ipsum
 lorem ipsum  
 
 <a name="revit"></a>  
-## Revit 
+### Revit 
 
 **Associated file extensions:** .rvt  
 **Vendor:** AutoDesk  
@@ -71,7 +76,7 @@ lorem ipsum
 lorem ipsum  
 
 <a name="3ds"></a>  
-## 3DS Max  
+### 3DS Max  
 
 **Associated file extensions:** .3ds  
 **Vendor:** 
@@ -93,7 +98,7 @@ lorem ipsum
 lorem ipsum  
 
 <a name="rhino"></a>  
-## Rhinoceros  
+### Rhinoceros  
 
 **Associated file extensions:** .3dm  
 **Vendor:** Robert McNeel & Associates  
@@ -115,7 +120,7 @@ lorem ipsum
 lorem ipsum  
 
 <a name="microstation"></a>  
-## Microstation  
+### Microstation  
 
 **Associated file extensions:** .dgn  
 **Vendor:** Bentley  
@@ -137,7 +142,7 @@ lorem ipsum
 lorem ipsum  
 
 <a name="maya"></a>  
-## Maya   
+### Maya   
 
 **Associated file extensions:** .ma, .mb  
 **Vendor:** AutoDesk (originally Alias)  
@@ -159,7 +164,7 @@ lorem ipsum
 lorem ipsum  
 
 <a name="alias"></a>  
-## Alias  
+### Alias  
 
 **Associated file extensions:** .wire  
 **Vendor:** n/a (originally Alias)  
@@ -181,7 +186,7 @@ lorem ipsum
 lorem ipsum  
 
 <a name="formz"></a>  
-## Form-Z   
+### Form-Z   
 
 **Associated file extensions:** .fmz  
 **Vendor:** AutoDesSys  
@@ -203,7 +208,7 @@ lorem ipsum
 lorem ipsum  
 
 <a name="catia"></a>  
-## CATIA   
+### CATIA   
 
 **Associated file extensions:** .CATPart, .CATProduct, others  
 **Vendor:**   
@@ -225,7 +230,7 @@ lorem ipsum
 lorem ipsum  
 
 <a name="digitalproject"></a>  
-## Digital Project   
+### Digital Project   
 
 **Associated file extensions:** .CATPart, .CATProduct  
 **Vendor:** Gehry Technologies  
@@ -247,7 +252,7 @@ lorem ipsum
 lorem ipsum  
 
 <a name="solidworks"></a>  
-## Solidworks   
+### Solidworks   
 
 **Associated file extensions:** .SLDPRT  
 **Vendor:**   
@@ -269,7 +274,7 @@ lorem ipsum
 lorem ipsum  
 
 <a name="sketchup"></a>  
-## Sketchup  
+### Sketchup  
 
 **Associated file extensions:** .skp  
 **Vendor:**  
@@ -290,8 +295,10 @@ lorem ipsum
 
 lorem ipsum  
 
+## Vendor-netural formats  
+
 <a name="stl"></a>  
-## STL   
+### STL   
 
 **Associated file extensions:** .stl  
 **Vendor:** Non-vendor specific 
@@ -313,7 +320,7 @@ lorem ipsum
 lorem ipsum  
 
 <a name="iges"></a>  
-## IGES  
+### IGES  
 
 **Associated file extensions:** .iges  
 **Vendor:** Non-vendor specific 
@@ -335,7 +342,7 @@ lorem ipsum
 lorem ipsum  
 
 <a name="step"></a>  
-## STEP  
+### STEP  
 
 **Associated file extensions:** .iges  
 **Vendor:** Non-vendor specific 
