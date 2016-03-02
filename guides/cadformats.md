@@ -2,7 +2,7 @@
 
 lorem ipsum intro text  
 
-* [AutoCAD (.dwg, .dxf)](#autocad)
+* [AutoCAD (.dwg, .dxf, .dwf)](#autocad)
 * [Revit (.rvt)](#revit)
 * [3DS Max (.3ds)](#3ds)  
 * [Rhinoceros (.3dm)](#rhino)  
@@ -26,7 +26,7 @@ lorem ipsum intro text
 <a name="autocad"></a>  
 ## AutoCAD  
 
-**Associated file extensions**: .dwg, .dxf  
+**Associated file extensions**: .dwg, .dxf, .dwf  
 **Vendor:** AutoDesk  
 
 #### Summary  
