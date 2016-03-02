@@ -21,6 +21,7 @@ Vendor-neutral formats:
 * [IGES (.iges)](#iges)  
 * [STEP (.step)](#step)  
 * [COLLADA (.dae)](#dae)  
+* [IFC (.ifc)](#ifc)  
 
 <a name="autocad"></a>  
 ## AutoCAD  
@@ -371,6 +372,28 @@ lorem ipsum
 ## COLLADA  
 
 **Associated file extensions:** .dae  
+**Vendor:** Non-vendor specific 
+
+#### Summary  
+
+lorem ipsum  
+
+#### How to view files on CCA CAD workstations  
+
+lorem ipsum  
+
+#### Features of note  
+
+lorem ipsum  
+
+#### Preferred terminology in description  
+
+lorem ipsum  
+
+<a name="step"></a>  
+## IFC  
+
+**Associated file extensions:** .ifc  
 **Vendor:** Non-vendor specific 
 
 #### Summary  
