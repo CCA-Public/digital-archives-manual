@@ -53,7 +53,7 @@ Note that all directories of digital content should be described as files/groupe
 File-level description should be entered and reviewed in spreadsheets (one spreadsheet per series or project, depending on volume). These spreadsheets will be used to import description directly into AtoM once descriptions have been finalized.  
 
 | Column | ISAD element | Required? | Value |
-| :----: | :------------: | :---------: | ----- |
+| :----: | :------------: | :---------: | :---: |
 | Accession number | n/a | Yes | Versement number |
 | Parent | n/a | Yes | Identifier of parent (e.g. series) |
 | Identifier | 3.1.1 | Yes | Identifier of file (groupe). This should be an archival number composed of the fonds, series, subseries, dossier, and group numbers, as applicable (e.g. "AP500.S1.1996.D1.001" or "AP174.S2.001") |
@@ -92,7 +92,7 @@ The only types of information you should enter into TMS that will not be found i
 #### Internal management information  
 
 | TMS field | Value |
-| ------- | ------- |
+| :-----: | :-----: |
 | Department/Département| "Archives" |
 | Virtual Object/Objet virtuel | No (unchecked) |  
 | Status flags/Indicateurs du status de l'objet | "inventaire" |
@@ -107,7 +107,7 @@ The only types of information you should enter into TMS that will not be found i
 #### Elements of archival description  
 
 | Column in spreadsheet | TMS field | Instructions |
-| ------- | ------- | ------- |
+| :-----: | :-----: | :-----: |
 | Accession number | Elements reliés | Link object to versement via "Provient de" association type |
 | Parent | Elements reliés | Link object to versement via "Est inclus dans" association type |
 | Identifier | Object number/Numéro de l'objet | Copy and paste from spreadsheet |
