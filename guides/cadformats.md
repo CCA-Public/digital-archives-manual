@@ -39,6 +39,10 @@ lorem ipsum
 **DXF (Drawing Interchange Format, or Drawing Exchange Format):** Data interoperability format  
 **DWF (Design Web Format):** Compressed, lightweight visualization and sharing format  
 
+#### Backup (BAK) and auto-save files  
+
+lorem ipsum  
+
 #### How to view files on CCA CAD workstations  
 
 All three file types can be opened with **AutoCAD 2015** (read/write), **DWG TrueView** (read-only), and **Bentley View** (read-only).  
