@@ -14,7 +14,7 @@ lorem ipsum intro text
 * [Digital Project (.CATPart, .CATProduct)](#digitalproject)  
 * [SolidWorks (.SLDPRT)](#solidworks)  
 * [SketchUp (.skp)](#sketchup)   
-* [STL (.stl)*](#stl)
+* [STL (.stl)](#stl)
 
 **For each:**
 - Summary 
