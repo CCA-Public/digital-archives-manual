@@ -47,6 +47,8 @@ All three file types can be opened with:
 * DWG TrueView (read-only)  
 * Bentley View (read-only)  
 
+Due to DWG's popularity, it can also be viewed (less efficiently) with general image format software such as QuicKView Plus.  
+
 #### Features of note  
 
 lorem ipsum  
