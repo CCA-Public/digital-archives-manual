@@ -1,6 +1,6 @@
 # CAD, BIM, and 3D modeling software/file formats  
 
-Vendor-specific formats:  
+Vendor/software-specific formats:  
 
 * [AutoCAD (.dwg, .dxf, .dwf)](#autocad)
 * [Revit (.rvt)](#revit)
