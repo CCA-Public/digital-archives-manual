@@ -4,7 +4,7 @@ Vendor-specific formats:
 
 * [AutoCAD (.dwg, .dxf, .dwf)](#autocad)
 * [Revit (.rvt)](#revit)
-* [3DS Max (.3ds)](#3ds)  
+* [3DS Max (.3ds, .max)](#3ds)  
 * [Rhinoceros (.3dm)](#rhino)  
 * [Microstation (.dgn)](#microstation)  
 * [Maya (.ma, .mb)](#maya)  
@@ -84,6 +84,11 @@ lorem ipsum
 #### Summary  
 
 lorem ipsum  
+
+#### File types  
+
+**3DS:** description  
+**MAX:** description  
 
 #### How to view files on CCA CAD workstations  
 
