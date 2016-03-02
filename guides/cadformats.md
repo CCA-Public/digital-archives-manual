@@ -15,6 +15,7 @@ lorem ipsum intro text
 * [SolidWorks (.SLDPRT)](#solidworks)  
 * [SketchUp (.skp)](#sketchup)   
 * [STL (.stl)](#stl)  
+* [IGES (.iges)](#iges)  
 
 <a name="autocad"></a>  
 ## AutoCAD  
@@ -292,6 +293,28 @@ lorem ipsum
 ## STL   
 
 **Associated file extensions:** .stl  
+**Vendor:** Non-vendor specific 
+
+#### Summary  
+
+lorem ipsum  
+
+#### How to view files on CCA CAD workstations  
+
+lorem ipsum  
+
+#### Features of note  
+
+lorem ipsum  
+
+#### Preferred terminology in description  
+
+lorem ipsum  
+
+<a name="iges"></a>  
+## IGES  
+
+**Associated file extensions:** .iges  
 **Vendor:** Non-vendor specific 
 
 #### Summary  
