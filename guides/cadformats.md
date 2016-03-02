@@ -12,7 +12,7 @@ Vendor-specific formats:
 * [Form-Z (.fmz)](#formz)  
 * [CATIA (.CATPart, .CATProduct, others)](#catia)  
 * [Digital Project (.CATPart, .CATProduct)](#digitalproject)  
-* [SolidWorks (.SLDPRT)](#solidworks)  
+* [SOLIDWORKS (.SLDPRT)](#solidworks)  
 * [SketchUp (.skp)](#sketchup)  
 
 Vendor-neutral formats:  
@@ -77,7 +77,7 @@ lorem ipsum
 ## 3DS Max  
 
 **Associated file extensions:** .3ds  
-**Vendor:** 
+**Vendor:** AutoDesk  
 
 #### Summary  
 
@@ -121,7 +121,7 @@ lorem ipsum
 ## Microstation  
 
 **Associated file extensions:** .dgn  
-**Vendor:** Bentley  
+**Vendor:** Bentley Systems  
 
 #### Summary  
 
@@ -165,7 +165,7 @@ lorem ipsum
 ## Alias  
 
 **Associated file extensions:** .wire  
-**Vendor:** n/a (originally Alias)  
+**Vendor:** AutoDesk (originally Alias)  
 
 #### Summary  
 
@@ -209,7 +209,7 @@ lorem ipsum
 ## CATIA   
 
 **Associated file extensions:** .CATPart, .CATProduct, others  
-**Vendor:**   
+**Vendor:** Dassault Systèmes  
 
 #### Summary  
 
@@ -250,10 +250,10 @@ lorem ipsum
 lorem ipsum  
 
 <a name="solidworks"></a>  
-## Solidworks   
+## SOLIDWORKS   
 
 **Associated file extensions:** .SLDPRT  
-**Vendor:**   
+**Vendor:** Dassault Systèmes   
 
 #### Summary  
 
@@ -275,7 +275,7 @@ lorem ipsum
 ## Sketchup  
 
 **Associated file extensions:** .skp  
-**Vendor:**  
+**Vendor:** Trimble Navigation (originally Google)  
 
 #### Summary  
 
