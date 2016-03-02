@@ -9,7 +9,7 @@ Vendor-specific formats:
 * [Microstation (.dgn)](#microstation)  
 * [Maya (.ma, .mb)](#maya)  
 * [Alias (.wire)](#alias)
-* [Form-Z (.fmz)](#formz)  
+* [form-Z (.fmz)](#formz)  
 * [CATIA (.CATPart, .CATProduct, others)](#catia)  
 * [Digital Project (.CATPart, .CATProduct)](#digitalproject)  
 * [SOLIDWORKS (.SLDPRT)](#solidworks)  
@@ -184,7 +184,7 @@ lorem ipsum
 lorem ipsum  
 
 <a name="formz"></a>  
-## Form-Z   
+## form-Z   
 
 **Associated file extensions:** .fmz  
 **Vendor:** AutoDesSys  
