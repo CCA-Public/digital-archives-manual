@@ -28,7 +28,7 @@ For preferred terminology for CAD/BIM software and file formats, see [CAD, BIM, 
 More generally:  
 
 | Type of file | Examples | Preferred terminology | Alternate terms (for reference, do not use) |  
-| ------------ | :------: | :-------------------: | :-------------: |
+| :----------: | :------: | :-------------------: | :-------------: |
 | Rendering | tiff/jpg of 3D model rendered for presentation | rendering/renderings | renders |  
 
 <a name="higherlevel"></a>  
@@ -53,7 +53,7 @@ Note that all directories of digital content should be described as files/groupe
 File-level description should be entered and reviewed in spreadsheets (one spreadsheet per series or project, depending on volume). These spreadsheets will be used to import description directly into AtoM once descriptions have been finalized.  
 
 | Column | ISAD element | Required? | Value |
-| ------ | :------------: | :---------: | ----- |
+| :----: | :------------: | :---------: | ----- |
 | Accession number | n/a | Yes | Versement number |
 | Parent | n/a | Yes | Identifier of parent (e.g. series) |
 | Identifier | 3.1.1 | Yes | Identifier of file (groupe). This should be an archival number composed of the fonds, series, subseries, dossier, and group numbers, as applicable (e.g. "AP500.S1.1996.D1.001" or "AP174.S2.001") |
