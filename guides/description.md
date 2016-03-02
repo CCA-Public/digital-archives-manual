@@ -92,7 +92,7 @@ The only types of information you should enter into TMS that will not be found i
 #### Internal management information  
 
 | TMS field | Value |
-| :-----: | :------ |
+| :-----: | :-----: |
 | Department/Département| "Archives" |
 | Virtual Object/Objet virtuel | No (unchecked) |  
 | Status flags/Indicateurs du status de l'objet | "inventaire" |
