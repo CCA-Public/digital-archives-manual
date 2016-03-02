@@ -27,9 +27,9 @@ For preferred terminology for CAD/BIM software and file formats, see [CAD, BIM, 
 
 For other types of digital files, privilege the terms in the "Preferred terminology" column below:    
 
-| Type of file | Examples | Preferred terminology | Alternate terms (for reference, do not use) |  
-| :----------: | :------: | :-------------------: | :-------------: |
-| Rendering | Raster image (e.g. jpeg, tiff) of 3D model rendered for presentation | "rendering", "renderings" | "renders", "renders" |  
+| Type of file | Examples | Preferred terminology | Term source | Alternate terms (for reference, do not use) |  
+| :----------: | :------: | :-------------------: | :---------: | :-------------: |
+| Rendering | Raster image (e.g. jpeg, tiff) of 3D model rendered for presentation | "rendering", "renderings" | WHERE? | "renders", "renders" |  
 
 <a name="higherlevel"></a>  
 ## Fonds-, series-, and project-level description  
