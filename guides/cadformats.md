@@ -41,7 +41,11 @@ lorem ipsum
 
 #### How to view files on CCA CAD workstations  
 
-lorem ipsum  
+All three file types can be opened with:  
+
+* AutoCAD 2015 (read/write)  
+* DWG TrueView (read-only)  
+* Bentley View (read-only)  
 
 #### Features of note  
 
