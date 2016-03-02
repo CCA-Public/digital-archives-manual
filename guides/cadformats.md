@@ -28,17 +28,13 @@ lorem ipsum
 
 #### File types  
 
-* **DWG:** AutoCAD's proprietary binary native file format  
-* **DXF (Drawing Interchange Format, or Drawing Exchange Format):** Data interoperability format  
-* **DWF (Design Web Format):** Compressed, lightweight visualization and sharing format  
+**DWG:** AutoCAD's proprietary binary native file format  
+**DXF (Drawing Interchange Format, or Drawing Exchange Format):** Data interoperability format  
+**DWF (Design Web Format):** Compressed, lightweight visualization and sharing format  
 
 #### How to view files on CCA CAD workstations  
 
-All three file types can be opened with:  
-
-* AutoCAD 2015 (read/write)  
-* DWG TrueView (read-only)  
-* Bentley View (read-only)  
+All three file types can be opened with **AutoCAD 2015** (read/write), **DWG TrueView** (read-only), and **Bentley View** (read-only).  
 
 Due to DWG's popularity, it can also be viewed (less efficiently) with general image format software such as QuicKView Plus.  
 
