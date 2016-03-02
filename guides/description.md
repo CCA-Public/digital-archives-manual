@@ -23,13 +23,29 @@ Once the processing plan is set and the overall arrangement of the accession(s) 
 <a name="terminology"></a>  
 ## Preferred terminology  
 
-For preferred terminology for CAD/BIM software and file formats, see [CAD, BIM, and 3D modeling software/file formats](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/guides/cadformats.md).  
+For preferred terminology for specific CAD/BIM software and file formats, see [CAD, BIM, and 3D modeling software/file formats](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/guides/cadformats.md).  
 
-For other types of digital files, privilege the terms in the "Preferred terminology" column below:    
+Generally, for digital files, privilege the terms in the "Preferred terminology" column below:    
 
-| Type of file | Examples | Preferred terminology | Term source | Alternate terms (for reference, do not use) |  
+| Type of file | Examples | Preferred terminology | Term source | Alternate terms (for reference, do not use) and notes |  
 | :----------: | :------: | :-------------------: | :---------: | :-------------: |
+| CAD (generally) | .dwg, .dgn, .3dm, .ma, .stl | "computer-aided design", "computer-aided design file", "computer-aided design files" | AAT | "CAD", "CAD file", "CAD files" "
+| BIM (generally) | .rvt, .ifc | "Building Information Modeling", "Building Information Modeling file", "Building Information Modeling files" | WHERE? | "BIM", "BIM file", "BIM files" |
 | Rendering | Raster image (e.g. jpeg, tiff) of 3D model rendered for presentation | "rendering", "renderings" | WHERE? | "renders", "renders" |  
+| Raster image | .tiff, .jpg | blah | blah | blah | 
+| Vector image | .svg, .ai | blah | blah | blah |  
+| Audio file | .wav, .mp3 | blah | blah | blah |
+| Video file | .mkv, .mp4 | blah | blah | blah |
+| Text file | blah | blah | blah | blah |  
+| Word processing file | blah | blah | blah | blah |  
+| Spreadsheets | blah | blah | blah | blah |  
+| Email | blah | blah | blah | blah |  
+| Websites/pages | blah | blah | blah | blah |  
+| Software | blah | blah | blah | blah |  
+| Databases | blah | blah | blah | blah |  
+
+DESCRIBING DIMENSIONALITY AND OTHER QUALIFIERS  
+?  
 
 <a name="higherlevel"></a>  
 ## Fonds-, series-, and project-level description  
