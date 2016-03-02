@@ -29,7 +29,7 @@ More generally:
 
 | Type of file | Examples | Preferred terminology | Alternate terms (for reference, do not use) |  
 | :----------: | :------: | :-------------------: | :-------------: |
-| Rendering | tiff/jpg of 3D model rendered for presentation | "rendering", "renderings" | "renders", "renders" |  
+| Rendering | Raster image (e.g. jpeg, tiff) of 3D model rendered for presentation | "rendering", "renderings" | "renders", "renders" |  
 
 <a name="higherlevel"></a>  
 ## Fonds-, series-, and project-level description  
