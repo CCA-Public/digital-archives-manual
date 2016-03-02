@@ -33,6 +33,12 @@ lorem ipsum intro text
 
 lorem ipsum  
 
+#### File types  
+
+* **DWG:** AutoCAD's proprietary binary native file format  
+* **DXF (Drawing Interchange Format, or Drawing Exchange Format):** Data interoperability format  
+* **DWF (Design Web Format):** Compressed, lightweight visualization and sharing format  
+
 #### How to view files on CCA CAD workstations  
 
 lorem ipsum  
