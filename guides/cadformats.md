@@ -43,7 +43,7 @@ All three file types can be opened with **AutoCAD 2015** (read/write), **DWG Tru
 
 Due to DWG's popularity, it can also be viewed (less efficiently) with general image format software such as QuickView Plus.  
 
-In most cases, when you simply want to check the contents of a file, **DWG TrueView** is the easiest comprehensive tool for viewing standard AutoCAD file formats.  
+Typically, **DWG TrueView** is the easiest comprehensive tool for viewing standard AutoCAD file formats.  
 
 #### Features of note  
 
