@@ -23,7 +23,13 @@ Once the processing plan is set and the overall arrangement of the accession(s) 
 <a name="terminology"></a>  
 ## Preferred terminology  
 
-INSERT CHART/GUIDELINES AND LINK TO CAD PAGE  
+For preferred terminology for CAD/BIM software and file formats, see [CAD, BIM, and 3D modeling software/file formats](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/guides/cadformats.md).  
+
+More generally:  
+
+| Type of file | Examples | Preferred terminology | Alternate terms (for reference, do not use) |  
+| ------------ | :------: | :-------------------: | :-------------: |
+| Rendering | tiff/jpg of 3D model rendered for presentation | rendering/renderings | renders |  
 
 <a name="higherlevel"></a>  
 ## Fonds-, series-, and project-level description  
