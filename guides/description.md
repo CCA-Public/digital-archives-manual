@@ -44,8 +44,8 @@ Generally, for digital files, privilege the terms in the "Preferred terminology"
 | Software | blah | blah | blah | blah |  
 | Databases | blah | blah | blah | blah |  
 
-DESCRIBING DIMENSIONALITY AND OTHER QUALIFIERS  
-?  
+* DESCRIBING DIMENSIONALITY AND OTHER QUALIFIERS?  
+* SPLIT BETWEEN FILE TYPES AND PURPOSE? (+ tag types?)  
 
 <a name="higherlevel"></a>  
 ## Fonds-, series-, and project-level description  
