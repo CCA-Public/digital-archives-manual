@@ -29,7 +29,7 @@ Generally, for digital files, privilege the terms in the "Preferred terminology"
 
 | Type of file | Examples | Preferred terminology | Term source | Alternate terms (for reference, do not use) and notes |  
 | :----------: | :------: | :-------------------: | :---------: | :-------------: |
-| CAD (generally) | .dwg, .dgn, .3dm, .ma, .stl | "computer-aided design", "computer-aided design file", "computer-aided design files" | AAT | "CAD", "CAD file", "CAD files" "
+| CAD (generally) | .dwg, .dgn, .3dm, .mb, .wire, .iges, .stl | "computer-aided design", "computer-aided design file", "computer-aided design files" | AAT | "CAD", "CAD file", "CAD files" "
 | BIM (generally) | .rvt, .ifc | "Building Information Modeling", "Building Information Modeling file", "Building Information Modeling files" | WHERE? | "BIM", "BIM file", "BIM files" |
 | Rendering | Raster image (e.g. jpeg, tiff) of 3D model rendered for presentation | "rendering", "renderings" | WHERE? | "renders", "renders" |  
 | Raster image | .tiff, .jpg | blah | blah | blah | 
