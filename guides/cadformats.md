@@ -18,7 +18,7 @@ Vendor/software-specific formats:
 Vendor-neutral formats:  
 
 * [STL (.stl)](#stl)  
-* [IGES (.iges)](#iges)  
+* [IGES (.iges, .igs)](#iges)  
 * [STEP (.step)](#step)  
 * [COLLADA (.dae)](#dae)  
 * [IFC (.ifc)](#ifc)  
@@ -331,7 +331,7 @@ lorem ipsum
 <a name="iges"></a>  
 ## IGES  
 
-**Associated file extensions:** .iges  
+**Associated file extensions:** .iges, .igs  
 **Vendor:** Non-vendor specific 
 
 #### Summary  
