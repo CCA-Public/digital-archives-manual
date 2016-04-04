@@ -31,7 +31,7 @@ Vendor-neutral formats:
 
 #### Summary  
 
-The most widely-used CAD software on the market, first released in 1982. AutoCAD is a 2D and 3D computer-aided design and drafting tool. Since 2010, has been available as a cloud-based app (AutoCAD 360). AutoCAD was available for Macs until 1994 and then again starting in 2010. In the intervening years, it was available only for windows.
+First released in 1982. AutoCAD is the world's most widely-used 2D and 3D desktop (and, since 2010, cloud-based) computer-aided design and drafting tool.  
 
 #### File types  
 
@@ -53,7 +53,7 @@ Typically, **DWG TrueView** is the easiest comprehensive tool for viewing standa
 
 #### Features of note  
 
-lorem ipsum  
+AutoCAD was available for Macs until 1994 and then again starting in 2010. In the intervening years, it was available only for Windows.  
 
 #### Preferred terminology in description  
 
