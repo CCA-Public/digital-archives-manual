@@ -43,7 +43,7 @@ First released in 1982, AutoCAD is the world's most widely-used 2D and 3D deskto
 
 #### How to view files on CCA CAD workstations  
 
-All three file types can be opened with AutoCAD 2015 (read/write), DWG TrueView (read-only), and Bentley View (read-only).  
+All three file types can be opened with AutoCAD 2014 (read/write), DWG TrueView (read-only), and Bentley View (read-only).  
 
 Due to DWG's popularity, it can also be viewed (less efficiently) with general image format software such as QuickView Plus.  
 
@@ -85,15 +85,15 @@ lorem ipsum
 
 #### Summary  
 
-lorem ipsum  
+Revit, first released in 2000, is Building Information Modeling (BIM) software for use by architects, engineers, designers, and contractors. BIM software allows the same file to be used for 3D design, 2D drafting, annotation, and integration of building information such as standard parts catalogues. It includes tools to be used at every stage in a building's lifecycle, including design, construction, maintenance, and demolition.  
 
 #### How to view files on CCA CAD workstations  
 
-lorem ipsum  
+Most Revit files should be openable with Revit 2014. If you are having difficulty opening a file, attempt to open it with the "Audit" button checked in Revit.  
 
 #### Features of note  
 
-lorem ipsum  
+Revit projects can be exported as IFC files. Some specifically Revit information may be lost in the process.  
 
 #### Preferred terminology in description  
 
