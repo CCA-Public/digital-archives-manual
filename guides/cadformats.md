@@ -41,6 +41,14 @@ First released in 1982. AutoCAD is the world's most widely-used 2D and 3D deskto
 
 **DWF (Design Web Format):** An open 2D and 3D data visualization format developed by Autodesk. DWF files are highly compressed, and are not intended as a replacement for original design files.  
 
+#### How to view files on CCA CAD workstations  
+
+All three file types can be opened with AutoCAD 2015 (read/write), DWG TrueView (read-only), and Bentley View (read-only).  
+
+Due to DWG's popularity, it can also be viewed (less efficiently) with general image format software such as QuickView Plus.  
+
+Typically, **DWG TrueView** is the easiest comprehensive tool for viewing standard AutoCAD file formats.  
+
 #### Backup (BAK) and auto-save files  
 
 "Drawing backup files are typically created every time that you manually save a .dwg file. By default the file will be saved in the same location as the .dwg and will have the same name as the drawing but with a .bak extension, such as, site_topo.bak. A backup file is an exact copy of the drawing file prior to the last save. As such, backup files are always one version older than the currently saved drawing. Only one backup file is retained at a time so newly created backups will always replace older backups of the same name.  
@@ -50,14 +58,6 @@ Note: Backup files are created only if the system variable ISAVEBACK is set to 1
 Backup files are essentially renamed .dwg files. You can recover data saved in .bak files by renaming the .bak extension to dwg and then opening that file in AutoCAD."  
 
 Source: ["Understanding AutoCAD backup and autosave files," Autodesk, Jan 30, 2015](https://knowledge.autodesk.com/support/autocad/troubleshooting/caas/sfdcarticles/sfdcarticles/Understanding-AutoCAD-backup-and-autosave-files.html)  
-
-#### How to view files on CCA CAD workstations  
-
-All three file types can be opened with AutoCAD 2015 (read/write), DWG TrueView (read-only), and Bentley View (read-only).  
-
-Due to DWG's popularity, it can also be viewed (less efficiently) with general image format software such as QuickView Plus.  
-
-Typically, **DWG TrueView** is the easiest comprehensive tool for viewing standard AutoCAD file formats.  
 
 #### Features of note  
 
