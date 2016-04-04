@@ -71,7 +71,7 @@ lorem ipsum
 ## Revit 
 
 **Associated file extensions:** .rvt  
-**Vendor:** AutoDesk  
+**Vendor:** Autodesk  
 
 #### Summary  
 
@@ -93,7 +93,7 @@ lorem ipsum
 ## 3DS Max  
 
 **Associated file extensions:** .3ds  
-**Vendor:** AutoDesk  
+**Vendor:** Autodesk  
 
 #### Summary  
 
@@ -164,7 +164,7 @@ lorem ipsum
 ## Maya   
 
 **Associated file extensions:** .ma, .mb  
-**Vendor:** AutoDesk (originally Alias)  
+**Vendor:** Autodesk (originally Alias)  
 
 #### Summary  
 
@@ -186,7 +186,7 @@ lorem ipsum
 ## Alias  
 
 **Associated file extensions:** .wire  
-**Vendor:** AutoDesk (originally Alias)  
+**Vendor:** Autodesk (originally Alias)  
 
 #### Summary  
 
