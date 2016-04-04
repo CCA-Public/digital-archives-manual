@@ -121,7 +121,7 @@ lorem ipsum
 
 #### File types  
 
-**3DS:** 3DS is a native binary file format for 3ds Max.  
+**3DS:** 3DS is a native binary file format for 3ds Max. Unlike MAX, 3DS is interoperable with other 3D modeling software programs.  
 **MAX:** MAX is the native internal file format for 3ds Max.  
 
 #### How to view files on CCA CAD workstations  
