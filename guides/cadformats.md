@@ -45,7 +45,7 @@ lorem ipsum
 
 #### How to view files on CCA CAD workstations  
 
-All three file types can be opened with **AutoCAD 2015** (read/write), **DWG TrueView** (read-only), and **Bentley View** (read-only).  
+All three file types can be opened with AutoCAD 2015 (read/write), DWG TrueView (read-only), and Bentley View (read-only).  
 
 Due to DWG's popularity, it can also be viewed (less efficiently) with general image format software such as QuickView Plus.  
 
@@ -53,7 +53,7 @@ Typically, **DWG TrueView** is the easiest comprehensive tool for viewing standa
 
 #### Features of note  
 
-AutoCAD was available for Macs until 1994 and then again starting in 2010. In the intervening years, it was available only for Windows.  
+AutoCAD was not produced for Mac between 1994 and 2010.  
 
 #### Preferred terminology in description  
 
