@@ -31,7 +31,7 @@ Vendor-neutral formats:
 
 #### Summary  
 
-First released in 1982. AutoCAD is the world's most widely-used 2D and 3D desktop (and, since 2010, cloud-based) computer-aided design and drafting tool.  
+First released in 1982, AutoCAD is the world's most widely-used 2D and 3D desktop (and, since 2010, cloud-based) computer-aided design and drafting tool.  
 
 #### Associated file formats    
 
@@ -61,7 +61,15 @@ Source: ["Understanding AutoCAD backup and autosave files," Autodesk, Jan 30, 20
 
 #### Features of note  
 
-AutoCAD was not produced for Mac between 1994 and 2010.  
+AutoCAD was not produced for Mac between 1994 and 2010. 
+
+#### Can import  
+
+3DS, DGN, DWG, DWS, DWT, DXF, FBX, SAT, WMF  
+
+#### Can export  
+
+3DS, BMP, DGN, DWF, DWG, DXF, FBX, PDF  
 
 #### Preferred terminology in description  
 
