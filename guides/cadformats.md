@@ -23,6 +23,8 @@ Vendor-neutral formats:
 * [COLLADA (.dae)](#dae)  
 * [IFC (.ifc)](#ifc)  
 
+GENERAL NOTE: ALSO CHECK OUT [NAVISWORKS](https://knowledge.autodesk.com/support/navisworks-products/troubleshooting/caas/sfdcarticles/sfdcarticles/Supported-file-formats-and-applications-for-Autodesk-Navisworks-2009-to-2012.html) AS MULTI-CAD VIEWER.  
+
 <a name="autocad"></a>  
 ## AutoCAD  
 
@@ -89,7 +91,7 @@ Revit, first released in 2000, is Building Information Modeling (BIM) software f
 
 #### How to view files on CCA CAD workstations  
 
-Most Revit files should be openable with Revit 2014. If you are having difficulty opening a file, attempt to open it with the "Audit" button checked in Revit.  
+Most Revit files should open in Revit 2014. If you are having difficulty opening a file, attempt to open it with the "Audit" button checked in Revit.  
 
 #### Features of note  
 
@@ -108,23 +110,23 @@ AVI, DGN, DWF, DWG, DXF, FBX, IFC, JPEG, PDF, PNG, SAT, TIF
 lorem ipsum  
 
 <a name="3ds"></a>  
-## 3DS Max  
+## 3ds Max  
 
-**Associated file extensions:** .3ds  
+**Associated file extensions:** .3ds, .max  
 **Vendor:** Autodesk  
 
 #### Summary  
 
-lorem ipsum  
+3ds Max was first released as 3D Studio in 1990. Over the years, the name evolved from 3D Studio to 3D Studio Max (1996) to 3ds Max (2006). 3ds Max is a desktop application for 3D modeling, rendering, and animation used by the architectural, gaming, film, and animation industries. It can be used to, for example, create high-defintion renderings of projects designed in Revit.  
 
 #### File types  
 
-**3DS:** description  
-**MAX:** description  
+**3DS:** 3DS is a native binary file format for 3ds Max.  
+**MAX:** MAX is the native internal file format for 3ds Max.  
 
 #### How to view files on CCA CAD workstations  
 
-lorem ipsum  
+Both 3DS and MAX files can be opened in 3ds Max 2015.
 
 #### Features of note  
 
