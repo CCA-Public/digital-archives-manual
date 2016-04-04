@@ -93,7 +93,15 @@ Most Revit files should be openable with Revit 2014. If you are having difficult
 
 #### Features of note  
 
-Revit projects can be exported as IFC files. Some specifically Revit information may be lost in the process.  
+Revit projects can be exported as IFC files. Some Revit-specific information may be lost in the process, but IFC is the closest thing to a comprehensive vendor-neutral/standard format available for BIM.  
+
+#### Can import  
+
+DGN, DWG, DXF, JPEG, PNG, SAT, SKP, TIF  
+
+#### Can export  
+
+AVI, DGN, DWF, DWG, DXF, FBX, IFC, JPEG, PDF, PNG, SAT, TIF
 
 #### Preferred terminology in description  
 
