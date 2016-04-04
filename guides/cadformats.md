@@ -61,7 +61,9 @@ Source: ["Understanding AutoCAD backup and autosave files," Autodesk, Jan 30, 20
 
 #### Features of note  
 
-AutoCAD was not produced for Mac between 1994 and 2010. 
+AutoCAD 2014 is capable of reading all versions of DWG file formats and writing some older DWG formats (R14 and newer).  
+
+AutoCAD was not produced for Mac between 1994 and 2010.   
 
 #### Can import  
 
