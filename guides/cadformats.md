@@ -69,11 +69,11 @@ AutoCAD was not produced for Mac between 1994 and 2010.
 
 #### Can import  
 
-3DS, DGN, DWG, DWS, DWT, DXF, FBX, SAT, WMF  
+.3ds, .dgn, .dwg, .dws, .dwt, .dxf, .fbx, .sat, .wmf  
 
 #### Can export  
 
-3DS, BMP, DGN, DWF, DWG, DXF, FBX, PDF  
+.3ds, .bmp, .dgb, .dwf, .dwg, .dxf, .fbx, .pdf  
 
 #### Preferred terminology in description  
 
@@ -99,11 +99,11 @@ Revit projects can be exported as IFC files. Some Revit-specific information may
 
 #### Can import  
 
-DGN, DWG, DXF, JPEG, PNG, SAT, SKP, TIF  
+.dgn, .dwg, .dxf, .jpg, .png, .sat, .skp, .tif  
 
 #### Can export  
 
-AVI, DGN, DWF, DWG, DXF, FBX, IFC, JPEG, PDF, PNG, SAT, TIF
+.avi, .dgn, .dwf, .dwg, .dxf, .fbx, .ifc, .jpg, .pdf, .png, .sat, .tif  
 
 #### Preferred terminology in description  
 
@@ -126,7 +126,41 @@ lorem ipsum
 
 #### How to view files on CCA CAD workstations  
 
-Both 3DS and MAX files can be opened in 3ds Max 2015.
+Both 3DS and MAX files can be opened in 3ds Max 2015.  
+
+#### Can import  
+
+3D Studio (.3DS)  
+Adobe Illustrator (.AI)  
+ASCII Scene Export (.ASE)  
+Lightscape - Material (.ATR), Blocks (.BLK), Parameter (.DF), Layers (.LAY), Preparation (.LP), View (.VW)  
+Autodesk DWF (.DWF)  
+Autocad DWG (.DWG)  
+Autocad DXF (.DXF)  
+Autodesk FBX (.FBX, .DAE)  
+Motion Analysis HTR File (.HTR)  
+IGES (.IGS)  
+JSR-184 (.M3G)  
+Wavefront Object (.OBJ) and Material (.MTL)  
+StereoLitho (.STL)  
+Shockwave 3D (.W3D)  
+VRML97 (.WRL)  
+
+#### Can export  
+
+3D Studio (.3DS, .PRJ)  
+Adobe Illustrator (.AI)  
+LandXML / DEM / DDF (.XML, .DEM, .DDF) Autocad Drawing (.DWG, .DXF)  
+Legacy Autocad (.DWG)  
+Autodesk FBX (.FBX, .DAE)  
+Motion Analysis HTR File (.HTR)  
+IGES (.IGE,.IGS,.IGES)  
+Autodesk Inventor (.IPT, .IAM)  
+Lightscape (.LS, .LP, .VW)  
+Wavefront Object (.OBJ) and Material (.MTL) 3D Studio Shape (.SHP)  
+StereoLitho (.STL)  
+Motion Analysis TRC File (.TRC) VRML (.WRL, WRZ)  
+VIZ Material XML (.XML)  
 
 #### Features of note  
 
