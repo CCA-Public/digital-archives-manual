@@ -182,7 +182,7 @@ Rhinoceros (most commonly referred to as Rhino) is a NURBS-based 3D design tool 
 
 #### How to view files on CCA CAD workstations  
 
-Open files in Rhinoceros 5.  
+You can open .3dm (and many other) files in Rhinoceros 5.  
 
 #### Features of note  
 
