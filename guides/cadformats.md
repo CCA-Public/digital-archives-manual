@@ -178,7 +178,7 @@ lorem ipsum
 
 #### Summary  
 
-Rhinoceros (most commonly referred to as Rhino) is a NURBS-based 3D design tool for Windows and Mac OS X, first released in 1998 and commonly used for computer-aided design, manufacturing, 3D printing, and multimedia work. Rhino's wide appeal can be attributed in part to the Grasshopper visual scripting add-on, V-Ray rendering plug-in, and other such plug-ins that can expand Rhino's native feature set.  
+Rhinoceros (most commonly referred to as Rhino) is a NURBS-based 3D design tool for Windows and Mac OS X, first released in 1998 and commonly used for computer-aided design, manufacturing, 3D printing, and multimedia work. Rhino's wide appeal can be attributed in part to its extensive library of plug-ins, such as Grasshopper (visual scripting) and V-Ray (rendering), that extend Rhino's native feature set.  
 
 #### How to view files on CCA CAD workstations  
 
