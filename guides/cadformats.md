@@ -178,7 +178,7 @@ lorem ipsum
 
 #### Summary  
 
-lorem ipsum  
+Rhinoceros (most commonly referred to as Rhino) is a NURBS-based 3D design tool for Windows and Mac OS X, commonly used for computer-aided design, manufacturing, 3D printing, and multimedia work. Rhino's wide appeal can be attributed in part to Grasshopper, a visual scripting add-on, and other plug-ins that can expand Rhino's native feature set.  
 
 #### How to view files on CCA CAD workstations  
 
@@ -186,7 +186,19 @@ lorem ipsum
 
 #### Features of note  
 
-lorem ipsum  
+Rhino's 3DM file format has been openly documented as part of Robert McNeel & Associates' openNURBS Initiative, and can be read and written by the open-source openNURBS toolkit.  
+
+When opening CAD file formats not in Rhino native file format, the program will always create a new drawing called "Untitled" and convert the file, meaning that for the file to remain in its old file format it must be re-converted to its original format.  
+
+Although Rhino can import DWG files, it may not always be able to read the newest versions of this format. This delay can be attributed to the time it takes to reverse-engineer new versions of the DWG format after they are released by Autodesk. Rhino 5 can import and export DWG/DXF file formats up to version 2014.  
+
+In the absence of full-licensed Microstation, Rhino is the best tool available for importing DGNs for export into other formats for use in, e.g., e-publications.  
+
+#### Can import/export  
+
+DWG/DXF (up to version 2014), IGES, STEP, SLDPRT, SAT, DGN, FBX, 3DS, LWO, STL, SLC, OBJ, AI, RIB, POV, UDO, VRML, CSV, BMP, TGA, TIFF, VDA, GHS, GTS, KML, PLY, SketchUp  
+
+Other formats may be supported via third-party plugins.  
 
 #### Preferred terminology in description  
 
