@@ -212,15 +212,15 @@ lorem ipsum
 
 #### Summary  
 
-lorem ipsum  
+Microstation is a 2D and 3D CAD software product developed and sold by Bentley Systems, first released in 1985. Microstation is commonly used for infrastructural projects. Its largest user base in the UK. The current version of Microstation as of April 2016 is Microstation V8i.  
 
 #### How to view files on CCA CAD workstations  
 
-lorem ipsum  
+Although CCA does not have a fully-licensed version of Microstation, DGN files can be viewed read-only in the free Bentley View software installed on our CAD workstations. DGN files can also be imported (and subsequently re-exported in other formats) in Rhino 5.  
 
 #### Features of note  
 
-lorem ipsum  
+Although Microstation historically offered Mac and UNIX versions of its software projects, Microstation is now a Windows-only product.    
 
 #### Preferred terminology in description  
 
