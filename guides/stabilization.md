@@ -99,20 +99,22 @@ Steps:
 2. Leave one of the copies of the Removal Sheet in the box or folder where you found the media, as close to where the media was found as possible.  
 3. Put the media and the second copy of the completed Digital Media Removal Sheet in a new envelope or box and store this container in cool vault shelving.  
 4. Create a TMS record for the new container:
-    * Object number: "(accession number).DM##", e.g. "AR2013.0050.DM01"  
-    * Classification: "médias numériques retirés"  
-    * Status flag: "record for management need"  
-    * Nom de l'objet: "digital media"  
-    * Title: "Separated digital media"  
-    * Description du contenu: Enter a brief description of the material and (optionally) the title of the folder from which it was taken.  
-    * Link the container record as an child of the versement, using the "Est composé de" association.  
-    * Link the container record to the fonds- or collection- record using the "a classifier" association.  
-5. Label the new container:
+    * **Object number:** "(accession number).DM##", e.g. "AR2013.0050.DM01"  
+    * **Classification:** "médias numériques retirés"  
+    * **Status flag:** "record for management need"  
+    * **Nom de l'objet:** "digital media"  
+    * **Title:** "Separated digital media"  
+    * **Description du contenu:** Enter a brief description of the material and (optionally) the title of the folder from which it was taken.  
+5. Add the following associations: 
+    * **a classifier:** The fonds or collection to which the media belongs  
+    * **Provient de:**The accession to which the media belongs  
+    * **Est inclus dans (if applicable):** The groupe to which the separated media belongs  
+6. Label the new container:
     * Object number  
     * Fonds or Collection number (when appropriate)  
     * Name of fonds or collection (short name is okay, e.g. you can write "Siza" instead of "Alvaro Siza fonds")  
-6. If the media in the container (*note: specific pieces of media, not the folder or "groupe" they were found within*) already have ARCH, DR, or PH numbers, link the ARCH/DR/PH records to the DM container record as children with the "Est composé de" association.  
-7. Give information about the new container to the Registrar, as per usual localisation procedures.  
+7. If the media in the container (*note: specific pieces of media, not the folder or "groupe" they were found within*) already have ARCH, DR, or PH numbers, link the ARCH/DR/PH records to the DM container record as children with the "Est composé de" association.  
+8. Give information about the new container to the Registrar, as per usual localisation procedures.  
 
 <a name="diskimaging"></a>
 ### Disk imaging original physical media  
