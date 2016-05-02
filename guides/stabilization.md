@@ -100,7 +100,13 @@ Steps:
 3. Put the media and the second copy of the completed Digital Media Removal Sheet in a new envelope or box and store this container in cool vault shelving.  
 4. Create a TMS record for the new container:
     * Object number: "(accession number).DM##", e.g. "AR2013.0050.DM01"  
+    * Classification: "médias numériques retirés"  
+    * Status flag: "record for management need"  
+    * Nom de l'objet: "digital media"  
+    * Title: "Separated digital media"  
+    * Description du contenu: Enter a brief description of the material and (optionally) the title of the folder from which it was taken.  
     * Link the container record as an child of the versement, using the "Est composé de" association.  
+    * Link the container record to the fonds- or collection- record using the "a classifier" association.  
 5. Label the new container:
     * Object number  
     * Fonds or Collection number (when appropriate)  
