@@ -265,7 +265,7 @@ lorem ipsum
 
 #### Summary  
 
-lorem ipsum  
+Can refer to either Alias Studio, etc. (set of industrial design tools) or PowerAnimator (3D modeling, animation, and visual effects suite that was the precursor to Maya).   
 
 #### How to view files on CCA CAD workstations  
 
