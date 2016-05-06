@@ -9,7 +9,7 @@ Vendor/software-specific formats:
 * [Microstation (.dgn)](#microstation)  
 * [Maya (.ma, .mb)](#maya)  
 * [Alias (.wire)](#alias)
-* [form-Z (.fmz)](#formz)  
+* [form·Z (.fmz)](#formz)  
 * [CATIA (.CATPart, .CATProduct, others)](#catia)  
 * [Digital Project (.CATPart, .CATProduct)](#digitalproject)  
 * [SOLIDWORKS (.SLDPRT)](#solidworks)  
@@ -280,22 +280,26 @@ lorem ipsum
 lorem ipsum  
 
 <a name="formz"></a>  
-## form-Z   
+## form·Z   
 
 **Associated file extensions:** .fmz  
 **Vendor:** AutoDesSys  
 
 #### Summary  
 
-lorem ipsum  
+Form·Z is a computer-aided (CAD) design tool developed by AutoDesSys for all design fields that deal with the articulation of 3D spaces and forms and which is used for 3D modeling, drafting, animation and rendering.  
+
+In general, form·Z allows design in 3D or in 2D, using numeric or interactive graphic input through either line or smooth shaded drawings (OpenGL)among drafting, modeling, rendering, and animation platforms.  
 
 #### How to view files on CCA CAD workstations  
 
-lorem ipsum  
+CCA has two versions of form·Z installed on its CAD workstations: form·Z 8 Pro and form·Z 6.73. form·Z 8 Pro will be able to open only relatively new form·Z files or files that have been migrated to the newest version of the .fmz format. form·Z 6.73 will be able to read some (but still not all) older .fmz files, making it the de facto choice for attempting to open .fmz files in the archives.  
+
+It may be that neither of the versions of form·Z on the CAD workstations are able to open files in an archive. If this is the case, please notify the Digital Archivist, so that we can explore options for gaining access to the files in question.  
 
 #### Features of note  
 
-lorem ipsum  
+Form·Z is notoriously not backwards-compatible. Newer versions of the software are unable to open files created in older version of form·Z.  
 
 #### Preferred terminology in description  
 
