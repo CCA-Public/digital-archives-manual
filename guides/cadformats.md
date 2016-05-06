@@ -234,11 +234,11 @@ lorem ipsum
 
 #### Summary  
 
-Maya is an application used to generate 3D assets for use in film, television, game development and architecture. The software was initially released for the IRIX operating system in February 1998. However, this support was discontinued in August 2006 after the release of version 6.5. Maya was available in both "Complete" and "Unlimited" editions until August 2008, when it was turned into a single suite.  
+Maya is an application used to generate 3D assets for use in film, television, game development and architecture. The software was initially developed by Alias Systems (later Alias|Wavefront, which was owned by Silicon Graphics Inc.) and released for the IRIX operating system in February 1998. However, this support was discontinued in August 2006 after the release of version 6.5. Maya was available in both "Complete" and "Unlimited" editions until August 2008, when it was turned into a single suite.  
 
 Users define a virtual workspace (scene) to implement and edit media of a particular project. Scenes can be saved in a variety of formats, the default being .mb (Maya Binary). Maya exposes a node graph architecture. Scene elements are node-based, each node having its own attributes and customization. As a result, the visual representation of a scene is based entirely on a network of interconnecting nodes, depending on each other's information. For the convenience of viewing these networks, there is a dependency and a directed acyclic graph.  
 
-Maya continues to be used for many major film, gaming, and architectural projects.  
+Maya continues to be used in Windows and Mac OS X for many major film, gaming, and architectural projects.  
 
 #### File types  
 
