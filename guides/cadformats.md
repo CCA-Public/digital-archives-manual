@@ -240,6 +240,11 @@ Users define a virtual workspace (scene) to implement and edit media of a partic
 
 Maya continues to be used for many major film, gaming, and architectural projects.  
 
+#### File types  
+
+**MA**: Maya ASCII (text-based format)  
+**MB**: Maya Binary (compressed, binary format)  
+
 #### How to view files on CCA CAD workstations  
 
 You can open .ma and .mb files in Autodesk Maya 2014.   
