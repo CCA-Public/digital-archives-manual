@@ -33,6 +33,7 @@ Helpful resources, including:
 <a name="formats"></a>  
 ## File format identification and information  
 
+* [Seigfried](http://www.itforarchivists.com/siegfried): Have a file with a missing or suspect file extension? Drag the file onto Siegfried's hammer and this site will do its best to recognize the file for you.  
 * [All known extensions](http://www.digipres.org/formats/extensions/): Don't know anything about a file other than it's extension? This is a good place to start.  
 * [PRONOM](http://www.nationalarchives.gov.uk/PRONOM/Default.aspx): The most inclusive and detailed file format registry. Developed and maintained by the UK National Archives.  
 * [Sustainability of Digital Formats Planning for Library of Congress Collections](http://www.digitalpreservation.gov/formats/index.shtml)  
