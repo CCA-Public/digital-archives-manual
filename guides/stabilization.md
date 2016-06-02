@@ -52,7 +52,7 @@ Steps:
 * **Digital Archivist: Ingest**  
   * Add brief descriptive note regarding content to versement "Description du contenu"  
   * Transfer files to Digital Shipping Space, saving content in folder named after accession (versement) number  
-  * Package content according to BagIt specification and ingest into Archivematica according to pceodures for ingesting "raw" data  
+  * Package content according to BagIt specification and ingest into Archivematica according to procedures for ingesting "raw" data  
   * Inform Registrar when ingest is completed  
   * Delete copy of files from Digital Shipping Space  
   * Reformat (erase) media and return to donor or repurpose as appropriate
