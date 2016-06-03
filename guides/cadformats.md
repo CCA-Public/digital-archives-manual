@@ -208,16 +208,14 @@ Start familiarizing yourself with Rhino 5's navigational features by watching [t
 
 In perspective view:
 
-* Right mouse button + drag: tumble (rotate)  
-* Ctrl + right mouse button + drag : zoom  
-* Scroll wheel: zoom
-* Shift + right mouse button + drag: pan  
-
+* **Rotate**: Right mouse button + drag  
+* **Pan**: Shift + right mouse button + drag  
+* **Zoom**: Ctrl + right mouse button + drag OR scroll wheel  
+  
 In ortho views (top, front, right):  
 
-* Right mouse button + drag: pan  
-* Ctrl + right mouse button + drag : zoom  
-* Scroll wheel: zoom  
+* **Pan**: Right mouse button + drag  
+* **Zoom**: Ctrl + right mouse button + drag OR scroll wheel  
 
 Be aware that elements of a 3D model may exist in layers that are not turned on at the time the file is opened.  To manage layers, go to the "Layers" tab on the right-hand side of the screen. Click the light bulb icon to turn layers on and off.  
 
