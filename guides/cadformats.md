@@ -204,7 +204,9 @@ Other formats may be supported via third-party plugins.
 
 #### Navigation and use  
 
-In Rhino 5:
+Start familiarizing yourself with Rhino's navigational features by watching [this short video](https://vimeo.com/58212839).  
+
+In Rhino 5:  
 
 **Pan (press Alt to rotate; press Ctrl to zoom)**: Pans the view.  
 
