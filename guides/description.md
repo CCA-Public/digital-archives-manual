@@ -61,8 +61,8 @@ File-level description should be entered and reviewed in spreadsheets (one sprea
 | Note | 3.6.1 | No | Do not enter at file level except under rare circumstances and when discussed with an Archivist. |
 | Folder number | n/a | No | n/a |
 | Box number | n/a | No | n/a |
-| Subject access points | ? | ? | "born-digital" (and, optionally, another object type from the list in the File Descriptive Standards - e.g. for a directory of videos, you may enter both "born-digital" and "moving images". When you input multiple values, be sure they are separated with a pipe) |
-| Name access points | ? | No | Optionally, enter name access points (and roles) of people or corporate bodies associated with or resposible for the creation of the file. Do not enter at file level except under rare circumstances and when discussed with an Archivist. |  
+| Subject access points | n/a | Yes | "born-digital" (and, optionally, another object type from the list in the File Descriptive Standards - e.g. for a directory of videos, you may enter both "born-digital" and "moving images". When you input multiple values, be sure they are separated with a pipe) |
+| Name access points | n/a | No | Optionally, enter name access points (and roles) of people or corporate bodies associated with or resposible for the creation of the file. Do not enter at file level except under rare circumstances and when discussed with an Archivist. |  
 | Description status | n/a | No | Leave blank |
 | Level of detail | n/a | No | Leave blank |
 
