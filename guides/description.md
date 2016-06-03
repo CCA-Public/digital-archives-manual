@@ -88,7 +88,7 @@ The only types of information you should enter into TMS that will not be found i
 | Archive constituent | Add an "Archive" constituent to every record within an archive. |  
 | Object count/Nombre de l'objet | "1" |  
 | Object name/Nom de l'objet | "file" |  
-| "Object type" attribute | digital/numérique |  
+| "Object type" attribute | "born-digital"/"né numérique" (and, optionally, another object type) |  
 
 <a name="archivalelements"></a>
 #### Elements of archival description  
