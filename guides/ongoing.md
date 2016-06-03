@@ -12,10 +12,10 @@ When AIP corruption is detected, the AIP is restored from backups according to t
 
 In the short term, all access to born-digital content happens on a by-request basis through Reference. When Reference receives a request, they contact the Digital Archivist, who places consultation copies of content into the Research Material folder, where it will be made available to the researcher on CCA's Study Room CAD workstation.  This approach has a number of limitations:  
 
-* It is a manual and time-consuming process  
-* Files must be copied from "raw" accessions, because Archivematica's AIPs and DIPs are meant to be machine processed, not browsed directly by end users in a file system  
-* Not all files can be copied to Research Materials or consulted on the CAD workstation due to Windows file path limits and other technical considerations  
-* Following this approach, we are unable to leverage any of the technical metadata Archivematica gathers for access purposes. Files without extensions, for example, will be confusing and/or unusable to researchers without extensive intervention by CCA staff  
+* It is a manual and time-consuming process.  
+* Files must be copied from "raw" accessions, because Archivematica's AIPs and DIPs are meant to be machine processed, not browsed directly by end users in a file system.  
+* Not all files can be copied to Research Materials or consulted on the CAD workstation due to Windows file path limits and other technical considerations.  
+* Following this approach, we are unable to leverage any of the technical metadata Archivematica gathers for access purposes. Files without extensions, for example, will be confusing and/or unusable to researchers without extensive intervention by CCA staff.  
 
 The Study Room CAD workstation has no internet access and USB ports are blocked. For now, researchers may not make copies of files for their personal use off of the Study Room machine. They are welcome, however, to use their own phones or cameras to take photos of the screen.  
 
