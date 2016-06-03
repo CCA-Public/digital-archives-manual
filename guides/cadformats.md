@@ -39,7 +39,7 @@ First released in 1982, AutoCAD is the world's most widely-used 2D and 3D deskto
 
 **DWG:** AutoCAD's proprietary binary native file format. Although DWG is a proprietary format, it has been reverse-engineered and made compatible (to varying degrees) with many non-AutoDesk software platforms.  
 
-**DXF (Drawing Interchange Format, or Drawing Exchange Format):** An open data transfer format developed by Autodesk, with [published specifications available](http://images.autodesk.com/adsk/files/autocad_2012_pdf_dxf-reference_enu.pdf) online. DXF exists in both ASCII and binary forms. ASCII DXF files are text files that can be read and modified with any text editor.  
+**DXF (Drawing Interchange Format, or Drawing Exchange Format):** An open data transfer format developed by Autodesk, with [published specifications](http://images.autodesk.com/adsk/files/autocad_2012_pdf_dxf-reference_enu.pdf) available online. DXF exists in both ASCII and binary forms. ASCII DXF files are text files that can be read and modified with any text editor.  
 
 **DWF (Design Web Format):** An open 2D and 3D data visualization format developed by Autodesk. DWF files are highly compressed, and are not intended as a replacement for original design files.  
 
