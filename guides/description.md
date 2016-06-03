@@ -110,7 +110,7 @@ The only types of information you should enter into TMS that will not be found i
 | Language | "1.8B14-langue" text entry | Copy and paste from spreadsheet (if applicable) |
 | Finding aids | "1.8B17-instruments de recherche" text entry | Copy and paste from spreadsheet (if applicable) |
 | Related units of description | "1.8B20-docs reliés fonds different" text entry | Copy and paste from spreadsheet (if applicable) |
-| Note | "1.8B21-générale" text entry | Copy and paste from spreadsheet |  
+| Note | "1.8B21-générale" text entry | Copy and paste from spreadsheet (if applicable) |  
 | Name access points | Personne(s) et institution(s) | Enter as constituents with appropriate roles (if applicable) |  
 
 <a name="itemdesc"></a>  
