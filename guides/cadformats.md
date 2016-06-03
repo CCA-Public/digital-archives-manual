@@ -204,23 +204,17 @@ Other formats may be supported via third-party plugins.
 
 #### Navigation and use  
 
-Start familiarizing yourself with Rhino's navigational features by watching [this short video](https://vimeo.com/58212839).  
+Start familiarizing yourself with Rhino 5's navigational features by watching [this short video](https://vimeo.com/58212839).  
 
-In Rhino 5:  
+In perspective view:
 
-**Pan (press Alt to rotate; press Ctrl to zoom)**: Pans the view.  
+* Right mouse button + drag: tumble (rotate)  
+* Ctrl + right mouse button + drag : zoom  
+* Shift + right mouse button + drag: pan  
 
-* Alt + middle mouse button rotates the view.  
+In ortho views (top, front, right):  
 
-**Rotate (press Shift to pan; press Ctrl to zoom)**: Rotates the view.  
-
-* Shift + middle mouse button pans.  
-* Ctrl + middle mouse button zooms.  
-
-**Swap pan and zoom (press Ctrl to pan; press Shift to zoom)**: Swaps the Shift and Ctrl key behavior for middle mouse button.  
-
-* Shift + middle mouse button zooms the view
-* Ctrl + middle mouse button pans the view.  
+* Right mouse button + drag: pan  
 
 **ADD NOTE ABOUT LAYERS**  
 
