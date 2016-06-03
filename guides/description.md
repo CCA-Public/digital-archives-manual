@@ -24,7 +24,7 @@ Once the processing plan is set and the overall arrangement of the accession(s) 
 
 Your higher level (fonds-, series-, and project-level) descriptions should follow the guidelines set out for these levels of description in the overall CCA Archives Processing Manual.  
 
-Fonds, series, and project records must be entered directly into TMS, but should be written and reviewed in the Finding Aid Template Word document and/or a spreadsheet (for projects) first. If we are able to move to AtoM, fonds and series records will be entered directly in AtoM. Projects can then be imported from the descriptive project spreadsheet.  
+Fonds, series, and project records must be entered directly into TMS, but should be written and reviewed in the Finding Aid Template Word document and/or a spreadsheet (for projects) first. If we are able to move to AtoM, fonds and series records will be entered directly in AtoM. Projects will also be entered manual or can be imported using the standard project description spreadsheet.  
 
 Lines about digital materials in Collation statements in fonds-, series-, and dossier-level records should take the following form: "x digital files (y KB/MB/GB)", e.g. "1,760 digital files (50.3 GB)".  
 
