@@ -3,7 +3,7 @@
 <a name="fixity"></a>  
 ## Fixity checking and repair  
 
-Fixity checks of all AIPs are conducted on a quarterly basis using the [Fixity](https://github.com/artefactual/fixity) application. Fixity's "scanall" function is run via a Bash script. Logs are saved on the Archivematica Storage Service server and results are emailed to CCA staff.  
+Fixity checks of all AIPs are conducted on a quarterly basis using the [Fixity](https://github.com/artefactual/fixity) application. Fixity's "scanall" function is run via a Bash script. Logs are saved on the Archivematica Storage Service server and results are emailed to Storage Service administrators.    
 
 When AIP corruption is detected, the AIP is restored from backups according to the Storage Service's [Recovery](https://www.archivematica.org/en/docs/storage-service-0.7/recovery/#recovery) procedures.  
 
