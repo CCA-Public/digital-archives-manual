@@ -75,9 +75,9 @@ AutoCAD was not produced for Mac between 1994 and 2010.
 
 .3ds, .bmp, .dgb, .dwf, .dwg, .dxf, .fbx, .pdf  
 
-#### Preferred terminology in description  
+#### Navigation and use 
 
-lorem ipsum  
+In AutoCAD, an be interacted with through the Command terminal or through the graphical interface. Basic navigational functions (such as pan, zoom, and orbit) are mostly supported through the [Navigation Bar](https://knowledge.autodesk.com/support/autocad/learn-explore/caas/CloudHelp/cloudhelp/2015/ENU/AutoCAD-Core/files/GUID-17225A0F-7A50-41B9-8404-7D415518DEFB-htm.html).
 
 <a name="revit"></a>  
 ## Revit 
