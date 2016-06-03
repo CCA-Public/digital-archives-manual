@@ -3,7 +3,6 @@
 Once the processing plan is set and the overall arrangement of the accession(s) being processed has been finalized, it is time to think in greater detail about the second half of processing: description. This guide describes CCA's standards for description of born-digital records in spreadsheets (eventually to be imported into AtoM) and The Museum System (TMS), and includes:
 
 * [Principles and practical guidelines for description of born-digital archives](#descriptionprincipleandpractice)  
-* [Preferred terminology](#terminology)  
 * [Fonds-, series-, and project-level description](#higherlevel)
 * [File ("groupe")-level description](#groupdesc)
     * [Entering file-level description in processing spreadsheets](#spreadsheetentry)  
@@ -19,33 +18,6 @@ Once the processing plan is set and the overall arrangement of the accession(s) 
 * "Let the bits describe themselves": Machine-actionable information such as extent, file formats, and filesystem metadata should be captured automatically, never calculated by hand, and rarely transcribed.  
 * Born-digital records may not reflect traditional Stage and Purpose architectural terminology/practice - don't force terminology where it doesn't fit.  
 * Description will be entered and updated in processing spreadsheets that can later be imported into AtoM. Entering this data in TMS will require some fields to be manually entered, but you should copy and paste from your processing spreadsheet when possible. Make sure that any revisions to your description are completed prior to entering data into TMS.  
-
-<a name="terminology"></a>  
-## Preferred terminology  
-
-For preferred terminology for specific CAD/BIM software and file formats, see [CAD, BIM, and 3D modeling software/file formats](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/guides/cadformats.md).  
-
-Generally, for digital files, privilege the terms in the "Preferred terminology" column below:    
-
-| Type of file | Examples | Preferred terminology | Term source | Alternate terms (for reference, do not use) and notes |  
-| :----------: | :------: | :-------------------: | :---------: | :-------------: |
-| CAD (generally) | .dwg, .dgn, .3dm, .mb, .wire, .iges, .stl | "computer-aided design", "computer-aided design file", "computer-aided design files" | AAT | "CAD", "CAD file", "CAD files" "
-| BIM (generally) | .rvt, .ifc | "Building Information Modeling", "Building Information Modeling file", "Building Information Modeling files" | WHERE? | "BIM", "BIM file", "BIM files" |
-| Rendering | Raster image (e.g. jpeg, tiff) of 3D model rendered for presentation | "rendering", "renderings" | WHERE? | "renders", "renders" |  
-| Raster image | .tiff, .jpg | blah | blah | blah | 
-| Vector image | .svg, .ai | blah | blah | blah |  
-| Audio file | .wav, .mp3 | blah | blah | blah |
-| Video file | .mkv, .mp4 | blah | blah | blah |
-| Text file | blah | blah | blah | blah |  
-| Word processing file | blah | blah | blah | blah |  
-| Spreadsheets | blah | blah | blah | blah |  
-| Email | blah | blah | blah | blah |  
-| Websites/pages | blah | blah | blah | blah |  
-| Software | blah | blah | blah | blah |  
-| Databases | blah | blah | blah | blah |  
-
-* DESCRIBING DIMENSIONALITY AND OTHER QUALIFIERS?  
-* SPLIT BETWEEN FILE TYPES AND PURPOSE? (+ tag types?)  
 
 <a name="higherlevel"></a>  
 ## Fonds-, series-, and project-level description  
