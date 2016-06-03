@@ -77,7 +77,11 @@ Steps:
 
 ![mountscript3](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/mountscript3.png)  
 
-Note: As you can see from the terminal window in the screenshot below, the Mount Disk Image script works by mounting the disk in the /media directory. The image will remain mounted as a drive in this directory until you unmount the disk image. **Please be sure to unmount the disk image after you have finished copying all files.** In order to unmount the disk image, right-click on the disk image file. From the Scripts menu, choose "Unmount Disk Image". If you are unsure if the image has been unmounted, you can open a Terminal and enter "ls /media". If you see the disk's identifier listed in the results, the disk image has not yet been unmounted.  
+Note: As you can see from the terminal window in the screenshot below, the Mount Disk Image script works by mounting the disk in the /media directory. The image will remain mounted as a drive in this directory until you unmount the disk image. **Please be sure to unmount the disk image after you have finished copying all files.** In order to unmount the disk image, right-click on the disk image file. From the Scripts menu, choose "Unmount Disk Image". If you are unsure if the image has been unmounted, you can open a Terminal and enter the following command:  
+
+```ls /media```  
+
+If you see the disk's identifier listed in the results, the disk image has not yet been unmounted.  
 
 ![mountscript4](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/mountscript4.png)  
 
