@@ -219,7 +219,7 @@ In ortho views (top, front, right):
 * Ctrl + right mouse button + drag : zoom  
 * Scroll wheel: zoom  
 
-**ADD NOTE ABOUT LAYERS**  
+Be aware that elements of a 3D model may exist in layers that are not turned on at the time the file is opened.  To manage layers, go to the "Layers" tab on the right-hand side of the screen. Click the light bulb icon to turn layers on and off.  
 
 <a name="microstation"></a>  
 ## Microstation  
