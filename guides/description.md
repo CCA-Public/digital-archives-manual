@@ -46,7 +46,7 @@ File-level description should be entered and reviewed in spreadsheets (one sprea
 | Parent | n/a | Yes | Identifier of parent (e.g. series or project) |
 | Identifier | 3.1.1 | Yes | Identifier of file (groupe). This should be an archival number composed of the fonds, series, subseries, dossier, and group numbers, as applicable (e.g. "AP500.S1.1996.PR1.001" or "AP174.S2.001") |
 | Title | 3.1.2 | Yes | Supplied or original title, according to standard Titling Procedures. Do not use a file or directory name as a title. |
-| Creators | 3.2.1 | No | Enter the file's creator if different than higher-level records (optional at file level) |
+| Creators | 3.2.1 | No | Enter the fonds creator (in TMS, this will be a consituent with role "creator") |
 | Date expression | 3.1.3 | Yes | Enter a free-text date expression, according to CCA's standard archival procedures for dates |
 | Date start, Date end | 3.1.3 | Yes | Enter machine-readable beginning and end dates in ISO8601 format. Acceptable date formats: YYYY-MM-DD, YYYY-MM, YYYY. If the file has only a single date (e.g. 1990 or 1990-01-20), enter this in both Date start and Date end. |
 | Level of description | 3.1.4 | Yes | "File" |
