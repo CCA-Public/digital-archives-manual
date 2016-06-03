@@ -210,11 +210,14 @@ In perspective view:
 
 * Right mouse button + drag: tumble (rotate)  
 * Ctrl + right mouse button + drag : zoom  
+* Scroll wheel: zoom
 * Shift + right mouse button + drag: pan  
 
 In ortho views (top, front, right):  
 
 * Right mouse button + drag: pan  
+* Ctrl + right mouse button + drag : zoom  
+* Scroll wheel: zoom  
 
 **ADD NOTE ABOUT LAYERS**  
 
