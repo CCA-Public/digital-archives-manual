@@ -17,7 +17,7 @@ Once the processing plan is set and the overall arrangement of the accession(s) 
 * "Choose to guide, not to map": Let the researcher do their own research, but give them a good enough sense of the content and context of records to know where to focus their energies.  
 * "Let the bits describe themselves": Machine-actionable information such as extent, file formats, and filesystem metadata should be captured automatically, never calculated by hand, and rarely transcribed.  
 * Born-digital records may not reflect traditional Stage and Purpose architectural terminology/practice - don't force terminology where it doesn't fit.  
-* Description will be entered and updated in processing spreadsheets that can later be imported into AtoM. Entering this data in TMS will require some fields to be manually entered, but you should copy and paste from your processing spreadsheet when possible. Make sure that any revisions to your description are completed prior to entering data into TMS.  
+* Description will be entered and updated in processing spreadsheets (that will eventually enable easier import into AtoM). Entering this data in TMS will require some fields to be manually entered, but you should copy and paste from your processing spreadsheet when possible. Make sure that any revisions to your description are completed prior to entering data into TMS.  
 
 <a name="higherlevel"></a>  
 ## Fonds-, series-, and project-level description  
