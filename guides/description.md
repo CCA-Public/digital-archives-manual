@@ -99,8 +99,8 @@ The only types of information you should enter into TMS that will not be found i
 | Parent | Elements reliés | Link object to versement via "Est inclus dans" association type |
 | Identifier | Object number/Numéro de l'objet | Copy and paste from spreadsheet |
 | Title | Title/Titre | Copy and paste from spreadsheet |
-| Creators | Personne(s) et institution(s) | Enter people/corporate bodies as Constituents with appropriate role (e.g. architect, architectural firm, model maker) |
-| Dates | Dates | Enter the date value within "Désignation date". START AND END DATES? |
+| Creators | Personne(s) et institution(s) | Enter creator as a constituent with role "creator" |
+| Dates | Dates | Enter the date value within "Désignation date". |
 | Level of description | Classification | "groupe" |
 | Extent and medium | "Collation" text entry | Copy and paste from spreadsheet |
 | Scope and content | Content description/Description du contenu | Copy and paste from spreadsheet |
@@ -111,13 +111,7 @@ The only types of information you should enter into TMS that will not be found i
 | Finding aids | "1.8B17-instruments de recherche" text entry | Copy and paste from spreadsheet (if applicable) |
 | Related units of description | "1.8B20-docs reliés fonds different" text entry | Copy and paste from spreadsheet (if applicable) |
 | Note | "1.8B21-générale" text entry | Copy and paste from spreadsheet |  
-
-#### Unresolved questions  
-
-* Subjects  
-* Form/digital object types (as tag?)  
-* How to resolve creator vs. name access points  
-* Add something about linking to versement in TMS  
+| Name access points | Personne(s) et institution(s) | Enter as constituents with appropriate roles (if applicable) |  
 
 <a name="itemdesc"></a>  
 ## Item ("pièce")-level description  
