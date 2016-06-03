@@ -168,7 +168,7 @@ lorem ipsum
 
 #### Navigation and use 
 
-There are many ways to view and navigate 3D space in 3ds Max is complicated. For a good introduction, see [this guide](https://knowledge.autodesk.com/support/3ds-max/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/3DSMax/files/GUID-CDA67D65-73D5-4F91-9378-D00B85ED6898-htm.html).  
+There are many ways to view and navigate 3D space in 3ds Max. For a good introduction, see [this guide](https://knowledge.autodesk.com/support/3ds-max/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/3DSMax/files/GUID-CDA67D65-73D5-4F91-9378-D00B85ED6898-htm.html).  
 
 The easiest way to navigate a 3D file in 3ds Max is likely through the [ViewCube](https://knowledge.autodesk.com/support/3ds-max/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/3DSMax/files/GUID-F8D9EF38-A2BB-4502-95A7-4897A7F30F21-htm.html).  
 
