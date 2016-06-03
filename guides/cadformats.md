@@ -105,7 +105,7 @@ Revit projects can be exported as IFC files. Some Revit-specific information may
 
 .avi, .dgn, .dwf, .dwg, .dxf, .fbx, .ifc, .jpg, .pdf, .png, .sat, .tif  
 
-#### Preferred terminology in description  
+#### Navigation and use    
 
 lorem ipsum  
 
@@ -166,9 +166,11 @@ VIZ Material XML (.XML)
 
 lorem ipsum  
 
-#### Preferred terminology in description  
+#### Navigation and use 
 
-lorem ipsum  
+There are many ways to view and navigate 3D space in 3ds Max is complicated. For a good introduction, see [this guide](https://knowledge.autodesk.com/support/3ds-max/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/3DSMax/files/GUID-CDA67D65-73D5-4F91-9378-D00B85ED6898-htm.html).  
+
+The easiest way to navigate a 3D file in 3ds Max is likely through the [ViewCube](https://knowledge.autodesk.com/support/3ds-max/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/3DSMax/files/GUID-F8D9EF38-A2BB-4502-95A7-4897A7F30F21-htm.html).  
 
 <a name="rhino"></a>  
 ## Rhinoceros  
@@ -200,9 +202,25 @@ DWG/DXF (up to version 2014), IGES, STEP, SLDPRT, SAT, DGN, FBX, 3DS, LWO, STL, 
 
 Other formats may be supported via third-party plugins.  
 
-#### Preferred terminology in description  
+#### Navigation and use  
 
-lorem ipsum  
+In Rhino 5:
+
+**Pan (press Alt to rotate; press Ctrl to zoom)**: Pans the view.  
+
+* Alt + middle mouse button rotates the view.  
+
+**Rotate (press Shift to pan; press Ctrl to zoom)**: Rotates the view.  
+
+* Shift + middle mouse button pans.  
+* Ctrl + middle mouse button zooms.  
+
+**Swap pan and zoom (press Ctrl to pan; press Shift to zoom)**: Swaps the Shift and Ctrl key behavior for middle mouse button.  
+
+* Shift + middle mouse button zooms the view
+* Ctrl + middle mouse button pans the view.  
+
+**ADD NOTE ABOUT LAYERS**  
 
 <a name="microstation"></a>  
 ## Microstation  
@@ -220,11 +238,7 @@ Although CCA does not have a fully-licensed version of Microstation, DGN files c
 
 #### Features of note  
 
-Although Microstation historically offered Mac and UNIX versions of its software projects, Microstation is now a Windows-only product.    
-
-#### Preferred terminology in description  
-
-lorem ipsum  
+Although Microstation historically offered Mac and UNIX versions of its software projects, Microstation is now a Windows-only product.  
 
 <a name="maya"></a>  
 ## Maya   
@@ -253,9 +267,15 @@ You can open .ma and .mb files in Autodesk Maya 2014.
 
 The Maya ASCII file format has changed as of Maya 2013. This breaks backwards compatibility, particularly when the .ma file includes meshes.   
 
-#### Preferred terminology in description  
+#### Navigation and use  
 
-lorem ipsum  
+In Maya 2014:  
+
+**Pan**: Alt + middle mouse button  
+**Rotate**: Alt + left mouse button  
+**Zoom**: Alt + right mouse button  
+
+For more information, see [this tutorial on Viewport navigation in Maya](http://www.worldofleveldesign.com/categories/3d_modeling/maya-tutorial-for-beginners-04-viewport-navigation.php).  
 
 <a name="alias"></a>  
 ## Alias  
@@ -275,7 +295,7 @@ lorem ipsum
 
 lorem ipsum  
 
-#### Preferred terminology in description  
+#### Navigation and use  
 
 lorem ipsum  
 
@@ -301,9 +321,12 @@ It may be that neither of the versions of form·Z on the CAD workstations are ab
 
 Form·Z is notoriously not backwards-compatible. Newer versions of the software are unable to open files created in older version of form·Z.  
 
-#### Preferred terminology in description  
+#### Navigation and use    
 
-lorem ipsum  
+See the following resources:  
+
+* [View navigation and control](http://www.formz.com/manuals/formz7/!SSL!/WebHelp/01020_View_navigation_and_control.html)  
+* [form·Z video: Navigation](https://www.youtube.com/watch?v=x0ipLHhbZjY)  
 
 <a name="catia"></a>  
 ## CATIA   
@@ -323,7 +346,7 @@ lorem ipsum
 
 lorem ipsum  
 
-#### Preferred terminology in description  
+#### Navigation and use    
 
 lorem ipsum  
 
@@ -345,7 +368,7 @@ lorem ipsum
 
 lorem ipsum  
 
-#### Preferred terminology in description  
+#### Navigation and use    
 
 lorem ipsum  
 
@@ -367,7 +390,7 @@ lorem ipsum
 
 lorem ipsum  
 
-#### Preferred terminology in description  
+#### Navigation and use    
 
 lorem ipsum  
 
@@ -389,7 +412,7 @@ lorem ipsum
 
 lorem ipsum  
 
-#### Preferred terminology in description  
+#### Navigation and use    
 
 lorem ipsum  
 
@@ -409,11 +432,7 @@ lorem ipsum
 
 #### Features of note  
 
-lorem ipsum  
-
-#### Preferred terminology in description  
-
-lorem ipsum  
+lorem ipsum   
 
 <a name="iges"></a>  
 ## IGES  
@@ -430,10 +449,6 @@ lorem ipsum
 lorem ipsum  
 
 #### Features of note  
-
-lorem ipsum  
-
-#### Preferred terminology in description  
 
 lorem ipsum  
 
@@ -455,10 +470,6 @@ lorem ipsum
 
 lorem ipsum  
 
-#### Preferred terminology in description  
-
-lorem ipsum  
-
 <a name="step"></a>  
 ## COLLADA  
 
@@ -477,10 +488,6 @@ lorem ipsum
 
 lorem ipsum  
 
-#### Preferred terminology in description  
-
-lorem ipsum  
-
 <a name="step"></a>  
 ## IFC  
 
@@ -496,9 +503,5 @@ lorem ipsum
 lorem ipsum  
 
 #### Features of note  
-
-lorem ipsum  
-
-#### Preferred terminology in description  
 
 lorem ipsum  
