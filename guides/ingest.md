@@ -84,7 +84,7 @@ When prompted in Archivematica's Ingest phase, the person performing ingest adds
 <a name="fileformatpolicies"></a>
 ## CCA file format policies  
 
-insert format policies here  
+Currently in process of being reviewed. When complete, CCA's file format policies will be published as a document and implemented in our local instance of the Archivematica Format Policy Registry (FPR) 
 
 <a name="amaticadevelopments"></a>
 ## Future developments with Archivematica  
