@@ -114,7 +114,7 @@ Steps:
     * Fonds or Collection number (when appropriate)  
     * Name of fonds or collection (short name is okay, e.g. you can write "Siza" instead of "Alvaro Siza fonds")  
 7. If the media in the container (*note: specific pieces of media, not the folder or "groupe" they were found within*) already have ARCH, DR, or PH numbers, link the ARCH/DR/PH records to the DM container record as children with the "Est composé de" association.  
-8. Give information about the new container to the Registrar, as per usual localisation procedures.  
+8. Give information about the new container to the Registrar as per usual localisation procedures, and request that the material is localised to the Digital Media storage in the Cool Vault.  
 
 <a name="diskimaging"></a>
 ### Disk imaging original physical media  
