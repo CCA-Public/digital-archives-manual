@@ -66,7 +66,7 @@ When prompted in Archivematica's Ingest phase, the person performing ingest adds
 | Field | Value |  
 | ----- | ----- |  
 | Title | Title of groupe |  
-| Part of AIC | n/a |  
+| Part of AIC | Fonds number (AP###) |  
 | Creator | Creator of archive (should be same as constituent in TMS) |  
 | Subject | n/a |  
 | Description | (optional) |  
