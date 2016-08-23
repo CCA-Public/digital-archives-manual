@@ -61,7 +61,7 @@ This page describes the configurations and policies utilized by Archivematica du
 <a name="dcmetadata"></a>  
 ## Adding descriptive metadata to the AIP  
 
-When prompted in Archivematica's Ingest phase, the person performing ingest adds descriptive metadata to the AIP. The metadata entered should reflect description in TMS and takes the following form:  
+CCA adds descriptive metadata to every AIP to aid in discoverability and re-use of data. In most cases, metadata will be entered automatically after being pulled from TMS or a processing spreadsheet (TBD). CCA's local standards for metadata entry are as follows:  
 
 | Field | Value |  
 | ----- | ----- |  
@@ -69,7 +69,7 @@ When prompted in Archivematica's Ingest phase, the person performing ingest adds
 | Part of AIC | Fonds number (AP###) |  
 | Creator | Creator of archive (should be same as constituent in TMS) |  
 | Subject | n/a |  
-| Description | (optional) |  
+| Description | Scope and content note |  
 | Publisher | Centre Canadien d'Architecture |  
 | Contributor | n/a |  
 | Date | Follow ISO8601 standards. Allowable values: YYYY, YYYY-MM, YYYY-MM-DD, YYYY/YYYY, YYYY-MM/YYYY-MM, YYYY-MM-DD/YYYY-MM-DD |  
