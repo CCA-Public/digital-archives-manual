@@ -43,6 +43,7 @@ This is the CCA's processing manual for born-digital archives. It functions as a
          * [Institutional priorities](guides/arrangement.md/#institutionalpriorities)
       * [Developing a processing plan](guides/arrangement.md/#processingplan)
       * [The exception: Extensible processing of born-digital records](guides/arrangement.md/#extensible)  
+      * [Packaging SIPs for Archivematica](guides/arrangement.md/#packagingsips)  
 * **[Description](guides/description.md)**
       * [Principles and practical guidelines for description of born-digital archives](guides/description.md/#descriptionprincipleandpractice)
       * [Preferred terminology](guides/description.md/#terminology)  
