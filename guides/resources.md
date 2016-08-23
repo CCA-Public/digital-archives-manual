@@ -45,6 +45,7 @@ Helpful resources, including:
 * [BagIt 0.97 Specification](http://www.digitalpreservation.gov/documents/bagitspec.pdf): The specifications for the widely used packaging and validation scheme developed by the Library of Congress.  
 * [Bitcurator wiki](http://wiki.bitcurator.net/index.php?title=Main_Page)  
 * [Archivematica documentation](https://www.archivematica.org/en/docs/archivematica-1.4/)  
+* [Preserving optical media from the command line](http://blog.kbresearch.nl/2015/11/13/preserving-optical-media-from-the-command-line/)  
 
 <a name="cadpres"></a>  
 ## Preservation of computer-aided design  
