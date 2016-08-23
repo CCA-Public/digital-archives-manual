@@ -89,4 +89,6 @@ Currently in process of being reviewed. When complete, CCA's file format policie
 <a name="amaticadevelopments"></a>
 ## Future developments with Archivematica  
 
-At present, all arrangement occurs after ingest of "raw" data and prior to ingest of "processed" data, and happens exclusively outside of Archivematica. With developments in future releases of Archivematica and in CCA's IT infrastructure, this will likely change to enable archivists and cataloguers to arrange digital archives within the Archivematica dashboard interface.
+* Appraisal tab (AM/1.6) - triage and arrangement inside Archivematica interface  
+* Access system - may require changes to local metadata schema  
+* Automation Tools - will allow for watched directories, "drag and drop" ingest  
