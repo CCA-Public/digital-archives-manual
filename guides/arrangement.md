@@ -14,6 +14,7 @@ The first step of processing archives (whether in digital or analog formats) is 
     * [Institutional priorities](#institutionalpriorities)
 * [Developing a processing plan](#processingplan)
 * [The exception: Extensible processing of born-digital records](#extensible)
+* [Packaging SIPs for Archivematica](#sippackaging)
 
 <a name="arrprinciple"></a>  
 ## Arrangement of born-digital archives in principle  
@@ -97,4 +98,18 @@ Once consultation copies of files, reports, and other documentation have been pl
 
 In some cases, based on the factors listed above, it may make more sense not to arrange born-digital records and to provide only minimal higher-level description (e.g. just a fonds or series-level record). In cases where no arrangement is done (once our Archivematica installation has been upgraded to 1.5), we will simply re-ingest the "raw" SIP in the "processed" pipeline, allowing Archivematica to normalize, characterize, and create AIPs and DIPs, and name the re-ingested package according to the material's processed identifier.  
 
-Following this procedure, we will still end up with two versions of the data (a "raw" AIP and a "processed" AIP/DIP), but the two will only differ in terms of the interventions that the Archivematica makes in the ingest process.
+Following this procedure, we will still end up with two versions of the data (a "raw" AIP and a "processed" AIP/DIP), but the two will only differ in terms of the interventions that the Archivematica makes in the ingest process.  
+
+<a name="sippackaging"></a>  
+## Packaging SIPs for Archivematica  
+
+Once the content of your SIP has been decided, CCA workflow tools (in development) will help you package each SIP so that it meets our local requirements for ingest into Archivematica. All SIPs should have the following structure:  
+
+* Submission Information Package (SIP) : Named after identifier (typically, an AP or ARCH number)
+   * objects/ : folder for digital objects to be ingested  
+      * DISK IMAGES/ : (optional folder used if disk image is ingested alongside files)  
+      * FILES/ : (optional folder used if disk image is ingested alongside files)  
+   * metadata / : folder for metadata associated with digital objects  
+      * checksum.md5 : manifest containing checksums for each file in objects/
+      * metadata.csv : csv file containing metadata to be written to METS file (still to be decided: from TMS API call or transformed from processing spreadsheet)  
+      * submissionDocumentation/ : folder containing any additional documentation related to the digital objects  
