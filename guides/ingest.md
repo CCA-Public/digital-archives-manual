@@ -69,7 +69,7 @@ CCA adds descriptive metadata to every AIP to aid in discoverability and re-use 
 | Part of AIC | Fonds number (AP###) |  
 | Creator | Creator of archive (should be same as constituent in TMS) |  
 | Subject | n/a |  
-| Description | Scope and content note |  
+| Description | Scope and content note (optional) |  
 | Publisher | Centre Canadien d'Architecture |  
 | Contributor | n/a |  
 | Date | Follow ISO8601 standards. Allowable values: YYYY, YYYY-MM, YYYY-MM-DD, YYYY/YYYY, YYYY-MM/YYYY-MM, YYYY-MM-DD/YYYY-MM-DD |  
