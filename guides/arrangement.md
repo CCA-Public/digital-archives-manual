@@ -107,7 +107,7 @@ Once the content of your SIP has been decided, CCA workflow tools (in developmen
 
 * Submission Information Package (SIP) : Named after identifier (typically, an AP or ARCH number)
    * objects/ : folder for digital objects to be ingested  
-      * DISK IMAGES/ : (optional folder, use only when both disk image and files are ingested together)  
+      * DISK_IMAGES/ : (optional folder, use only when both disk image and files are ingested together)  
       * FILES/ : (optional folder, use only when both disk image and files are ingested together)  
    * metadata / : folder for metadata associated with digital objects  
       * checksum.md5 : manifest containing checksums for each file in objects/
