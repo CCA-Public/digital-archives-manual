@@ -103,7 +103,23 @@ Following this procedure, we will still end up with two versions of the data (a 
 <a name="sippackaging"></a>  
 ## Packaging SIPs for Archivematica  
 
-Once the content of your SIP has been decided, CCA workflow tools (in development) will help you package each SIP so that it meets our local requirements for ingest into Archivematica. All SIPs should have the following structure:  
+Once the content of your SIP has been decided, CCA workflow tools (in development) will help you package each SIP so that it meets our local requirements for ingest into Archivematica. All SIPs should have one of the two following structures:  
+
+### Bagged SIP
+* Submission Information Package (SIP) : Named after identifier (typically, an AP or ARCH number)  
+   * bag-info.txt : bagit file  
+   * bagit.txt : bagit file  
+   * manifest-md5.txt : bagit file  
+   * tagmanifest-md5.txt : bagit file  
+   * data : bagit folder containing contents of transfer
+      * objects/ : folder for digital objects to be ingested  
+         * diskimage/ : (optional folder, use only when both disk image and files are ingested together)  
+         * files/ : (optional folder, use only when both disk image and files are ingested together)  
+      * metadata/ : folder for metadata associated with digital objects  
+         * metadata.csv : csv file containing metadata to be written to METS file (still to be decided: from TMS API call or transformed from processing spreadsheet)
+         * submissionDocumentation/ : folder containing any additional documentation related to the digital objects  
+
+### Non-bagged SIP  
 
 * Submission Information Package (SIP) : Named after identifier (typically, an AP or ARCH number)
    * objects/ : folder for digital objects to be ingested  
