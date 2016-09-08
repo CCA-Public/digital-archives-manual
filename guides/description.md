@@ -42,7 +42,6 @@ File-level description should be entered and reviewed in spreadsheets (one sprea
 
 | Column | ISAD element | Required? | Value |
 | :----: | :------------: | :---------: | :---- |
-| Accession number | n/a | Yes | Versement number |
 | Parent | n/a | Yes | Identifier of parent (e.g. series or project) |
 | Identifier | 3.1.1 | Yes | Identifier of file (groupe). This should be an archival number composed of the fonds, series, subseries, dossier, and group numbers, as applicable (e.g. "AP500.S1.1996.PR1.001" or "AP174.S2.001") |
 | Title | 3.1.2 | Yes | Supplied or original title, according to standard Titling Procedures. Do not use a file or directory name as a title. |
@@ -51,8 +50,9 @@ File-level description should be entered and reviewed in spreadsheets (one sprea
 | Date start, Date end | 3.1.3 | Yes | Enter machine-readable beginning and end dates in ISO8601 format. Acceptable date formats: YYYY-MM-DD, YYYY-MM, YYYY. If the file has only a single date (e.g. 1990 or 1990-01-20), enter this in both Date start and Date end. |
 | Level of description | 3.1.4 | Yes | "File" |
 | Extent and medium | 3.1.5 | Yes | This information will be script-generated, in the form "x digital files (y bytes/KB/MB/GB/TB)". Unless value is "EMPTY", do not modify except when discussed with Digital Archivist. |
-| Scope and content | 3.3.1 | Yes | Add a Scope and Content note if title information needs to be supplemented, content falls outside scope of your higher level description, or to call attention to records of note. Because groupes of born-digital records are often voluminous and internally complex, detailed scope and content notes will be more common for this material than for other formats. For groups of born-digital records, the scope and content note field in your processing spreadsheet will be pre-populated with the following script-generated information. Verify and edit these lines as needed, and make sure they are at the end of your note: *"Original directory name: [NAME]". "Prevalent file types: .ext, .ext, .ext” (up to 5 extensions, sorted from most common to least)* |
+| Scope and content | 3.3.1 | Yes | Add a Scope and Content note if title information needs to be supplemented, content falls outside scope of your higher level description, or to call attention to records of note. Because groupes of born-digital records are often voluminous and internally complex, detailed scope and content notes will be more common for this material than for other formats. For groups of born-digital records, the scope and content note field in your processing spreadsheet will be pre-populated with some script-generated information on processing history and common file formats. Verify and edit these lines as needed, and make sure they are at the end of your note. |
 | Arrangement | 3.3.4 | No | Not necessary at file level but can be used to indicate manual re-arrangement when it has been done for some files but not others within the same series. |
+| Accession number | n/a | Yes | Versement number |
 | Conditions governing access | 3.4.1 | No | Only enter at file-level when conditions governing access differ from general conditions set at higher level. |
 | Conditions governing reproduction | 3.4.2 | No | Only enter at file-level when conditions governing reproduction differ from general conditions set at higher level. |
 | Language | 3.4.3 | No | Do not enter at file level except under rare circumstances and when discussed with an Archivist. |
@@ -87,7 +87,7 @@ The only types of information you should enter into TMS that will not be found i
 | Alternate number | Enter fonds number (AP###) as an alternate number for all records within an archive. |  
 | Archive constituent | Add an "Archive" constituent to every record within an archive. |  
 | Object count/Nombre de l'objet | "1" |  
-| Object name/Nom de l'objet | "file" |  
+| Object name/Nom de l'objet | "File" |  
 | "Object type" attribute | "born-digital"/"né numérique" (and, optionally, another object type) |  
 
 <a name="archivalelements"></a>
@@ -95,7 +95,6 @@ The only types of information you should enter into TMS that will not be found i
 
 | Column in spreadsheet | TMS field | Instructions |
 | :-----: | :-----: | :------ |
-| Accession number | Elements reliés | Link object to versement via "Provient de" association type |
 | Parent | Elements reliés | Link object to versement via "Est inclus dans" association type |
 | Identifier | Object number/Numéro de l'objet | Copy and paste from spreadsheet |
 | Title | Title/Titre | Copy and paste from spreadsheet |
@@ -105,11 +104,12 @@ The only types of information you should enter into TMS that will not be found i
 | Extent and medium | "Collation" text entry | Copy and paste from spreadsheet |
 | Scope and content | Content description/Description du contenu | Copy and paste from spreadsheet |
 | Arrangement | "1.8B13-classement" text entry | Copy and paste from spreadsheet (if applicable) |
+| Accession number | Elements reliés | Link object to versement via "Provient de" association type |
 | Conditions governing access | "1.8B16a-restrictions à la consultation" text entry | Copy and paste from spreadsheet (if applicable) |
 | Conditions governing reproduction | "1.8B16c-restric. à l'utilis. et repro." text entry | Copy and paste from spreadsheet (if applicable) |
 | Language | "1.8B14-langue" text entry | Copy and paste from spreadsheet (if applicable) |
 | Finding aids | "1.8B17-instruments de recherche" text entry | Copy and paste from spreadsheet (if applicable) |
-| Related units of description | "1.8B20-docs reliés fonds different" text entry | Copy and paste from spreadsheet (if applicable) |
+| Related units of description | "1.8B20a-docs reliés meme fonds" text entry | Copy and paste from spreadsheet (if applicable) |
 | Note | "1.8B21-générale" text entry | Copy and paste from spreadsheet (if applicable) |  
 | Name access points | Personne(s) et institution(s) | Enter as constituents with appropriate roles (if applicable) |  
 
