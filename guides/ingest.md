@@ -66,7 +66,7 @@ CCA adds descriptive metadata to every AIP to aid in discoverability and re-use 
 | Field | Value |  
 | ----- | ----- |  
 | Title | Title of groupe |  
-| Part of AIC | Fonds number (AP###) |  
+| Part of AIC | Identifier of AIC (if applicable) |  
 | Creator | Creator of archive (should be same as constituent in TMS) |  
 | Subject | n/a |  
 | Description | Scope and content note (optional) |  
@@ -76,7 +76,7 @@ CCA adds descriptive metadata to every AIP to aid in discoverability and re-use 
 | Format | n/a |  
 | Identifier | Identifier of material being ingested |  
 | Source | Accession (e.g. versement) number -- for "raw" ingests, leave this blank |  
-| Relation | n/a |  
+| Relation | Fonds number (AP###) |  
 | Language | n/a |  
 | Coverage | n/a |  
 | Rights | n/a |  
