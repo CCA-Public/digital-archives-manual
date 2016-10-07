@@ -78,7 +78,7 @@ CCA adds descriptive metadata to every AIP to aid in discoverability and re-use 
 | Source | Accession (e.g. versement) number -- for "raw" ingests, leave this blank |  
 | Relation | Fonds number (AP###) |  
 | Language | n/a |  
-| Coverage | n/a |  
+| Coverage | Identifier of parent (series, subseries, or project) |  
 | Rights | n/a |  
 
 <a name="fileformatpolicies"></a>
