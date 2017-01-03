@@ -116,7 +116,6 @@ Once the content of your SIP has been decided, CCA workflow tools like [Folder P
          * diskimage/ : (optional folder, use only when both disk image and files are ingested together)  
          * files/ : (optional folder, use only when both disk image and files are ingested together)  
       * metadata/ : folder for metadata associated with digital objects  
-         * metadata.csv : csv file containing metadata to be written to METS file (still to be decided: from TMS API call or transformed from processing spreadsheet)
          * submissionDocumentation/ : folder containing any additional documentation related to the digital objects  
 
 ### Non-bagged SIP  
@@ -127,5 +126,4 @@ Once the content of your SIP has been decided, CCA workflow tools like [Folder P
       * files/ : (optional folder, use only when both disk image and files are ingested together)  
    * metadata / : folder for metadata associated with digital objects  
       * checksum.md5 : manifest containing checksums for each file in objects
-      * metadata.csv : csv file containing metadata to be written to METS file (still to be decided: from TMS API call or transformed from processing spreadsheet)  
       * submissionDocumentation/ : folder containing any additional documentation related to the digital objects  
