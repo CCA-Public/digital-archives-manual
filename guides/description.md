@@ -96,7 +96,7 @@ The only types of information you should enter into TMS that will not be found i
 | Identifier | Object number/Numéro de l'objet | Copy and paste from spreadsheet |
 | Title | Title/Titre | Copy and paste from spreadsheet |
 | Creators | Personne(s) et institution(s) | Enter creator as a constituent with role "archive creator" |
-| Dates | Dates | Enter the date value within "Désignation date" |
+| Dates | Dates | Enter the date values within "Désignation date" |
 | Level of description | Classification | "groupe" |
 | Extent and medium | "Collation" text entry | Copy and paste from spreadsheet |
 | Scope and content | Content description/Description du contenu | Copy and paste from spreadsheet |
