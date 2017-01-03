@@ -38,7 +38,7 @@ Note that all directories of digital content should be described as files/groupe
 <a name="spreadsheetentry"></a>  
 ### Entering file-level description in processing spreadsheets  
 
-File-level description should be entered and reviewed in spreadsheets (one spreadsheet per series or project, depending on volume). These spreadsheets will be used to import description directly into AtoM once descriptions have been finalized.  
+File-level description should be entered and reviewed in spreadsheets (one spreadsheet per series or project, depending on volume).
 
 | Column | ISAD element | Required? | Value |
 | :----: | :------------: | :---------: | :---- |
