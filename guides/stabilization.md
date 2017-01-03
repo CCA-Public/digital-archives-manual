@@ -37,9 +37,9 @@ Steps:
   * Add brief descriptive note about content to versement "Description du contenu"  
   * Package content according to BagIt specification and ingest into Archivematica according to procedures for ingesting "raw" data  
   * Inform Registrar when ingest is completed  
-  * Delete copy of files from Digital Shipping Space/Dépot numérique  
+  * Delete copies of files from Digital Shipping Space/Dépot numérique  
 * **Registrar**  
-  * Add "Digital Repository" as location to accession (e.g. versement) record  
+  * Add "Dark archive" as location to accession (e.g. versement) record  
 
 <a name="temporarymedia"></a>
 ## Temporary physical media
@@ -51,13 +51,12 @@ Steps:
   * *For Photo/P&D, create groupe or pièce records as usual*  
 * **Digital Archivist: Ingest**  
   * Add brief descriptive note regarding content to versement "Description du contenu"  
-  * Transfer files to Digital Shipping Space, saving content in folder named after accession (versement) number  
   * Package content according to BagIt specification and ingest into Archivematica according to procedures for ingesting "raw" data  
   * Inform Registrar when ingest is completed  
-  * Delete copy of files from Digital Shipping Space  
+  * Delete extra copies of files on network shares
   * Reformat (erase) media and return to donor or repurpose as appropriate
 * **Registrar**  
-  * Add "Digital Repository" as location to accession (versement) record  
+  * Add "Dark archive" as location to accession (versement) record  
 
 <a name="originalphysicalmedia"></a>
 ## Original physical media  
@@ -79,7 +78,7 @@ Steps:
   * Inform Registrar when ingest is completed  
   * Delete copy of files from Digital Shipping Space  
 * **Registrar**
-  * Add "Digital Repository" as location to accession (versement) record  
+  * Add "Dark archive" as location to accession (versement) record  
 * **Digital Archivist, Archivist/Chef/Curator, Associate Director**  
   * During or after processing, Digital Archivist and either the Archivist or appropriate Curator/Chef assess media for artefactual value and confirm with Associate Director, Collection. There are three possible results to this assessment:  
     * Media have artefactual value and will be kept permanently at CCA in their entirety  
@@ -121,7 +120,7 @@ Steps:
 
 At CCA, we capture the contents of original physical media as forensic disk images. A disk image is a computer file that is an exact replica of the contents of a disk or other digital storage volume as that information exists on a particular physical storage medium. Because disk images can be stored redundantly, backed up, and audited in ways that physical carriers like DVDs or external hard drives cannot, they are a much better suited for preservation of digital information over time, while retaining all characteristics of the original physical media as a storage volume.  
 
-Except when circumstances require different solutions, CCA prefers the [Expert Witness Compression Format (also known as EWF or E01)](https://github.com/libyal/libewf/blob/master/documentation/Expert%20Witness%20Compression%20Format%20%28EWF%29.asciidoc) disk image format.  
+Except when circumstances require different solutions, CCA prefers raw disk image formats (e.g. "dd" or "raw").  
 
 **Note: In order to ensure that the source media is unchanged by the process of data capture and transfer, hard drives and removable media drives should always be connected to the capture workstation through a hardware write-blocker.**  
 
@@ -133,7 +132,7 @@ We will typically use one of two tools for creating disk images of media: [Guyma
 <a name="guymager"></a>
 #### Disk imaging with Guymager (Bitcurator)  
 
-Guymager is an open source disk imaging utility found in the Bitcurator environment, and the preferred tool for disk imaging at CCA. At CCA we use Guymager to create disk images in the Expert Witness (E01) format.  
+Guymager is an open source disk imaging utility found in the Bitcurator environment, and the preferred tool for disk imaging at CCA. At CCA we use Guymager to create disk images in the raw (dd) format.  
 
 Before starting to create disk images from an accession, create a folder on the Bitcurator desktop in which you will save your work.  
 
@@ -148,12 +147,9 @@ Steps for imaging physical media with Guymager:
 
 ![Bitcurator1](http://wiki.bitcurator.net/images/4/45/Acquire_image_guymager.jpg)  
 
-* Choose the 'Expert Witness Format' (E01) file format. Split size can be kept at 2047 MB (the default). Enter the following metadata/settings:
-  * **Case number:** Versement
-  * **Evidence number:** Identifier of the media being imaged
-  * **Examiner:** Your name
-  * **Description:** Transcribe any annotations on the media here
-  * **Notes:** Guymager will automatically enter information about the device here. Do not edit this field.    
+* Choose the 'Linux dd raw image' (file extension .dd or .xxx) file format (NOT EWF/E01, as shown in picture).  
+* Split size can be kept at 2047 MB (the default).  
+* Enter the following metadata/settings: 
   * **Image directory:** Give the path to the folder you created for your project on the Bitcurator desktop. The path should be 'home/bcadmin/Desktop/(insert name of folder you created here)/'.  
   * **Image filename:** Enter the disk's identifier with no spaces. Replace any full stops ('.') or colons (':') with underscores ('_').  
   * **Info filename:** This should be automatically created based on your image filename. Do not edit this field.  
@@ -165,9 +161,9 @@ Steps for imaging physical media with Guymager:
   
 ![Bitcurator2](http://wiki.bitcurator.net/images/b/b7/Acquire_image_window.jpg)  
 
-* Once all metadata has been entered and the settings have been checked, click 'OK' to start the disk imaging process.
+* Once settings have been confirmed, press 'OK' to start the disk imaging process.
 * Guymager will track its progress and give you color-coded indications when the process has been completed successfully or has failed. If it fails, make a note of this in the versement stabilization spreadsheet and set the disk aside for review by the Digital Archivist.  
-* If the image is successfully created, go to your project folder on the desktop and do a quick visual check that all looks good. You should see at least two files: the disk image(s) themselves (potentially split into several files with the same file name but extensions of .E01, .E02, etc.) and a '.info' metadata file.  
+* If the image is successfully created, go to your project folder on the desktop and do a quick visual check that all looks good. You should see at least two files: the disk image(s) themselves (potentially split into several files with the same file name but extensions of .001, .002, etc.) and a '.info' metadata file.  
 * If all looks good, repeat this process with the next disk until all media has been imaged.  Once all media has been imaged, copy the entire project folder from the Bitcurator desktop into the "Dépôts" folder and alert the Digital Archivist.  
 
 <a name="ftkimager"></a>
@@ -199,7 +195,7 @@ Steps for imaging physical media with FTK Imager:
 
 ![FTK4](https://blogs.sans.org/computer-forensics/files/2009/06/device-selected.png)  
 
-* Select Image type 'E01'.  
+* Select Image type 'raw (dd)'.  
 * FTK Imager will prompt you to add metadata for your disk image. Enter the following metadata:  
   * **Case number:** Versement  
   * **Evidence number:** Identifier of the media being imaged  
@@ -207,7 +203,8 @@ Steps for imaging physical media with FTK Imager:
   * **Examiner:** Your name  
   * **Notes:** Leave this blank  
 
-![FTK5](https://blogs.sans.org/computer-forensics/files/2009/06/evidence-info.png)
+![FTK5](https://blogs.sans.org/computer-forensics/files/2009/06/select-image-type.png)
+![FTK6](https://blogs.sans.org/computer-forensics/files/2009/06/evidence-info.png)
 
  * FTK Imager will now ask you for information about where to save the resulting disk image and metadata files. Enter the following and then select 'Finish':
   * **Image destination folder:** Enter the network location of your current work folder in the Catalogers drive.
@@ -215,19 +212,19 @@ Steps for imaging physical media with FTK Imager:
 
 * Double-check to make sure that the Image Destination and settings appear correct and then select 'Start' to begin the disk imaging process.  
 
-![FTK6](https://blogs.sans.org/computer-forensics/files/2009/06/ready-to-create.png)  
+![FTK7](https://blogs.sans.org/computer-forensics/files/2009/06/ready-to-create.png)  
 
 * A progress window will not appear and keep you informed of how the disk imaging is progressing. If disk imaging fails or seems to get hung up on a large number of bad sectors, make note of this in the versement stabilization spreadsheet and set the disk aside for review by the Digital Archivist.  
-* If the image is successfully created, go to your project folder in the Catalogers drive and do a quick visual check that all looks good. You should see at least two files: the disk image(s) themselves (potentially split into several files with the same file name but extensions of .E01, .E02, etc.) and a '.txt' metadata file.  
+* If the image is successfully created, go to your project folder in the Catalogers drive and do a quick visual check that all looks good. You should see at least two files: the disk image(s) themselves (potentially split into several files with the same file name but extensions of .001, .002, etc.) and a '.txt' metadata file.  
 * If all looks good, repeat this process with the next disk until all media has been imaged.  Once all media has been imaged, copy the entire project folder from the Catalogers drive into the "Dépôts" folder and alert the Digital Archivist.    
 
 <a name="rawingest"></a>
 ## Ingesting "raw" accession data into digital repository  
 
-Once data from all of the network transfer, temporary media, and original media in an accession has been stabilized, the digital component of the accession is ingested into CCA's Archivematica-based digital repository.  The aim of this step is to retain and safely store a copy of the data exactly as it arrived at CCA in the digital repository.  **Note that all files from network transfers or temporary media must be packaged in some time of archive format (zip, tar, rar, etc.), or else Archivematica will change original filenames and timestamps, defeating part of the purpose of the "raw" ingest.**    
+Once data from all of the network transfer, temporary media, and original media in an accession has been stabilized, the digital component of the accession is ingested into CCA's Archivematica-based digital repository.  The aim of this step is to retain and safely store a copy of the data exactly as it arrived at CCA in the digital repository.  **Note that all files from network transfers or temporary media must be packaged in some time of archive format (zip, tar, rar, etc.), or else Archivematica will change original filenames and timestamps, defeating part of the purpose of the "raw" ingest. At CCA, we typically prefer to tar files.**    
 
 This SIP (Submission Information Package, in OAIS parlance) is composed of all files, archive packages, and disk images in the Shipping Space that correspond to an accession. It is named according to the convention "(versement number)_raw".   
 
-For the ingest of raw unprocessed data, Archivematica is set not to extract packages, examine contents, or normalize any files. An AIP is created and stored, but no DIP is created. These settings must be manually selected for now, but eventually these will be the default settings in a "raw ingest" watched directory that will process material through Archivematica using Automation Tools scripts.    
+For the ingest of raw unprocessed data, we use the csp-arch-02 processing pipeline. In this pipeline, Archivematica is set not to extract packages, examine contents, or normalize any files. An AIP is created and stored, but no DIP is created. These settings must be manually selected for now, but eventually these will be the default settings in a "raw ingest" watched directory that will process material through Archivematica using Automation Tools scripts.    
 
-Once an accession has been ingested into Archivematica, the Digital Archivist deletes the temporary copies from the Shipping Space and notifies the Registrar. The Registrar then updates the location for the appropriate accession records to "Digital Repository".  
+Once an accession has been ingested into Archivematica, the Digital Archivist deletes the temporary copies from the Shipping Space and notifies the Registrar. The Registrar then updates the location for the appropriate accession records to "Dark archive".  

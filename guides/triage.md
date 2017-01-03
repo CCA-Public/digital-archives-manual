@@ -18,7 +18,9 @@ In order to analyze, arrange, and describe the digital objects that make up a ve
 
 Files can be extracted from archive packages via the use of the free and open source software such as 7zip (Windows/Linux) or The Unarchiver (Mac).  
 
-At CCA we typically use one of two tools for extracting files from disk images: [Bitcurator](#bitcuratorfiles) or [FTK Imager](#ftkimagerfiles).  
+The simplest way to extract files from disk images is to do so as part of the reporting processing using [Brunnhilde](https://github.com/timothyryanwalsh/brunnhilde).  
+
+For extracting files from disk images outside of the reporting process, we typically use one of two tools for extracting files from disk images: [Bitcurator](#bitcuratorfiles) or [FTK Imager](#ftkimagerfiles).  
 
 <a name="bitcuratorfiles"></a>  
 ### Extracting files from disk images with Bitcurator  
@@ -117,9 +119,9 @@ If you see the disk's identifier listed in the results, the disk image has not y
 
 You may find in some cases that neither Bitcurator nor FTK Imager is able to extract files from a disk image. Typically this will be because the media is formatted using a file system that modern operating systems cannot read.  
 
-Nine times out of ten, when a disk image cannot be read or mounted on a modern machine it is because the disk is using the HFS file system. HFS (Hierarchical File System) is an Apple file system associated with "Classic" versions of the Mac operating system (i.e., those prior to OS X). Although modern machines cannot read HFS natively, we can use an open source tool called HFSExplorer (included in Bitcurator) to export usable files from such disks.  
+Nine times out of ten, when a disk image cannot be read or mounted on a modern machine it is because the disk is using the HFS file system. HFS (Hierarchical File System) is an Apple file system associated with "Classic" versions of the Mac operating system (i.e., those prior to OS X). Although modern machines cannot read HFS natively, we can use an open source tool called HFSExplorer (included in Bitcurator) to export usable files from such disks. This is the same tool used by Brunnhilde to characterize and extract files from HFS-formatted disks.
 
-In order to feed a disk image into HFSExplorer, we must first convert our E01 disk image into a raw format that HFSExplorer can read. To do this we will utilize a command-line utility called ewfexport.  In Bitcurator, open a command line terminal, navigate to the directory containing the target .E01 disk image, and enter the command
+HFSExplorer can only read raw disk images. If starting with an EWF/E01 forensic disk image, you must first convert our E01 disk image into a raw format that HFSExplorer can read. To do this we will utilize a command-line utility called ewfexport.  In Bitcurator, open a command line terminal, navigate to the directory containing the target .E01 disk image, and enter the command
 
 ```ewfexport [FILENAME.E01]```  
 
@@ -139,7 +141,7 @@ Once you have the raw disk image, open HFSExplorer (located in the 'Additional T
 
 ![hfsexplorer1](http://wiki.bitcurator.net/images/c/c2/HFS1.png)  
 
-From the 'File' menu, select 'Load file system from file' and then select the raw disk image file you just created.  
+From the 'File' menu, select 'Load file system from file' and then select the raw disk image file.  
 
 ![hfsexplorer2](http://wiki.bitcurator.net/images/3/30/HFS2.png)  
 
@@ -161,14 +163,14 @@ The final step is to export these files from HFSExplorer to a desktop or network
 
 ![hfsexplorer5](http://wiki.bitcurator.net/images/0/0a/HFSextract3.png)  
 
-* If all goes well, you will get a message saying 'Extraction finished.' NOTE: It is common for HFSExplorer to run into an issue with invalid characters in file names during the export process, due to the differences in allowable file name characters between HFS and modern file systems. When HFSExplorer runs into files will such characters, a pop-up window will appear asking you to auto-rename or manually rename the files. You may select auto-rename, which will replace 'illegal' characters such as forward slashes ('/') and full spots ('.') with underscores ('_').  
+* If all goes well, you will get a message saying 'Extraction finished.' NOTE: It is common for HFSExplorer to run into an issue with invalid characters in file names during the export process, due to the differences in allowable file name characters between HFS and modern file systems. When HFSExplorer runs into files will such characters, a pop-up window will appear asking you to auto-rename or manually rename the files. You may select auto-rename, which will replace 'illegal' characters such as forward slashes ('/') and full spots ('.') with underscores ('_').
 
 <a name="reporting"></a>  
 ## Reporting  
 
 The goal of the reporting step is to gain a more thorough understanding of the content to be arranged and described, as well as to automate some of the more rote elements of description and flag potential preservation issues.  
 
-In order to accomplish this task, the Digital Archivist runs files through a number of tools, including [Siegfried](http://www.itforarchivists.com/siegfried), [Brunnhilde](https://github.com/timothyryanwalsh/brunnhilde), [bulk_extractor](http://www.forensicswiki.org/wiki/Bulk_extractor), and some home-grown scripts, to gather information about:  
+In order to accomplish this task, Processing Archivists can use the Brunnhilde GUI tool (in the "Additional Tools" folder on CCA-configured Bitcurator worksations) to gather information such as:
 
 1. File format types and versions  
 2. Existing organizational structure  
@@ -177,12 +179,7 @@ In order to accomplish this task, the Digital Archivist runs files through a num
 5. Potential preservation issues  
 6. Potential personal information and confidentiality issues  
 
-At the end of the process, these reports will be shared with the processor and used to create a detailed processing plan for the accession.  
-
 <a name="moving"></a>  
 ## Moving files to processing location  
 
-Once the files are ready to be arranged and described and preliminary reporting has been completed, working copies of the files are moved to a folder in the Catalogers network share. Each project folder within this share should contain the following folders:  
-* **pro/:** Leave this blank for now. This is where you will save processed groupes if the processing plan calls for any rearrangement or manual file format normalization. 
-* **raw/:** Consultation copies of files for processing.
-* **ref/:** Any reference documentation (including reports but also documentation from donors and other divisions at CCA such as Programmes and Publications) that may assist the processor in understanding the material at hand.
+Once the files are ready to be arranged and described and preliminary reporting has been completed, working copies of the files are moved to a folder in the Catalogers network share. These are temporary copies solely for consultation on CAD workstations and other networked computers at CCA. "Master" copies of SIPs should be kept on the Bitcurator desktop while being worked on.

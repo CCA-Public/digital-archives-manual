@@ -85,7 +85,7 @@ A few general principles to keep in mind when processing born-digital materials:
 * Few fonds consist of solely born-digital material. When digital material exists alongside records in other formats, make sure that your decisions and actions in processing the digital material consider and respect the fonds as a whole.
 * As with analogue materials, the fundamental goal of processing work is to make materials available for researchers in a timely fashion and provide our users with the appropriate tools to search, identify, select, and obtain materials that meet their research needs.  
 * As with analogue materials, we should be flexible in our arrangement practices to best respect original order and meet our users' needs. Often this will mean co-locating records of different formats together in the same series and project files. However, the realities of a particular set of born-digital files and other factors may necessitate other approaches to arrangement on a case-by-case basis.  
-* Born-digital materials already contain much of their own description and can be algorithmically processed in ways that analogue materials cannot. Let machines do the tasks that machines are best at and focus your efforts on the tasks that humans excel at (namely, analysis of content and context).  
+* Born-digital materials already contain much of their own description and can be algorithmically processed in ways that analogue materials cannot. Let machines do the tasks that machines are best at and focus your efforts on the tasks at which humans excel (namely, analysis of content and context).  
 * Arrangement and description work should typically focus on higher-level folders in a directory structure or on a piece of media as a whole. Manual arrangement and description of individual files is the exception, and should be undertaken only in extraordinary cases and when agreed upon in pre-processing planning.  
 * All actions taken during each stage of the digital archives workflow are documented. This documentation is crucial to demonstrate the authenticity of digital files and enable future preservation efforts.  
 
@@ -93,27 +93,27 @@ A few general principles to keep in mind when processing born-digital materials:
 ## Born-digital archives workflow at a glance  
 
 1. Archival material (born-digital or hybrid) is accessioned and stabilized:
-   * Files sent via network transfers or temporary media (e.g. USB drives, external hard drives) are packaged and stored temporarily in the Digital Shipping Space (a secure, limited-access network location).
-   * Original physical media are disk imaged; disk images are stored in Digital Shipping Space.
-2. "Raw" data is ingested from the Digital Shipping Space into digital repository, to retain and safely store a copy of data exactly as it arrived at CCA:
-   * Digital Archivist creates an SIP according to the BagIt specification, naming the package according to the convention "(versement number)_raw", and oversees ingest into Archivematica.
-   * The "raw ingest" Archivematica pipeline is set not to extract packages, examine contents, or normalize files; creates and stores an AIP only.  
-3. Pre-processing triage and evaluation:  
-   * Digital Archivist downloads AIPs containing raw data of all accessions to be processed.  
-   * Digital Archivist, technician, or processor extracts files from packages and disk images as necessary.  
-   * Digital Archivist triages and evaluates content, creating reports for use by processor.  
-   * Digital Archivist moves working copies of files to network location that archivists and cataloguers can access.  
-4. Arrangement and description:
-   * Processor drafts fonds, series, and project-level descriptions in Word documents. Once fonds is fully described, these are the first records entered into AtoM/TMS.  
-   * Processor enters file-level description in standard processing spreadsheet, adding descriptive metadata (title, scope and content, etc.) to pre-generated technical metadata (dates, file types, etc.).  
-   * Digital archivist creates Bags for ingest corresponding to described groups.  
-   * Processing spreadsheet is imported into AtoM to create finding aid through which files in DIP will be accessible.  
-   * Description is copied and pasted from spreadsheet into TMS.  
-5. Processed SIPs are ingested into Archivematica:  
-   * This is performed by the Digital Archivist for now, but may become one of the processor's responsibilities when developments in Archivematica and CCA's general IT infrastructure allow.  
-   * The "processed ingest" Archivematica pipeline is set to extract packages, examine contents, and noramlize files; creates and stores AIPs and DIPs.  
-   * Descriptive metadata is manually entered into Archivematica to retain the link to the TMS record.  
-6. Ongoing activities:  
+   * Files sent via network transfers or temporary media (e.g. USB drives, external hard drives) are packaged as tar files and stored in the Dark Archive as a "raw" copy of the accession data.
+   * Original physical media are disk imaged and disk images are stored in the Dark Archive as a "raw" copy of the accession data.
+2. Pre-processing triage and evaluation:  
+   * Digital Archivist or Processing Archivist downloads AIPs containing raw data of all accessions to be processed.  
+   * Digital Archivist or Processing Archivist extracts files from archive packages as necessary.  
+   * Digital Archivist or Processing Archivist triages and evaluates content using [Brunnhilde](https://github.com/timothyryanwalsh/brunnhilde).
+   * A working "reference" copy of files is moved onto network drives, where the files can be consulted from CAD workstations during processing.
+   * Processing Archivist develops proposed processing plan for accession(s).
+   * Digital Archivist, Processing Archivist, Conservation, and potentially others have consultation meeting to discuss processing plan.
+3. Arrangement and description:
+   * Processing Archivist conducts manual file format normalizations and other preservation actions and explores contents of files in Bitcurator and CAD workstations as needed.
+   * Processing Archivist uses [Folder Processor and/or Disk Image Processor](https://github.com/timothyryanwalsh/cca-tools) tools to create processed SIPs from raw accession data and begin the file-level processing spreadsheet.
+   * Processing Archivist supplements and finishes file-level description in standard processing spreadsheet generated by Folder Processor or Disk Image Processor.
+   * Processing Archivist drafts fonds, series, and project-level descriptions in plain text files.
+   * Descriptions are reviewed with Digital Archivist and approved for entry into TMS.
+   * Processing Archivist copies and pastes descriptions from text files and processing spreadsheet into TMS and creates object packages of newly-processed materials. 
+4. Processed SIPs are ingested into Archivematica:  
+   * Final processed SIPs are copied to a watched folder on the main Archivematica processing pipeline server.  
+   * Processing Archivist QAs ingest (automated fetching of descriptive metadata from TMS, normalization, etc.) and stores DIPs  
+   * Digtial Archivist performs final QA check when all data from an accession is ingested  
+5. Ongoing activities:  
    * Monitoring health of AIPs in Archivematica  
    * Restoring from backups as needed  
    * Access

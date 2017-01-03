@@ -17,16 +17,16 @@ Once the processing plan is set and the overall arrangement of the accession(s) 
 * "Choose to guide, not to map": Let the researcher do their own research, but give them a good enough sense of the content and context of records to know where to focus their energies.  
 * "Let the bits describe themselves": Machine-actionable information such as extent, file formats, and filesystem metadata should be captured automatically, never calculated by hand, and rarely transcribed.  
 * Born-digital records may not reflect traditional Stage and Purpose architectural terminology/practice - don't force terminology where it doesn't fit.  
-* Description will be entered and updated in processing spreadsheets (that will eventually enable easier import into AtoM). Entering this data in TMS will require some fields to be manually entered, but you should copy and paste from your processing spreadsheet when possible. Make sure that any revisions to your description are completed prior to entering data into TMS.  
+* Description will be entered and updated in processing spreadsheets. Entering this data in TMS will require some fields to be manually entered, but you should copy and paste from your processing spreadsheet when possible. Make sure that any revisions to your description are completed prior to entering data into TMS.  
 
 <a name="higherlevel"></a>  
 ## Fonds-, series-, and project-level description  
 
 Your higher level (fonds-, series-, and project-level) descriptions should follow the guidelines set out for these levels of description in the overall CCA Archives Processing Manual.  
 
-Fonds, series, and project records must be entered directly into TMS, but should be written and reviewed in the Finding Aid Template Word document and/or a spreadsheet (for projects) first. If we are able to move to AtoM, fonds and series records will be entered directly in AtoM. Projects will also be entered manual or can be imported using the standard project description spreadsheet.  
+Fonds, series, and project records must be entered directly into TMS, but should be written and reviewed in a plain text document and/or a spreadsheet first.
 
-Lines about digital materials in Collation statements in fonds-, series-, and dossier-level records should take the following form: "x digital files (y KB/MB/GB)", e.g. "1,760 digital files (50.3 GB)".  
+Lines about digital materials in Collation statements in fonds-, series-, and dossier-level records should take the following form: "x digital files (y KB/MB/GB)", e.g. "760 digital files (18 GB)".  
 
 <a name="groupdesc"></a>  
 ## File ("groupe")-level description  
@@ -42,14 +42,14 @@ File-level description should be entered and reviewed in spreadsheets (one sprea
 
 | Column | ISAD element | Required? | Value |
 | :----: | :------------: | :---------: | :---- |
-| Parent | n/a | Yes | Identifier of parent (e.g. series or project) |
+| Parent | n/a | Yes | Identifier of immediate parent (e.g. series or project) |
 | Identifier | 3.1.1 | Yes | Identifier of file (groupe). This should be an archival number composed of the fonds, series, subseries, dossier, and group numbers, as applicable (e.g. "AP500.S1.1996.PR1.001" or "AP174.S2.001") |
 | Title | 3.1.2 | Yes | Supplied or original title, according to standard Titling Procedures. Do not use a file or directory name as a title. |
 | Creators | 3.2.1 | No | Enter the fonds creator |
-| Date expression | 3.1.3 | Yes | Enter a free-text date expression, according to CCA's standard archival procedures for dates |
-| Date start, Date end | 3.1.3 | Yes | Enter machine-readable beginning and end dates in ISO8601 format. Acceptable date formats: YYYY-MM-DD, YYYY-MM, YYYY. If the file has only a single date (e.g. 1990 or 1990-01-20), enter this in both Date start and Date end. |
+| Date expression | 3.1.3 | Yes | This information will be pre-populated in description spreadsheets. Revise only when necessary. Use years only (e.g. 1990-1992). |
+| Date start, Date end | 3.1.3 | Yes | This information will be pre-populated in description spreadsheets. Revise only when necessary (you can use the DFXML Reader tool to verify dates in the spreadsheet against those recorded in DFXML files for disk images). All dates must be in ISO8601 format. Acceptable date formats: YYYY-MM-DD, YYYY-MM, YYYY. If the file has only a single date (e.g. 1990 or 1990-01-20), this should be entered in both Date start and Date end. |
 | Level of description | 3.1.4 | Yes | "File" |
-| Extent and medium | 3.1.5 | Yes | This information will be script-generated, in the form "x digital files (y bytes/KB/MB/GB/TB)". Unless value is "EMPTY", do not modify except when discussed with Digital Archivist. |
+| Extent and medium | 3.1.5 | Yes | This information will be pre-populated in description spreadsheets, in the form "x digital files (y bytes/KB/MB/GB/TB)". Unless value is "EMPTY", do not modify except when discussed with Digital Archivist. |
 | Scope and content | 3.3.1 | Yes | Add a Scope and Content note if title information needs to be supplemented, content falls outside scope of your higher level description, or to call attention to records of note. Because groupes of born-digital records are often voluminous and internally complex, detailed scope and content notes will be more common for this material than for other formats. For groups of born-digital records, the scope and content note field in your processing spreadsheet will be pre-populated with some script-generated information on processing history and common file formats. Verify and edit these lines as needed, and make sure they are at the end of your note. |
 | Arrangement | 3.3.4 | No | Not necessary at file level but can be used to indicate manual re-arrangement when it has been done for some files but not others within the same series. |
 | Accession number | n/a | Yes | Versement number |
@@ -66,14 +66,12 @@ File-level description should be entered and reviewed in spreadsheets (one sprea
 | Description status | n/a | No | Leave blank |
 | Level of detail | n/a | No | Leave blank |
 
-
-
 <a name="tmsentry"></a>  
 ### Entering file-level description in TMS  
 
-Once your processing spreadsheet is finalized, use the following instructions to enter the information into TMS, copying and pasting from the spreadsheet when possible. This can be done most efficiently by making use of Models that pre-populate new records with consistent information such as nom de l'objet, status flags, and credit line.  
+Once your processing spreadsheet is reviewed and approved by the Digital Archivist, use the following instructions to enter the information into TMS, copying and pasting from the spreadsheet when possible. This can be done most efficiently by making use of Models that pre-populate new records with consistent information such as nom de l'objet, status flags, and credit line.  
 
-The only types of information you should enter into TMS that will not be found in your processing spreadsheet are  associations and the elements in [Internal management information](#internalmanagement) below.  
+The only types of information you should enter into TMS that will not be found in your processing spreadsheet are associations and the elements in [Internal management information](#internalmanagement) below.  
 
 <a name="internalmanagement"></a>
 #### Internal management information  
@@ -84,8 +82,7 @@ The only types of information you should enter into TMS that will not be found i
 | Virtual Object/Objet virtuel | No (unchecked) |  
 | Status flags/Indicateurs du status de l'objet | "traitement en cours" (to be batched changed to "inventaire" when finding aid is published) |
 | Credit line/Ligne de credit | Enter as usual |  
-| Alternate number | Enter fonds number (AP###) as an alternate number for all records within an archive. |  
-| Archive constituent | Add an "Archive" constituent to every record within an archive. |  
+| Alternate number | Enter fonds number (AP###) as an alternate number for all records within an archive, using description "fonds number". |  
 | Object count/Nombre de l'objet | "1" |  
 | Object name/Nom de l'objet | "File" |  
 | "Object type" attribute | "born-digital"/"né numérique" (and, optionally, another object type) |  
@@ -98,8 +95,8 @@ The only types of information you should enter into TMS that will not be found i
 | Parent | Elements reliés | Link object to versement via "Est inclus dans" association type |
 | Identifier | Object number/Numéro de l'objet | Copy and paste from spreadsheet |
 | Title | Title/Titre | Copy and paste from spreadsheet |
-| Creators | Personne(s) et institution(s) | Enter creator as a constituent with role "creator" |
-| Dates | Dates | Enter the date value within "Désignation date". |
+| Creators | Personne(s) et institution(s) | Enter creator as a constituent with role "archive creator" |
+| Dates | Dates | Enter the date value within "Désignation date" |
 | Level of description | Classification | "groupe" |
 | Extent and medium | "Collation" text entry | Copy and paste from spreadsheet |
 | Scope and content | Content description/Description du contenu | Copy and paste from spreadsheet |

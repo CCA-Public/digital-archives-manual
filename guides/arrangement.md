@@ -96,14 +96,14 @@ Once consultation copies of files, reports, and other documentation have been pl
 <a name="extensible"></a>  
 ## The exception: Extensible processing of born-digital records  
 
-In some cases, based on the factors listed above, it may make more sense not to arrange born-digital records and to provide only minimal higher-level description (e.g. just a fonds or series-level record). In cases where no arrangement is done (once our Archivematica installation has been upgraded to 1.5), we will simply re-ingest the "raw" SIP in the "processed" pipeline, allowing Archivematica to normalize, characterize, and create AIPs and DIPs, and name the re-ingested package according to the material's processed identifier.  
+In some cases, based on the factors listed above, it may make more sense not to arrange born-digital records and to provide only minimal higher-level description (e.g. just a fonds or series-level record). In cases where no arrangement is done (once our Archivematica installation has been upgraded to 1.6), we will simply re-ingest the "raw" SIP in the "processed" pipeline, allowing Archivematica to normalize, characterize, and create AIPs and DIPs, and name the re-ingested package according to the material's processed identifier.  
 
 Following this procedure, we will still end up with two versions of the data (a "raw" AIP and a "processed" AIP/DIP), but the two will only differ in terms of the interventions that the Archivematica makes in the ingest process.  
 
 <a name="sippackaging"></a>  
 ## Packaging SIPs for Archivematica  
 
-Once the content of your SIP has been decided, CCA workflow tools (in development) will help you package each SIP so that it meets our local requirements for ingest into Archivematica. All SIPs should have one of the two following structures:  
+Once the content of your SIP has been decided, CCA workflow tools like [Folder Processor and Disk Image Processor](https://github.com/timothyryanwalsh/cca-tools) will help you package each SIP so that it meets our local requirements for ingest into Archivematica. All SIPs should have one of the two following structures:  
 
 ### Bagged SIP
 * Submission Information Package (SIP) : Named after identifier (typically, an AP or ARCH number)  

@@ -39,7 +39,7 @@ This page describes the configurations and policies utilized by Archivematica du
 | Type | Checked? | Option |
 | -------- | -------- | -------- |
 | Send transfer to quarantine | yes | "No" |
-| Approve normalization | yes | "Yes" |
+| Approve normalization | no | n/a |
 | Store AIP | yes | "Yes" |
 | Transcribe files (OCR) | yes | "No" |
 | Generate transfer structure report | yes | "Yes" |
@@ -61,13 +61,13 @@ This page describes the configurations and policies utilized by Archivematica du
 <a name="dcmetadata"></a>  
 ## Adding descriptive metadata to the AIP  
 
-CCA adds descriptive metadata to every AIP to aid in discoverability and re-use of data. In most cases, metadata will be entered automatically after being pulled from TMS or a processing spreadsheet (TBD). CCA's local standards for metadata entry are as follows:  
+CCA adds descriptive metadata to every AIP to aid in discoverability and re-use of data. In most cases, metadata will be entered automatically during the ingest process using [Automation Tools](https://github.com/artefactual/automation-tools) and [add-tms-metadata.py](https://github.com/timothyryanwalsh/cca-scripts/blob/master/add_tms_metadata.py). CCA's local standards for metadata entry are as follows:  
 
 | Field | Value |  
 | ----- | ----- |  
-| Title | Title of groupe |  
+| Title | Title |  
 | Part of AIC | Identifier of AIC (if applicable) |  
-| Creator | Creator of archive (should be same as constituent in TMS) |  
+| Creator | Creator of archive creator (should be same as constituent in TMS) |  
 | Subject | n/a |  
 | Description | Scope and content note (optional) |  
 | Publisher | Centre Canadien d'Architecture |  
@@ -78,7 +78,7 @@ CCA adds descriptive metadata to every AIP to aid in discoverability and re-use 
 | Source | Accession (e.g. versement) number -- for "raw" ingests, leave this blank |  
 | Relation | Fonds number (AP###) -- for "raw" ingests, leave this blank |  
 | Language | n/a |  
-| Coverage | Identifier of parent (series, subseries, or project) -- for "raw" ingests, leave this blank |  
+| Coverage | Identifier of immediate parent (series, subseries, or project) -- for "raw" ingests, leave this blank |  
 | Rights | n/a |  
 
 <a name="fileformatpolicies"></a>
@@ -90,5 +90,3 @@ Currently in process of being reviewed. When complete, CCA's file format policie
 ## Future developments with Archivematica  
 
 * Appraisal tab (AM/1.6) - triage and arrangement inside Archivematica interface  
-* Access system - may require changes to local metadata schema  
-* Automation Tools - will allow for watched directories, "drag and drop" ingest  
