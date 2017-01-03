@@ -33,7 +33,7 @@ Lines about digital materials in Collation statements in fonds-, series-, and do
 
 File ("groupe")-level description is the lowest level of description done during typical processing projects, and should follow the guidelines set out in the overall CCA Archives Processing Manual. Description will happen first in spreadsheets. Do not enter any file-level information into TMS until that spreadsheet has gone through the review and approval process with the Digital Archivist.  
 
-Note that all directories of digital content should be described as files/groupes, even if they only contain one digital file.  
+Note that all directories of digital content should be described as files/groupes, even if they contain only one digital file.
 
 <a name="spreadsheetentry"></a>  
 ### Entering file-level description in processing spreadsheets  
