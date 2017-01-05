@@ -15,6 +15,8 @@ The first step of processing archives (whether in digital or analog formats) is 
 * [Developing a processing plan](#processingplan)
 * [The exception: Extensible processing of born-digital records](#extensible)
 * [Packaging SIPs for Archivematica](#sippackaging)
+* [Processing disk images with Disk Image Processor (CCA Tools)](#diskimageprocessor)  
+* [Processing directories of files with Folder Processor (CCA Tools)](#folderprocessor)  
 
 <a name="arrprinciple"></a>  
 ## Arrangement of born-digital archives in principle  
@@ -127,3 +129,13 @@ Once the content of your SIP has been decided, CCA workflow tools like [Folder P
    * metadata / : folder for metadata associated with digital objects  
       * checksum.md5 : manifest containing checksums for each file in objects
       * submissionDocumentation/ : folder containing any additional documentation related to the digital objects  
+ 
+<a name="diskimageprocessor"></a>  
+## Processing disk images with Disk Image Processor (CCA Tools)  
+
+lorem ipsum  
+
+<a name="folderprocessor"></a>  
+## Processing directories of files with Folder Processor (CCA Tools)  
+
+lorem ipsum  
