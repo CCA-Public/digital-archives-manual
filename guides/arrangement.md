@@ -177,7 +177,7 @@ Steps:
 <a name="folderprocessor"></a>  
 ## Processing directories of files with Folder Processor (CCA Tools)  
 
-The Folder Processor takes a directory or directories on a local disk, piece of external media (such as a USB thumbdrive), or network share and turns each into a ready-to-ingest SIPs packaged for Archivematica. The tool also writes a pre-populated description spreadsheet including information for each SIP. SIPs include an md5deep-generated checksum.md5 file in the "metadata" directory by default, but can optionally be bagged instead. The tool will optionally instead create a SIp for each immediate child directory of the supplied source (as demonstrated in the walkthrough below).  
+The Folder Processor takes a directory or directories on a local disk, piece of external media (such as a USB thumbdrive), or network share and turns each into a ready-to-ingest SIPs packaged for Archivematica. The tool also writes a pre-populated description spreadsheet including information for each SIP. SIPs include an md5deep-generated checksum.md5 file in the "metadata" directory by default, but can optionally be bagged instead. The tool will optionally instead create a SIP for each immediate child directory of the supplied source (as demonstrated in the walkthrough below).  
 
 For this walkthrough we will start with a USB thumbdrive containing 3 visible directories of files.  
 
