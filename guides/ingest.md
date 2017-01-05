@@ -9,7 +9,7 @@ This page describes the configurations and policies utilized by Archivematica du
 * [Future developments with Archivematica](#amaticadevelopments)  
 
 <a name="rawingestconfig"></a>  
-## Archivematica processing configuration for ingest of "raw" data  
+## Archivematica processing configuration for ingest of "raw" data (csp-arch-02)    
 
 | Type | Checked? | Option |
 | -------- | -------- | -------- |
@@ -34,12 +34,12 @@ This page describes the configurations and policies utilized by Archivematica du
 | Store DIP location | yes | "Media Archive dip storage" |  
 
 <a name="processedingestconfig"></a>  
-## Archivematica processing configuration for ingest of "processed" data  
+## Archivematica processing configuration for ingest of "processed" data (csp-arch-03)  
 
 | Type | Checked? | Option |
 | -------- | -------- | -------- |
 | Send transfer to quarantine | yes | "No" |
-| Approve normalization | no | n/a |
+| Approve normalization | yes | "Yes" |
 | Store AIP | yes | "Yes" |
 | Transcribe files (OCR) | yes | "No" |
 | Generate transfer structure report | yes | "Yes" |
