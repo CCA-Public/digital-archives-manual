@@ -120,7 +120,7 @@ Once the content of your SIP has been decided, CCA workflow tools like [Folder P
       * metadata/ : folder for metadata associated with digital objects  
          * submissionDocumentation/ : folder containing any additional documentation related to the digital objects  
 
-### Non-bagged SIP  
+### Non-bagged SIP (preferred)  
 
 * Submission Information Package (SIP) : Named after identifier (typically, an AP or ARCH number)
    * objects/ : folder for digital objects to be ingested  
