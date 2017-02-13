@@ -63,7 +63,7 @@ One of these factors is how the material arrived at CCA: as one or a few large t
 
 Another factor to consider is the existing organization of the material. Does the existing order appear to be meaningful? Is there evidence that this constitutes an original order, as used by the records creator? Does the existing order reflect a conscious management approach or is it just the result of material contraints of storage media (e.g. a backup split between many floppy disks or CDs due to limited storage space on each disk)? Documentation from the record creators and/or donation sources can greatly help in making these determinations.  
 
-The original order of material must also be balanced against user needs. Is the existing order self-evident or accessible for researchers? Can it be made accessible through your file-level description? If the answer to both of these questions is no, the situation may call for rearrangement or an alternative processing approach.  
+The original order of material must also be balanced against user needs. Is the existing order self-evident or accessible for researchers? Can it be made accessible through your fonds, series, and file-level descriptions? If the answer to both of these questions is no, the situation may call for rearrangement or an alternative processing approach.  
 
 In cases where any rearrangement occurs, we will make information about the existing organization of files at time of transfer available to researchers via alternate means, such as searchable Excel documents attached to the fonds-level record.  
 
