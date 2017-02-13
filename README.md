@@ -1,8 +1,6 @@
 # CCA Digital Archives Processing Manual
 
----WORK IN PROGRESS---
-
-This is the CCA's processing manual for born-digital archives. It functions as a component of the larger CCA Processing Manual. The Digital Archives Processing Manual covers each step of the processing process, including capture of data, arrangement, description, ingest into our Archivematica-based digital repository, and access. It includes general policies and procedures as well as specific information about tools used in this process.
+This is the CCA's processing manual for born-digital archives. It is a living, continually edited document that functions as a component of the larger CCA Processing Manual. The Digital Archives Processing Manual covers each step of the processing process, including capture of data, arrangement, description, ingest into our Archivematica-based digital repository, and access. It includes general policies and procedures as well as specific information about tools used in this process.
 
 ## Table of Contents
 
