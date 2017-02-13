@@ -18,6 +18,7 @@ Once the processing plan is set and the overall arrangement of the accession(s) 
 * "Let the bits describe themselves": Machine-actionable information such as extent, file formats, and filesystem metadata should be captured automatically, never calculated by hand, and rarely transcribed.  
 * Born-digital records may not reflect traditional Stage and Purpose architectural terminology/practice - don't force terminology where it doesn't fit.  
 * Description will be entered and updated in processing spreadsheets. Entering this data in TMS will require some fields to be manually entered, but you should copy and paste from your processing spreadsheet when possible. Make sure that any revisions to your description are completed prior to entering data into TMS.  
+* Describe at the appropriate level. File-level descriptions are largely automated by CCA Disk Image Processor and CCA Folder Processor. In most cases, quickly surveying the included files and adding a title will suffice. More involved descriptive efforts should typically be be focused at higher levels of description: for example, at the series or project level. At these levels, you are better able to provide researchers with an overview of what they can expect to find. Resist the temptation to open and investigate every digital file.  
 
 <a name="higherlevel"></a>  
 ## Fonds-, series-, and project-level description  
