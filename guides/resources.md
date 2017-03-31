@@ -16,6 +16,7 @@ Helpful resources, including:
 
 * Lavoie, Brian. "[The Open Archival Information System (OAIS) Reference Model: Introductory Guide (2nd Edition)](http://www.dpconline.org/component/docman/doc_download/1359-dpctw14-02)," DPC Technology Watch Report, 2014.  
 * Trace, Ciaran. "[Beyond the Magic to the Mechanism: Computers, Materiality, and What it Means for Records to Be 'Born Digital'](https://www.ischool.utexas.edu/~cbtrace/pubs/CBT_Archivaria_2011.pdf)," Archivaria 72, 2011.  
+* Caplan, Priscilla. "[Understanding PREMIS](http://www.loc.gov/standards/premis/understanding-premis-rev2017.pdf)," Library of Congress Network Development and MARC Standards Office, revised 2017.
 
 #### On archival description  
 
