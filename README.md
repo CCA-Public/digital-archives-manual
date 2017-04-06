@@ -23,14 +23,14 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
          * [Disk imaging with Guymager (Bitcurator)](guides/stabilization.md/#guymager)  
          * [Disk imaging with FTK Imager](guides/stabilization.md/#ftkimager)  
    * [Ingesting "raw" accession data into digital repository](guides/stabilization.md/#rawingest)  
-* **[Pre-processing: Triage and evaluation](guides/triage.md)**
+* **[Pre-processing: Triage and evaluation](guides/triage.md)**  
       * [Extracting files from packages and disk images](guides/triage.md/#diskimageextract)
          * [Extracting files from disk images with Bitcurator](guides/triage.md/#bitcuratorfiles)
          * [Extracting files from disk images with FTK Imager](guides/triage.md/#ftkimagerfiles)  
          * [Extracting files from images of Hierarchical File System (HFS) disks](guides/triage.md/#hfsfiles)        
       * [Reporting](guides/triage.md/#reporting)  
       * [Moving files to processing location](guides/triage.md/#moving)  
-* **[Arrangement](guides/arrangement.md)**
+* **[Arrangement](guides/arrangement.md)**  
       * [Arrangement of born-digital archives in principle](guides/arrangement.md/#arrprinciple)
       * [Factors affecting the arrangement of born-digital records](guides/arrangement.md/#arrfactors)
          * [How the records arrive at CCA](guides/arrangement.md/#howarrive)
@@ -44,7 +44,7 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
       * [Packaging SIPs for Archivematica](guides/arrangement.md/#packagingsips)  
       * [Processing disk images with Disk Image Processor (CCA Tools)](guides/arrangement.md/#diskimageprocessor)  
       * [Processing directories of files with Folder Processor (CCA Tools)](guides/arrangement.md/#folderprocessor)
-* **[Description](guides/description.md)**
+* **[Description](guides/description.md)**  
       * [Principles and practical guidelines for description of born-digital archives](guides/description.md/#descriptionprincipleandpractice)
       * [Preferred terminology](guides/description.md/#terminology)  
       * [Fonds-, series-, and project-level description](guides/description.md/#higherlevel)
@@ -54,7 +54,7 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
             * [Internal management information](guides/description.md/#internalmanagement)  
             * [Elements of archival description](guides/description.md/#archivalelements)  
       * [Item ("pièce")-level description](guides/description.md/#itemdesc)  
-* **[Ingest](guides/ingest.md)**
+* **[Ingest](guides/ingest.md)**  
      * [Archivematica processing configuration for ingest of "raw" data](guides/ingest.md/#rawingestconfig)  
      * [Archivematica processing configuration for ingest of "processed" data](guides/ingest.md/#processedingestconfig)  
      * [Adding descriptive metadata to the AIP](guides/ingest.md/#dcmetadata)  
@@ -63,7 +63,7 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
 * **[Ongoing activities](guides/ongoing.md)**  
    * [Fixity checks](guides/ongoing.md/#fixity)  
    * [Access](guides/ongoing.md/#access)  
-* **[CAD, BIM, and 3D modeling software/file formats](guides/cadformats.md)**
+* **[CAD, BIM, and 3D modeling software/file formats](guides/cadformats.md)**  
 * **[Additional resources](guides/resources.md)**  
    * [Reading material](guides/resources.md/#readings)  
    * [Digital storage media identification and information](guides/resources.md/#media)  
