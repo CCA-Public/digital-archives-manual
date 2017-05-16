@@ -173,6 +173,6 @@ Steps:
 DESCRIPTION TO BE ADDED
 
 <a name="sipcreator"></a>  
-##Creating single SIPs from directories and files with SIP Creator  
+## Creating single SIPs from directories and files with SIP Creator  
 
 DESCRIPTION TO BE ADDED
