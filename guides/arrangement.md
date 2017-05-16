@@ -15,8 +15,9 @@ The first step of processing archives (whether in digital or analog formats) is 
 * [Developing a processing plan](#processingplan)
 * [The exception: Extensible processing of born-digital records](#extensible)
 * [Packaging SIPs for Archivematica](#sippackaging)
-* [Processing disk images with Disk Image Processor (CCA Tools)](#diskimageprocessor)  
-* [Processing directories of files with Folder Processor (CCA Tools)](#folderprocessor)  
+* [Processing disk images with Disk Image Processor](#diskimageprocessor)  
+* [Processing directories of files with Folder Processor](#folderprocessor)  
+* [Creating single SIPs from directories and files with SIP Creator](#sipcreator)  
 
 <a name="arrprinciple"></a>  
 ## Arrangement of born-digital archives in principle  
@@ -131,7 +132,7 @@ Once the content of your SIP has been decided, CCA workflow tools like [Folder P
       * submissionDocumentation/ : folder containing any additional documentation related to the digital objects  
  
 <a name="diskimageprocessor"></a>  
-## Processing disk images with Disk Image Processor (CCA Tools)  
+## Processing disk images with Disk Image Processor 
 
 The Disk Image Processor takes a folder of disk images and turns each into a ready-to-ingest SIP packaged for Archivematica. The tool also writes a pre-populated description spreadsheet including information for each SIP. SIPs include an md5deep-generated checksum.md5 file in the "metadata" directory by default, but can optionally be bagged instead. The tool populates each "objects" directory with a raw disk image (even if the source disk image is EWF/E01) and logical files carved with either tsk_recover or the HFSExplorer command line utility unhfs. Files in the source directory that are not disk images are ignored (the exception to this is files that share the same basename, such as .info sidecar metadata files for disk images, which will be copied into the "objects/diskimage" file at the end of processing.)  
 
@@ -167,43 +168,11 @@ Steps:
 
 
 <a name="folderprocessor"></a>  
-## Processing directories of files with Folder Processor (CCA Tools)  
+## Processing directories of files with Folder Processor  
 
-The Folder Processor takes a directory or directories on a local disk, piece of external media (such as a USB thumbdrive), or network share and turns each into a ready-to-ingest SIPs packaged for Archivematica. The tool also writes a pre-populated description spreadsheet including information for each SIP. SIPs include an md5deep-generated checksum.md5 file in the "metadata" directory by default, but can optionally be bagged instead. The tool will optionally instead create a SIP for each immediate child directory of the supplied source (as demonstrated in the walkthrough below).  
+DESCRIPTION TO BE ADDED
 
-For this walkthrough we will start with a USB thumbdrive containing 3 visible directories of files.  
+<a name="sipcreator"></a>  
+##Creating single SIPs from directories and files with SIP Creator  
 
-Steps:  
-
-* Double-click on the "Folder Processor" icon in the "CCA Tools" folder on the Bitcurator desktop.  
-
-![folder1](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/folder1.png)  
-
-* Enter the path of the source directory or media in "Source" (or navigate to the source using the "Browse" functionality as illustrated in the picture below) and the path of a new folder for the outputs in "Destination". If you want to create a SIP for each child directory, tick the "Create SIPs for each immediate child directory of source" button. Press the "Process disk images" [sic.] button to begin processing.  
-
-![folder2](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/folder2.png)  
-
-![folder3](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/folder3.png)  
-
-* While the tool is processing, you will see some output in the "Detailed output" field and the Status will read "Started".  
-
-![folder4](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/folder4.png)  
-
-* When the tool has finished, Status will read "Finished".  
-
-![folder5](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/folder5.png)  
-
-* In the Destination folder, you will now see the following: a CSV file containing pre-populated archival description for each directory, a log file for the Folder Processor tool, and a folder containing each processed SIP.  
-
-![folder6](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/folder6.png)  
-
-![folder7](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/folder7.png)  
-
-* Each individual SIP contains a standard structure, as demonstrated in the picture below. At the highest level, the SIP contains "object" and "metadata" folders. The "object" folder contains an exact copy of the original source directory, including the top level folder. The "metadata" folder contains a checksum.md5 file that can later be used by Archivematica to ensure file fixity and a "submissionDocumentation" folder, which contains a Brunnhilde report for the SIP.  
-
-![folder8](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/folder8.png)  
-
-* Once the SIP has been arranged and described, the highest-level folder in the "SIPs" directory should be renamed to the file's object number in TMS.  
-
-![folder9](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/folder9.png)  
-
+DESCRIPTION TO BE ADDED
