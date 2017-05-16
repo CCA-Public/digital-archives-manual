@@ -3,13 +3,13 @@
 When an accession is to be processed, the Digital Archivist downloads the "raw" AIPs containing all digital data and begins the triage and reporting process. The result of this process will be working files for the processor to arrange and describe as well as detailed reports to aid in the decision-making process surrounding arrangement, description, and preservation of the archives. This guide describes the steps taking in this pre-processing stage, and includes:  
 
 * [Analyzing disk images with Disk Image Processor](#analysis)
-* [Extracting files from packages and disk images](#diskimageextract)  
+* [Extracting files from disk images](#diskimageextract)  
     * [Extracting files from disk images with Bitcurator](#bitcuratorfiles)  
       * [Bitcurator Disk Image Access Interface](#bcaccess)  
       * [Mount Disk Image script](#mountscript)  
     * [Extracting files from disk images with FTK Imager](#ftkimagerfiles)  
     * [Extracting files from images of Hierarchical File System (HFS) disks](#hfsfiles)  
-* [Reporting](#reporting)  
+* [Extracting archives and reporting on logical files](#reporting)  
 * [Moving files to processing location](#moving)  
 
 <a name="analysis"></a>
@@ -45,8 +45,6 @@ Use of the Analysis mode can help you understand crucial aspects of a collection
 ## Extracting files from packages and disk images  
 
 Another option is to use of one several tools to either carve files from disk images or to mount the disk image and copy files from the mounted drive. In either case, this will allow you to copy files onto the Catalogers drive and subsequently view them from any computer connected to the CCA network.  
-
-Files can be extracted from archive packages via the use of the free and open source software such as 7zip (Windows/Linux) or The Unarchiver (Mac).  
 
 For extracting files from disk images outside of the reporting process, we typically use one of two tools for extracting files from disk images: [Bitcurator](#bitcuratorfiles) or [FTK Imager](#ftkimagerfiles).  
 
@@ -194,18 +192,22 @@ The final step is to export these files from HFSExplorer to a desktop or network
 * If all goes well, you will get a message saying 'Extraction finished.' NOTE: It is common for HFSExplorer to run into an issue with invalid characters in file names during the export process, due to the differences in allowable file name characters between HFS and modern file systems. When HFSExplorer runs into files will such characters, a pop-up window will appear asking you to auto-rename or manually rename the files. You may select auto-rename, which will replace 'illegal' characters such as forward slashes ('/') and full spots ('.') with underscores ('_').
 
 <a name="reporting"></a>  
-## Reporting  
+## Extracting archives and reporting on logical files  
 
-The goal of the reporting step is to gain a more thorough understanding of the content to be arranged and described, as well as to automate some of the more rote elements of description and flag potential preservation issues.  
+Files can be extracted from archive packages via the use of the free and open source software such as 7zip (Windows/Linux) or The Unarchiver (Mac). Extracting files may not be necessary for reporting purposes, as tools like Brunnhilde are able to analyze the contents of common archive pcakages.
 
-In order to accomplish this task, Processing Archivists can use the Brunnhilde GUI tool (in the "Additional Tools" folder on CCA-configured Bitcurator worksations) to gather information such as:
+The standard reporting tool for non-disk images at CCA is [Brunnhilde](https://github.com/timothyryanwalsh/brunnhilde). See the Brunnhilde Github repo for detailed usage information. A GUI wrapper for the program is also available.
 
-1. File format types and versions  
-2. Existing organizational structure  
-3. Extents and prevalent file types across directories  
-4. Duplicate content  
-5. Potential preservation issues  
-6. Potential personal information and confidentiality issues  
+Brunnhilde will gather information such as:
+
+* File format types and versions  
+* Existing organizational structure  
+* Extents and prevalent file types across directories  
+* Duplicate content  
+* Potential preservation issues  
+* Potential personal information and confidentiality issues  
+
+If bulk_extractor is run with Brunnhilde, the resulting logs can be analyzed in BitCurator using BEViewer.  
 
 <a name="moving"></a>  
 ## Moving files to processing location  
