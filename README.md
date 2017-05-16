@@ -43,7 +43,6 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
     * [Archivematica processing configuration for ingest of "processed" data](guides/ingest.md/#processedingestconfig)  
     * [Adding descriptive metadata to the AIP](guides/ingest.md/#dcmetadata)  
     * [CCA file format policies](guides/ingest.md/#fileformatpolicies)  
-    * [Future developments with Archivematica](guides/ingest.md/#amaticadevelopments)  
 * **[Ongoing activities](guides/ongoing.md)**  
     * [Fixity checks](guides/ongoing.md/#fixity)  
     * [Access](guides/ongoing.md/#access)  
