@@ -147,19 +147,11 @@ Steps:
 
 ![diskimage2](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/diskimage2.png)  
 
-* Enter the path of the source folder containing the disk images in "Source" (or select using the "Browse" button) and the path of a new folder for the outputs in "Destination". Press the "Process Disk Images" button to begin processing.  
+* Enter the path of the source folder containing the disk images in "Source" (or select using the "Browse" button) and the path of a new folder for the outputs in "Destination". Choose between the two toolsets (standard usage: default to "mount-copy and walk_to_dfxml.py" and use other toolset only if unsuccessful) and any desired options. Press the "Process Disk Images" button to begin processing.  
 
 ![diskimage3](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/diskimage3.png)  
 
-* While the tool is processing, you will see some output in the "Detailed output" field and the Status will read "Started".  
-
-![diskimage4](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/diskimage4.png)  
-
-* When the tool has finished, Status will read "Finished".  
-
-![diskimage5](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/diskimage5.png)  
-
-* In the Destination folder, you will now see the following: a CSV file containing pre-populated archival description for each disk image, a log file for the Disk Image Processor tool, and a folder containing each processed SIP.  
+* While the tool is processing, you will see some output in the "Detailed output" field and the Status will read "Started". When the tool has finished, Status will read "Finished". In the Destination folder, you will now see the following: a CSV file containing pre-populated archival description for each disk image, a log file for the Disk Image Processor tool, and a folder containing each processed SIP.  
 
 ![diskimage6](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/diskimage6.png)  
 
