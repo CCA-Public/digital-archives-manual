@@ -39,6 +39,8 @@ The tool additionally creats an "analysis.csv" file that contains the following 
 * Virus found (True/False)  
 * Sorted list of file formats  
 
+![diskimageprocessoranalysis](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/dip-analysis.png)
+
 Use of the Analysis mode can help you understand crucial aspects of a collection of disk images, and begin to formulate a strategy for their arrangement, description, and any format normalization or other preservation work that might be necessary.
 
 <a name="diskimageextract"></a>
