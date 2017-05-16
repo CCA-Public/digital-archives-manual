@@ -35,6 +35,7 @@ Steps:
   * *For Photo/P&D, create groupe or pièce records as usual*  
 * **Digital Archivist: Ingest**  
   * Add brief descriptive note about content to versement "Description du contenu"  
+  * If files were not already in an archive format, package them as a .tar file  
   * Package content according to BagIt specification and ingest into Archivematica according to procedures for ingesting "raw" data  
   * Inform Registrar when ingest is completed  
   * Delete copies of files from Digital Shipping Space/Dépot numérique  
@@ -51,6 +52,7 @@ Steps:
   * *For Photo/P&D, create groupe or pièce records as usual*  
 * **Digital Archivist: Ingest**  
   * Add brief descriptive note regarding content to versement "Description du contenu"  
+  * If files were not already in an archive format, package them as a .tar file  
   * Package content according to BagIt specification and ingest into Archivematica according to procedures for ingesting "raw" data  
   * Inform Registrar when ingest is completed  
   * Delete extra copies of files on network shares
