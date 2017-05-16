@@ -126,46 +126,44 @@ Except when circumstances require different solutions, CCA prefers raw disk imag
 
 **Note: In order to ensure that the source media is unchanged by the process of data capture and transfer, hard drives and removable media drives should always be connected to the capture workstation through a hardware write-blocker.**  
 
-We will typically use one of two tools for creating disk images of media: [Guymager](#guymager) or [FTK Imager](#ftkimager). Regardless of which tool you use, always complete the following steps first:  
+We will typically use one of two tools for creating disk images of media: [Guymager](#guymager) or [FTK Imager](#ftkimager). Regardless of which tool you use, always complete the following step first:  
 
-1. Give each piece of media an ARCH number identifier if it doesn't have one already, and create a corresponding "Record for Management Need" object record in TMS. The identifier should be written on the media or its case with a felt tip pen or (very lightly) in pencil.  
-2. Take an identification photo of the media and save it to a folder named "versement_mediaPhotos", replacing any full stops or colons with underscores - e.g. "AR2015_0050_mediaPhotos". Save this folder to your project folder in H:\Acquisitions et traitement.  
+Give each piece of media an ARCH number identifier if it doesn't have one already, and create a corresponding "Record for Management Need" object record in TMS. The identifier should be written on the media or its case with a felt tip pen or (very lightly) in pencil, or affixed to the case using a label maker if available.
 
 <a name="guymager"></a>
 #### Disk imaging with Guymager (Bitcurator)  
 
-Guymager is an open source disk imaging utility found in the Bitcurator environment, and the preferred tool for disk imaging at CCA. At CCA we use Guymager to create disk images in the raw (dd) format.  
+Guymager is an open source disk imaging utility found in the Bitcurator environment, and one of the preferred tools for disk imaging at CCA. At CCA we use Guymager to create disk images in the raw (dd) format.  
 
-Before starting to create disk images from an accession, create a folder on the Bitcurator desktop in which you will save your work.  
+Before starting to create disk images from an accession, create a folder in the /mnt/1TB_RAID directory in which you will save your work. Name this folder something memorable and meaningful, such as an accession number or other identifier.  
 
 Steps for imaging physical media with Guymager:  
 
 * Prior to creating a disk image, virus scan the media using ClamTK:  
   * Open ClamTK (from the 'Additional Tools' folder on the Bitcurator desktop).  
-  * From the 'Scan' menu, click 'Recursive Scan' and then select the media to begin virus scanning.  
+  * Ensure that settings are correct: Double-click on 'Settings', and ensure that everything except 'Scan for PUAs' is selected.    
+  * Double-click on 'Scan a directory' from the 'Analysis' tabe and then choose directory to scan.  
   * If there are no viruses, proceed with the next step. If ClamTK finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside, and consult the Digital Archivist.  
 * Open Guymager (from the 'Imaging Tools' folder on the Bitcurator desktop).  
 * Rick-click on the drive you wish to image and select 'Acquire image'. If the drive/device you wish to image does not appear, refresh the screen by clicking "Rescan" in the upper left hand corner of the Guymager interface.  
 
 ![Bitcurator1](http://wiki.bitcurator.net/images/4/45/Acquire_image_guymager.jpg)  
 
-* Choose the 'Linux dd raw image' (file extension .dd or .xxx) file format (NOT EWF/E01, as shown in picture).  
-* Split size can be kept at 2047 MB (the default).  
-* Enter the following metadata/settings: 
-  * **Image directory:** Give the path to the folder you created for your project on the Bitcurator desktop. The path should be 'home/bcadmin/Desktop/(insert name of folder you created here)/'.  
+* Choose the 'Linux dd raw image' (file extension .dd or .xxx) file format.  
+* Make sure split size is unchecked.  
+* Enter the following metadata/settings:  
+  * **Image directory:** Select the directory you created in /mnt/1TB_RAID.
   * **Image filename:** Enter the disk's identifier with no spaces. Replace any full stops ('.') or colons (':') with underscores ('_').  
   * **Info filename:** This should be automatically created based on your image filename. Do not edit this field.  
   * **Hash calculation/verification:**  
-    * Check "Calculate MD5"  
-    * Leave "Calculate SHA-256" unchecked  
-    * Leave "Re-read source after acquisition for verification" unchecked
-    * Check "Verify image after acquisition"  
+    * Check "Calculate MD5", "Calculate SHA-1", and "Verify image after acquisition" 
+    * Keep other options unchecked   
   
-![Bitcurator2](http://wiki.bitcurator.net/images/b/b7/Acquire_image_window.jpg)  
+![Bitcurator2](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/guymager_settings.png)  
 
-* Once settings have been confirmed, press 'OK' to start the disk imaging process.
+* Once settings have been confirmed, press 'Start' to start the disk imaging process.
 * Guymager will track its progress and give you color-coded indications when the process has been completed successfully or has failed. If it fails, make a note of this in the versement stabilization spreadsheet and set the disk aside for review by the Digital Archivist.  
-* If the image is successfully created, go to your project folder on the desktop and do a quick visual check that all looks good. You should see at least two files: the disk image(s) themselves (potentially split into several files with the same file name but extensions of .001, .002, etc.) and a '.info' metadata file.  
+* If the image is successfully created, go to your project folder on the desktop and do a quick visual check that all looks good. You should see at two files: the disk image itself and a '.info' metadata file.  
 * If all looks good, repeat this process with the next disk until all media has been imaged.  Once all media has been imaged, copy the entire project folder from the Bitcurator desktop into the "Dépôts" folder and alert the Digital Archivist.  
 
 <a name="ftkimager"></a>
