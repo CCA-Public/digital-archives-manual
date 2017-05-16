@@ -48,7 +48,7 @@ File-level description should be entered and reviewed in spreadsheets (one sprea
 | :----: | :------------: | :---------: | :---- |
 | Parent | n/a | Yes | Identifier of immediate parent (e.g. series or project) |
 | Identifier | 3.1.1 | Yes | Identifier of file (groupe). This should be an archival number composed of the fonds, series, subseries, dossier, and group numbers, as applicable (e.g. "AP500.S1.1996.PR1.001" or "AP174.S2.001") |
-| Title | 3.1.2 | Yes | Supplied or original title, according to standard titling procedures. Do not use a file or directory name as a title. |
+| Title | 3.1.2 | Yes | Supplied or original title, according to standard titling procedures. Do not use a file or directory name as a title unless you are unable to provide a better succinct title. |
 | Creators | 3.2.1 | No | Enter the fonds creator |
 | Date expression | 3.1.3 | Yes | This information will be pre-populated in description spreadsheets. Revise only when necessary. Use years only (e.g. 1990-1992). |
 | Date start, Date end | 3.1.3 | Yes | This information will be pre-populated in description spreadsheets. Revise only when necessary (you can use the DFXML Reader tool to verify dates in the spreadsheet against those recorded in DFXML files for disk images). All dates must be in ISO8601 format. Acceptable date formats: YYYY-MM-DD, YYYY-MM, YYYY. If the file has only a single date (e.g. 1990 or 1990-01-20), this should be entered in both Date start and Date end. |
