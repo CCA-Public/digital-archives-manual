@@ -17,7 +17,7 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
 * **[Accession and stabilization](guides/stabilization.md)**
     * [Network transfers](guides/stabilization.md/#networktransfer)
     * [Temporary physical media](guides/stabilization.md/#temporarymedia)
-    * [Original physical media - including disk imaging](guides/stabilization.md/#originalphysicalmedia)  
+    * [Original physical media - disk imaging](guides/stabilization.md/#originalphysicalmedia)  
     * [Ingesting "raw" accession data into digital repository](guides/stabilization.md/#rawingest)  
 * **[Pre-processing: Triage and evaluation](guides/triage.md)**  
     * [Analyzing disk images with Disk Image Processor](guides/triage.md/#analysis)  
