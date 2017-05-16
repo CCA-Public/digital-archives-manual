@@ -8,7 +8,6 @@ This page describes the configurations and policies utilized by Archivematica du
 * [Archivematica processing configuration for ingest of "processed" data](#processedingestconfig) 
 * [Adding descriptive metadata to the AIP](#dcmetadata)
 * [CCA file format policies](#fileformatpolicies)  
-* [Future developments with Archivematica](#amaticadevelopments)  
 
 <a name="rawingestconfig"></a>  
 ## Archivematica processing configuration for ingest of "raw" data (csp-arch-02)    
