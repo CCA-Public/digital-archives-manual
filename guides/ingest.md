@@ -1,5 +1,7 @@
 # Ingesting processed born-digital archives into the CCA digital repository  
 
+*Current version of Archivematica: 1.6.0*  
+
 This page describes the configurations and policies utilized by Archivematica during ingest. It includes:  
 
 * [Archivematica processing configuration for ingest of "raw" data](#rawingestconfig)  
@@ -11,52 +13,54 @@ This page describes the configurations and policies utilized by Archivematica du
 <a name="rawingestconfig"></a>  
 ## Archivematica processing configuration for ingest of "raw" data (csp-arch-02)    
 
-| Type | Checked? | Option |
-| -------- | -------- | -------- |
-| Send transfer to quarantine | yes | "No" |
-| Approve normalization | yes | "Yes" |
-| Store AIP | yes | "Yes" |
-| Transcribe files (OCR) | yes | "No" |
-| Generate transfer structure report | yes | "Yes" |
-| Remove from quarantine after | no | n/a |
-| Create SIP(s) | yes | "Create single SIP and continue processing" |
-| Extract packages | yes | "No" |
-| Normalize | yes | "Do not normalize" |
-| Reminder: add metadata if desired | no | n/a |
-| Examine contents | yes | "Skip examine contents" |
-| Select file format identification command (Transfer) | yes | "Siegfried" |
-| Select file format identification command (Ingest) | yes | "Siegfried" |
-| Select file format identification command (Submission documentation & metadata) | yes | "Siegfried" |
-| Delete packages after extraction | yes | "Yes" |
-| Select compression algorithm | yes | "7z using bzip2" |
-| Select compression level | yes | "5 - normal compression mode" |
+| Type | Value |
+| -------- | -------- |
+| Send transfer to quarantine | "No" |
+| Approve normalization | "Yes" |
+| Store AIP | "Yes" |
+| Transcribe files (OCR) | "No" |
+| Generate transfer structure report | "Yes" |
+| Remove from quarantine after | n/a |
+| Create SIP(s) | "Create single SIP and continue processing" |
+| Extract packages | "No" |
+| Normalize | "Do not normalize" |
+| Reminder: add metadata if desired | n/a |
+| Examine contents | "Skip examine contents" |
+| Select file format identification command (Transfer) | "Siegfried" |
+| Select file format identification command (Ingest) | "Use existing data" |
+| Select file format identification command (Submission documentation & metadata) | "Siegfried" |
+| Delete packages after extraction | "No" |
+| Select compression algorithm | "Uncompressed" |
+| Select compression level | "5 - normal compression mode" |
 | Store AIP location | yes | "Dark Archive AIP Storage" |
-| Store DIP location | yes | "Media Archive dip storage" |  
+| Store DIP location | "None" |  
 
 <a name="processedingestconfig"></a>  
 ## Archivematica processing configuration for ingest of "processed" data (csp-arch-03)  
 
-| Type | Checked? | Option |
-| -------- | -------- | -------- |
-| Send transfer to quarantine | yes | "No" |
-| Approve normalization | yes | "Yes" |
-| Store AIP | yes | "Yes" |
-| Transcribe files (OCR) | yes | "No" |
-| Generate transfer structure report | yes | "Yes" |
-| Remove from quarantine after | no | n/a |
-| Create SIP(s) | yes | "Create single SIP and continue processing" |
-| Extract packages | yes | "Yes" |
-| Normalize | yes | "Normalize for preservation and access" |
-| Reminder: add metadata if desired | no | n/a |
-| Examine contents | yes | "Examine contents" |
-| Select file format identification command (Transfer) | yes | "Siegfried" |
-| Select file format identification command (Ingest) | yes | "Siegfried" |
-| Select file format identification command (Submission documentation & metadata) | yes | "Siegfried" |
-| Delete packages after extraction | yes | "Yes" |
-| Select compression algorithm | yes | "7z using bzip2" |
-| Select compression level | yes | "5 - normal compression mode" |
+| Type | Value |
+| -------- | -------- |
+| Send transfer to quarantine | "No" |
+| Approve normalization | "Yes" |
+| Store AIP | "Yes" |
+| Transcribe files (OCR) | "No" |
+| Generate transfer structure report | "Yes" |
+| Remove from quarantine after | n/a |
+| Create SIP(s) | "Create single SIP and continue processing" |
+| Extract packages | "Yes" |
+| Normalize | "Normalize for preservation" |
+| Reminder: add metadata if desired | n/a |
+| Examine contents | "Skip examine contents" |
+| Select file format identification command (Transfer) | "Siegfried" |
+| Select file format identification command (Ingest) | "Use existing data" |
+| Select file format identification command (Submission documentation & metadata) | "Siegfried" |
+| Delete packages after extraction | "Yes" |
+| Select compression algorithm | "Uncompressed" |
+| Select compression level | "5 - normal compression mode" |
 | Store AIP location | yes | "Dark Archive AIP Storage" |
-| Store DIP location | yes | "Media Archive dip storage" |  
+| Store DIP location | "None" |   
+
+*Note: Normalization for access will begin post-sponsored development for more appropriate DIPs.*
 
 <a name="dcmetadata"></a>  
 ## Adding descriptive metadata to the AIP  
