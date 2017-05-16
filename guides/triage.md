@@ -2,6 +2,7 @@
 
 When an accession is to be processed, the Digital Archivist downloads the "raw" AIPs containing all digital data and begins the triage and reporting process. The result of this process will be working files for the processor to arrange and describe as well as detailed reports to aid in the decision-making process surrounding arrangement, description, and preservation of the archives. This guide describes the steps taking in this pre-processing stage, and includes:  
 
+* [Analyzing disk images with Disk Image Processor](#analysis)
 * [Extracting files from packages and disk images](#diskimageextract)  
     * [Extracting files from disk images with Bitcurator](#bitcuratorfiles)  
       * [Bitcurator Disk Image Access Interface](#bcaccess)  
@@ -11,14 +12,41 @@ When an accession is to be processed, the Digital Archivist downloads the "raw" 
 * [Reporting](#reporting)  
 * [Moving files to processing location](#moving)  
 
+<a name="analysis"></a>
+## Analyzing disk images with Disk Image Processor
+
+*Note: This section is accurate as of Disk Image Processor v0.3.1.*
+
+[Disk Image Processor](https://github.com/timothyryanwalsh/cca-diskimageprocessor) is a GUI tool developed for BitCurator that sits above two Python 3 scripts: diskimageanalyzer.py and diskimageprocessor.py.
+
+Each of the two scripts/modes takes a directory of disk images and related files as input and creates consistent standardized outputs as well as a description CSV.
+
+In Analysis mode, the tool can be used to get a high-level understanding of the contents of a collection of disk images. The tool loops over all of the files in a directory, determines which are disk images, and then for those:
+
+* Converts the image to raw, if packaged as a forensic (E01) image  
+* Creates a "reports" directory for the disk image containing:  
+    * A DFXML file  
+    * Text output from the disktype utility  
+    * Brunnhilde reports (including logs and reports from clamAV and bulk_extractor)  
+
+The tool additionally creats an "analysis.csv" file that contains the following information for each disk that it was able to read:
+* Disk image name  
+* File system  
+* Date statement  
+* Earliest date  
+* Latest date  
+* Extent  
+* Virus found (True/False)  
+* Sorted list of file formats  
+
+Use of the Analysis mode can help you understand crucial aspects of a collection of disk images, and begin to formulate a strategy for their arrangement, description, and any format normalization or other preservation work that might be necessary.
+
 <a name="diskimageextract"></a>
 ## Extracting files from packages and disk images  
 
-In order to analyze, arrange, and describe the digital objects that make up a versement, it is first necessary to extract the file contents from any archive packages (7zips) and disk images that were created during the accessioning and stabilization process.  
+Another option is to use of one several tools to either carve files from disk images or to mount the disk image and copy files from the mounted drive. In either case, this will allow you to copy files onto the Catalogers drive and subsequently view them from any computer connected to the CCA network.  
 
 Files can be extracted from archive packages via the use of the free and open source software such as 7zip (Windows/Linux) or The Unarchiver (Mac).  
-
-The simplest way to extract files from disk images is to do so as part of the reporting processing using [Brunnhilde](https://github.com/timothyryanwalsh/brunnhilde).  
 
 For extracting files from disk images outside of the reporting process, we typically use one of two tools for extracting files from disk images: [Bitcurator](#bitcuratorfiles) or [FTK Imager](#ftkimagerfiles).  
 
