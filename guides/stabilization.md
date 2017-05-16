@@ -199,7 +199,7 @@ Steps for imaging physical media with FTK Imager:
 * FTK Imager will prompt you to add metadata for your disk image. Enter the following metadata:  
   * **Case number:** Versement  
   * **Evidence number:** Identifier of the media being imaged  
-  * **Unique description:** Transcribe any annotations on the media here  
+  * **Unique description:** Enter a brief description of the media and/or its annotations (e.g., '3.5" floppy disk labelled "FOA Photos 2002"')  
   * **Examiner:** Your name  
   * **Notes:** Leave this blank  
 
@@ -221,7 +221,7 @@ Steps for imaging physical media with FTK Imager:
 <a name="rawingest"></a>
 ## Ingesting "raw" accession data into digital repository  
 
-Once data from all of the network transfer, temporary media, and original media in an accession has been stabilized, the digital component of the accession is ingested into CCA's Archivematica-based digital repository.  The aim of this step is to retain and safely store a copy of the data exactly as it arrived at CCA in the digital repository.  **Note that all files from network transfers or temporary media must be packaged in some time of archive format (zip, tar, rar, etc.), or else Archivematica will change original filenames and timestamps, defeating part of the purpose of the "raw" ingest. At CCA, we typically prefer to package in tar files.**    
+Once data from all of the network transfer, temporary media, and original media in an accession has been stabilized, the digital component of the accession is ingested into CCA's Archivematica-based digital repository.  The aim of this step is to retain and safely store a copy of the data exactly as it arrived at CCA in the digital repository.  **Note that all files from network transfers or temporary media must be packaged in some time of archive format (zip, tar, rar, etc.), or else Archivematica will change original filenames and timestamps, defeating part of the purpose of the "raw" ingest. At CCA, we typically prefer to package in tar files. Note also that this step may not be necessary if disk images are to be retained as part of the processed material.**  
 
 This SIP (Submission Information Package, in OAIS parlance) is composed of all files, archive packages, and disk images in the Shipping Space that correspond to an accession. It is named according to the convention "(versement number)_raw".   
 
