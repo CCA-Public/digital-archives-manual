@@ -29,8 +29,9 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
     * [Developing a processing plan](guides/arrangement.md/#processingplan)  
     * [The exception: Extensible processing of born-digital records](guides/arrangement.md/#extensible)   
     * [Packaging SIPs for Archivematica](guides/arrangement.md/#packagingsips)  
-    * [Processing disk images with Disk Image Processor (CCA Tools)](guides/arrangement.md/#diskimageprocessor)  
-    * [Processing directories of files with Folder Processor (CCA Tools)](guides/arrangement.md/#folderprocessor)  
+    * [Processing disk images with Disk Image Processor](guides/arrangement.md/#diskimageprocessor)  
+    * [Processing directories of files with Folder Processor](guides/arrangement.md/#folderprocessor)  
+    * [Creating single SIPs from directories and files with SIP Creator](guides/arrangement.md/#sipcreator)  
 * **[Description](guides/description.md)**  
     * [Principles and practical guidelines for description of born-digital archives](guides/description.md/#descriptionprincipleandpractice)  
     * [Preferred terminology](guides/description.md/#terminology)  
