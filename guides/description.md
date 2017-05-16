@@ -21,7 +21,7 @@ Once the processing plan is set and the overall arrangement of the accession(s) 
 * "Let the bits describe themselves": Machine-actionable information such as extent, file formats, and filesystem metadata should be captured automatically, never calculated by hand, and rarely transcribed.  
 * Born-digital records may not reflect traditional Stage and Purpose architectural terminology/practice - don't force terminology where it doesn't fit.  
 * Description will be entered and updated in processing spreadsheets. Entering this data in TMS will require some fields to be manually entered, but you should copy and paste from your processing spreadsheet when possible. Make sure that any revisions to your description are completed prior to entering data into TMS.  
-* Don't spend excessive time at the file level. File-level descriptions are largely automated by CCA Disk Image Processor and CCA Folder Processor. In most cases, quickly surveying the included files and adding a title will suffice. Resist the temptation to open and investigate each digital file in a given directory/disk image.  
+* Don't spend excessive time at the file level. File-level descriptions are largely automated by CCA Disk Image Processor and CCA Folder Processor. In many cases, quickly surveying the included files and adding a title will suffice. Resist the temptation to open and investigate each digital file in a given directory/disk image.  
 
 <a name="higherlevel"></a>  
 ## Fonds-, series-, and project-level description  
@@ -37,7 +37,7 @@ Lines about digital materials in Collation statements in fonds-, series-, and do
 
 File ("groupe")-level description is the lowest level of description done during typical processing projects, and should follow the guidelines set out in the overall CCA Archives Processing Manual. Description will happen first in spreadsheets. Do not enter any file-level information into TMS until that spreadsheet has gone through the review and approval process with the Digital Archivist.  
 
-Note that all directories of digital content should be described as files/groupes, even if they contain only one digital file.
+Note that all directories of digital content should be described as files ("groupes"), even if they contain only one digital file.
 
 <a name="spreadsheetentry"></a>  
 ### Entering file-level description in processing spreadsheets  
