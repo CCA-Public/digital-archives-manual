@@ -84,9 +84,4 @@ CCA adds descriptive metadata to every AIP to aid in discoverability and re-use 
 <a name="fileformatpolicies"></a>
 ## CCA file format policies  
 
-Currently in process of being reviewed. When complete, CCA's file format policies will be published as a document and implemented in our local instance of the Archivematica Format Policy Registry (FPR) 
-
-<a name="amaticadevelopments"></a>
-## Future developments with Archivematica  
-
-* Appraisal tab (AM/1.6) - triage and arrangement inside Archivematica interface  
+Currently in process of being reviewed. When complete, CCA's file format policies will be published as a document and implemented in our local instance of the Archivematica Format Policy Registry (FPR)  
