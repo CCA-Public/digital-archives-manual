@@ -31,7 +31,7 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
 1. When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator machines, all SIPs are named with the scheme [identifier]---[accession number], and data entry for all SIPs has been completed in TMS, advise the Digital Archivist that you are ready to move on to the Ingest phase of the project.  
 2. The Digital Archivist will copy the SIPs to the /mnt/incoming/transfers "staging area" on csp-arch-03 using rsync and schedule a time for ingest.  
 3. When it is time for ingest, the Digital Archivist will move the appropriate SIPs to the Automation Tools watched folder for ingest in batches of <50 SIPs at a time. Archivematica will then ingest each of the SIPs, one at a time.  
-4. QA the ingests, marking all information in an Ingest spreadsheet (TO DO - ADD SPREADSHEET!):  
+4. QA the ingests, marking all information in an [Archivematica ingest spreadsheet](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/forms/archivematica_ingest_spreadsheet.xlsx):  
     * For each SIP, ensure that Transfer and Ingest completed successfully and that the AIP was stored.  
     * For each SIP, add the following information to your Ingest spreadsheet:  
         * Identifier  
@@ -45,7 +45,7 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
     * For every 5th SIP, conduct a more complete QA check. Verify the following and then put "True" in the Full QA column of the Ingest spreadsheet:  
         * Look at the normalization report and ensure that no files that should have been normalized for preservation failed.  
         * Download the AIP and look at the METS file and ensure that descriptive metadata was written to the dmdSec.   
-5. When Ingest and QA is complete, delete the local copy of the SIPs from the BitCurator machine.  
+5. When Ingest and QA is complete, inform the Digital Archivist, save your ingest spreadsheet to the appropriate "Acquisition et traitement" folder, and delete the local copy of the SIPs from the BitCurator machine.  
 
 <a name="webui"></a>  
 ### Using the Archivematica Web UI  
