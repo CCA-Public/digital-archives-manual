@@ -46,6 +46,7 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
         * Look at the normalization report and ensure that no files that should have been normalized for preservation failed.  
         * Download the AIP and look at the METS file and ensure that descriptive metadata was written to the dmdSec.   
 5. When Ingest and QA is complete, inform the Digital Archivist, save your ingest spreadsheet to the appropriate "Acquisition et traitement" folder, and delete the local copy of the SIPs from the BitCurator machine.  
+6. Create an object package for the files in TMS corresponding to the SIPs. Send an email to Deplacement requesting that each of the files in the object package be localized with the location "Dark archive", CCing the Digital Archivist.  
 
 <a name="webui"></a>  
 ### Using the Archivematica Web UI  
