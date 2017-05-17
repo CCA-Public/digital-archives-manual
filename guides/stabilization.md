@@ -142,7 +142,7 @@ Steps for imaging physical media with Guymager:
 * Prior to creating a disk image, virus scan the media using ClamTK:  
   * Open ClamTK (from the 'Additional Tools' folder on the Bitcurator desktop).  
   * Ensure that settings are correct: Double-click on 'Settings', and ensure that everything except 'Scan for PUAs' is selected.    
-  * Double-click on 'Scan a directory' from the 'Analysis' tabe and then choose directory to scan.  
+  * Double-click on 'Scan a directory' from the 'Analysis' tab and then choose directory to scan.  
   * If there are no viruses, proceed with the next step. If ClamTK finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside, and consult the Digital Archivist.  
 * Open Guymager (from the 'Imaging Tools' folder on the Bitcurator desktop).  
 * Rick-click on the drive you wish to image and select 'Acquire image'. If the drive/device you wish to image does not appear, refresh the screen by clicking "Rescan" in the upper left hand corner of the Guymager interface.  
