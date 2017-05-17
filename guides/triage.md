@@ -191,7 +191,7 @@ The final step is to export these files from HFSExplorer to a desktop or network
 
 ![hfsexplorer5](http://wiki.bitcurator.net/images/0/0a/HFSextract3.png)  
 
-* If all goes well, you will get a message saying 'Extraction finished.' NOTE: It is common for HFSExplorer to run into an issue with invalid characters in file names during the export process, due to the differences in allowable file name characters between HFS and modern file systems. When HFSExplorer runs into files will such characters, a pop-up window will appear asking you to auto-rename or manually rename the files. You may select auto-rename, which will replace 'illegal' characters such as forward slashes ('/') and full spots ('.') with underscores ('_').
+* If all goes well, you will get a message saying 'Extraction finished.' NOTE: It is common for HFSExplorer to run into an issue with invalid characters in file names during the export process, due to the differences in allowable file name characters between HFS and modern file systems. When HFSExplorer runs into files will such characters, a pop-up window will appear asking you to auto-rename or manually rename the files. You may select auto-rename, which will replace 'illegal' characters such as forward slashes ('/') and full stops ('.') with underscores ('_').
 
 <a name="reporting"></a>  
 ## Extracting archives and reporting on logical files  
