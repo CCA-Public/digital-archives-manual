@@ -4,10 +4,28 @@
 
 This page describes the configurations and policies utilized by Archivematica during ingest. It includes:  
 
+* [Methods for ingesting digital archives into Archivematica](#ingestmethods)  
+  * [Automation Tools](#automationtools)  
+  * [Using the Archivematica Web UI](#webui)  
 * [Archivematica processing configuration for ingest of "raw" data](#rawingestconfig)  
 * [Archivematica processing configuration for ingest of "processed" data](#processedingestconfig) 
 * [Adding descriptive metadata to the AIP](#dcmetadata)
 * [CCA file format policies](#fileformatpolicies)  
+
+<a name="ingestmethods"></a>  
+## Methods for ingesting digital archives into Archivematica  
+
+TEXT
+
+<a name="autotools"></a>  
+### Automation Tools  
+
+TEXT
+
+<a name="webui"></a>  
+### Using the Archivematica Web UI  
+
+TEXT
 
 <a name="rawingestconfig"></a>  
 ## Archivematica processing configuration for ingest of "raw" data (currently default on csp-arch-02)    
