@@ -19,4 +19,4 @@ All access to born-digital content happens on a by-request basis through Referen
 
 The Study Room CAD workstation and virtualization workstation have no internet access and USB ports are blocked. For now, researchers may not make copies of files for their personal use off of the Study Room machines. They are welcome, however, to use their own phones or cameras to take photos of the screen.  
 
-Over the long-term, we aim to leverage the Dissemination Information Packages (DIPs) created by Archivematica to faciliate more direct search/browse access to digital files.   
+Over the long-term, we aim to leverage the Dissemination Information Packages (DIPs) created by Archivematica to faciliate more direct search/browse access to digital files. An estimate for sponsored development that would make Archivematica-generated DIPs that are more appropriate for our use cases is currently underway.     
