@@ -1,4 +1,4 @@
-# Ingesting processed born-digital archives into the CCA digital repository  
+# Ingesting into Archivematica
 
 *Current version of Archivematica: 1.6.0*  
 
