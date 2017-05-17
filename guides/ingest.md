@@ -15,7 +15,11 @@ This page describes the configurations and policies utilized by Archivematica du
 <a name="ingestmethods"></a>  
 ## Methods for ingesting digital archives into Archivematica  
 
-TEXT
+There are two primary methods for ingesting data into Archivematica at CCA: using [Automation Tools](https://github.com/artefactual/automation-tools) or manually through the Archivematica web dashboard.  
+
+When possible, we will use Automation Tools, as this allows for more efficient ingest and automated addition of metadata from TMS.  
+
+**NOTE: Because we want our AIPs to be complete and self-describing, archival description must be complete and entered into TMS for all files/SIPs prior to ingest into Archivematica.**  
 
 <a name="autotools"></a>  
 ### Automation Tools  
