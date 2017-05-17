@@ -43,8 +43,7 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
         * Standard QA (True/False)  
     * For every 5th SIP, conduct a more complete QA check. Verify the following and then put "True" in the Full QA column of the Ingest spreadsheet:  
         * Look at the normalization report and ensure that no files that should have been normalized for preservation failed.  
-        * Download the AIP and look at the METS file and ensure that descriptive metadata was written to the dmdSec.  
-        * WHAT ELSE?  
+        * Download the AIP and look at the METS file and ensure that descriptive metadata was written to the dmdSec.   
 5. When Ingest and QA is complete, delete the local copy of the SIPs from the BitCurator machine.  
 
 <a name="webui"></a>  
