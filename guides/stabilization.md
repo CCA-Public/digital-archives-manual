@@ -208,7 +208,7 @@ Steps for imaging physical media with FTK Imager:
 
  * FTK Imager will now ask you for information about where to save the resulting disk image and metadata files. Enter the following and then select 'Finish':
   * **Image destination folder:** Enter the network location of your current work folder in the Catalogers drive.
-  * **Image filename:** Enter the disk's identifier with no spaces. Replace any full stops ('.') or colons (':') with underscores ('_').  
+  * **Image filename:** Enter the disk's identifier with no spaces. Replace any colons (':') with underscores ('_').  
 
 * Double-check to make sure that the Image Destination and settings appear correct and then select 'Start' to begin the disk imaging process.  
 
