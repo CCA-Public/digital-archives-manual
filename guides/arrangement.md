@@ -164,9 +164,7 @@ Steps:
 
 ![diskimage8](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/diskimage8.png)  
 
-* Once the SIPs have been created, each should be renamed with the following scheme: [identifier]---[accession number].  
-
-![diskimage9](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/diskimage9.png)  
+* From here, simply continue to describe the SIPs in the spreadsheet and rename the SIP directories with the following scheme: [identifier]---[accession number].    
 
 
 <a name="folderprocessor"></a>  
