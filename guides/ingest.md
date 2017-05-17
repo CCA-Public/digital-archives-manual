@@ -51,7 +51,9 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
 <a name="webui"></a>  
 ### Using the Archivematica Web UI  
 
-TEXT
+Alternatively, transfers may be started and monitored from within the web dashboard. Before starting, verify that the transfer type for the material you're ingesting is correct and amend the processing configuration so that it pauses the process when metadata must be entered. You will need to manually enter metadata according to the schema outlined in [Adding descriptive metadata to the AIP](#dcmetadata).  
+
+ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator machines, all SIPs are named with the scheme [identifier]---[accession number], and data entry for all SIPs has been completed in TMS, advise the Digital Archivist that you are ready to move on to the Ingest phase of the project. The Digital Archivist will copy the SIPs to the /mnt/incoming/transfers "staging area" on csp-arch-03 using rsync and schedule a time for ingest.  
 
 <a name="rawingestconfig"></a>  
 ## Archivematica processing configuration for ingest of "raw" data (currently default on csp-arch-02)    
