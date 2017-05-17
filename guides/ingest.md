@@ -24,7 +24,27 @@ When possible, we will use Automation Tools, as this allows for more efficient i
 <a name="autotools"></a>  
 ### Automation Tools  
 
-TEXT
+Automation Tools is currently set up only for ingest of "processed" data and only on csp-arch-03 (this will change soon). Automation Tools checks the /mnt/incoming/auto-transfers directory on csp-arch-03 every 5 minutes, verifies that nothing is currently being transferred or ingested, runs pre-transfer scripts (that verify the transfer is the correct type, pass the transfer's accession number on to Archivematica, and add metadata to the transfer using the TMS API), and starts the next transfer.  The rest of the transfer and ingest process is automated. Your job as a processing archivist is simply to QA the results of this process and ensure that all processes completed within acceptable parameters for success.  
+
+Here is the procedure for conducting ingests of processed SIPs with Automation Tools:  
+
+1. When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator machines, all SIPs are named with the scheme [identifier]---[accession number], and data entry for all SIPs has been completed in TMS, advise the Digital Archivist that you are ready to move on to the Ingest phase of the project.  
+2. The Digital Archivist will copy the SIPs to the /mnt/incoming/transfers "staging area" on csp-arch-03 using rsync and schedule a time for ingest.  
+3. When it is time for ingest, the Digital Archivist will move the appropriate SIPs to the Automation Tools watched folder for ingest in batches of <50 SIPs at a time. Archivematica will then ingest each of the SIPs, one at a time.  
+4. QA the ingests, marking all information in an Ingest spreadsheet (TO DO - ADD SPREADSHEET!):  
+    * For each SIP, ensure that Transfer and Ingest completed successfully and that the AIP was stored.  
+    * For each SIP, add the following information to your Ingest spreadsheet:  
+        * Identifier  
+        * Accession  
+        * Fonds number  
+        * Ingest successful? (True/False)  
+        * Notes  
+        * AIP UUID  
+        * Standard QA (True/False)  
+    * For every 5th SIP, conduct a more complete QA check. Verify the following and then put "True" in the Full QA column of the Ingest spreadsheet:  
+        * Look at the normalization report and ensure that no files that should have been normalized for preservation failed.  
+        * Download the AIP and look at the METS file and ensure that descriptive metadata was written to the dmdSec.  
+        * WHAT ELSE?  
 
 <a name="webui"></a>  
 ### Using the Archivematica Web UI  
