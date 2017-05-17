@@ -1,4 +1,4 @@
-# Ingesting into Archivematica
+# Ingest in Archivematica
 
 *Current version of Archivematica: 1.6.0*  
 
