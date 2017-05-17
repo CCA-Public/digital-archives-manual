@@ -450,7 +450,7 @@ IGES files can be viewed from most CAD programs. Because not all software compli
 <a name="step"></a>  
 ## STEP  
 
-**Associated file extensions:** .step, .stp  
+**Associated file extensions:** .step, .stp, .p21    
 **Vendor:** Non-vendor specific 
 
 #### Summary  
