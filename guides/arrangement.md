@@ -134,7 +134,9 @@ Once the content of your SIP has been decided, CCA workflow tools like [Folder P
 <a name="diskimageprocessor"></a>  
 ## Processing disk images with Disk Image Processor 
 
-The Disk Image Processor takes a folder of disk images and turns each into a ready-to-ingest SIP packaged for Archivematica. The tool also writes a pre-populated description spreadsheet including information for each SIP. SIPs include an md5deep-generated checksum.md5 file in the "metadata" directory by default, but can optionally be bagged instead. The tool populates each "objects" directory with a raw disk image (even if the source disk image is EWF/E01) and logical files carved with either tsk_recover or the HFSExplorer command line utility unhfs. Files in the source directory that are not disk images are ignored (the exception to this is files that share the same basename, such as .info sidecar metadata files for disk images, which will be copied into the "objects/diskimage" file at the end of processing.)  
+*Instructions valid for Disk Image Processor v0.3.1*
+
+[Disk Image Processor](https://github.com/timothyryanwalsh/cca-diskimageprocessor) takes a folder of disk images and turns each into a ready-to-ingest SIP packaged for Archivematica. The tool also writes a pre-populated description spreadsheet including information for each SIP. SIPs include an md5deep-generated checksum.md5 file in the "metadata" directory by default, but can optionally be bagged instead. The tool populates each "objects" directory with a raw disk image (even if the source disk image is EWF/E01) and logical files carved with either tsk_recover or the HFSExplorer command line utility unhfs. Files in the source directory that are not disk images are ignored (the exception to this is files that share the same basename, such as .info sidecar metadata files for disk images, which will be copied into the "objects/diskimage" file at the end of processing.)  
 
 This workflow assumes that each piece of storage media in an accession will be assigned a file-level description. If the contents of media are to be split into multiple files, a different approach is required.  
 
@@ -170,7 +172,18 @@ Steps:
 <a name="folderprocessor"></a>  
 ## Processing directories of files with Folder Processor  
 
-DESCRIPTION TO BE ADDED
+[Folder Processor](https://github.com/timothyryanwalsh/cca-folderprocessor) allows users to create consistently-packaged SIPs from each of any number of selected input directories. Each SIP is packaged for Archivematica and contains a copy of the files, an md5 manifest, a DFXML file, and Brunnhilde reports.
+
+![folderprocessor](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/folderprocessor.png)
+
+To create SIPs with Folder Processor:
+
+* Press the "Select source" button at the top of the GUI and choose the directory you want to be able to select files from. The "Directory Selector" window will then populate with a checkbox interface.  
+* Select all directories you wish to create SIPs from by checking the box to the left of the directory name. Any files that are selected will be ignored.  
+* Input the destination for your SIPs in "Destination", either by entering the path directory in the box or by selecting a folder using the "Browse" button. If you do the latter, double-check to make sure that the correct path is entered in the box before moving on (it is easy to accidentally select a directory above what you intend when creating new output directories through the GUI).  
+* If desired, select the "Bag SIPs" or "Run bulk_extractor" options. In most cases, leave these unchecked.  
+* When you are ready to start, press the "Create SIPs" button. The process will begin working, and the Status bar should increment for each directory that is successfully turned into a SIP. Be patient - for large input directories, this can take some time. If you need to cancel the process at any time, you can use the "Cancel" button in the lower-right corner of the GUI.  
+* When the process is completed, the destination directory will contain a description CSV (containing pre-populated archival description for the SIPs) and a directory containing each of the SIPs. From here, simply continue to describe the SIPs in the spreadsheet and rename the SIP directories with their archival identifiers. Original directory names are retained in the SIP within the "objects" directory.  
 
 <a name="sipcreator"></a>  
 ## Creating single SIPs from directories and files with SIP Creator  
