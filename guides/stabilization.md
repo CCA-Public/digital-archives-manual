@@ -10,6 +10,7 @@ This guide describes CCA standards for accessioning and stabilizing born-digital
   * [Disk imaging original physical media](#diskimaging)  
     * [Disk imaging with Guymager (Bitcurator)](#guymager)  
     * [Disk imaging with FTK Imager](#ftkimager)  
+    * [Disk imaging 5.25" floppy disks with FC5025](#fc5025)
 * [Ingesting "raw" versement data into digital repository](#rawingest)  
 
 <a name="triageoverview"></a>  
@@ -217,6 +218,11 @@ Steps for imaging physical media with FTK Imager:
 * A progress window will not appear and keep you informed of how the disk imaging is progressing. If disk imaging fails or seems to get hung up on a large number of bad sectors, make note of this in the versement stabilization spreadsheet and set the disk aside for review by the Digital Archivist.  
 * If the image is successfully created, go to your project folder in the Catalogers drive and do a quick visual check that all looks good. You should see at least two files: the disk image(s) themselves (potentially split into several files with the same file name but extensions of .001, .002, etc.) and a '.txt' metadata file.  
 * If all looks good, repeat this process with the next disk until all media has been imaged.  Once all media has been imaged, copy the entire project folder from the Catalogers drive into the "Dépôts" folder and alert the Digital Archivist.    
+
+<a name="fc5025"></a>  
+## Disk imaging 5.25" floppy disks with FC5025  
+
+TEXT
 
 <a name="rawingest"></a>
 ## Ingesting "raw" accession data into digital repository  
