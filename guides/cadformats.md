@@ -421,15 +421,15 @@ lorem ipsum
 
 #### Summary  
 
-lorem ipsum  
+STL is a vendor-neutral file format most typically used for 3D printing and computer-aided manufacturing (CAM). There are ASCII and binary variants of the STL format. 
 
 #### How to view files on CCA CAD workstations  
 
-lorem ipsum  
+STL file are best viewed in Rhino.  
 
 #### Features of note  
 
-lorem ipsum   
+STL files only contain information on surface geometry. See the [STL wikipedia page](https://en.wikipedia.org/wiki/STL_(file_format) for more detailed information.  
 
 <a name="iges"></a>  
 ## IGES  
@@ -439,15 +439,13 @@ lorem ipsum
 
 #### Summary  
 
-lorem ipsum  
+IGES, or the Initial Graphics Exchange Specification, is a vendor-neutral, lightweight CAD format for the exchange of geometric data. It is an ASCII – meaning ASCII-encoded, text-based format. In practical terms, this means that you can open IGES files in a text editor to explore their content and even make changes to models.
+
+IGES was published in 1980 and is supported as an import/export format in most CAD products. Although ubiquitous, its main drawback is that IGES files cannot contain anything more than basic geometric information. It’s for this reason that the last published version of the IGES format happened in 1996, right around the same time that STEP was gaining popularity.
 
 #### How to view files on CCA CAD workstations  
 
-lorem ipsum  
-
-#### Features of note  
-
-lorem ipsum  
+IGES files can be viewed from most CAD programs. Because not all software complies precisely with the IGES standard, it is advised to open files in software as close as possible to the software that created the file, if known.
 
 <a name="step"></a>  
 ## STEP  
@@ -457,15 +455,15 @@ lorem ipsum
 
 #### Summary  
 
-lorem ipsum  
+STEP, or Standard for the Exchange of Product Model Data, is an ISO format started in 1984 as a more fully-featured and rigorously defined replacement for existing standards such as IGES. Development has continued since, with elements of the standard being published throughout the 1990s and 2000s.
 
+A number of more specific file formats have been specified under the STEP standard, allow of which are collectively referred to as STEP files. The most common implementations of STEP are AP203; AP214, which extends on AP203 with support for information such as layers; and AP242, a more heavy-weight format intended for use in the manufacturing and aerospace industries.
+
+Although converting most proprietary CAD models to STEP does imply some degree of data loss (such as parametric data), STEP is the closest thing to a full-featured vendor-neutral exchange format for CAD files, and has often been floated as a potential preservation format. Many CAD products now support STEP importers and exporters, in part due to the efforts of groups such as the CAx Implementors Forum, which have helped to develop these tools.
+ 
 #### How to view files on CCA CAD workstations  
 
-lorem ipsum  
-
-#### Features of note  
-
-lorem ipsum  
+STEP files can be opened in a number of CAD programs. Due to the possibility that the originated software may not comply precisely with the STEP standard, it is advised to open files in software as close as possible to the software that created the file, if known.
 
 <a name="step"></a>  
 ## COLLADA  
