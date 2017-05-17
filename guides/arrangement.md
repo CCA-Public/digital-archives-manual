@@ -178,7 +178,7 @@ Steps:
 
 To create SIPs with Folder Processor:
 
-* Press the "Select source" button at the top of the GUI and choose the directory you want to be able to select files from. The "Directory Selector" window will then populate with a checkbox interface.  
+* Press the "Select source" button at the top of the GUI and choose the directory you want to be able to select input directories from. The "Directory Selector" window will then populate with a checkbox interface.  
 * Select all directories you wish to create SIPs from by checking the box to the left of the directory name. Any files that are selected will be ignored.  
 * Input the destination for your SIPs in "Destination", either by entering the path directory in the box or by selecting a folder using the "Browse" button. If you do the latter, double-check to make sure that the correct path is entered in the box before moving on (it is easy to accidentally select a directory above what you intend when creating new output directories through the GUI).  
 * If desired, select the "Bag SIPs" or "Run bulk_extractor" options. In most cases, leave these unchecked.  
@@ -188,4 +188,15 @@ To create SIPs with Folder Processor:
 <a name="sipcreator"></a>  
 ## Creating single SIPs from directories and files with SIP Creator  
 
-DESCRIPTION TO BE ADDED
+[SIP Creator](https://github.com/timothyryanwalsh/cca-sipcreator) allows users to create a single SIP from any number of input directories and files. The resulting SIP is packaged for Archivematica and contains a copy of the files, an md5 manifest, a DFXML file, and Brunnhilde reports.
+
+![sipcreator](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/sipcreator.png)
+
+To create SIPs with SIP Creator:
+
+* Press the "Select source" button at the top of the GUI and choose the directory you want to be able to select files from. The "Directory Selector" window will then populate with a checkbox interface.  
+* Select all files and directories you wish to add to the SIP by checking the box to the left of the file name.  
+* Input the destination for your SIPs in "Destination", either by entering the path directory in the box or by selecting a folder using the "Browse" button. If you do the latter, double-check to make sure that the correct path is entered in the box before moving on (it is easy to accidentally select a directory above what you intend when creating new output directories through the GUI).  
+* If desired, select the "Bag SIP" or "Run bulk_extractor" options. In most cases, leave these unchecked.  
+* When you are ready to start, press the "Create SIP" button. The process will begin working, and the Status bar should increment once when the SIP is created, and again when the description CSV has been generated. Be patient - for large SIPs, this can take some time. If you need to cancel the process at any time, you can use the "Cancel" button in the lower-right corner of the GUI.  
+* When the process is completed, the destination directory will contain a description CSV (containing pre-populated archival description for the SIPs) and a directory containing the newly generated SIP. From here, simply continue to describe the SIP in the spreadsheet (you may want to copy and paste this line into an existing spreadsheet so that there isn't a spreadsheet for every file) and rename the SIP directory with its archival identifier.  
