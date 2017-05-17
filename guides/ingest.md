@@ -10,7 +10,7 @@ This page describes the configurations and policies utilized by Archivematica du
 * [CCA file format policies](#fileformatpolicies)  
 
 <a name="rawingestconfig"></a>  
-## Archivematica processing configuration for ingest of "raw" data (csp-arch-02)    
+## Archivematica processing configuration for ingest of "raw" data (currently default on csp-arch-02)    
 
 | Type | Value |
 | -------- | -------- |
@@ -35,7 +35,7 @@ This page describes the configurations and policies utilized by Archivematica du
 | Store DIP location | "None" |  
 
 <a name="processedingestconfig"></a>  
-## Archivematica processing configuration for ingest of "processed" data (csp-arch-03)  
+## Archivematica processing configuration for ingest of "processed" data (currently default on csp-arch-03)  
 
 | Type | Value |
 | -------- | -------- |
@@ -87,4 +87,4 @@ CCA adds descriptive metadata to every AIP to aid in discoverability and re-use 
 <a name="fileformatpolicies"></a>
 ## CCA file format policies  
 
-Currently in process of being reviewed. When complete, CCA's file format policies will be published as a document and implemented in our local instance of the Archivematica Format Policy Registry (FPR)  
+Currently in process of being reviewed. When complete, CCA's file format policies will be published as a document and implemented in our local instance of the Archivematica Format Policy Registry (FPR).  
