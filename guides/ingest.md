@@ -45,6 +45,7 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
         * Look at the normalization report and ensure that no files that should have been normalized for preservation failed.  
         * Download the AIP and look at the METS file and ensure that descriptive metadata was written to the dmdSec.  
         * WHAT ELSE?  
+5. When Ingest and QA is complete, delete the local copy of the SIPs from the BitCurator machine.  
 
 <a name="webui"></a>  
 ### Using the Archivematica Web UI  
