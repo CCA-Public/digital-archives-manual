@@ -164,7 +164,7 @@ Steps:
 
 ![diskimage8](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/diskimage8.png)  
 
-* Once the SIP has been arranged and described, the highest-level folder in the "SIPs" directory should be renamed to the file's object number in TMS.  
+* Once the SIPs have been created, each should be renamed with the following scheme: [identifier]---[accession number].  
 
 ![diskimage9](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/diskimage9.png)  
 
@@ -183,7 +183,7 @@ To create SIPs with Folder Processor:
 * Input the destination for your SIPs in "Destination", either by entering the path directory in the box or by selecting a folder using the "Browse" button. If you do the latter, double-check to make sure that the correct path is entered in the box before moving on (it is easy to accidentally select a directory above what you intend when creating new output directories through the GUI).  
 * If desired, select the "Bag SIPs" or "Run bulk_extractor" options. In most cases, leave these unchecked.  
 * When you are ready to start, press the "Create SIPs" button. The process will begin working, and the Status bar should increment for each directory that is successfully turned into a SIP. Be patient - for large input directories, this can take some time. If you need to cancel the process at any time, you can use the "Cancel" button in the lower-right corner of the GUI.  
-* When the process is completed, the destination directory will contain a description CSV (containing pre-populated archival description for the SIPs) and a directory containing each of the SIPs. From here, simply continue to describe the SIPs in the spreadsheet and rename the SIP directories with their archival identifiers. Original directory names are retained in the SIP within the "objects" directory.  
+* When the process is completed, the destination directory will contain a description CSV (containing pre-populated archival description for the SIPs) and a directory containing each of the SIPs. From here, simply continue to describe the SIPs in the spreadsheet and rename the SIP directories with the following scheme: [identifier]---[accession number]. Original directory names are retained in the SIP within the "objects" directory.  
 
 <a name="sipcreator"></a>  
 ## Creating single SIPs from directories and files with SIP Creator  
@@ -199,4 +199,4 @@ To create SIPs with SIP Creator:
 * Input the destination for your SIPs in "Destination", either by entering the path directory in the box or by selecting a folder using the "Browse" button. If you do the latter, double-check to make sure that the correct path is entered in the box before moving on (it is easy to accidentally select a directory above what you intend when creating new output directories through the GUI).  
 * If desired, select the "Bag SIP" or "Run bulk_extractor" options. In most cases, leave these unchecked.  
 * When you are ready to start, press the "Create SIP" button. The process will begin working, and the Status bar should increment once when the SIP is created, and again when the description CSV has been generated. Be patient - for large SIPs, this can take some time. If you need to cancel the process at any time, you can use the "Cancel" button in the lower-right corner of the GUI.  
-* When the process is completed, the destination directory will contain a description CSV (containing pre-populated archival description for the SIPs) and a directory containing the newly generated SIP. From here, simply continue to describe the SIP in the spreadsheet (you may want to copy and paste this line into an existing spreadsheet so that there isn't a spreadsheet for every file) and rename the SIP directory with its archival identifier.  
+* When the process is completed, the destination directory will contain a description CSV (containing pre-populated archival description for the SIPs) and a directory containing the newly generated SIP. From here, simply continue to describe the SIP in the spreadsheet (you may want to copy and paste this line into an existing spreadsheet so that there isn't a spreadsheet for every file) and rename the SIP directory with the following scheme: [identifier]---[accession number].  
