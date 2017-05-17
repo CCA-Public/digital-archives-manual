@@ -153,7 +153,7 @@ Steps for imaging physical media with Guymager:
 * Make sure split size is unchecked.  
 * Enter the following metadata/settings:  
   * **Image directory:** Select the directory you created in /mnt/1TB_RAID.
-  * **Image filename:** Enter the disk's identifier with no spaces. Replace any full stops ('.') or colons (':') with underscores ('_').  
+  * **Image filename:** Enter the disk's identifier with no spaces. Replace any colons (':') with underscores ('_').  
   * **Info filename:** This should be automatically created based on your image filename. Do not edit this field.  
   * **Hash calculation/verification:**  
     * Check "Calculate MD5", "Calculate SHA-1", and "Verify image after acquisition" 
