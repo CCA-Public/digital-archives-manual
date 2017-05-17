@@ -68,7 +68,7 @@ The original order of material must also be balanced against user needs. Is the 
 
 In cases where any rearrangement occurs, we will make information about the existing organization of files at time of transfer available to researchers via alternate means, such as searchable Excel documents attached to the fonds-level record.  
 
-<a name="context"</a>
+<a name="context"></a>
 ### Context of creation and active use  
 
 An additional factor to consider is the context of the files' creation and use. What relationships, if any, do the digital materials have with analogue and physical materials in the fonds? Were records in different formats kept together when the records were in active use?  
