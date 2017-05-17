@@ -37,6 +37,7 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
         * Identifier  
         * Accession  
         * Fonds number  
+        * Pipeline (csp-arch-02 or csp-arch-03)  
         * Ingest successful? (True/False)  
         * Notes  
         * AIP UUID  
