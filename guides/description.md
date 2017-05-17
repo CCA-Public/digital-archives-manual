@@ -117,6 +117,4 @@ The only types of information you should enter into TMS that will not be found i
 <a name="itemdesc"></a>  
 ## Item ("pièce")-level description  
 
-Item-level cataloguing for digital files is rare and should only be done when discussed in pre-processing. All "pièce" records must exist as a child of a groupe.  
-
---INSERT GUIDELINES HERE--
+At CCA, we typically do not process digital files at the item-level.  
