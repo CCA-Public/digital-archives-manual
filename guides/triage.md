@@ -214,4 +214,4 @@ If bulk_extractor is run with Brunnhilde, the resulting logs can be analyzed in 
 <a name="moving"></a>  
 ## Moving files to processing location  
 
-Once the files are ready to be arranged and described and preliminary reporting has been completed, working copies of the files are moved to a folder in the Catalogers network share. These are temporary copies solely for consultation on CAD workstations and other networked computers at CCA. "Master" copies of SIPs should be kept on the Bitcurator desktop while being worked on.
+Once the files are ready to be arranged and described and preliminary reporting has been completed, working copies of the files are moved to a folder in the Catalogers network share. These are temporary copies solely for consultation on CAD workstations and other networked computers at CCA. "Master" copies of SIPs should be kept in BitCurator in a directory in /mnt/1TB_RAID/ being worked on.
