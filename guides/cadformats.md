@@ -429,7 +429,7 @@ STL file are best viewed in Rhino.
 
 #### Features of note  
 
-STL files only contain information on surface geometry. See the [STL wikipedia page](https://en.wikipedia.org/wiki/STL_(file_format) for more detailed information.  
+STL files only contain information on surface geometry. See the [STL wikipedia page](https://en.wikipedia.org/wiki/STL_(file_format)) for more detailed information.  
 
 <a name="iges"></a>  
 ## IGES  
