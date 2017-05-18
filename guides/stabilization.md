@@ -125,7 +125,7 @@ Steps:
 
 At CCA, we capture the contents of original physical media as raw disk images. A disk image is a computer file that is an exact replica of the contents of a disk or other digital storage volume as that information exists on a particular physical storage medium. Because disk images can be stored redundantly, backed up, and audited in ways that physical carriers like DVDs or external hard drives cannot, they are a much better suited for preservation of digital information over time, while retaining all characteristics of the original physical media as a storage volume.  
 
-Except when circumstances require different solutions, CCA prefers raw disk image formats (e.g. "dd" or "raw").  
+Except when circumstances require different solutions, CCA prefers raw disk image formats (e.g. "dd" or "raw") or ISO images (for optical media).  
 
 **Note: In order to ensure that the source media is unchanged by the process of data capture and transfer, hard drives and removable media drives should always be connected to the capture workstation through a hardware write-blocker.**  
 
