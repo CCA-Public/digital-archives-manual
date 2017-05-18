@@ -109,7 +109,7 @@ Steps:
     * **Description du contenu:** Enter a brief description of the material and (optionally) the title of the folder from which it was taken.  
 5. Add the following associations: 
     * **a classifier:** The fonds or collection to which the media belongs  
-    * **Provient de:**The accession to which the media belongs  
+    * **Provient de:** The accession to which the media belongs  
     * **Est inclus dans (if applicable):** The groupe to which the separated media belongs  
 6. Label the new container:
     * Object number  
