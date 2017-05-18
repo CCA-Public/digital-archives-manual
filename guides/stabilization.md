@@ -118,6 +118,8 @@ Steps:
 7. If the media in the container (*note: specific pieces of media, not the folder or "groupe" they were found within*) already have ARCH, DR, or PH numbers, link the ARCH/DR/PH records to the DM container record as children with the "Est composé de" association.  
 8. Give information about the new container to the Registrar as per usual localisation procedures, and request that the material is localised to the Digital Media storage in the Cool Vault.  
 
+**Note: For digital media that will be disk imaged and accessioned immediately, a more steamlined procedure may be followed. Nonetheless, removal sheets should always be used to track where digital media were originally located.**
+
 <a name="diskimaging"></a>
 ### Disk imaging original physical media  
 
