@@ -6,6 +6,7 @@ Helpful resources, including:
 * [Digital storage media identification and information](#media)  
 * [File format identification and information](#formats)  
 * [Digital preservation tools](#tools)  
+* [Scripting resources](#scripting)
 * [Preservation of computer-aided design](#cadpres)  
 * [General resources](#general)  
 
@@ -47,6 +48,12 @@ Helpful resources, including:
 * [Bitcurator wiki](http://wiki.bitcurator.net/index.php?title=Main_Page)  
 * [Archivematica documentation](https://www.archivematica.org/en/docs/archivematica-1.4/)  
 * [Preserving optical media from the command line](http://blog.kbresearch.nl/2015/11/13/preserving-optical-media-from-the-command-line/)  
+
+<a name="scripting"></a>  
+## Scripting resources
+
+* [Script Ahoy](http://dd388.github.io/crals/): "Our community resource is intended to provide helpful one-liners and script code specifically drawn from real-life examples in archives and libraries."  
+* [Command Line Crash Course](https://learnpythonthehardway.org/book/appendixa.html): From *Learn Python the Hard Way*  
 
 <a name="cadpres"></a>  
 ## Preservation of computer-aided design  
