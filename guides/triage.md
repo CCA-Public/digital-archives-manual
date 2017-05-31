@@ -5,7 +5,7 @@ When an accession is to be processed, the Digital Archivist downloads the "raw" 
 * [Analyzing disk images with Disk Image Processor](#analysis)
 * [Extracting files from disk images](#diskimageextract)  
     * [Extracting files from disk images with Bitcurator](#bitcuratorfiles)  
-      * [Bitcurator Disk Image Access Interface](#bcaccess)  
+      * [BitCurator Reporting Tool - File Access](#bcaccess)  
       * [Mount Disk Image script](#mountscript)  
     * [Extracting files from disk images with FTK Imager](#ftkimagerfiles)  
     * [Extracting files from images of Hierarchical File System (HFS) disks](#hfsfiles)  
@@ -56,42 +56,16 @@ For extracting files from disk images outside of the reporting process, we typic
 Bitcurator has two native tools for extracting files from disk images: the [Bitcurator Disk Image Access Interface](#bcaccess) and the [Mount Disk Image script](#mountscript).  
 
 <a name="bcaccess"></a>  
-#### Bitcurator Disk Image Access Interface  
+#### BitCurator Reporting Tool - File Access 
 
-Steps:  
+See [instructions for how to export logical files from disk images](https://wiki.bitcurator.net/index.php?title=File_Access) on BitCurator wiki.  
 
-* Open the Bitcurator Disk Image Access tool from the "Forensics Tools" folder on the Bitcurator desktop.  
-
-![bcaccess1](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/bcaccess1.png)  
-
-* Choose "Open disk image" from the top menu panel. In the pop-up window, select the correct disk image and then press "Open".  
-
-![bcaccess2](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/bcaccess2.png)  
-
-* If the disk image is read successfully, you will see "Done" as the last line in the Messages pane, and a path to the disk image in the main (white) pane. If you wish, you can open the tree by clicking on the arrow to the left of "Disk Image" to navigate the contents of the disk image.  
-
-![bcaccess3](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/bcaccess3.png)  
-
-* Choose "Select All" from the top menu panel to select all of the files stored on the disk.  
-
-![bcaccess4](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/bcaccess4.png)  
-
-* Once all files have been selected, choose "Export selections" from the top menu and create a folder in your project folder on the desktop (putting the disk's identifier in place of "FOLDER NAME HERE" in the below example.)  
-
-![bcaccess5](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/bcaccess5.png)  
-
-* The Disk Image Access Interface logs its progress in the Messages pane. If the process is successful, you will see a list of the exported files followed by the line "Copied checked files to the directory: <PATH>".  
-
-![bcaccess6](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/bcaccess6.png)  
-
-* Just to be sure, visually verify that files have been copied to the Desktop folder you created. If all looks good, you can choose "Close disk image" from the top menu of the Disk Image Access Interface and start the process over for the next disk.  
-
-If you encounter any errors during this process, make a note of this in your versement stabilization spreadsheet and then attempt to extract files via the next method: Bitcurator's [Mount Disk Image script](#mountscript).  
+Note that this method may not retain original timestamps for files. If original file system dates must be retained, you can attempt to extract files from the disk image via the next method: Bitcurator's [Mount Disk Image script](#mountscript).  
 
 <a name="mountscript"></a>  
 #### Mount Disk Image script  
 
-If the Disk Image Access Interface is unable to export files, Bitcurator offers another option: mounting disk images as drives via an included Mount Disk Image file system script and manually copying over files.  
+In addition to the File Access tab of the BitCurator Reporting Tool, BitCurator offers another option: mounting disk images as drives via an included Mount Disk Image file system script and manually copying over files.  
 
 Steps:
 
