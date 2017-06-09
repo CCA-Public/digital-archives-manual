@@ -73,9 +73,15 @@ File-level description should be entered and reviewed in spreadsheets (one sprea
 <a name="tmsentry"></a>  
 ### Entering file-level description in TMS  
 
-Once your processing spreadsheet is reviewed and approved by the Digital Archivist, use the following instructions to enter the information into TMS, copying and pasting from the spreadsheet when possible. This can be done most efficiently by making use of Models that pre-populate new records with consistent information such as nom de l'objet, status flags, and credit line.  
+Once your processing spreadsheet is reviewed and approved by the Digital Archivist, use the following instructions to enter the information into TMS, copying and pasting from the spreadsheet when possible. This can be done most efficiently by making use of Models. Models exist for file-level description of various types of material already; for most efficient work, create a custom version of the "Archives - Files - Born Digital" model for your archive, containing the following information:  
 
-The only types of information you should enter into TMS that will not be found in your processing spreadsheet are associations and the elements in [Internal management information](#internalmanagement) below.  
+* Archives creator  
+* Fonds number  
+* Credit Line
+
+Especially for high-volume collections, using an archive- and type-specific model for data entry will greatly speed up the process.
+
+The only types of information you should enter into TMS that will not be found in your processing spreadsheet are associations and the elements in [Internal management information](#internalmanagement) below (note that many of these are already entered in the existing Archives data entry models).
 
 <a name="internalmanagement"></a>
 #### Internal management information  
