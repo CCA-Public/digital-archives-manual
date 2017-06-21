@@ -8,9 +8,9 @@ The first step of processing archives (whether in digital or analog formats) is 
          * [As large transfers](#largetransfers)
          * [Spread across smaller storage media](#spreadtransfers)
     * [Existing organization](#existingorganization)
-    * [Context of creation and active use](#context)
+    * [Context of creation and active use](#context)  
+    * [Archivematica requirements](#archivematicarequirements)
     * [Nature of archival collection to which they belong](#nature)
-    * [Access requirements](#accessrequirements)
     * [Institutional priorities](#institutionalpriorities)
 * [Developing a processing plan](#processingplan)
 * [The exception: Extensible processing of born-digital records](#extensible)
@@ -80,10 +80,10 @@ What are the relationships between the files in the accession? Do the files link
 
 Another factor to consider when thinking about arrangement is the nature of the archive to which the records belong. Did the CCA acquire the full fonds of this creator, or do the records belong to a project archive/assembled collection? Does CCA expect to receive additional accessions that will need to be integrated into the archive at a later date?  
 
-<a name="accessrequirements"></a>  
-### Access requirements  
+<a name="archivematicarequirements"></a>  
+### Archivematica requirements  
 
-* Archivematica-AtoM requirements  
+* Transfers of more than 10,000 files or so must be split into multiple AIPs. These can then be recombined in Archivematica in an Archival Information Collection (AIC). Future versions of Archivematica should address the scaling issues that necessitate splitting large collections across multiple transfers.   
 
 <a name="institutionalpriorities"></a>
 ### Institutional priorities  
