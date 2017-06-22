@@ -97,7 +97,7 @@ A few general principles to keep in mind when processing born-digital materials:
    * Final processed SIPs are copied to a watched folder on the main Archivematica processing pipeline server.  
    * Processing Archivist QAs ingest (automated fetching of descriptive metadata from TMS, normalization, etc.) and stores DIPs  
    * Digtial Archivist performs final QA check when all data from an accession is ingested  
-   * "Raw" copy of data is deleted from Dark Archive unless there is sufficient reason to keep it  
+   * "Raw" copy of accession data is deleted from Dark Archive unless there is sufficient reason to keep it  
 5. Ongoing activities:  
    * Monitoring health of AIPs in Archivematica  
    * Restoring from backups as needed  
