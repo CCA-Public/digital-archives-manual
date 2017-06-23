@@ -3,7 +3,7 @@
 <a name="fixity"></a>  
 ## Fixity checking and repair  
 
-Fixity checks of all AIPs are conducted on a quarterly basis using the [Fixity](https://github.com/artefactual/fixity) application. Fixity's "scanall" function is run via a Bash script. Logs are saved on the Archivematica Storage Service server and results are emailed to Storage Service administrators. After moving our storage and servers to the "new core", where the Dark Archive storage will use the ZFS file system for an additional level of fixity detection, scanall fixity checks will be changed to a frequency of twice per year.  
+Fixity checks of all AIPs are conducted on a quarterly basis using the [Fixity](https://github.com/artefactual/fixity) application. Fixity's "scanall" function is run via a Bash script. Logs are saved on the Archivematica Storage Service server and results are emailed to Storage Service administrators. After implementation of the "new core", which will use the ZFS file system in the Dark Archive for an additional level of fixity detection, scanall fixity checks will be changed to a frequency of twice per year.  
 
 When AIP corruption is detected, the AIP is restored from backups according to the Storage Service's [Recovery](https://www.archivematica.org/en/docs/storage-service-0.7/recovery/#recovery) procedures.  
 
