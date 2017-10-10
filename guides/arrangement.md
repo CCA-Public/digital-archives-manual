@@ -18,6 +18,7 @@ The first step of processing archives (whether in digital or analog formats) is 
 * [Processing disk images with Disk Image Processor](#diskimageprocessor)  
 * [Processing directories of files with Folder Processor](#folderprocessor)  
 * [Creating single SIPs from directories and files with SIP Creator](#sipcreator)  
+* [Manual normalization for Archivematica](#mannorm) 
 
 <a name="arrprinciple"></a>  
 ## Arrangement of born-digital archives in principle  
@@ -198,3 +199,27 @@ To create SIPs with SIP Creator:
 * If desired, select the "Bag SIP" or "Run bulk_extractor" options. In most cases, leave these unchecked.  
 * When you are ready to start, press the "Create SIP" button. The process will begin working, and the Status bar should increment once when the SIP is created, and again when the description CSV has been generated. Be patient - for large SIPs, this can take some time. If you need to cancel the process at any time, you can use the "Cancel" button in the lower-right corner of the GUI.  
 * When the process is completed, the destination directory will contain a description CSV (containing pre-populated archival description for the SIPs) and a directory containing the newly generated SIP. From here, simply continue to describe the SIP in the spreadsheet (you may want to copy and paste this line into an existing spreadsheet so that there isn't a spreadsheet for every file) and rename the SIP directory with the following scheme: [identifier]---[accession number].  
+
+<a name="mannorm"></a>
+## Manual normalization for Archivematica
+
+There are instances where Archivematica will not automatically normalize files into their preservation formats. This primarily occurs in instances where a file type is not up to specification and not recognized by Siegfried, but still has the expected playback. (See the MP3s manipulated by Virtools software in AP167: ONL NSA Muscle project records for an example.) When this occurs, these file types will have to be manually normalized for preservation.
+
+* Create the SIP as usual.
+* In the *objects* folder, create a folder titled *manualNormalization*. 
+* In *manualNormalization*, create a folder titled *preservation*.
+* In *preservation*, manually recreate the directory structure beginning with the top directory. 
+* Normalize the file type(s) using the command line if possible. Save them to the directory in *preservation* that corresponds with their original directory.
+* Update the checksum.md5 file accordingly.
+
+The final directory structure of the SIP should look like: 
+
+* top directory 
+     * metadata
+     * objects
+          * top directory name (with objects)
+          * manualNormalization
+               * preservation
+                    * top directory name
+                         * recreated directory structure
+                              * preservation copies
