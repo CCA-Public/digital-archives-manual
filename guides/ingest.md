@@ -32,7 +32,7 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
 2. The Digital Archivist will copy the SIPs to the /mnt/incoming/transfers "staging area" on csp-arch-03 using rsync and schedule a time for ingest.  
 3. When it is time for ingest, the Digital Archivist will move the appropriate SIPs to the Automation Tools watched folder for ingest in batches of <50 SIPs at a time. Archivematica will then ingest each of the SIPs, one at a time.  
 4. QA the ingests, marking all information in an [Archivematica ingest spreadsheet](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/forms/amatica_ingest_spreadsheet.xlsx):  
-    * For each SIP, ensure that Transfer and Ingest completed successfully and that the AIP was stored.  
+    * For each SIP, ensure that Transfer and Ingest completed successfully and that the AIP was stored. Click “Archival storage” at the top of the Archivematica page, and ensure all of your SIPs are there. If they are listed, then they have successfully completed. 
     * For each SIP, add the following information to your Ingest spreadsheet:  
         * Identifier  
         * Accession  
@@ -44,7 +44,9 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
         * Standard QA (True/False)  
     * For every 5th SIP, conduct a more complete QA check. Verify the following and then put "True" in the Full QA column of the Ingest spreadsheet:  
         * Look at the normalization report and ensure that no files that should have been normalized for preservation failed.  
-        * Download the AIP and look at the METS file and ensure that descriptive metadata was written to the dmdSec.   
+        * Download the AIP and look at the METS file and ensure that descriptive metadata was written to the dmdSec with the typical Dublin Core metadata.
+        * You may also wish to use <a href="http://bitarchivist.pythonanywhere.com/">METSFlask</a> to examine the metadata. Upload the METS file, view the metadata for a given file, and confirm that the metadata has been written. Be sure to delete your file from the homepage when you have finished.
+   * You may have also received a number of Normalization Failure Report emails from Archivematica during ingest. In instances where the failed files have exit codes 0 or 2, these can be ignored. In instances where the failed file have exit code 1, it is worth confirming that the file type is actually normalized at CCA; if so, it may be worth investigating further.
 5. When Ingest and QA is complete, inform the Digital Archivist, save your ingest spreadsheet to the appropriate "Acquisition et traitement" folder, and delete the local copy of the SIPs from the BitCurator machine.  
 6. Create an object package for the files in TMS corresponding to the SIPs. Send an email to Deplacement requesting that each of the files in the object package be localized with the location "Dark archive", CCing the Digital Archivist.  
 
