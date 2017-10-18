@@ -224,9 +224,9 @@ Steps for imaging physical media with FTK Imager:
 <a name="fc5025"></a>  
 #### Disk imaging 5.25" floppy disks with FC5025  
 
-The [FC5025](http://www.deviceside.com/fc5025.html#swreq) is a 5.25" floppy controller that plugs into any computer's USB port and enables you to attach a 5.25" floppy drive. It comes with a disk image and browse tool program that allows you to access and to create image copies of digital material. There are two ways of using the FC5025 software for disk-imaging: from the GUI or from the command-line. Each of these options has its own pros and cons, depending on if you want to record the errors during the process or not.
+The [FC5025](http://www.deviceside.com/fc5025.html#swreq) is a 5.25" floppy controller that plugs into any computer's USB port and enables you to attach a 5.25" floppy drive. It comes with a disk image and browse tool program that allows you to access and create image copies of digital material. There are two ways of using the FC5025 software for disk-imaging: from the GUI or from the command-line. Each of these options has its own pros and cons, depending on if you want to record the errors during the process or not.
 
-Before starting processing, you first need to insert the floppy disk in the FC5025 drive with the correct side up, with the front – on which the labels are typically – pointing towards you. The write-unprotect notch should be on the left of the floppy disk when you place it with the label closer to you. Another way to make sure the disk is inserted correctly is to examine the disk sides and to identify the back side: you should be able to discern the folded portions on the back side of the plastic jacket. Once the disk is inserted, turn the knob clockwise to lock the floppy disk into the drive. The indicator light should turn on to green when the disk is being read in the drive. When the indicator light turns off, you can safely remove the disk from the drive by unlocking it first. 
+Before starting processing, you first need to insert the floppy disk in the FC5025 drive with the correct side up, with the front – on which the labels are typically – pointing towards you. The write-protect notch should be on the left of the floppy disk when you place it with the label closer to you. Another way to make sure the disk is inserted correctly is to examine the disk sides and to identify the back side: you should be able to discern the folded portions on the back side of the plastic jacket. Once the disk is inserted, turn the knob clockwise to lock the floppy disk into the drive. The indicator light should turn on to green when the disk is being read in the drive. When the indicator light turns off, you can safely remove the disk from the drive by unlocking it first. 
 
 ##### Disk-imaging from the GUI
 * Once the disk is inserted correctly, start the FC5025 software. A window shows up with four settings to configure: Source Drive, Disk Type, Output Image Directory, and Output Image Filename
@@ -250,7 +250,7 @@ The complete syntax for fcimage is as follows:
 fcimage.exe -f format outputfile 1> logfile 2>&1
 ```
 
-Following with our example, the command goes as :
+Following with our example, the command is :
 ```
 fcimage.exe -f msdos360 ARCH222229.img 1> ARCH222229.log 2>&1
 ```
