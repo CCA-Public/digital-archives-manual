@@ -234,7 +234,7 @@ Before starting processing, you first need to insert the floppy disk in the FC50
 * **Disk Type:** Selects the disk format of the disk you are currently reading from the device. If the disk type is not accurate, the disk simply won’t be read correctly or will not read at all. In order to set the disk type, you can select an option from the drop-down menu and test it first. Examine the label first in order to find any information that indicates the disk type. E.g. If you have a 360KB 5.25” floppy disk created in a DOS environment, select 'MS-DOS 360k'.  
 After selecting the disk type, click on 'Browse Disk Contents'. A new window shows up. If the disk type corresponds, the disk is read correctly and the file listing appears in the dialogue window. If the disk type does not correspond, a message indicates: “Unable to get file listing!”
 * **Output Image Directory:** Copy the path to the directory which will contain the disk image file.
-* **Output Image Filename:** Select a location and a name that describes best the content you are disk imaging, such as the identifier.
+* **Output Image Filename:** Select a location and a name that describes best the content you are disk imaging, such as the media's identifier.
 * **Capture Disk:** Click the 'Capture Disk Image File' button to begin operating the drive. Each read error is indicated in the progress display window. If there are multiple errors, they are usually displayed quickly on after the other, with each successive error erasing the one before it. This is one of the main inconveniences of using the GUI for disk-imaging. On the other side, we can keep track of the multiple read errors and keep a record of the disk-imaging process by using the command-line for disk imaging with FC5025. The following guidelines will show us how.
 
 ##### Disk-imaging from the command-line
@@ -255,7 +255,7 @@ Following with our example, the command goes as :
 fcimage.exe -f msdos360 ARCH222229.img 1> ARCH222229.log 2>&1
 ```
 
-* Once the command is completed, open your project folder and make sure everything is there. An .img file (your disk-image file) and a .log file (the recorded errors) should be found in the folder. 
+* Once the command is completed, open your project folder and make sure everything is there. You should have an .img file (your disk-image file) and a .log file (the recorded errors).
 
 <a name="rawingest"></a>
 ## Ingesting "raw" accession data into digital repository  
