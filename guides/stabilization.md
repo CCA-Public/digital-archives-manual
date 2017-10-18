@@ -222,9 +222,40 @@ Steps for imaging physical media with FTK Imager:
 * If all looks good, repeat this process with the next disk until all media has been imaged.  Once all media has been imaged, alert the Digital Archivist.    
 
 <a name="fc5025"></a>  
-## Disk imaging 5.25" floppy disks with FC5025  
+#### Disk imaging 5.25" floppy disks with FC5025  
 
-TEXT
+The [FC5025](http://www.deviceside.com/fc5025.html#swreq) is a 5.25" floppy controller that plugs into any computer's USB port and enables you to attach a 5.25" floppy drive. It comes with a disk image and browse tool program that allows you to access and to create image copies of digital material. There are two ways of using the FC5025 software for disk-imaging: from the GUI or from the command-line. Each of these options has its own pros and cons, depending on if you want to record the errors during the process or not.
+
+Before starting processing, you first need to insert the floppy disk in the FC5025 drive with the correct side up, with the front – on which the labels are typically – pointing towards you. The write-unprotect notch should be on the left of the floppy disk when you place it with the label closer to you. Another way to make sure the disk is inserted correctly is to examine the disk sides and to identify the back side: you should be able to discern the folded portions on the back side of the plastic jacket. Once the disk is inserted, turn the knob clockwise to lock the floppy disk into the drive. The indicator light should turn on to green when the disk is being read in the drive. When the indicator light turns off, you can safely remove the disk from the drive by unlocking it first. 
+
+##### Disk-imaging from the GUI
+* Once the disk is inserted correctly, start the FC5025 software. A window shows up with four settings to configure: Source Drive, Disk Type, Output Image Directory, and Output Image Filename
+* **Source Drive:** Should always indicate the FC5025 device. There shouldn’t be any other option available at this step.
+* **Disk Type:** Selects the disk format of the disk you are currently reading from the device. If the disk type is not accurate, the disk simply won’t be read correctly or will not read at all. In order to set the disk type, you can select an option from the drop-down menu and test it first. Examine the label first in order to find any information that indicates the disk type. E.g. If you have a 360KB 5.25” floppy disk created in a DOS environment, select 'MS-DOS 360k'.  
+After selecting the disk type, click on 'Browse Disk Contents'. A new window shows up. If the disk type corresponds, the disk is read correctly and the file listing appears in the dialogue window. If the disk type does not correspond, a message indicates: “Unable to get file listing!”
+* **Output Image Directory:** Copy the path to the directory which will contain the disk image file.
+* **Output Image Filename:** Select a location and a name that describes best the content you are disk imaging, such as the identifier.
+* **Capture Disk:** Click the 'Capture Disk Image File' button to begin operating the drive. Each read error is indicated in the progress display window. If there are multiple errors, they are usually displayed quickly on after the other, with each successive error erasing the one before it. This is one of the main inconveniences of using the GUI for disk-imaging. On the other side, we can keep track of the multiple read errors and keep a record of the disk-imaging process by using the command-line for disk imaging with FC5025. The following guidelines will show us how.
+
+##### Disk-imaging from the command-line
+ * On the disk-imaging workstation (DSK-065-14), open the command prompt from the Start menu. 
+ * **Recording errors:** If you need to record the standard output and the standard errors from your processing, you can use the fcimage command to direct the both to a log file. First, set the command prompt to the path of your project folder. Make sure you are located on the proper server:
+```
+cd Users\username\Desktop\ARCH222229
+```
+If the software tools were properly installed, you can call the command directly from the command-line. Otherwise, drag-and-drop the command .exe file into the command prompt. The executable file for the fcimage command  can be found at C:\Program Files (x86)\FC5025
+
+The complete syntax for fcimage is as follows: 
+```
+fcimage.exe -f format outputfile 1> logfile 2>&1
+```
+
+Following with our example, the command goes as :
+```
+fcimage.exe -f msdos360 ARCH222229.img 1> ARCH222229.log 2>&1
+```
+
+* Once the command is completed, open your project folder and make sure everything is there. An .img file (your disk-image file) and a .log file (the recorded errors) should be found in the folder. 
 
 <a name="rawingest"></a>
 ## Ingesting "raw" accession data into digital repository  
