@@ -19,7 +19,7 @@ The first step of processing archives (whether in digital or analog formats) is 
 * [Processing directories of files with Folder Processor](#folderprocessor)  
 * [Creating single SIPs from directories and files with SIP Creator](#sipcreator)  
 * [Manual normalization for Archivematica](#mannorm)
-* [Processing forward-migrated files] (#processfm)
+* [Processing forward-migrated files](#processfm)
 
 <a name="arrprinciple"></a>  
 ## Arrangement of born-digital archives in principle  
