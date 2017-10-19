@@ -18,7 +18,8 @@ The first step of processing archives (whether in digital or analog formats) is 
 * [Processing disk images with Disk Image Processor](#diskimageprocessor)  
 * [Processing directories of files with Folder Processor](#folderprocessor)  
 * [Creating single SIPs from directories and files with SIP Creator](#sipcreator)  
-* [Manual normalization for Archivematica](#mannorm) 
+* [Manual normalization for Archivematica](#mannorm)
+* [Processing forward-migrated files] (#processfm)
 
 <a name="arrprinciple"></a>  
 ## Arrangement of born-digital archives in principle  
@@ -223,3 +224,31 @@ The final directory structure of the SIP should look like:
                     * top directory name
                          * recreated directory structure
                               * preservation copies
+
+<a name="processfm"></a>
+## Processing forward-migrated files
+
+For exhibition, research and access purposes, some records which are part of the Archaeology of the Digital ensemble were migrated to a more recent version of their original format. These new versions of the records could be used as access copies, as they are easier to consult with the CCA’s existing equipment. Below are the guidelines allowing to retain these records and to provide access to them while preserving the link to their original versions.
+
+Gather the forward-migrated files into one top-level file folders corresponding to an existing file-level description. It is not necessary to recreate directories as the original structure will be provided by listing the file paths in the archival description. 
+
+Name the new file folder by using the reference number of its source and add FM (forward-migrated) at the end. For example, if the original folder is numbered AP222.S2.002, the folder containing its forward-migrated files will be identified as AP222.S2.002.FM. 
+SIPs may now be created with SIP Creator. Complete the SIP’s identification number with its related accession number: e.g. AP222.S2.002.FM---AR2020.0056
+
+If others files from the same original folder were to be forward-migrated, they should be gathered into a new top-level folder and be created along these guidelines. Reference numbers will be sequential, following this example: AP222.S2.002.FM1, AP222.S2.002.FM2, etc.
+
+A corresponding description record needs to be added in TMS. It will have a “child” relationship (“est inclus dans”) to its originating file-level description. It should also be related to the accession with “provient de”. Refer to the FILE descriptive standard for general guidance and to the following for more specific considerations:
+
+* Reference code (ISAD(G) 3.1.1)/Object Number:
+   * Duplicate original file reference number and add “FM”: e.g.:  AP222.S2.002.FM
+* Title (ISAD(G) 3.1.2)/Title:
+   * Follow titling guidelines for File-level description. Title must indicate the nature of files (i.e. they are forward-migrated versions). Title should include some level of detail about the formats whenever possible as to increase access to records. e.g. "Forward-migrated formZ 6 and 7 files for 3 of RUR digital working files"
+* Scope and content note (ISAD(G) 3.3.1)/Description du contenu:
+   * Detail and contextualize files which were migrated: list file paths of original file and indicate any specificity to new file versions if they do not appear in the processing spreadsheet. Refer to the original’s file description identification number.Add information about the migration process, if known: who, how, when and why.
+   e.g. "Files were migrated by a CCA collaborator in 2014 as part of the preparation for the Archeology of the Digital Complexity and Convention exhibit."
+* Physical characteristics and technical requirements (ISAD(G) 3.4.4)/Physical Description field:
+   * Indicate designated software for file access. e.g. “Files may be accessed using form*Z version 6 to 8.”
+   
+Finally, in the scope and content note for the folder with the original files (e.g. AP222.S2.002), indicate that the files have been migrated to a more recent software version and provide the folder titles for the forward-migrated files (e.g. AP222.S2.002.FM). List the forward-migrated files and their file paths, and indicate their software version.
+
+If the number of files would make this type of list difficult to include in TMS, the archivists should move the list to a log or readme file in the forward-migrated SIP.
