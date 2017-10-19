@@ -224,7 +224,7 @@ Steps for imaging physical media with FTK Imager:
 <a name="fc5025"></a>  
 #### Disk imaging 5.25" floppy disks with FC5025  
 
-The [FC5025](http://www.deviceside.com/fc5025.html#swreq) is a 5.25" floppy controller that plugs into any computer's USB port and enables you to attach a 5.25" floppy drive. It comes with a disk image and browse tool program that allows you to access and create image copies of digital material. There are two ways of using the FC5025 software for disk-imaging: from the GUI or from the command-line. Each of these options has its own pros and cons, depending on if you want to record the errors during the process or not.
+The [FC5025](http://www.deviceside.com/fc5025.html#swreq) is a 5.25" floppy controller that plugs into any computer's USB port and enables you to attach a 5.25" floppy drive. It comes with a disk image and browse tool program that allows you to access and create image copies of digital material. There are two ways of using the FC5025 software for disk-imaging: from the GUI or from the command-line. Each of these options has its own pros and cons: the GUI offers an instinctive, easy to use interface, whereas the command-line will allow you to capture the disk-imaging process by sending the standard output and the standard errors to a log file.
 
 Before starting processing, you first need to insert the floppy disk in the FC5025 drive with the correct side up, with the front – on which the labels are typically – pointing towards you. The write-protect notch should be on the left of the floppy disk when you place it with the label closer to you. Another way to make sure the disk is inserted correctly is to examine the disk sides and to identify the back side: you should be able to discern the folded portions on the back side of the plastic jacket. Once the disk is inserted, turn the knob clockwise to lock the floppy disk into the drive. The indicator light should turn on to green when the disk is being read in the drive. When the indicator light turns off, you can safely remove the disk from the drive by unlocking it first. 
 
@@ -239,7 +239,7 @@ After selecting the disk type, click on 'Browse Disk Contents'. A new window sho
 
 ##### Disk-imaging from the command-line
  * On the disk-imaging workstation (DSK-065-14), open the command prompt from the Start menu. 
- * **Recording errors:** If you need to record the standard output and the standard errors from your processing, you can use the fcimage command to direct the both to a log file. First, set the command prompt to the path of your project folder. Make sure you are located on the proper server:
+ * **Recording errors:** If you need to record the standard output and the standard errors from your processing, you can use the fcimage command to direct both of them to a log file. First, set the command prompt to the path of your project folder. Make sure you are located on the proper server:
 ```
 cd Users\username\Desktop\ARCH222229
 ```
