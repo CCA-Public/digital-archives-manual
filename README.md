@@ -31,8 +31,10 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
     * [Packaging SIPs for Archivematica](guides/arrangement.md/#packagingsips)  
     * [Processing disk images with Disk Image Processor](guides/arrangement.md/#diskimageprocessor)  
     * [Processing directories of files with Folder Processor](guides/arrangement.md/#folderprocessor)  
-    * [Creating single SIPs from directories and files with SIP Creator](guides/arrangement.md/#sipcreator)  
-* **[Description](guides/description.md)**  
+    * [Creating single SIPs from directories and files with SIP Creator](guides/arrangement.md/#sipcreator)
+    * [Manual normalization for Archivematica](guides/arrangement.md#mannorm)
+    * [Processing forward-migrated files](guides/arrangement.md#processfm)
+* **[Description](guides/description.md)**  
     * [Principles and practical guidelines for description of born-digital archives](guides/description.md/#descriptionprincipleandpractice)  
     * [Preferred terminology](guides/description.md/#terminology)  
     * [Fonds-, series-, and project-level description](guides/description.md/#higherlevel)  
@@ -52,8 +54,9 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
    * [Reading material](guides/resources.md/#readings)  
    * [Digital storage media identification and information](guides/resources.md/#media)  
    * [File format identification and information](guides/resources.md/#formats)  
-   * [Digital preservation tools](guides/resources.md/#tools)  
-   * [Preservation of computer-aided design](guides/resources.md/#cadpres)  
+   * [Digital preservation tools](guides/resources.md/#tools)
+   * [Scripting resources](guides/resources.md#scripting)
+   * [Preservation of computer-aided design](guides/resources.md/#cadpres)  
    * [General resources](guides/resources.md/#general)  
 
 <a name="processingintro"></a>  
