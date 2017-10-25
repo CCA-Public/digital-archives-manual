@@ -200,6 +200,6 @@ If Brunnhilde returns unidentified file types, it can be useful to submit them t
 2. Use the information from the spreadsheet to fill out the [PRONOM submission form](https://www.nationalarchives.gov.uk/contact-us/submit-information-for-pronom/pronom-request-form/). Be sure to tick the box stating that you have file samples, and include the hex signature for the new file type if you were able to identify one.
 3. Next, zip your file samples (2-3 total if possible) and submit them to PRONOM. This can be done in one of two ways:
     - If the zipped files are small enough to fit on an email, email David Clipsham (David.Clipsham@nationalarchives.gsi.gov.uk) and Paul Young (Paul.Young@nationalarchives.gsi.gov.uk) with the files.
-    - If the zipped files are too big, you can share the folder through the Cloud by making a request with IT. The request form is attached. Once it's filled out, it can be sent to IT (soutiens@cca.qc.ca).
+    - If the zipped files are too big, you can share the folder through the Cloud by making a request with IT. The request form is [here](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/cloud_share_request_form.pdf). Once it's filled out, it can be sent to IT (soutiens@cca.qc.ca).
 
 Once the request is processed, the file format will likely be included in the next update of PRONOM.
