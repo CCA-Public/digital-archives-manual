@@ -232,10 +232,23 @@ Before starting processing, you first need to insert the floppy disk in the FC50
 * Once the disk is inserted correctly, start the FC5025 software. A window shows up with four settings to configure: Source Drive, Disk Type, Output Image Directory, and Output Image Filename
 * **Source Drive:** Should always indicate the FC5025 device. There shouldn’t be any other option available at this step.
 * **Disk Type:** Selects the disk format of the disk you are currently reading from the device. If the disk type is not accurate, the disk simply won’t be read correctly or will not read at all. In order to set the disk type, you can select an option from the drop-down menu and test it first. Examine the label first in order to find any information that indicates the disk type. E.g. If you have a 360KB 5.25” floppy disk created in a DOS environment, select 'MS-DOS 360k'.  
-After selecting the disk type, click on 'Browse Disk Contents'. A new window shows up. If the disk type corresponds, the disk is read correctly and the file listing appears in the dialogue window. If the disk type does not correspond, a message indicates: “Unable to get file listing!”. Note that this feature is not available for all Disk Types.  
+After selecting the disk type, click on 'Browse Disk Contents'. A new window shows up. If the disk type corresponds, the disk is read correctly and the file listing appears in the dialogue window. 
+
+![FC5025](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/fc5025_03.JPG?raw=true)
+
+If the disk type does **not** correspond, a message indicates: “Unable to get file listing!”. Note that this feature is not available for all Disk Types.  
+
+![FC5025](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/fc5025_02.JPG?raw=true)
+
 * **Output Image Directory:** Copy the path to the directory which will contain the disk image file.
 * **Output Image Filename:** Select a location and a name that describes best the content you are disk imaging, such as the media's identifier.
+
+![FC5025](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/fc5025_01.JPG?raw=true)
+
 * **Capture Disk:** Click the 'Capture Disk Image File' button to begin operating the drive. Each read error is indicated in the progress display window. If there are multiple errors, they are usually displayed quickly on after the other, with each successive error erasing the one before it. This is one of the main inconveniences of using the GUI for disk-imaging. On the other side, we can keep track of the multiple read errors and keep a record of the disk-imaging process by using the command-line for disk imaging with FC5025. The following guidelines will show us how.
+
+![FC5025](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/fc5025_04.JPG?raw=true)
+
 
 ##### Disk-imaging from the command-line
  * On the disk-imaging workstation (DSK-065-14), open the command prompt from the Start menu. 
