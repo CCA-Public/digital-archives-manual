@@ -11,6 +11,7 @@ When an accession is to be processed, the Digital Archivist downloads the "raw" 
     * [Extracting files from images of Hierarchical File System (HFS) disks](#hfsfiles)  
 * [Extracting archives and reporting on logical files](#reporting)  
 * [Moving files to processing location](#moving)  
+* [Submitting files to PRONOM](#pronom)
 
 <a name="analysis"></a>
 ## Analyzing disk images with Disk Image Processor
@@ -189,3 +190,16 @@ If bulk_extractor is run with Brunnhilde, the resulting logs can be analyzed in 
 ## Moving files to processing location  
 
 Once the files are ready to be arranged and described and preliminary reporting has been completed, working copies of the files are moved to a folder in the Catalogers network share. These are temporary copies solely for consultation on CAD workstations and other networked computers at CCA. "Master" copies of SIPs should be kept in BitCurator in a directory in /mnt/1TB_RAID/ being worked on.
+
+<a name="pronom"></a>
+## Submitting file types to PRONOM
+
+If Brunnhilde returns unidentified file types, it can be useful to submit them to [PRONOM](http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatSearch.aspx?status=new), the file format registry that supports Siegfried. In order to do so: 
+
+1. Fill out a new line on the internal tracking sheet for CCA submissions to PRONOM. All fields are optional, as the amount of information you will have about each type of format will vary. The spreadsheet lives here: svrdata/CollectionCCA$/Archives/Archives numériques/Systems Development/PRONOM/PRONOM_FileFormatsSubmissions.xlsx
+2. Use the information from the spreadsheet to fill out the [PRONOM submission form](https://www.nationalarchives.gov.uk/contact-us/submit-information-for-pronom/pronom-request-form/). Be sure to tick the box stating that you have file samples, and include the hex signature for the new file type if you were able to identify one.
+3. Next, zip your file samples (2-3 total if possible) and submit them to PRONOM. This can be done in one of two ways:
+    - If the zipped files are small enough to fit on an email, email David Clipsham (David.Clipsham@nationalarchives.gsi.gov.uk) and Paul Young (Paul.Young@nationalarchives.gsi.gov.uk) with the files.
+    - If the zipped files are too big, you can share the folder through the Cloud by making a request with IT. The request form is attached. Once it's filled out, it can be sent to IT (soutiens@cca.qc.ca).
+
+Once the request is processed, the file format will likely be included in the next update of PRONOM.
