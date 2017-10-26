@@ -235,7 +235,7 @@ Steps:
 * Prior to creating the disk image, virus scan the media using ESET Endpoint Antivirus.
    * Open ESET Endpoint Antivirus
    * From the left side menu, select “Computer scan”, click on “Custom scan” and then select the media to begin virus scanning.
-   * If there are no viruses, proceed with the next step. If ESET finds viruses, stop, note the virus(es) encountered in the versement   stabilization spreadsheet, set the media aside and go to section [“Create a disk image of infected media”](#infected)
+   * If there are no viruses, proceed with the next step. If ESET finds viruses, stop, note the virus(es) encountered in the versement   stabilization spreadsheet, set the media aside and consult the Digital Archivist.
  
 2. Settings
 * Prior to disk imaging, go through the following settings, depending on the needs of your digital preservation project.
