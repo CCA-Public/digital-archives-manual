@@ -9,7 +9,8 @@ This guide describes CCA standards for accessioning and stabilizing born-digital
   * [Identifying and separating physical media in Collection](#idandremoval)  
   * [Disk imaging original physical media](#diskimaging)  
     * [Disk imaging with Guymager (Bitcurator)](#guymager)  
-    * [Disk imaging with FTK Imager](#ftkimager)  
+    * [Disk imaging with FTK Imager](#ftkimager)
+    * [Disk imaging with IsoBuster](#isobuster)
     * [Disk imaging 5.25" floppy disks with FC5025](#fc5025)
 * [Ingesting "raw" versement data into digital repository](#rawingest)  
 
@@ -179,10 +180,10 @@ Before starting to create disk images from an accession, create a folder in the 
 Steps for imaging physical media with FTK Imager:  
 
 * Prior to creating a disk image, virus scan the media using ESET:  
-  * Open ESET Endpoint Antivirus.  
-  * From the 'Analyse de l'ordinator' menu, click 'Analyse personnalisée' and then select the media to begin virus scanning.  
-  * If there are no viruses, proceed with the next step. If ESET finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside, and consult the Digital Archivist.  
-* Open FTK Imager.  
+ * Open ESET Endpoint Antivirus.  
+ * From the 'Analyse de l'ordinateur' menu, click 'Analyse personnalisée' and then select the media to begin virus scanning.  
+ * If there are no viruses, proceed with the next step. If ESET finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside, and consult the Digital Archivist.  
+ * Open FTK Imager.  
 
 ![FTK1](https://blogs.sans.org/computer-forensics/files/2009/06/ftkimager.png)  
 
@@ -221,12 +222,25 @@ Steps for imaging physical media with FTK Imager:
 * If the image is successfully created, go to your project folder in the Depot numérique folder and do a quick visual check that all looks good. You should see at least two files: the disk image(s) themselves (potentially split into several files with the same file name but extensions of .001, .002, etc.) and a '.txt' metadata file.  
 * If all looks good, repeat this process with the next disk until all media has been imaged.  Once all media has been imaged, alert the Digital Archivist.    
 
-<a name="fc5025"></a>  
+<a name="isobuster"></a>
+
+#### Disk imaging with IsoBuster
+
+[IsoBuster](https://www.isobuster.com/help/) is a Windows-based paid-for disk imaging tool produced by Smart Projects (managed by Peter Van Hove). At CCA, we use IsoBuster to create disk images for media which Guymager and FTK Imager are unable to image properly. Before moving on, make sure you are using the disk-imaging workstation (DSK-065-14). Create a project folder in the /Dépôt Numérique network folder in which you will save your work. Name this folder something memorable and meaningful, such as an accession number or other identifier.
+
+Steps:
+1. Virus scan 
+* Prior to creating the disk image, virus scan the media using ESET Endpoint Antivirus.
+  * Open ESET Endpoint Antivirus
+  * From the left side menu, select “Computer scan”, click on “Custom scan” and then select the media to begin virus scanning.
+  * If there are no viruses, proceed with the next step. If ESET finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside and go to section “Create a disk image of infected media”.
+
+<a name="fc5025"></a>  
 #### Disk imaging 5.25" floppy disks with FC5025  
 
 The [FC5025](http://www.deviceside.com/fc5025.html#swreq) is a 5.25" floppy controller that plugs into any computer's USB port and enables you to attach a 5.25" floppy drive. It comes with a disk image and browse tool program that allows you to access and create image copies of digital material. There are two ways of using the FC5025 software for disk-imaging: from the GUI or from the command-line. Each of these options has its own pros and cons: the GUI offers an instinctive, easy to use interface, whereas the command-line will allow you to capture the disk-imaging process by sending the standard output and the standard errors to a log file.
 
-Before starting processing, you first need to insert the floppy disk in the FC5025 drive with the correct side up, with the front – on which the labels are typically – pointing towards you. The write-protect notch should be on the left of the floppy disk when you place it with the label closer to you. Another way to make sure the disk is inserted correctly is to examine the disk sides and to identify the back side: you should be able to discern the folded portions on the back side of the plastic jacket. Once the disk is inserted, turn the knob clockwise to lock the floppy disk into the drive. The indicator light should turn on to green when the disk is being read in the drive. When the indicator light turns off, you can safely remove the disk from the drive by unlocking it first. 
+Before starting processing, you first need to insert the floppy disk in the FC5025 drive located in the disk-imaging workstation (DSK-065-14) with the correct side up, the front – on which the labels are typically – pointing towards you. The write-protect notch should be on the left of the floppy disk when you place it with the label closer to you. Another way to make sure the disk is inserted correctly is to examine the disk sides and to identify the back side: you should be able to discern the folded portions on the back side of the plastic jacket. Once the disk is inserted, turn the knob clockwise to lock the floppy disk into the drive. The indicator light should turn on to green when the disk is being read in the drive. When the indicator light turns off, you can safely remove the disk from the drive by unlocking it first. 
 
 ##### Disk-imaging from the GUI
 * Once the disk is inserted correctly, start the FC5025 software. A window shows up with four settings to configure: Source Drive, Disk Type, Output Image Directory, and Output Image Filename
