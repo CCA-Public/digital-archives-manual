@@ -211,7 +211,6 @@ There are instances where Archivematica will not automatically normalize files i
 * In *manualNormalization*, create a folder titled *preservation*.
 * In *preservation*, manually recreate the directory structure beginning with the top directory. 
 * Normalize the file type(s) using the command line if possible. Save them to the directory in *preservation* that corresponds with their original directory.
-* Update the checksum.md5 file accordingly.
 
 The final directory structure of the SIP should look like: 
 
@@ -224,6 +223,11 @@ The final directory structure of the SIP should look like:
                     * top directory name
                          * recreated directory structure
                               * preservation copies
+                              
+* Update the checksum.md5 file accordingly. In order to do this, delete the original checksum.md5 file in Top Directory/metadata. Open Terminal, and cd into this folder. Then run the following script to create a new manifest: 
+```
+md5deep -rl ../objects > checksum.md5
+```
 
 <a name="processfm"></a>
 ## Processing forward-migrated files
