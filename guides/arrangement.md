@@ -235,7 +235,7 @@ Gather the forward-migrated files into one top-level file folders corresponding 
 Name the new file folder by using the reference number of its source and add FM (forward-migrated) at the end. For example, if the original folder is numbered AP222.S2.002, the folder containing its forward-migrated files will be identified as AP222.S2.002.FM. 
 SIPs may now be created with SIP Creator. Complete the SIP’s identification number with its related accession number: e.g. AP222.S2.002.FM---AR2020.0056
 
-If others files from the same original folder were to be forward-migrated, they should be gathered into a new top-level folder and be created along these guidelines. Reference numbers will be sequential, following this example: AP222.S2.002.FM1, AP222.S2.002.FM2, etc.
+There may be instances where, in the future, another migration event will occur. In this instance, create a new SIP with the new forward-migrated files, and retain the old one. The numbering schema is as follows: AP222.S2.002.FM1, AP222.S2.002.FM2, etc.
 
 A corresponding description record needs to be added in TMS. It will have a “child” relationship (“est inclus dans”) to its originating file-level description. It should also be related to the accession with “provient de”. Refer to the FILE descriptive standard for general guidance and to the following for more specific considerations:
 
