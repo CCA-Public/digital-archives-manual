@@ -254,9 +254,9 @@ The detected media (CD/DVD, floppy disk) shows up at the top of the tree view. C
 
 ![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_06.PNG?raw=true)
 
-   * In the left pane, right-click on the Media icon. Under the option “Extract CD <Image>, select “RAW (.bin, .iso)”.
-  
- ![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_02.png?raw=true) 
+   * In the left pane, right-click on the Media icon. Under the option “Extract CD Image, select “RAW (.bin, .iso)”.
+
+![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_02.png?raw=true) 
  
    * A new window opens up, asking you where you want to save your image file. Select the project folder you have previously created in the /Dépôt Numérique network folder. Title the disk image by entering the disk's identifier without spaces and by replacing any colons with underscores (e.g.: DR2008:0016:346 becomes DR2008_0016_346).
    * In the “Save as type” menu, select the .iso extension.
@@ -310,8 +310,6 @@ The following guidelines may be useful if you encounter difficulties reading and
  
    * Depending on the results from the two previous analysis, you can either proceed to the extraction of the disk image or identify that the disk cannot be disk imaged in the versement stabilization spreadsheet. Follow Step 3 and 4 to extract disk image.
    * Identify the damaged media in the versement stabilization spreadsheet, specifying the accession level: were they scanned for viruses? Were they disk imaged? Was there any unreadable file? If you saved some analysis reports to your working folder, write their filename in the “Note” column of the versement stabilization spreadsheet.
-
-
 
 <a name="fc5025"></a>  
 #### Disk imaging 5.25" floppy disks with FC5025  
