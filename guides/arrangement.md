@@ -241,7 +241,7 @@ SIPs may now be created with SIP Creator. Complete the SIP’s identification nu
 
 There may be instances where, in the future, another migration event will occur. For example, a new software version may be released or CCA might obtain new software for previously unaccessible files. In this instance, create a new SIP with the new forward-migrated files, and retain the old one. The numbering schema is as follows: AP222.S2.002.FM1, AP222.S2.002.FM2, etc.
 
-A corresponding description record needs to be added in TMS. It will have a “child” relationship (“est inclus dans”) to its originating file-level description. It should also be related to the accession with “provient de”. Refer to the FILE descriptive standard for general guidance and to the following for more specific considerations:
+A corresponding description record needs to be added in TMS. It should be arranged alongside its originating file-level description (“est inclus dans” the same series or project). It should also be related to the accession with “provient de”. Refer to the FILE descriptive standard for general guidance and to the following for more specific considerations:
 
 * Reference code (ISAD(G) 3.1.1)/Object Number:
    * Duplicate original file reference number and add “FM”: e.g.:  AP222.S2.002.FM
