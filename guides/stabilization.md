@@ -226,19 +226,19 @@ Steps for imaging physical media with FTK Imager:
 
 #### Disk imaging with IsoBuster
 
-[IsoBuster](https://www.isobuster.com/help/) is a Windows-based paid-for disk imaging tool produced by Smart Projects (managed by Peter Van Hove). At CCA, we use IsoBuster to create disk images for media which Guymager and FTK Imager are unable to image properly. Before moving on, make sure you are using the disk-imaging workstation (DSK-065-14). Create a project folder in the /Dépôt Numérique network folder in which you will save your work. Name this folder something memorable and meaningful, such as an accession number or other identifier.
+[IsoBuster](https://www.isobuster.com/help/) is a Windows-based paid-for disk imaging tool produced by Smart Projects (managed by Peter Van Hove). At CCA, we use IsoBuster to create disk images for optical media which Guymager and FTK Imager are unable to image properly. Before moving on, make sure you are using the disk-imaging workstation (DSK-065-14) in the CCA Digital Lab. Create a project folder in the /Dépôt Numérique network folder in which you will save your work. Name this folder something memorable and meaningful, such as an accession number or an identification number.
 
 ##### Disk imaging 
 
 Steps:
 1. Virus scan 
 * Prior to creating the disk image, virus scan the media using ESET Endpoint Antivirus.
-   * Open ESET Endpoint Antivirus
-   * From the left side menu, select “Computer scan”, click on “Custom scan” and then select the media to begin virus scanning.
+   * Open ESET Endpoint Antivirus from the Start menu.
+   * From the left side menu, select “Computer scan”, click on “Custom scan” and then select the media to begin the virus scan.
    * If there are no viruses, proceed with the next step. If ESET finds viruses, stop, note the virus(es) encountered in the versement   stabilization spreadsheet, set the media aside and consult the Digital Archivist.
  
 2. Settings
-* Prior to disk imaging, go through the following settings, depending on the needs of your digital preservation project.
+* Prior to disk imaging, go through the following settings, depending on your needs for your digital preservation project.
    * **Cuesheet file** - Go to **Image files** under the Options menu. Under *Select when a cuesheet file will be created*, select **Always after a CD, DVD or BD image is created**.
    * **MD5 Checksum file** - Still under **Image files**, go to *Select when an MD5 checksum file will be created* and select **Always after an image is created**.
    * **Image File Size** - Still under **Image files**, go to *Image File Creation* and **uncheck** the *Split large Image Files to specified size* option.
@@ -246,23 +246,32 @@ Steps:
 3. Create a disk image
 * Start IsoBuster from the Start Menu.
 
-IsoBuster should automatically read the entire content of the disk and display a tree view of the files and the repositories on the left side column. If not, select the right option drive in the drop-down box below the menu. The message “No media present” shows up if there is no disk mounted to the drive. 
+IsoBuster automatically reads the entire content of the disk and displays a tree view of the repositories and the files on the left side column. If not, select the right option drive in the drop-down box below the menu. The message “No media present” shows up if there is no disk mounted to the drive. 
 
 ![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_01.PNG?raw=true)
 
-The detected media (CD/DVD, floppy disk) shows up at the top of the tree view. Click on the arrow left to the File System Icon (e.g. the green UDF icon named board2) in order to show the internal structure of the repositories. When you select a repository, its content shows up in the right pane. 
+The detected media (CD/DVD, floppy disk) shows up at the top of the tree view. Click on the arrow left to the File System Icon (e.g. the green UDF icon named board2 in the image below) in order to show the internal structure of the repositories. When you select a repository, its content shows up in the right pane. 
 
-   * In the left pane, right-click on the Media icon (here, we will click on CD). Under the option “Extract CD <Image>, select “RAW (.bin, .iso)”.
-   * A new window opens up, asking you where you want to save your image file. Select the project folder you have previously created in the /Dépôt Numérique network folder. Title the disk image by entering the disk's identifier without spaces and by replacing any colons (“:”) with underscores (“_”) (e.g.: DR2008:0016:346 becomes DR2008_0016_346).
+![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_06.PNG?raw=true)
+
+   * In the left pane, right-click on the Media icon. Under the option “Extract CD <Image>, select “RAW (.bin, .iso)”.
+  
+ ![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_02.png?raw=true) 
+ 
+   * A new window opens up, asking you where you want to save your image file. Select the project folder you have previously created in the /Dépôt Numérique network folder. Title the disk image by entering the disk's identifier without spaces and by replacing any colons with underscores (e.g.: DR2008:0016:346 becomes DR2008_0016_346).
    * In the “Save as type” menu, select the .iso extension.
+ 
+ ![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_03.PNG?raw=true)
+   
    * Click on “Save”. A new window pops up, showing the progress of the disk image extraction.
    * Once the extraction is done, IsoBuster will create a MD5 Checksum file.
  
  4. Verify disk image's contents
  
    * Once the disk imaging process is over, open the folder you created in the /Dépôt numérique network folder and make sure you have all the right components. You should have at least three files: the disk image file (.iso), a cuesheet file (.cue) and a checksum file (.md5)
-   * In order to verify the integrity of the disk image file, go back to IsoBuster and select Open Image File in the “File” toolbar menu. Then double-click on the cuesheet file (.cue) associated with your image file (.iso). The cue-sheet files (.cue) are commonly used and combined with optical disc image files to have a feel for the track layout of the CD, DVD, BD. Cue-sheet files are in fact text files, for which the actual CD data is always contained in a different file (.bin, .iso,…) So if you open a .cue file with IsoBuster, it will know the track layout of the image but will get the actual data from another file. This file’s name is also contained in the .cue file. 
-   * Verify that the repositories and files are all there, to ensure the integrity of the image file. If there is a red X sign beside some of the files, this means that those files have read errors and might not have been imaged correctly. In this case, you can repeat Step 3 and create a new disk image file. If the final results are still not satisfying, add a note to the versement stabilization spreadsheet.
+   * In order to verify the integrity of the disk image file, go back to IsoBuster and select Open Image File in the “File” toolbar menu. Then double-click on the cuesheet file (.cue) associated with your image file (.iso). 
+     * **NOTE:** The cue-sheet files (.cue) are commonly used and combined with optical disc image files to have a feel for the track layout of the CD, DVD, BD. Cue-sheet files are in fact text files, for which the actual CD data is always contained in a different file (.bin, .iso,…) So if you open a .cue file with IsoBuster, it will know the track layout of the image but will get the actual data from another file. This file’s name is also contained in the .cue file. 
+   * Verify that the repositories and files are all there, to ensure the integrity of the image file. If there is a red X sign beside some of the files, this means that those files have read errors and might not have been imaged correctly. Make a note to the versement stabilization spreadsheet.
    * Right-click on the media icon (CD), then in the MD5 Checksum file select “Verify this image file with existing MD5 Checksum file”. The message “The checksum matches with the image file” shows up if the disk image was extract successfully. Otherwise, “The checksum does NOT matches with the image file” appears.
 
 ##### Disk imaging an Audio-CD
