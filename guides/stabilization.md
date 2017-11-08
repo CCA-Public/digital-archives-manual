@@ -226,7 +226,7 @@ Steps for imaging physical media with FTK Imager:
 
 #### Disk imaging with IsoBuster
 
-[IsoBuster](https://www.isobuster.com/help/) is a Windows-based paid-for disk imaging tool produced by Smart Projects (managed by Peter Van Hove). At CCA, we use IsoBuster to create disk images for optical media which Guymager and FTK Imager are unable to image properly. Before moving on, make sure you are using the disk-imaging workstation (DSK-065-14) in the CCA Digital Lab. Create a project folder in the /Dépôt Numérique network folder in which you will save your work. Name this folder something memorable and meaningful, such as an accession number or an identification number.
+[IsoBuster](https://www.isobuster.com/help/) is a Windows-based paid-for disk imaging tool produced by Smart Projects (managed by Peter Van Hove). At CCA, we use IsoBuster to create disk images for optical media which Guymager and FTK Imager are unable to image properly. Before moving on, make sure you are using the disk-imaging workstation (DSK-065-14) in the CCA Digital Lab. Create a project folder in which you will save your work. Name this folder something memorable and meaningful, such as an accession or an identification number.
 
 ##### Disk imaging 
 
