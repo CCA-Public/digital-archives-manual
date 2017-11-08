@@ -346,16 +346,15 @@ If the disk type does **not** correspond, a message indicates: “Unable to get 
 ```
 cd Users\username\Desktop\ARCH222229
 ```
-If the software tools were properly installed, you can call the command directly from the command-line. Otherwise, drag-and-drop the command .exe file into the command prompt. The executable file for the fcimage command  can be found at C:\Program Files (x86)\FC5025
-
-The complete syntax for fcimage is as follows: 
+If the software tools were properly installed, you can call the command directly from the command-line. 
+The complete syntax for fcimage to disk image the media while exporting the log in a text file is as follows: 
 ```
-fcimage.exe -f format outputfile 1> logfile 2>&1
+fcimage -f format outputfile 1> logfile 2>&1
 ```
 
 Following with our example, the command is :
 ```
-fcimage.exe -f msdos360 ARCH222229.img 1> ARCH222229.log 2>&1
+fcimage -f msdos360 ARCH222229.img 1> ARCH222229.log 2>&1
 ```
 
 * Once the command is completed, open your project folder and make sure everything is there. You should have an .img file (your disk-image file) and a .log file (the recorded errors).
