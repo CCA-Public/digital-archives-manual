@@ -238,7 +238,7 @@ Steps:
    * If there are no viruses, proceed with the next step. If ESET finds viruses, stop, note the virus(es) encountered in the versement   stabilization spreadsheet, set the media aside and consult the Digital Archivist.
  
 2. Settings
-* Prior to disk imaging, go through the following settings, depending on your needs for your digital preservation project.
+* Prior to disk imaging, go through the following settings. You may need to change some settings, depending on your needs for your digital preservation project.
    * **Cuesheet file** - Go to **Image files** under the Options menu. Under *Select when a cuesheet file will be created*, select **Always after a CD, DVD or BD image is created**.
    * **MD5 Checksum file** - Still under **Image files**, go to *Select when an MD5 checksum file will be created* and select **Always after an image is created**.
    * **Image File Size** - Still under **Image files**, go to *Image File Creation* and **uncheck** the *Split large Image Files to specified size* option.
@@ -246,19 +246,19 @@ Steps:
 3. Create a disk image
 * Start IsoBuster from the Start Menu.
 
-IsoBuster automatically reads the entire content of the disk and displays a tree view of the repositories and the files on the left side column. If not, select the right option drive in the drop-down box below the menu. The message “No media present” shows up if there is no disk mounted to the drive. 
+IsoBuster automatically reads the entire content of the disk and displays a tree view of the repositories and files on the left side column. If not, select the right option drive in the drop-down box below the menu. The message “No media present” shows up if there is no disk mounted to the drive. 
 
 ![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_01.PNG?raw=true)
 
-The detected media (CD/DVD, floppy disk) shows up at the top of the tree view. Click on the arrow left to the File System Icon (e.g. the green UDF icon named board2 in the image below) in order to show the internal structure of the repositories. When you select a repository, its content shows up in the right pane. 
+The detected media (CD/DVD, floppy disk) shows up at the top of the tree view. Click on the arrow left to the File System Icon (e.g. the green UDF icon named 'board2' in the image below) in order to show the internal structure of the repositories. When you select a repository, its content shows up in the right pane. 
 
 ![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_06.PNG?raw=true)
 
-   * In the left pane, right-click on the Media icon. Under the option “Extract CD Image, select “RAW (.bin, .iso)”.
+   * In the left pane, right-click on the Media icon. Under the option <Extract CD Image>, select “RAW (.bin, .iso)”.
 
 ![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_02.png?raw=true) 
  
-   * A new window opens up, asking you where you want to save your image file. Select the project folder you have previously created in the /Dépôt Numérique network folder. Title the disk image by entering the disk's identifier without spaces and by replacing any colons with underscores (e.g.: DR2008:0016:346 becomes DR2008_0016_346).
+   * A new window opens up, asking you where you want to save your image file. Select the project folder you have previously created. Title the disk image by entering the disk's identifier without spaces and by replacing any colons with underscores (e.g.: DR2008:0016:346 becomes DR2008_0016_346).
    * In the “Save as type” menu, select the .iso extension.
  
  ![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_03.PNG?raw=true)
@@ -268,36 +268,35 @@ The detected media (CD/DVD, floppy disk) shows up at the top of the tree view. C
  
  4. Verify disk image's contents
  
-   * Once the disk imaging process is over, open the folder you created in the /Dépôt numérique network folder and make sure you have all the right components. You should have at least three files: the disk image file (.iso), a cuesheet file (.cue) and a checksum file (.md5)
+   * Once you've created a disk image, open your project folder and make sure you have all the right components. You should have at least three files: the disk image file (.iso), a cuesheet file (.cue) and a checksum file (.md5)
    * In order to verify the integrity of the disk image file, go back to IsoBuster and select Open Image File in the “File” toolbar menu. Then double-click on the cuesheet file (.cue) associated with your image file (.iso). 
-     * **NOTE:** The cue-sheet files (.cue) are commonly used and combined with optical disc image files to have a feel for the track layout of the CD, DVD, BD. Cue-sheet files are in fact text files, for which the actual CD data is always contained in a different file (.bin, .iso,…) So if you open a .cue file with IsoBuster, it will know the track layout of the image but will get the actual data from another file. This file’s name is also contained in the .cue file. 
-   * Verify that the repositories and files are all there, to ensure the integrity of the image file. If there is a red X sign beside some of the files, this means that those files have read errors and might not have been imaged correctly. Make a note to the versement stabilization spreadsheet.
-   * Right-click on the media icon (CD), then in the MD5 Checksum file select “Verify this image file with existing MD5 Checksum file”. The message “The checksum matches with the image file” shows up if the disk image was extract successfully. Otherwise, “The checksum does NOT matches with the image file” appears.
+     * **NOTE:** The cue-sheet files (.cue) are commonly used and combined with **optical disk image files** to have a feel for the track layout of the CD, DVD, BD. Cue-sheet files are in fact text files, for which the actual CD data is always contained in a different file (.bin, .iso,…) So if you open a .cue file with IsoBuster, it will know the track layout of the image but will get the actual data from another file. This file’s name is also contained in the .cue file. 
+   * Verify that the repositories and files are all there, to ensure the integrity of the image file. If there is a red X sign beside some of the files, those files have read errors and might not have been imaged correctly. 
+   * Right-click on the media icon (CD), then in the <MD5 Checksum file> select “Verify this image file with existing MD5 Checksum file”. The message “The checksum matches with the image file” confirms that the disk image corresponds to the data from the original media. 
 
 ##### Disk imaging an Audio-CD
 
 Audio-CDs don’t contain any data and thus, they have no file system. There’s neither data files nor folders on an Audio-CD, but audio tracks listed on a Table of Content (TOC).
    * Follow Steps 1 and 2
-   * Extract the content of each audio track in a WAVE file, an uncompressed audio format.
+   * Extract the content of each audio track in an uncompressed WAVE file.
    * Right-click on the media icon (CD), then under Extract CD <Content>, select “Extract Audio to Wave File (*.wav).
    * Once the extraction is completed, make sure the Wave files are in the current working folder and rename it/them using the media’s accession number (e.g. DR2008_0016_264.wav). If you have multiple tracks, add track number at the end of the title (e.g.: DR2008_0016_264_01; DR2008_0016_264_02). 
-   * The folder should only contain a series of Wave files.
-   * Identify the Audio-CDs in the versement stabilization spreadsheet.
+   * Flag the Audio-CDs in the versement stabilization spreadsheet.
  
  ##### Disk imaging a DVD-R 
    * Go through Steps 1 and 2.
-   * Using the File Size adjustment setting, IsoBuster allows us to avoid fractioning a larger file – like the contents of a DVD – into multiple smaller image files.
+   * Using the File Size adjustment setting, IsoBuster avoids fractioning large image files – like the contents of a DVD – into multiple smaller image files.
    * In the left side pannel, right-click on the media icon (DVD+R). Under “Extract DVD+R <Image>, select “User Data (.tao, .bin, .iso)”. DVDs only have one type of blocks, that contains user data only (there’s no such thing as a RAW DVD). Under “Extract DVD+R <Image>, the RAW and RAW2User options have been greyed out. Select “User Data (.tao, .bin, .iso)” to start the disk imaging process.
-   * Enter the network location of your current work folder in the /Dépôt numérique shared network folder.
-   * Enter the media’s identifier (with no spaces) as the image filename, replacing any colons(“:”) with underscores(“_”). (e.g.: DR2008:0016:346 becomes DR2008_0016_346)
+   * Enter the path of your current project folder.
+   * Use the media’s identifier as the image filename, replacing any colons(“:”) with underscores(“_”). (e.g.: DR2008:0016:346 becomes DR2008_0016_346)
    * Select the extension .iso in the “Save as type” menu.
    * Click on “Save”. A new window will pop-up, showing the progress of the disk image extraction.
    * Once the extraction is completed successfully, will create an MD5 Checksum file
    * Follow Step 3 to verify the integrity of the disk image file.
-   * Identify the DVD+R in the versement stabilization spreadsheet.
+   * Flag the DVDs in the versement stabilization spreadsheet.
 
 ##### Disk imaging damaged media 
-The following guidelines may be useful if you encounter difficulties reading and/or disk imaging media. It is not guaranteed that it will get you out of trouble, but it can surely help you document the present state of the digital material you are preserving. Make sure you consult the Digital Archivist prior to accessioning damaged digital media. 
+The following guidelines may be useful if you encounter difficulties reading and/or disk imaging media. It will not get you out of trouble, but it can surely help you document the current condition of the digital material you are preserving. Make sure you consult the Digital Archivist prior to accessioning damaged digital media. 
    * Go through Steps 1 and 2. If the disk you are working with has many bad sectors, you might not be able to complete an antivirus scan
    * In the left-side panel, right-click on the Media Icon (CD/DVD+R) and select “Perform a surface scan”.
    * After the scan is done, IsoBuster gives you more information on the state of your disk. If everything’s good, the message “No physical errors encountered. Your disc is still in good shape” will show up. Otherwise, IsoBuster generates a report showing you the readability of the disk (in percentage). 
@@ -309,7 +308,7 @@ The following guidelines may be useful if you encounter difficulties reading and
  ![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_10.PNG?raw=true)
  
    * Depending on the results from the two previous analysis, you can either proceed to the extraction of the disk image or identify that the disk cannot be disk imaged in the versement stabilization spreadsheet. Follow Step 3 and 4 to extract disk image.
-   * Identify the damaged media in the versement stabilization spreadsheet, specifying the accession level: were they scanned for viruses? Were they disk imaged? Was there any unreadable file? If you saved some analysis reports to your working folder, write their filename in the “Note” column of the versement stabilization spreadsheet.
+   * Identify the damaged media in the versement stabilization spreadsheet, including as much details as you can about the actual condition of the media. Write the errors logs filenames in the “Note” column of the versement stabilization spreadsheet for further reference.
 
 <a name="fc5025"></a>  
 #### Disk imaging 5.25" floppy disks with FC5025  
@@ -357,7 +356,7 @@ Following with our example, the command is :
 fcimage -f msdos360 ARCH222229.img 1> ARCH222229.log 2>&1
 ```
 
-* Once the command is completed, open your project folder and make sure everything is there. You should have an .img file (your disk-image file) and a .log file (the recorded errors).
+* Once the command is completed, open your project folder and make sure everything is there. You should have an .img file (your disk image file) and a .log file (the recorded errors).
 
 <a name="rawingest"></a>
 ## Ingesting "raw" accession data into digital repository  
