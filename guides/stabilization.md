@@ -226,7 +226,9 @@ Steps for imaging physical media with FTK Imager:
 
 #### Disk imaging with IsoBuster
 
-[IsoBuster](https://www.isobuster.com/help/) is a Windows-based proprietary disk imaging tool produced by Smart Projects (managed by Peter Van Hove). At CCA, we use IsoBuster to create disk images for optical media which Guymager and FTK Imager are unable to image properly. Before moving on, make sure you are using the disk-imaging workstation (DSK-065-14) in the CCA Digital Lab. Create a project folder in which you will save your work. Name this folder something memorable and meaningful, such as an accession or an identification number.
+[IsoBuster](https://www.isobuster.com/help/) is a Windows-based proprietary disk imaging tool produced by Smart Projects (managed by Peter Van Hove). At CCA, we use IsoBuster to create disk images for particular types of optical media - mostly DVDs, Audio-CDs, and optical media containing more than 1024MB of data - and as a tool for documenting the current condition of damaged media. 
+
+Before moving on to the disk imaging process, make sure you are using the disk-imaging workstation (DSK-065-14) in the CCA Digital Lab. Create a project folder in which you will save your work. Name this folder something memorable and meaningful, such as an accession or an identification number.
 
 ##### Disk imaging 
 
@@ -283,9 +285,9 @@ Audio-CDs don’t contain any data and thus, they have no file system. There’s
    * Once the extraction is completed, make sure the Wave files are in the current working folder and rename it/them using the media’s accession number (e.g. DR2008_0016_264.wav). If you have multiple tracks, add track number at the end of the title (e.g.: DR2008_0016_264_01; DR2008_0016_264_02). 
    * Flag the Audio-CDs in the versement stabilization spreadsheet.
  
- ##### Disk imaging a DVD-R 
+ ##### Disk imaging a DVD
    * Go through Steps 1 and 2.
-   * Using the File Size adjustment setting, IsoBuster avoids fractioning large image files – like the contents of a DVD – into multiple smaller image files.
+   * Using the File Size adjustment setting, IsoBuster avoids fractioning large image files – like the contents of a DVD – into multiple smaller image files. If you have a DVD or any piece of media containing more than 1024MB of data, you might want to use IsoBuster instead of FTK Imager. The later will fraction any large image file into smaller 1024MB image files.
    * In the left side pannel, right-click on the media icon (DVD+R). Under “Extract DVD+R <Image>, select “User Data (.tao, .bin, .iso)”. DVDs only have one type of blocks, that contains user data only (there’s no such thing as a RAW DVD). Under “Extract DVD+R <Image>, the RAW and RAW2User options have been greyed out. Select “User Data (.tao, .bin, .iso)” to start the disk imaging process.
    * Enter the path of your current project folder.
    * Use the media’s identifier as the image filename, replacing any colons(“:”) with underscores(“_”). (e.g.: DR2008:0016:346 becomes DR2008_0016_346)
