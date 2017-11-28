@@ -202,7 +202,7 @@ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator mac
 <a name="dcmetadata"></a>  
 ## Adding descriptive metadata to the AIP  
 
-CCA adds descriptive metadata to every AIP to aid in discoverability and re-use of data. In most cases, metadata will be entered automatically during the ingest process using [Automation Tools](https://github.com/artefactual/automation-tools) and [add-tms-metadata.py](https://github.com/timothyryanwalsh/cca-scripts/blob/master/add_tms_metadata.py). CCA's local standards for metadata entry are as follows:  
+CCA adds descriptive metadata to every AIP to aid in discoverability and re-use of data. In most cases, metadata will be entered automatically during the ingest process using [Automation Tools](https://github.com/artefactual/automation-tools) and [add-tms-metadata.py](https://github.com/timothyryanwalsh/cca-scripts/blob/master/archivematica/add_tms_metadata.py). CCA's local standards for metadata entry are as follows:  
 
 | Field | Value |  
 | ----- | ----- |  
