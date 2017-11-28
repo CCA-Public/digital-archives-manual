@@ -13,6 +13,10 @@
 
 Fixity checks of all AIPs are conducted on a bi-annual (twice a year) basis using the [Fixity](https://github.com/artefactual/fixity) application. Fixity's `scanall` function is run via the `run-fixity-scanall.sh` bash script on the Storage Service VM. Logs are saved on the Archivematica Storage Service server and results are emailed to Storage Service administrators. Regular timing of these fixity checks is still to be determined with IT; for now they are run manually.
 
+When starting a fixity check manually, use nohup to ensure that the process runs to completion in the background, even if your terminal session ends:  
+
+`nohup sudo ./run-fixity-scanall.sh &`
+
 When AIP corruption is detected, the AIP is restored from backups according to the Storage Service's [Recovery](https://www.archivematica.org/en/docs/storage-service-0.10/recovery/#recovery) procedures.  
 
 <a name="flushing"></a>
