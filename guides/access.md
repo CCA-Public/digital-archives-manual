@@ -8,7 +8,14 @@
 <a name="dipdefinition"></a>  
 ## Definition of CCA-style DIPs  
 
-Description to come.
+CCA-style DIPs take the following form:
+
+`[transfer name]_[AIP UUID]_DIP` (top directory)
+  * DIP METS file (describes contents of DIP)  
+  * `objects` directory  
+    * `[transfer name].zip`
+
+The zip file in the `objects` directory contains a copy of all original files included in the transfer - with filenames and last modified dates restored to their original values - as well as a copy of the AIP's `submissionDocumentation` directory and the AIP METS file.  
 
 <a name="dipcreation"></a>  
 ## Creating CCA-style DIPs  
