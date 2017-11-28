@@ -1,11 +1,12 @@
 # Administration
 
 * [Fixity checking and repair](#fixity)  
-* [Dropping MySQL and ES data in pipelines](#flushing)
-* [Reindexing AIPs in Archival Storage indexes](#reindexing)
+* [Dropping MySQL and ES data in pipelines](#flushing)  
+* [Reindexing AIPs in Archival Storage indexes](#reindexing)  
+* [Clearing space when local disk is nearly full](#clearingspace)  
 * [Restarting services](#restarting)  
 * [Log of changes to default Archivematica FPR](#fprchanges)  
-* [Archivematica configuration settings](#configsettings)
+* [Archivematica configuration settings](#configsettings)  
 
 <a name="fixity"></a>  
 ## Fixity checking and repair  
@@ -18,6 +19,8 @@ When AIP corruption is detected, the AIP is restored from backups according to t
 ## Dropping MySQL and ES data in pipelines  
 
 We will periodically drop the Elasticsearch indexes and rows from the MySQL databases on each of the processing pipelines to minimize resource drain and keep performance quick. This should be done every few months and only after all ingests have been successfully QAed.  
+
+When the ES index is dropped, backups and logs from `/srv/am-est-backups` and `/var/log/elasticsearch` may also be deleted. This will help to save space on the local disk.
 
 <a name="reindexing"></a>
 ## Reindexing AIPs Archival Storage indexes  
@@ -32,6 +35,14 @@ Before using the scripts:
 * Clone the `archivematica-devtools repo` to your home folder on the pipeline server  
 * Change paths in the scripts to point to correct locations  
 
+<a name="clearingspace"></a>
+## Clearing space when local disk is nearly full  
+
+When local disk space on one of the Archivematica pipelines is almost full, IT will send an alert. To clear space, you may delete some logs and well as older MySQL and Elasticsearch backups, namely:  
+
+* `/srv/am-db-backups`: Keep latest backup; all others can be deleted  
+* `/srv/am-es-backups`: Keep latest backup (check file size to ensure it's a real backup); all others can be deleted  
+* `/var/log/elasticsearch`: Delete any logs more than a month old  
 
 <a name="restarting"></a>  
 ## Restarting services
