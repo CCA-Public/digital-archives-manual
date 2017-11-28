@@ -55,6 +55,7 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
     * [Fixity checking and repair](guides/administration.md/#fixity)   
     * [Dropping MySQL and ES data in pipelines](guides/administration.md/#flushing)  
     * [Reindexing AIPs in Archival Storage indexes](guides/administration.md/#reindexing)  
+    * [Clearing space when local disk is nearly full](guides/administration.md/#clearingspace)  
     * [Restarting services](guides/administration.md/#restarting)  
     * [Log of changes to default Archivematica FPR](guides/administration.md/#fprchanges)  
     * [Archivematica configuration settings](guides/administration.md/#configsettings)  
