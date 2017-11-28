@@ -46,9 +46,18 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
     * [Archivematica processing configurations](guides/ingest.md/#processingconfigs)
     * [Adding descriptive metadata to the AIP](guides/ingest.md/#dcmetadata)  
     * [CCA file format policies](guides/ingest.md/#fileformatpolicies)  
-* **[Ongoing activities](guides/ongoing.md)**  
-    * [Fixity checks](guides/ongoing.md/#fixity)  
-    * [Access](guides/ongoing.md/#access)  
+* **[DIP Generation and Access](guides/access.md)**  
+    * [Definition of CCA-style DIPs](guides/access.md/#dipdefinition)  
+    * [Creating CCA-style DIPs](guides/access.md/#dipcreation)  
+    * [Current access workflow](guides/access.md/#accessworkflow)  
+    * [Access plans](guides/access.md/#accessplans)  
+* **[Administration](guides/administration.md)**  
+    * [Fixity checking and repair](guides/administration.md/#fixity)   
+    * [Dropping MySQL and ES data in pipelines](guides/administration.md/#flushing)  
+    * [Reindexing AIPs in Archival Storage indexes](guides/administration.md/#reindexing)  
+    * [Restarting services](guides/administration.md/#restarting)  
+    * [Log of changes to default Archivematica FPR](guides/administration.md/#fprchanges)  
+    * [Archivematica configuration settings](guides/administration.md/#configsettings)  
 * **[CAD, BIM, and 3D modeling software/file formats](guides/cadformats.md)**  
 * **[Additional resources](guides/resources.md)**  
    * [Reading material](guides/resources.md/#readings)  
