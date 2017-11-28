@@ -119,7 +119,7 @@ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator mac
 | Store AIP location | "DARK_ARCHIVE_001 aipstore"*** |
 | Store DIP location | "None" |  
 
-*** *Note: Each DARK_ARCHIVE_xxx AIP location is 5TB in size. We will fill these sequentually; meaning that when the current bucket is full, this should be changed to "DARK_ARCHIVE_002" and so on as necessary.*
+** *Note: Each DARK_ARCHIVE_xxx AIP location is 5TB in size. We will fill these sequentually; meaning that when the current bucket is full this should be changed to "DARK_ARCHIVE_002", then "DARK_ARCHIVE_003", and so on.*
 
 <a name="processedingestconfig"></a>  
 ### Configuration for ingest of "processed" data (Pipeline 2 default)  
