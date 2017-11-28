@@ -31,7 +31,7 @@ In addition to supporting fileservers, CCA's Archivematica infrastructure runs o
 | VSP-AMPL-01 | Storage Service | The Storage Service manages storage, indexing, and retrieval of Archival Information Packages (AIPs) and conducts fixity checks of the AIP store. |
 
 <a name="ingestmethods"></a>  
-## Methods for ingesting digital archives into Archivematica  
+## Archivematica ingest workflows 
 
 There are two primary methods for ingesting data into Archivematica at CCA: using [Automation Tools](https://github.com/artefactual/automation-tools) or manually through the Archivematica web dashboard.  
 
@@ -90,7 +90,7 @@ Alternatively, transfers may be started and monitored from within the web dashbo
 
 When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator machines, all SIPs are named with the scheme [identifier]---[accession number], and data entry for all SIPs has been completed in TMS, advise the Digital Archivist that you are ready to move on to the Ingest phase of the project and then copy the SIPs to /mnt/incoming/transfers on the appropriate Pipeline using the "send_to_archivematica.py" script.
 
-<a name="processingconfigs">  
+<a name="processingconfigs"></a>
 ## Archivematica processing configurations  
 
 <a name="rawingestconfig"></a>  
