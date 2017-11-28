@@ -115,8 +115,10 @@ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator mac
 | Delete packages after extraction | "No" |
 | Select compression algorithm | "Uncompressed" |
 | Select compression level | "5 - normal compression mode" |
-| Store AIP location | yes | "DARK_ARCHIVE_001 aipstore" (for now; each DARK_ARCHIVE bucket is 5TB; will fill them sequentually) |
+| Store AIP location | yes | "DARK_ARCHIVE_001 aipstore"*** |
 | Store DIP location | "None" |  
+
+*** *Each DARK_ARCHIVE_xxx AIP location is 5TB in size. We will fill these sequentually; meaning that when the current bucket is full, this should be changed to "DARK_ARCHIVE_002" and so on as necessary.*
 
 <a name="processedingestconfig"></a>  
 ### Configuration for ingest of "processed" data (Pipeline 2 default)  
@@ -140,7 +142,7 @@ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator mac
 | Delete packages after extraction | "Yes" |
 | Select compression algorithm | "Uncompressed" |
 | Select compression level | "5 - normal compression mode" |
-| Store AIP location | yes | "DARK_ARCHIVE_001 aipstore" (for now; each DARK_ARCHIVE bucket is 5TB; will fill them sequentually) |
+| Store AIP location | yes | "DARK_ARCHIVE_001 aipstore"*** |
 | Store DIP location | "None" |   
 
 *Note: CCA creates DIPs from our AIPs through the [create_dip.py](https://github.com/artefactual/automation-tools/blob/dev/aip2dip/aips/create_dip.py) script rather than through the standard Archivematica "Normalization for access" option.*  
@@ -169,7 +171,7 @@ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator mac
 | Delete packages after extraction | "Yes" |
 | Select compression algorithm | "Uncompressed" |
 | Select compression level | "5 - normal compression mode" |
-| Store AIP location | yes | "DARK_ARCHIVE_001 aipstore" (for now; each DARK_ARCHIVE bucket is 5TB; will fill them sequentually) |
+| Store AIP location | yes | "DARK_ARCHIVE_001 aipstore"*** |
 | Store DIP location | "None" |   
 
 <a name="metadatareingestconfig"></a>  
@@ -196,7 +198,7 @@ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator mac
 | Delete packages after extraction | "Yes" |
 | Select compression algorithm | "Uncompressed" |
 | Select compression level | "5 - normal compression mode" |
-| Store AIP location | yes | "DARK_ARCHIVE_001 aipstore" (for now; each DARK_ARCHIVE bucket is 5TB; will fill them sequentually) |
+| Store AIP location | yes | "DARK_ARCHIVE_001 aipstore"*** |
 | Store DIP location | "None" |   
 
 <a name="dcmetadata"></a>  
