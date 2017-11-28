@@ -115,7 +115,7 @@ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator mac
 | Delete packages after extraction | "No" |
 | Select compression algorithm | "Uncompressed" |
 | Select compression level | "5 - normal compression mode" |
-| Store AIP | yes |
+| Store AIP | "Yes" |
 | Store AIP location | "DARK_ARCHIVE_001 aipstore"*** |
 | Store DIP location | "None" |  
 
@@ -143,7 +143,7 @@ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator mac
 | Delete packages after extraction | "Yes" |
 | Select compression algorithm | "Uncompressed" |
 | Select compression level | "5 - normal compression mode" |
-| Store AIP | yes |
+| Store AIP | "Yes" |
 | Store AIP location | "DARK_ARCHIVE_001 aipstore"*** |
 | Store DIP location | "None" |   
 
@@ -173,7 +173,7 @@ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator mac
 | Delete packages after extraction | "Yes" |
 | Select compression algorithm | "Uncompressed" |
 | Select compression level | "5 - normal compression mode" |
-| Store AIP | yes |
+| Store AIP | "Yes" |
 | Store AIP location | "DARK_ARCHIVE_001 aipstore"*** |
 | Store DIP location | "None" |   
 
@@ -201,7 +201,7 @@ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator mac
 | Delete packages after extraction | "Yes" |
 | Select compression algorithm | "Uncompressed" |
 | Select compression level | "5 - normal compression mode" |
-| Store AIP | yes |
+| Store AIP | "Yes" |
 | Store AIP location | "DARK_ARCHIVE_001 aipstore"*** |
 | Store DIP location | "None" |   
 
