@@ -17,7 +17,7 @@ When starting a fixity check manually, use nohup to ensure that the process runs
 
 `nohup sudo ./run-fixity-scanall.sh &`
 
-When AIP corruption is detected, the AIP is restored from backups according to the Storage Service's [Recovery](https://www.archivematica.org/en/docs/storage-service-0.10/recovery/#recovery) procedures.  
+When AIP corruption is detected, notify IT and restore the AIP from backups according to the Storage Service's [Recovery](https://www.archivematica.org/en/docs/storage-service-0.10/recovery/#recovery) procedures.  
 
 <a name="flushing"></a>
 ## Dropping MySQL and ES data in pipelines  
