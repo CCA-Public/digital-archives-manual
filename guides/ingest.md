@@ -53,7 +53,7 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
   * All SIPs are named with the scheme [identifier]---[accession number]
   * Data entry for all SIPs has been completed in TMS  
 2. Copy the SIPs to Pipeline 2 using the "send_to_archivematica.py" script with option "--pipeline 2".  This will move the SIPs to the /mnt/incoming/transfers location on the Pipeline 2 VM.
-    * Example of command in terminal, where the script is located on the Desktop:
+    * Example of command in terminal, where the script is located on the Desktop and all SIPs are placed in a top-level directory:
      '/home/bcadmin/Desktop/send_to_archivematica.py' --pipeline 2 '/mnt/1TB_RAID/AP194_Bettum/SIP'
 3. Alert the Digital Archivist that your SIPs are ready for ingest.  
 4. When the pipeline is clear, the Digital Archivist will move the appropriate SIPs to the Automation Tools watched folder for ingest in batches of <50 SIPs at a time. Archivematica will then ingest each of the SIPs, one at a time.  
