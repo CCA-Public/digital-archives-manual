@@ -48,7 +48,7 @@ Each storage location configured in the Storage Service is 5 TB in size (this wa
 *These instructions will be updated when sponsored development around DIP creation workflow is complete*
 
 Steps to add a new location:  
-1. Ensure directory to add is mounted on Storage Service VM and pipeline VMs (ask sysadmin if this is not true).  
+1. Ensure directory to add is mounted on Storage Service VM (read/write) and pipeline VMs (read-only). Ask CCA sysadmin to configure this if not true.    
 2. Configure as a storage space in the Storage Service GUI.  
 3. Set as default value in appropriate pipelines.  
 4. Update defaultProcessingMCP files with new Store AIP location in Automation Tools.  
