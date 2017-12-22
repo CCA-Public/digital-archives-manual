@@ -3,6 +3,7 @@
 * [Fixity checking and repair](#fixity)  
 * [Dropping MySQL and ES data in pipelines](#flushing)  
 * [Reindexing AIPs in Archival Storage indexes](#reindexing)  
+* [Adding new storage locations](#locations)  
 * [Clearing space when local disk is nearly full](#clearingspace)  
 * [Restarting services](#restarting)  
 * [Log of changes to default Archivematica FPR](#fprchanges)  
@@ -38,6 +39,20 @@ The Pythons script `rebuild-aip-index.py` allows you to specify the UUIDs of the
 Before using the scripts:  
 * Clone the `archivematica-devtools` repo to your home folder on the pipeline server  
 * Change paths in the scripts to point to correct locations  
+
+<a name="locations"></a>  
+## Adding new storage locations  
+
+Each storage location configured in the Storage Service is 5 TB in size (this was done in order to make backups manageable for IT). As storage locations will, new locations will need to be added to the Storage Service and assigned as the default values for pipelines. **Locations should contain only AIPs for which DIPs will be produced (e.g. processed digital archives) or AIPs for which DIPs will not be produced (e.g. digitization masters), not mixed.**
+
+*These instructions will be updated when sponsored development around DIP creation workflow is complete*
+
+Steps to add a new location:  
+1. Ensure directory to add is mounted on Storage Service VM and pipeline VMs (ask sysadmin if this is not true).  
+2. Configure as a storage space in the Storage Service GUI.  
+3. Set as default value in appropriate pipelines.  
+4. Update defaultProcessingMCP files with new Store AIP location in Automation Tools.  
+5. (If new storage location will contain AIPs for which we want to generate DIPs) Add storage location as place to check for DIP workflow script.
 
 <a name="clearingspace"></a>
 ## Clearing space when local disk is nearly full  
