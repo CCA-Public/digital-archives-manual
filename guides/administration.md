@@ -34,7 +34,7 @@ To re-index an AIP in an Archival Storage index on a given pipeline, you can use
 
 The bash script `reindex-aip.sh` reindexes an AIP using the [Archivematica devtools](https://github.com/artefactual/archivematica-devtools).
 
-The Pythons script `rebuild-aip-index.py` allows you to specify the UUIDs of the AIPs you would like to index by adding them as strings to the list "aip_list", then calls `reindex-aip.sh` for each of the AIPs.
+The Python script `rebuild-aip-index.py` allows you to specify the UUIDs of the AIPs you would like to index by adding them as strings to the list "aip_list", then calls `reindex-aip.sh` for each of the AIPs.
 
 Before using the scripts:  
 * Clone the `archivematica-devtools` repo to your home folder on the pipeline server  
