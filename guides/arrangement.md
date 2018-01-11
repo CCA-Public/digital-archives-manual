@@ -228,6 +228,9 @@ The final directory structure of the SIP should look like:
 ```
 md5deep -rl ../objects > checksum.md5
 ```
+In some cases after ingest, the Archivematica report for the manually normalized SIP will have a status of "failed" for "Relate manual normalized preservation files to the original files." According to Archivematica, this occurs when two or more files have the same name. In practice, it also often occurs when there are a large number of files in a SIP or if the SIP has a complicated directory hierarchy. 
+
+To resolve the error, create a normalization.csv spreadsheet following the guidelines <a href="https://www.archivematica.org/en/docs/archivematica-1.6/user-manual/ingest/manual-normalization/#normalizing-files-with-the-same-name">here</a>, update the checksum, and reingest the SIP. 
 
 <a name="processfm"></a>
 ## Processing forward-migrated files
