@@ -3,6 +3,7 @@
 * [Fixity checking and repair](#fixity)  
 * [Dropping MySQL and ES data in pipelines](#flushing)  
 * [Reindexing AIPs in Archival Storage indexes](#reindexing)  
+* [Deleting AIPs not indexed on a pipeline](#deletingaips)  
 * [Adding new storage locations](#locations)  
 * [Clearing space when local disk is nearly full](#clearingspace)  
 * [Restarting services](#restarting)  
@@ -43,6 +44,13 @@ The Python script `rebuild-aip-index.py` allows you to specify the UUIDs of the 
 Before using the scripts:  
 * Clone the `archivematica-devtools` repo to your home folder on the pipeline server  
 * Change paths in the scripts to point to correct locations  
+
+<a name="deletingaips"></a>  
+## Deleting AIPs not indexed on a pipeline
+         
+To send a deletion request for an AIP that is not currently indexed on an Archivematica pipeline, ssh into the Storage Service VM and run the following curl command, replacing all values in < > with the appropriate information:
+
+`curl -X POST -H "Content-Type: application/json" -H "Authorization: ApiKey <SS user>:<SS user API key>" -d '{"event_reason":"<reason for deletion>","pipeline":"<UUID to pipeline to send deletion from>","user_id":<integer pipeline user primary key>,"user_email":"<email to send deletion notice to>"}' <SS URL>/api/v2/file/<AIP UUID>/delete_aip/`
 
 <a name="locations"></a>  
 ## Adding new storage locations  
