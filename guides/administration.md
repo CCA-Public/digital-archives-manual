@@ -27,6 +27,10 @@ We will periodically drop the Elasticsearch indexes and rows from the MySQL data
 
 When the ES index is dropped, backups and logs from `/srv/am-est-backups` and `/var/log/elasticsearch` may also be deleted. This will help to save space on the local disk.
 
+To drop the ES index on a pipeline:
+
+`curl -XDELETE http://pipeline.ip.address/aips`
+
 <a name="reindexing"></a>
 ## Reindexing AIPs Archival Storage indexes  
 
