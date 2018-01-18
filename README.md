@@ -55,6 +55,7 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
     * [Fixity checking and repair](guides/administration.md/#fixity)   
     * [Dropping MySQL and ES data in pipelines](guides/administration.md/#flushing)  
     * [Reindexing AIPs in Archival Storage indexes](guides/administration.md/#reindexing)  
+    * [Deleting AIPs not indexed on a pipeline](guides/administration.md/#deletingaips)  
     * [Adding new storage locations](guides/administration.md/#locations)  
     * [Clearing space when local disk is nearly full](guides/administration.md/#clearingspace)  
     * [Restarting services](guides/administration.md/#restarting)  
