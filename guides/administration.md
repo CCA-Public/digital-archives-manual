@@ -35,7 +35,7 @@ To drop the ES index on a pipeline:
 <a name="reindexing"></a>
 ## Reindexing AIPs Archival Storage indexes  
 
-To re-index an AIP in an Archival Storage index on a given pipeline, you can use the `rebuild-aip-index.py` and `reindex-aip.sh` scripts from the Archivematica folder of the [CCA scripts repo](https://github.com/timothyryanwalsh/cca-scripts/tree/master/archivematica) on the pipeline where you would like the AIPs to be re-indexed. This is necessary, for example, to request deletion of an AIP from the AIP Store.
+To re-index an AIP in an Archival Storage index on a given pipeline, you can use the `rebuild-aip-index.py` and `reindex-aip.sh` scripts from the Archivematica folder of the [CCA scripts repo](https://github.com/timothyryanwalsh/cca-scripts/tree/master/archivematica) on the pipeline where you would like the AIPs to be re-indexed.
 
 The bash script `reindex-aip.sh` reindexes an AIP using the [Archivematica devtools](https://github.com/artefactual/archivematica-devtools).
 
