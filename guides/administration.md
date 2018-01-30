@@ -123,4 +123,4 @@ To restart only the Archivematica server/client/dashboard:
 ## Archivematica configuration settings  
 
 * Elasticsearch request_timeout value changed from 10 to 60 seconds  
-* Storage Service will be set to use all available cores for bagit-python fixity checking (default is 1; shoudl be user-configurable in SS/0.11)  
+* Storage Service will be set to use all available cores for bagit-python fixity checking (default is 1; should be user-configurable in SS/0.11)  
