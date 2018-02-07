@@ -13,9 +13,9 @@
 <a name="fixity"></a>  
 ## Fixity checking and repair  
 
-Fixity checks of all AIPs are conducted on a bi-annual (twice a year) basis using the [Fixity](https://github.com/artefactual/fixity) application. Fixity's `scanall` function is run via the `run-fixity-scanall.sh` bash script on the Storage Service VM. Logs are saved on the Archivematica Storage Service server and results are emailed to Storage Service administrators. Regular timing of these fixity checks is still to be determined with IT; for now they are run manually.
+Fixity checks of all AIPs are conducted on a quarterly basis using the [Fixity](https://github.com/artefactual/fixity) application. Fixity's `scanall` function is run via the [cca-fixity](https://github.com/timothyryanwalsh/cca-fixity) scripts installed at `/var/archivematica/cca-fixity` on the Storage Service VM. Logs are saved on the Archivematica Storage Service server at `/var/log/cca-fixity`and results are emailed to the relevant administrators.
 
-When starting a fixity check manually, use nohup to ensure that the process runs to completion in the background, even if your terminal session ends:  
+If you must run a fixity check manually, use nohup to ensure that the process runs to completion in the background, even if your terminal session ends:  
 
 `nohup sudo ./run-fixity-scanall.sh &`
 
