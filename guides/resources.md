@@ -55,6 +55,27 @@ Helpful resources, including:
 * [Script Ahoy](http://dd388.github.io/crals/): "Our community resource is intended to provide helpful one-liners and script code specifically drawn from real-life examples in archives and libraries."  
 * [Command Line Crash Course](https://learnpythonthehardway.org/book/appendixa.html): From *Learn Python the Hard Way*  
 
+<a name="scripting"></a>  
+## Useful command line scripts
+
+* Command to recursively unzip files into a new folder with the title of the zip file into their current place in the directory, and then deletes the original file when it's done:
+    
+      cd topDirectory
+      for F in $(find . -type f -name *.zip); do unzip "$F" -d "${F%.*}/" && rm "$F"; done
+  
+  Source: https://stackoverflow.com/a/30339287/9459120
+  
+  The ZIPs must not have spaces in their filename, or else the command will fail. If needed, use Detox (https://linux.die.net/man/1/detox) prior to unzipping.
+  
+* Command to identify all files with problematic timestamps in a directory and to modify that timestamp:
+  
+      cd topDirectory
+      find .  -type f -newermt "YYYY-MM-DD" ! -newermt "YYYY-MM-DD" -exec touch -t "YYYYMMDDHHMM" {} +
+  
+  Sources: https://askubuntu.com/questions/191044/how-to-find-files-between-two-dates-using-find and https://stackoverflow.com/questions/3718645/unix-shell-script-update-timestamp-on-all-sub-directories-and-sub-files-includ
+  
+  If the modification is required by an issue in timestamp's interpretation by UNIX time system, the new date should be "197001010000" which correspond to time 0 in UNIX time system.
+
 <a name="cadpres"></a>  
 ## Preservation of computer-aided design  
 
