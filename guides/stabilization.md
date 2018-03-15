@@ -12,6 +12,7 @@ This guide describes CCA standards for accessioning and stabilizing born-digital
     * [Disk imaging with FTK Imager](#ftkimager)
     * [Disk imaging with IsoBuster](#isobuster)
     * [Disk imaging 5.25" floppy disks with FC5025](#fc5025)
+    * [Disk imaging floppy disks with the Kryoflux](#kryoflux)
 * [Ingesting "raw" versement data into digital repository](#rawingest)  
 
 <a name="triageoverview"></a>  
@@ -359,6 +360,40 @@ fcimage -f msdos360 ARCH222229.img 1> ARCH222229.log 2>&1
 ```
 
 * Once the command is completed, open your project folder and make sure everything is there. You should have an .img file (your disk image file) and a .log file (the recorded errors).
+
+<a name="kryoflux"></a>
+#### Disk imaging with the Kryoflux
+
+Note: Elements from the guidelines below have been gathered from the [Archivist’s Guide to KryoFlux](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#), a comprehensive resource for practitioners working with born-digital materials in an archival context. 
+
+The ![Kryoflux](https://www.kryoflux.com/) is a floppy disk controller card developed by the ![Software Preservation Society](http://www.softpres.org/) for imaging a wide variety of legacy floppies. Its particularity lies in its capacity to capture raw track data by sampling the fluctuation in the bit cells on the platter, enabling the capture of any type of 5.25" or 3.5" floppy disk, despite of its format.
+
+##### Capturing disk images using the graphical user interface (GUI)
+1.	Launch the KryoFlux GUI by double-clicking on the file called kryoflux-ui.jar located on the BitCurator Desktop.
+2.	At the beginning of each imaging session, calibrate the floppy drive by selecting the correct drive from the *Drive* menu then selecting *Calibrate* from the same menu (ADD FIGURE). You should only need to calibrate the drive once per imaging session and any time you switch between 3.5-inch and 5.25-inch disk drives.
+3.	Configure the KryoFlux GUI to select the output directory for your newly-created disk images and log files. To do so, select *File → Settings* and click on the *Output* tab. Browse to the appropriate path to storage. Ensure that the Logs button is checked, and then click *OK*.
+4.	For each disk, enter a unique identifier. Click on *Enter name…* and type in a unique ID associated with the disk. The text entered here will become the filename for any disk images and log files created. Do not include the extension of the file name.
+5.	Select the image format(s) for the disk image using the dropdown list below the filename field (ADD FIGURE). Use the table below (ADD FIGURE) to select the right image formats. In order to choose multiple outputs, hold down the *Control (Ctrl)* key while making your selections.  In most cases, selecting an image format to obtain a sector image requires that you know something about the media in hand.
+
+|Physical Format|	System Format	| Encoding	| KryoFlux Image Format |
+| ------------- |:-------------:| -------- | --------------------- |
+| 3.5” double density |	Macintosh |	GCR	| Apple DOS 400K/800K sector image
+| 3.5” double density |	PC	| MFM	| MFM sector image |
+| 3.5” high density |	Any	| MFM	| MFM sector image |
+| 5.25” double density	| Kaypro	| MFM	| MFM sector image [40 tracks] |
+| 5.25” double density	| PC	| MFM	| MFM sector image [40 tracks] |
+| 5.25” high density	| PC	| MFM	| MFM sector image [360 RPM] |
+
+6.	Once you have everything set up, insert the disk into the appropriate drive and click *Start*. In the Tracks section of the window, you should see the cells fill progressively with different colours. Here is each colors’ signification:
+
+| Color | Meaning |
+| ------------- | ------------- |
+| Green | Good: The track was imaged successfully! |
+| Orange | Good + modified: The track was imaged successfully but has one or more sectors that were modified after formatting or mastering. |  
+| Red | Bad: The track was not imaged successfully |
+| Grey | Unknown: The Kryoflux software could not determine the status of this track. This may or may not mean that it was read successfully. It could indicate that this track was unformatted or that the wrong format was selected prior to capture. If you are creating only preservation stream files, all sectors will be grey. | 
+7.	Once you hear the read head returning to its starting point (0), the disk stops spinning and the drive’s indicator light goes off meaning that the capture is done. A log file will automatically be generated in the directory you selected at step 3.
+8.	To image another disk, go back to step 4 and go on from there. If you switch drive and have not calibrated the other drive, continue from step 3. 
 
 <a name="rawingest"></a>
 ## Ingesting "raw" accession data into digital repository  
