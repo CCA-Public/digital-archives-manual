@@ -12,7 +12,7 @@ This guide describes CCA standards for accessioning and stabilizing born-digital
     * [Disk imaging with FTK Imager](#ftkimager)
     * [Disk imaging with IsoBuster](#isobuster)
     * [Disk imaging 5.25" floppy disks with FC5025](#fc5025)
-    * [Disk imaging floppy disks with the Kryoflux](#kryoflux)
+    * [Disk imaging with the Kryoflux](#kryoflux)
 * [Ingesting "raw" versement data into digital repository](#rawingest)  
 
 <a name="triageoverview"></a>  
