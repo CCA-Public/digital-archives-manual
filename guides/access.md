@@ -34,4 +34,4 @@ The Study Room CAD workstation and virtualization workstation have no internet a
 <a name="accessplans"></a>  
 ## Access plans  
 
-Description of DIP Access Interface to come.
+A project to build a free and open-source DIP access interface web application for discovery and access to CCA's DIPs is currently in the planning stage.  
