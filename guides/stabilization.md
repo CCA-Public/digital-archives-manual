@@ -366,7 +366,7 @@ fcimage -f msdos360 ARCH222229.img 1> ARCH222229.log 2>&1
 
 Note: Elements from the guidelines below have been gathered from the [Archivist’s Guide to KryoFlux](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#), a comprehensive resource for practitioners working with born-digital materials in an archival context. 
 
-The ![Kryoflux](https://www.kryoflux.com/) is a floppy disk controller card developed by the ![Software Preservation Society](http://www.softpres.org/) for imaging a wide variety of legacy floppies. Its particularity lies in its capacity to capture raw track data by sampling the fluctuation in the bit cells on the platter, enabling the capture of any type of 5.25" or 3.5" floppy disk, despite of its format.
+The [Kryoflux](https://www.kryoflux.com/) is a floppy disk controller card developed by the [Software Preservation Society](http://www.softpres.org/) for imaging a wide variety of legacy floppies. Its particularity lies in its capacity to capture raw track data by sampling the fluctuation in the bit cells on the platter, enabling the capture of any type of 5.25" or 3.5" floppy disk, despite of its format.
 
 ##### Capturing disk images using the graphical user interface (GUI)
 1.	Launch the KryoFlux GUI by double-clicking on the file called kryoflux-ui.jar located on the BitCurator Desktop.
