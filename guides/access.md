@@ -20,9 +20,9 @@ The zip file in the `objects` directory contains a copy of all original files in
 <a name="dipcreation"></a>  
 ## Creating CCA-style DIPs  
 
-CCA-style DIPs can be created from AIPs registered in the Storage Service using the [create_dip.py](https://github.com/artefactual/automation-tools/blob/master/aips/create_dip.py) script included as part of Artefactual's Automation Tools. Best practice is to call the Python script with all necessary parameters using the [create_dip_script.sh](https://github.com/artefactual/automation-tools/blob/master/etc/create_dip_script.sh) shell script. See the [Automation Tools repo](https://github.com/artefactual/automation-tools#dip-creation) for more details.  
+CCA-style DIPs can be created from AIPs registered in the Storage Service using the [create_dip.py](https://github.com/artefactual/automation-tools/blob/master/aips/create_dip.py) script included as part of Artefactual's Automation Tools. Best practice to generate a DIP on demand from a stored AIP is to call the Python script with all necessary parameters using the [create_dip_script.sh](https://github.com/artefactual/automation-tools/blob/master/etc/create_dip_script.sh) shell script. See the [Automation Tools repo](https://github.com/artefactual/automation-tools#dip-creation) for more details.  
 
-Current sponsored development work with Artefactual is exploring automated creation of CCA-style DIPs through hooks in our automated ingest workflow.  
+On Archivematica pipeline VSP-AMPL-02, the [create_dips_job.py](https://github.com/artefactual/automation-tools/blob/master/aips/create_dips_job.py) script is configured within Automation Tools to automatically generate a DIP for every AIP stored in appropriate AIP Stores (excluding those used for storing unprocessed "raw" AIPs).  
 
 <a name="accessworkflow"></a>  
 ## Current access workflow 
