@@ -215,7 +215,7 @@ CCA adds descriptive metadata to every AIP to aid in discoverability and re-use 
 | ----- | ----- |  
 | Title | Title |  
 | Part of AIC | Identifier of AIC (if applicable) |  
-| Creator | Creator of archive creator (should be same as constituent in TMS) |  
+| Creator | Archive creator (should be same as constituent in TMS) |  
 | Subject | n/a |  
 | Description | Scope and content note (optional) |  
 | Publisher | Centre Canadien d'Architecture |  
