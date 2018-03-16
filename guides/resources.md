@@ -75,6 +75,14 @@ Helpful resources, including:
   Sources: https://askubuntu.com/questions/191044/how-to-find-files-between-two-dates-using-find and https://stackoverflow.com/questions/3718645/unix-shell-script-update-timestamp-on-all-sub-directories-and-sub-files-includ
   
   If the modification is required by an issue in timestamp's interpretation by UNIX time system, the new date should be "197001010000" which correspond to time 0 in UNIX time system.
+  
+* Detox utility cleans file paths and names of trailing spaces and uncommon characters.
+     
+     For starters, and in simple cases, follow the script's proposed structure once you've prompted:
+            
+            detox -h
+            
+     (Complex cases' scripts to be added.)
 
 <a name="cadpres"></a>  
 ## Preservation of computer-aided design  
