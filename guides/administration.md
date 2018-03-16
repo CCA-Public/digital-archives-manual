@@ -117,7 +117,7 @@ To restart only the Archivematica server/client/dashboard:
 * Extraction rules for RAW, ISO, and AFF disk images are disabled so that disk images can be stored alongside files that are exported by the Disk Image Processor pre-ingest  
 * Ghostscript PDF->PDF/A command replaced with a bash script that prevents errors when output filepaths are longer than 255 characters  
 * Normalization rules for Adobe Flash, Macromedia Flash, and Generic SWF are disabled (by default, Archivematica attempts to normalize these formats to ffv1/Matroska video, which failed nearly 100% of the time)  
-* Libreoffice added as tool and "Transcode to docx with libreoffice" and "Transcode to odt with libreoffice" added as normalization commands  
+* Libreoffice and commands for transcoding to docx, odt, xlsx, ods, and pptx added   
 
 <a name="configsettings"></a>
 ## Archivematica configuration settings  
