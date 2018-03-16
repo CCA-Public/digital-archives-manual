@@ -85,7 +85,7 @@ Another factor to consider when thinking about arrangement is the nature of the 
 <a name="archivematicarequirements"></a>  
 ### Archivematica requirements  
 
-* Transfers of more than 10,000 files or so must be split into multiple AIPs. These can then be recombined in Archivematica in an Archival Information Collection (AIC). Future versions of Archivematica should address the scaling issues that necessitate splitting large collections across multiple transfers.   
+Transfers of more than 15-20,000 files or so must be split into multiple AIPs. These can then be recombined in Archivematica in an Archival Information Collection (AIC). Future versions of Archivematica should address the scaling issues that necessitate splitting large collections across multiple transfers.   
 
 <a name="institutionalpriorities"></a>
 ### Institutional priorities  
