@@ -58,31 +58,49 @@ Helpful resources, including:
 <a name="scripting"></a>  
 ## Useful command line scripts
 
-* Command to recursively unzip files into a new folder with the title of the zip file into their current place in the directory, and then deletes the original file when it's done:
+* **Recursively unzip files into a new folder with the title of the zip file into their current place in the directory, and then delete the original zip file when it's done:**
     
       cd topDirectory
       for F in $(find . -type f -name *.zip); do unzip "$F" -d "${F%.*}/" && rm "$F"; done
   
-  Source: https://stackoverflow.com/a/30339287/9459120
+  ([Source:] (https://stackoverflow.com/a/30339287/9459120))
   
-  The ZIPs must not have spaces in their filename, or else the command will fail. If needed, use Detox (https://linux.die.net/man/1/detox) prior to unzipping.
+  The ZIPs must not have spaces in their filename, or else the command will fail. If needed, use [Detox] (https://linux.die.net/man/1/detox) prior to unzipping.
   
-* Command to identify all files with problematic timestamps in a directory and to modify that timestamp:
+* **Identify all files with problematic timestamps in a directory and to modify that timestamp:**
   
       cd topDirectory
       find .  -type f -newermt "YYYY-MM-DD" ! -newermt "YYYY-MM-DD" -exec touch -t "YYYYMMDDHHMM" {} +
   
-  Sources: https://askubuntu.com/questions/191044/how-to-find-files-between-two-dates-using-find and https://stackoverflow.com/questions/3718645/unix-shell-script-update-timestamp-on-all-sub-directories-and-sub-files-includ
+  ([Source 1:] (https://askubuntu.com/questions/191044/how-to-find-files-between-two-dates-using-find) and [Source 2:] (https://stackoverflow.com/questions/3718645/unix-shell-script-update-timestamp-on-all-sub-directories-and-sub-files-includ))
   
   If the modification is required by an issue in timestamp's interpretation by UNIX time system, the new date should be "197001010000" which correspond to time 0 in UNIX time system.
   
-* Detox utility cleans file paths and names of trailing spaces and uncommon characters.
+* **Detox utility cleans file and directory names by removing spaces and translating/cleaning up Latin-1 (ISO 8859-1) characters encoded in 8-bit ASCII, Unicode characters encoded in UTF-8, and CGI escaped characters.**
      
-     For starters, and in simple cases, follow the script's proposed structure once you've prompted:
+     To do a test run (i.e. see proposed file name changes without actually making the changes): 
             
-            detox -h
+            detox -rn topDirectory
             
-     (Complex cases' scripts to be added.)
+     To make the changes: 
+     
+            detox -r topDirectory
+
+* **List and delete empty files and directories.**
+
+    To list all empty files and directories: 
+            
+            cd [topDirectory]
+            find . -empty
+            
+    To delete empty files: 
+    
+            find . -type f -empty -delete
+    
+    To delete empty directories: 
+            
+            find . -type d -empty -delete
+            
 
 <a name="cadpres"></a>  
 ## Preservation of computer-aided design  
