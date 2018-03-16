@@ -44,7 +44,7 @@ When possible we will use Automation Tools, as this allows for more efficient in
 
 Automation Tools is currently set up on Pipelines 1 and 2. On these VMs, Automation Tools checks the /mnt/incoming/auto-transfers directory every 5 minutes, verifies that nothing is currently being transferred or ingested, runs pre-transfer scripts (that verify the transfer is the correct type, pass the transfer's accession number on to Archivematica, and add metadata to the transfer using the TMS API), and starts the next transfer.  The rest of the transfer and ingest process is automated. 
 
-It is the responsibility of the processing archivists to QA the results of this process and ensure that all processes completed within acceptable parameters for success.  
+It is the responsibility of the archivist processing digital materials to QA the results of this process and ensure that all processes completed within acceptable parameters for success.  
 
 <a name="automationtoolsarchives"></a>  
 #### Procedure for Automation Tools ingest: digital archives
