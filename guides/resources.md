@@ -63,7 +63,7 @@ Helpful resources, including:
       cd topDirectory
       for F in $(find . -type f -name *.zip); do unzip "$F" -d "${F%.*}/" && rm "$F"; done
   
-  ([Source:](https://stackoverflow.com/a/30339287/9459120))
+  ([Source](https://stackoverflow.com/a/30339287/9459120))
   
   The ZIPs must not have spaces in their filename, or else the command will fail. If needed, use [Detox](https://linux.die.net/man/1/detox) prior to unzipping.
   
@@ -72,7 +72,7 @@ Helpful resources, including:
       cd topDirectory
       find .  -type f -newermt "YYYY-MM-DD" ! -newermt "YYYY-MM-DD" -exec touch -t "YYYYMMDDHHMM" {} +
   
-  ([Source 1:](https://askubuntu.com/questions/191044/how-to-find-files-between-two-dates-using-find) and [Source 2:](https://stackoverflow.com/questions/3718645/unix-shell-script-update-timestamp-on-all-sub-directories-and-sub-files-includ))
+  ([Source 1](https://askubuntu.com/questions/191044/how-to-find-files-between-two-dates-using-find) and [Source 2](https://stackoverflow.com/questions/3718645/unix-shell-script-update-timestamp-on-all-sub-directories-and-sub-files-includ))
   
   If the modification is required by an issue in timestamp's interpretation by UNIX time system, the new date should be "197001010000" which correspond to time 0 in UNIX time system.
   
