@@ -203,4 +203,4 @@ If Brunnhilde returns unidentified file types, it can be useful to submit them t
     - If the zipped files are small enough to fit on an email, email David Clipsham (David.Clipsham@nationalarchives.gsi.gov.uk) and Paul Young (Paul.Young@nationalarchives.gsi.gov.uk) with the files.
     - If the zipped files are too big, you can share the folder through the Cloud by making a request with IT. The request form is [here](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/forms/cloud_share_request_form.pdf). Once it's filled out, it can be sent to IT (soutiens@cca.qc.ca).
 
-Once the request is processed, the file format will likely be included in the next update of PRONOM.
+Once the request is processed, the file format will likely be included in a future PRONOM release.
