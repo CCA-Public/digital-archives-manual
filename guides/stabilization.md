@@ -373,16 +373,27 @@ The [Kryoflux](https://www.kryoflux.com/) is a floppy disk controller card devel
 2.	At the beginning of each imaging session, calibrate the floppy drive by selecting the correct drive from the *Drive* menu then selecting *Calibrate* from the same menu (ADD FIGURE). You should only need to calibrate the drive once per imaging session and any time you switch between 3.5-inch and 5.25-inch disk drives.
 3.	Configure the KryoFlux GUI to select the output directory for your newly-created disk images and log files. To do so, select *File → Settings* and click on the *Output* tab. Browse to the appropriate path to storage. Ensure that the Logs button is checked, and then click *OK*.
 4.	For each disk, enter a unique identifier. Click on *Enter name…* and type in a unique ID associated with the disk. The text entered here will become the filename for any disk images and log files created. Do not include the extension of the file name.
-5.	Select the image format(s) for the disk image using the dropdown list below the filename field (ADD FIGURE). Use the table below (ADD FIGURE) to select the right image formats. In order to choose multiple outputs, hold down the *Control (Ctrl)* key while making your selections.  In most cases, selecting an image format to obtain a sector image requires that you know something about the media in hand.
+5.	Select the image format(s) for the disk image using the dropdown list below the filename field (ADD FIGURE). Use the table below to select the right image format(s). In order to choose multiple outputs, hold down the *Control (Ctrl)* key while making your selections.  In most cases, selecting an image format to obtain a sector image requires that you know something about the media in hand. 
 
-|Physical Format|	System Format	| Encoding	| KryoFlux Image Format |
-| ------------- |:-------------:| -------- | --------------------- |
-| 3.5” double density |	Macintosh |	GCR	| Apple DOS 400K/800K sector image
-| 3.5” double density |	PC	| MFM	| MFM sector image |
-| 3.5” high density |	Any	| MFM	| MFM sector image |
-| 5.25” double density	| Kaypro	| MFM	| MFM sector image [40 tracks] |
-| 5.25” double density	| PC	| MFM	| MFM sector image [40 tracks] |
-| 5.25” high density	| PC	| MFM	| MFM sector image [360 RPM] |
+**Common Media Types and Image Formats**
+
+|Physical Format|	System Format	| Encoding	| Capacity | Image Profile/Format |
+| ------------- |:-------------:| -------- | -------- | -------------------- |
+| 3.5” double density |	Macintosh |	GCR	| 400 KB; 800 KB | Apple DOS 400K/800K sector image
+| 3.5” double density |	PC	| MFM	| 720 KB | MFM sector image |
+| 3.5” high density |	Any	| MFM	| 1440 KB | MFM sector image |
+| 5.25” double density	| PC	| MFM	| 320 KB; 360 KB | MFM sector image [40 tracks] |
+| 5.25” high density	| PC	| MFM	| 1200 KB | MFM sector image [1.2MB] |
+
+**Specs for Commonly Used Image Profiles/Formats** 
+
+| Profile Name |	Start Track	| End track	| Side Mode | Sector Size | Sector Count | Track Distance | Target RPM |
+| ------------ | ----------- | --------- | --------- | ----------- | ------------ | -------------- | ---------- |
+| MFM sector image [1.2MB] |	At least 0 |	At most 83	| Both sides | 512 Bytes | Exactly 15 | 80 Tracks | 360 |
+| MFM sector image |	At least 0 |	At most 83	| Both sides | 512 Bytes | Any | 80 Tracks | By image type |
+| MFM sector image [40 tracks] | At least 0 | At most 83 | Both sides | 512 Bytes | Any | 40 Tracks | By image type |
+| Apple DOS 400K/800K sector image | At least 0 | At most 83 | Both sides | 512 Bytes | Any | 80 Tracks | By image type |
+
 
 6.	Once you have everything set up, insert the disk into the appropriate drive and click *Start*. In the Tracks section of the window, you should see the cells fill progressively with different colours. Here is each colors’ signification:
 
@@ -394,6 +405,30 @@ The [Kryoflux](https://www.kryoflux.com/) is a floppy disk controller card devel
 | Grey | Unknown: The Kryoflux software could not determine the status of this track. This may or may not mean that it was read successfully. It could indicate that this track was unformatted or that the wrong format was selected prior to capture. If you are creating only preservation stream files, all sectors will be grey. | 
 7.	Once you hear the read head returning to its starting point (0), the disk stops spinning and the drive’s indicator light goes off meaning that the capture is done. A log file will automatically be generated in the directory you selected at step 3.
 8.	To image another disk, go back to step 4 and go on from there. If you switch drive and have not calibrated the other drive, continue from step 3. 
+
+##### Capturing floppy disks with physical damage or reading difficulties
+
+IMPORTANT NOTE: Whenever you notice the presence of mould or fungus on a piece digital media, consult Conservation and the Digital Archivist before capturing the disk image. Mould could spread inside the drive and on the read head and would risk contaminating other disks subsequently. To reduce the risk of contamination, you could use a drive exclusively dedicated to imaging contaminated media.
+For stubborn disks that appear to have multiple bad sectors and physical damage, here is the procedure:
+
+1.	In the output formats dropdown list, select **the format you believe the disk to be** and the **Kryoflux stream files, preservation** formats. This way you can verify if the disk was read correctly, and perform retries on the disk in case of errors. In addition, the raw stream files will act as preservation files if the selected encoding format doesn’t correspond to the format of the disk. They can also be used to output new image formats in [deviceless mode](#deviceless).
+2.	You can set the number of retries to a larger value if the disk is particularly difficult to read. Each time the head retries to read a sector, it “polishes” it by cutting through intrusive substances, such as dust, fungus and mould. We have set the number of retries to 20 – which is already more significant than the default number of 5 retries – but you could go up to 100.
+To set the number of retries, go to *File > Settings > Output* and enter the number of retries you wish to execute in the “Retries” field.
+3.	Follow steps 6 to 8 from the previous section.
+4.	Pay attention: Listen to the sound of the drive and notice any abnormalities. Look at the status in the Kryoflux GUI and note any bad sector or unknown format. 
+
+Instructions in this section where inspired by Dr. Gough's Tech Zone article on [Dealing with difficult disks and drives](http://goughlui.com/2013/05/19/project-kryoflux-part-6-dealing-with-difficult-disks-and-drives/). Please refer to the full article for more details about hardware care and data recovery using the Kryoflux.
+
+<a name="deviceless"></a>
+##### Using the GUI in deviceless mode
+Once they are captured, Kryoflux stream files can be used directly from the GUI to generated image files and avoid using any piece of external hardware again. This technique can be useful to process fragile disks that shouldn't be read multiple times by the drive's head, which could damage them. It can also be used for processing preservation files at a later time in your workflow.
+
+Here are the steps to output new image formats out of Kryoflux stream files:
+1. Go to *Drive* and select *Stream Files*
+2. Select the output destination.
+2. For each disk, enter a unique identifier. Click on *Enter name…* and type in a unique ID associated with the disk. The text entered here will become the filename for any disk images and log files created. Do not include the extension of the file name.
+3.	Select the image format(s) for the disk image using the dropdown list below the filename field (ADD FIGURE). 
+4. Click on *Start* and select the folder containing the stream files you want to process. Click on *Open* and the encoding process will start right away. The results will show up in the cells of the GUI, just as usual.
 
 <a name="rawingest"></a>
 ## Ingesting "raw" accession data into digital repository  
