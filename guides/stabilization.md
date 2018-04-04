@@ -428,7 +428,7 @@ For stubborn disks that appear to have multiple bad sectors and physical damage,
 You can set the number of retries to a larger value if the disk is particularly difficult to read. Each time the head retries to read a sector, it “polishes” it by cutting through intrusive substances, such as dust, fungus and mould. We have set the number of retries to 20 – which is already more significant than the default number of 5 retries – but you could go up to 100.
 To set the number of retries, go to *File > Settings > Output* and enter the number of retries you wish to execute in the “Retries” field. 
 3.	Follow steps 6 to 8 from the previous section.
-4.	Pay attention: Listen to the sound of the drive and notice any abnormalities. Look at the status in the Kryoflux GUI and note any bad sector or unknown format in your processing spreadsheet. 
+4.	Pay attention: Listen to the sound of the drive and notice any abnormalities. Look at the status in the Kryoflux GUI and note any bad sector or unknown format in the versement stabilization spreadsheet. 
 
 *Instructions in this section were inspired by Dr. Gough's Tech Zone article on [Dealing with difficult disks and drives](http://goughlui.com/2013/05/19/project-kryoflux-part-6-dealing-with-difficult-disks-and-drives/). Please refer to the full article for more details about hardware care and data recovery using the Kryoflux.*
 
