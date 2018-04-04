@@ -381,7 +381,7 @@ its format.
 
 ![Kryoflux](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/kryoflux_step5_selectformat_02.png)
 
-Use the tablse below to select the right image format(s). In order to choose multiple outputs, hold down the *Control (Ctrl)* key while making your selections.  In most cases, selecting an image format to obtain a sector image requires that you know something about the media in hand (physical format, system format, density, etc.)
+Use the tables below to select the right image format(s). In order to choose multiple outputs, hold down the *Control (Ctrl)* key while making your selections.  In most cases, selecting an image format to obtain a sector image requires that you know something about the media in hand (physical format, system format, density, etc.)
 
 **Common Media Types and Image Formats**
 
@@ -410,6 +410,7 @@ Use the tablse below to select the right image format(s). In order to choose mul
 | Orange | Good + modified: The track was imaged successfully but has one or more sectors that were modified after formatting or mastering. |  
 | Red | Bad: The track was not imaged successfully |
 | Grey | Unknown: The Kryoflux software could not determine the status of this track. This may or may not mean that it was read successfully. It could indicate that this track was unformatted or that the wrong format was selected prior to capture. If you are creating only preservation stream files, all sectors will be grey. | 
+
 7.	Once you hear the read head returning to its starting point (0), the disk stops spinning and the drive’s indicator light goes off meaning that the capture is done. A log file will automatically be generated in the directory you selected at step 3.
 8.	To image another disk, go back to step 4 and go on from there. If you switch drive and have not calibrated the other drive, continue from step 3. 
 
