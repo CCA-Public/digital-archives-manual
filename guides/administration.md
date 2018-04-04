@@ -114,7 +114,7 @@ To restart only the Archivematica server/client/dashboard:
 
 * FITS command replaced with bash script to prevent non-XML outputs from raising error (fixed in AM 1.7)  
 * FITS set as a characterization tool for all file formats -- note that this is crucial, as it means there is an indexed last modified date for all files ingested. See [METSFlask documentation](https://github.com/timothyryanwalsh/metsflask#detailed-identification-and-dates) for details on how to ensure FITS characterization for all files in AM 1.6  
-* Extraction rules for RAW, ISO, and AFF disk images are disabled so that disk images can be stored alongside files that are exported by the Disk Image Processor pre-ingest  
+* Extraction rules for RAW, ISO, AFF, and E01 disk images are disabled so that disk images can be stored alongside files (disk image extraction occurs in BitCurator prior to Archivematica ingest in our local workflows)  
 * Ghostscript PDF->PDF/A command replaced with a bash script that prevents errors when output filepaths are longer than 255 characters  
 * Normalization rules for Adobe Flash, Macromedia Flash, and Generic SWF are disabled (by default, Archivematica attempts to normalize these formats to ffv1/Matroska video, which failed nearly 100% of the time)  
 * Libreoffice and commands for transcoding to docx, odt, xlsx, ods, and pptx added   
