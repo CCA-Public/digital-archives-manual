@@ -19,7 +19,7 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
     * [Temporary physical media](guides/stabilization.md/#temporarymedia)
     * [Original physical media](guides/stabilization.md/#originalphysicalmedia)  
     * [Ingesting "raw" accession data into digital repository](guides/stabilization.md/#rawingest)  
-* **[Disk imaging Original Physical Media](guides/diskimaging.md)**
+* **[Disk imaging original physical media](guides/diskimaging.md)**
    * [Disk imaging with Guymager (Bitcurator)](guides/diskimaging.md/#guymager)  
    * [Disk imaging with FTK Imager](guides/diskimaging.md/#ftkimager)
    * [Disk imaging with IsoBuster](guides/diskimaging.md/#isobuster)
@@ -59,7 +59,7 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
     * [Archivematica processing configurations](guides/ingest.md/#processingconfigs)
     * [Adding descriptive metadata to the AIP](guides/ingest.md/#dcmetadata)  
     * [CCA file format policies](guides/ingest.md/#fileformatpolicies)  
-* **[DIP Generation and Access](guides/access.md)**  
+* **[DIP generation and Access](guides/access.md)**  
     * [Definition of CCA-style DIPs](guides/access.md/#dipdefinition)  
     * [Creating CCA-style DIPs](guides/access.md/#dipcreation)  
     * [Current access workflow](guides/access.md/#accessworkflow)  
