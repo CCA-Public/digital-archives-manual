@@ -52,7 +52,7 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
 
 1. Verify that all of the following are true:  
   * Your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator machines  
-  * All SIPs are named with the scheme [identifier]---[accession number]
+  * All SIPs are named with the scheme [identifier]---[accession number]. If SIPs consist of unprocessed material, a disk image for example, only use its identifier to name it.
   * Data entry for all SIPs has been completed in TMS  
 2. Copy the SIPs to Pipeline 2 Transfer Source using the "send_to_archivematica.py" script with option "--pipeline 2":`python3 /path/to/send_to_archivematica.py --pipeline 2 '/path/to/transfer'`
 3. Alert the Digital Archivist that your SIPs are ready for ingest.  
@@ -89,7 +89,7 @@ Procedures to come.
 
 Alternatively, transfers may be started and monitored from within the web dashboard. Before starting, verify that the transfer type for the material you're ingesting is correct and amend the processing configuration so that it pauses the process when metadata must be entered. You will need to manually enter metadata according to the schema outlined in [Adding descriptive metadata to the AIP](#dcmetadata).  
 
-When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator machines, all SIPs are named with the scheme [identifier]---[accession number], and data entry for all SIPs has been completed in TMS, advise the Digital Archivist that you are ready to move on to the Ingest phase of the project and then copy the SIPs to /mnt/incoming/transfers on the appropriate Pipeline using the "send_to_archivematica.py" script.
+When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator machines, all SIPs are named with the scheme [identifier]---[accession number], and data entry for all SIPs has been completed in TMS, advise the Digital Archivist that you are ready to move on to the Ingest phase of the project and then copy the SIPs to /mnt/incoming/transfers on the appropriate Pipeline using the "send_to_archivematica.py" script. If SIPs consist of unprocessed material, a disk image for example, only use its identifier to name it.
 
 <a name="processingconfigs"></a>
 ## Archivematica processing configurations  
