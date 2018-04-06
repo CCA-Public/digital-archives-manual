@@ -81,6 +81,7 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
    * [File format identification and information](guides/resources.md/#formats)  
    * [Digital preservation tools](guides/resources.md/#tools)
    * [Scripting resources](guides/resources.md#scripting)
+   * [Useful command line scripts](guides/resources.md#useful-command-line-scripts)  
    * [Preservation of computer-aided design](guides/resources.md/#cadpres)  
    * [General resources](guides/resources.md/#general)  
 
