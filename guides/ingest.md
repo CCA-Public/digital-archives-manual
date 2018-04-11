@@ -232,4 +232,4 @@ CCA adds descriptive metadata to every AIP to aid in discoverability and re-use 
 <a name="fileformatpolicies"></a>
 ## CCA file format policies  
 
-Currently in process of being reviewed. When complete, CCA's file format policies will be published as a document and implemented in our local instance of the Archivematica Format Policy Registry (FPR).  
+Current version: [Format Policy Registry, version 2](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/guides/CCA%20Format%20Policy%20Registry%20v2%20201804.pdf) 
