@@ -84,7 +84,8 @@ You only need to manually call `transfer-script.sh` once - after that, the cront
 
 Each storage location configured in the Storage Service is 5 TB in size (this was done in order to make backups manageable for IT). As storage locations will, new locations will need to be added to the Storage Service and assigned as the default values for pipelines. **Locations should contain only AIPs for which DIPs will be produced (e.g. processed digital archives) or AIPs for which DIPs will not be produced (e.g. digitization masters), not mixed.**
 
-Steps to add a new location:  
+Steps to start using a new AIP Store location:  
+
 1. Ensure directory to add is mounted on Storage Service VM (read/write) and pipeline VMs (read-only). Ask CCA sysadmin to configure this if not true.    
 2. Configure as a storage space in the Storage Service GUI.  
 3. Set as default value in appropriate pipelines.  
