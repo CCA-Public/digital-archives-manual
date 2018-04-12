@@ -75,6 +75,8 @@ The solution is to delete the `transfers.db` database and to manually re-start t
 * `sudo rm -f /var/archivematica/automation-tools/transfers.db`  
 * `sudo -u archivematica /etc/archivematica/automation-tools/transfer-script.sh`  
 
+You only need to manually call `transfer-script.sh` once - after that, the crontab will call the script every 5 minutes, per the recommended installation instructions.  
+
 **Note that deleting `transfers.db` means that the Automation Tools will no longer have a record of which transfers in the `/mnt/incoming/auto-transfers` directory have already been started, so you will want to make sure only transfers you intend to start are present in that directory before deleting the database.**
 
 <a name="locations"></a>  
