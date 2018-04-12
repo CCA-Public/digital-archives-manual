@@ -91,7 +91,7 @@ Steps to add a new location:
 2. Configure as a storage space in the Storage Service GUI.  
 3. Set as default value in appropriate pipelines.  
 4. Update defaultProcessingMCP files with new Store AIP location in Automation Tools.  
-5. (If new storage location will contain AIPs for which we want to generate DIPs) Add storage location as place to check for DIP workflow script.
+5. (If new storage location will contain AIPs for which we want to generate DIPs) Modify the `--location-uuid` value in `/etc/archivematica/automation-tools/create_dips_job_script.sh` to the value for the new AIP Store location.  
 
 <a name="clearingspace"></a>
 ## Clearing space when local disk is nearly full  
