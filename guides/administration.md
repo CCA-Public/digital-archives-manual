@@ -4,6 +4,8 @@
 * [Dropping MySQL and ES data in pipelines](#flushing)  
 * [Reindexing AIPs in Archival Storage indexes](#reindexing)  
 * [Deleting AIPs not indexed on a pipeline](#deletingaips)  
+* [Cleaning up after successful Automation Tools ingests](#autotoolssuccess)
+* [Responding to failed Automation Tools ingests](#autotoolsfailure)
 * [Adding new storage locations](#locations)  
 * [Clearing space when local disk is nearly full](#clearingspace)  
 * [Restarting services](#restarting)  
@@ -53,6 +55,27 @@ To send a deletion request for an AIP that is not currently indexed on an Archiv
 ```
 curl -X POST -H "Content-Type: application/json" -H "Authorization: ApiKey <SS user>:<SS user API key>" -d '{"event_reason":"<reason for deletion>","pipeline":"<UUID to pipeline to send deletion from>","user_id":<integer pipeline user primary key>,"user_email":"<email to send deletion notice to>"}' <SS URL>/api/v2/file/<AIP UUID>/delete_aip/
 ```
+
+<a name="autotoolssuccess"></a>  
+## Cleaning up after successful Automation Tools ingests  
+
+After ingests started via Automation Tools finish successfully, they must be deleted from the Transfer Source (in this case, `/mnt/incoming/auto-transfers/`) manually. This must be done by a user with `sudo` permissions, e.g. `sudo rm -rf /path/to/transfer/`. **Be careful when deleting files with sudo, as it is very easy to accidentally delete files you did not intend to delete**.
+
+Tim wrote some code for the Automation Tools repository that will automatically delete transfer source files after a successful ingest if the `transfer-script.sh` script is run with a `--delete` flag. This code is [currently being reviewed](https://github.com/artefactual/automation-tools/pull/44) - if the pull request is accepted and merged, it would remove the need for manually cleaning up after successful Automation Tools ingests. 
+
+<a name="autotoolsfailure"></a>  
+## Responding to failed Automation Tools ingests  
+
+When an ingest started via Automation Tools fails, the first order of business is to determine why the ingest failed and either fix the transfer or submit a support ticket with Artefactual.
+
+When you are ready to re-start the transfer/ingest after correcting the problem, you will notice that simply putting the transfer in the watched folder will not work. This is because the `transfers.db` SQLite database that the Automation Tools use to keep track of which transfers have already been started will already include the transfer (determined based on the folder name), preventing it from being started.
+
+The solution is to delete the `transfers.db` database and to manually re-start the `transfer-script.sh` with `sudo` permissions and as user `archivematica`:  
+
+* `rm -f /var/archivematica/automation-tools/transfers.db`  
+* `sudo -u archivematica /etc/archivematica/automation-tools/transfer-script.sh`  
+
+**Note that deleting `transfers.db` means that the Automation Tools will no longer have a record of which transfers in the `/mnt/incoming/auto-transfers` directory have already been started, so you will want to make sure only transfers you intend to start are present in that directory before deleting the database.**
 
 <a name="locations"></a>  
 ## Adding new storage locations  
