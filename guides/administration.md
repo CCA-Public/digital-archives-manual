@@ -6,7 +6,7 @@
 * [Deleting AIPs not indexed on a pipeline](#deletingaips)  
 * [Cleaning up after successful Automation Tools ingests](#autotoolssuccess)
 * [Responding to failed Automation Tools ingests](#autotoolsfailure)
-* [Adding new storage locations](#locations)  
+* [Adding and switching AIP Store locations](#locations)  
 * [Clearing space when local disk is nearly full](#clearingspace)  
 * [Restarting services](#restarting)  
 * [Log of changes to default Archivematica FPR](#fprchanges)  
@@ -80,7 +80,7 @@ You only need to manually call `transfer-script.sh` once - after that, the cront
 **Note that deleting `transfers.db` means that the Automation Tools will no longer have a record of which transfers in the `/mnt/incoming/auto-transfers` directory have already been started, so you will want to make sure only transfers you intend to start are present in that directory before deleting the database.**
 
 <a name="locations"></a>  
-## Adding new storage locations  
+## Adding and switching AIP Store locations  
 
 Each storage location configured in the Storage Service is 5 TB in size (this was done in order to make backups manageable for IT). As storage locations will, new locations will need to be added to the Storage Service and assigned as the default values for pipelines. **Locations should contain only AIPs for which DIPs will be produced (e.g. processed digital archives) or AIPs for which DIPs will not be produced (e.g. digitization masters), not mixed.**
 
