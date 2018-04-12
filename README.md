@@ -71,7 +71,7 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
     * [Deleting AIPs not indexed on a pipeline](guides/administration.md/#deletingaips) 
     * [Cleaning up after successful Automation Tools ingests](guides/administration.md/#autotoolssuccess)  
     * [Responding to failed Automation Tools ingests](guides/administration.md/#autotoolsfailure) 
-    * [Adding new storage locations](guides/administration.md/#locations)  
+    * [Adding and switching AIP Store locations](guides/administration.md/#locations)  
     * [Clearing space when local disk is nearly full](guides/administration.md/#clearingspace)  
     * [Restarting services](guides/administration.md/#restarting)  
     * [Log of changes to default Archivematica FPR](guides/administration.md/#fprchanges)  
