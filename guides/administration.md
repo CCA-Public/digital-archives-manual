@@ -84,14 +84,12 @@ You only need to manually call `transfer-script.sh` once - after that, the cront
 
 Each storage location configured in the Storage Service is 5 TB in size (this was done in order to make backups manageable for IT). As storage locations will, new locations will need to be added to the Storage Service and assigned as the default values for pipelines. **Locations should contain only AIPs for which DIPs will be produced (e.g. processed digital archives) or AIPs for which DIPs will not be produced (e.g. digitization masters), not mixed.**
 
-*These instructions will be updated when sponsored development around DIP creation workflow is complete*
-
 Steps to add a new location:  
 1. Ensure directory to add is mounted on Storage Service VM (read/write) and pipeline VMs (read-only). Ask CCA sysadmin to configure this if not true.    
 2. Configure as a storage space in the Storage Service GUI.  
 3. Set as default value in appropriate pipelines.  
 4. Update defaultProcessingMCP files with new Store AIP location in Automation Tools.  
-5. (If new storage location will contain AIPs for which we want to generate DIPs) Modify the `--location-uuid` value in `/etc/archivematica/automation-tools/create_dips_job_script.sh` to the value for the new AIP Store location.  
+5. (If new storage location will contain AIPs for which we want to generate DIPs) Modify the `--location-uuid` value in `/etc/archivematica/automation-tools/create_dips_job_script.sh` to the value for the new AIP Store location. If it is necessary to monitor and create DIPs for more than one AIP Store location, create a second script (e.g. `create_dips_job_script_1.sh`) and add this additional script to the crontab under user `archivematica` (to edit the crontab, use `sudo crontab -u archivematica -e`).  
 
 <a name="clearingspace"></a>
 ## Clearing space when local disk is nearly full  
