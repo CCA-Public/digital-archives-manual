@@ -32,7 +32,7 @@ When the ES index is dropped, backups and logs from `/srv/am-est-backups` and `/
 
 To drop the ES index on a pipeline:
 
-`curl -XDELETE http://<pipeline.ip.address>/aips`
+`curl -XDELETE http://<pipeline.ip.address>:9200/aips`
 
 <a name="reindexing"></a>
 ## Reindexing AIPs Archival Storage indexes  
