@@ -15,7 +15,7 @@
 <a name="fixity"></a>  
 ## Fixity checking and repair  
 
-Fixity checks of all AIPs are conducted on a quarterly basis using the [Fixity](https://github.com/artefactual/fixity) application. Fixity's `scanall` function is run via the [cca-fixity](https://github.com/timothyryanwalsh/cca-fixity) scripts installed at `/var/archivematica/cca-fixity` on the Storage Service VM and called automatically on the second Friday of each January, April, July, and October via the crontab. Logs are saved on the Archivematica Storage Service server at `/var/log/cca-fixity`and results are emailed to the relevant administrators.
+Fixity checks of all AIPs are conducted on a quarterly basis using the [Fixity](https://github.com/artefactual/fixity) application. Fixity's `scanall` function is run via the [cca-fixity](https://github.com/CCA-Public/cca-fixity) scripts installed at `/var/archivematica/cca-fixity` on the Storage Service VM and called automatically on the second Friday of each January, April, July, and October via the crontab. Logs are saved on the Archivematica Storage Service server at `/var/log/cca-fixity`and results are emailed to the relevant administrators.
 
 If you must run a fixity check manually, use [nohup](https://en.wikipedia.org/wiki/Nohup) to ensure that the process runs to completion in the background, even if your terminal session ends, e.g.:  
 
@@ -37,7 +37,7 @@ To drop the ES index on a pipeline:
 <a name="reindexing"></a>
 ## Reindexing AIPs Archival Storage indexes  
 
-To re-index an AIP in an Archival Storage index on a given pipeline, you can use the `rebuild-aip-index.py` and `reindex-aip.sh` scripts from the Archivematica folder of the [CCA scripts repo](https://github.com/timothyryanwalsh/cca-scripts/tree/master/archivematica) on the pipeline where you would like the AIPs to be re-indexed.
+To re-index an AIP in an Archival Storage index on a given pipeline, you can use the `rebuild-aip-index.py` and `reindex-aip.sh` scripts from the Archivematica folder of the [CCA scripts repo](https://github.com/CCA-Public/cca-scripts/tree/master/archivematica) on the pipeline where you would like the AIPs to be re-indexed.
 
 The bash script `reindex-aip.sh` reindexes an AIP using the [Archivematica devtools](https://github.com/artefactual/archivematica-devtools).
 
