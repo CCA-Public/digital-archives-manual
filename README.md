@@ -49,7 +49,6 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
     * [Processing forward-migrated files](guides/arrangement.md#processfm)
 * **[Description](guides/description.md)**  
     * [Principles and practical guidelines for description of born-digital archives](guides/description.md/#descriptionprincipleandpractice)  
-    * [Preferred terminology](guides/description.md/#terminology)  
     * [Fonds-, series-, and project-level description](guides/description.md/#higherlevel)  
     * [File ("groupe")-level description](guides/description.md/#groupdesc)   
     * [Item ("pièce")-level description](guides/description.md/#itemdesc)  
