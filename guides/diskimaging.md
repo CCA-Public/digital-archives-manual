@@ -47,7 +47,7 @@ Steps for imaging physical media with Guymager:
     * Check "Calculate MD5", "Calculate SHA-1", and "Verify image after acquisition" 
     * Keep other options unchecked   
   
-![Bitcurator2](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/guymager_settings.png)  
+![Bitcurator2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/guymager_settings.png)  
 
 * Once settings have been confirmed, press 'Start' to start the disk imaging process.
 * Guymager will track its progress and give you color-coded indications when the process has been completed successfully or has failed. If it fails, make a note of this in the versement stabilization spreadsheet and set the disk aside for review by the Digital Archivist.  
@@ -94,10 +94,9 @@ Steps for imaging physical media with FTK Imager:
 ![FTK5](https://blogs.sans.org/computer-forensics/files/2009/06/select-image-type.png)
 ![FTK6](https://blogs.sans.org/computer-forensics/files/2009/06/evidence-info.png)
 
- * FTK Imager will now ask you for information about where to save the resulting disk image and metadata files. Enter the following and then select 'Finish':
+* FTK Imager will now ask you for information about where to save the resulting disk image and metadata files. Enter the following and then select 'Finish':
   * **Image destination folder:** Enter the network location of your current work folder in the Catalogers drive.
   * **Image filename:** Enter the disk's identifier with no spaces. Replace any colons (':') with underscores ('_').  
-
 * Double-check to make sure that the Image Destination and settings appear correct and then select 'Start' to begin the disk imaging process.  
 
 ![FTK7](https://blogs.sans.org/computer-forensics/files/2009/06/ready-to-create.png)  
@@ -134,20 +133,20 @@ Steps:
 
 IsoBuster automatically reads the entire content of the disk and displays a tree view of the repositories and files on the left side column. If not, select the right option drive in the drop-down box below the menu. The message “No media present” shows up if there is no disk mounted to the drive. 
 
-![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_01.PNG?raw=true)
+![IsoBuster](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/isobuster_01.PNG?raw=true)
 
 The detected media (CD/DVD, floppy disk) shows up at the top of the tree view. Click on the arrow left to the File System Icon (e.g. the green UDF icon named 'board2' in the image below) in order to show the internal structure of the repositories. When you select a repository, its content shows up in the right pane. 
 
-![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_06.PNG?raw=true)
+![IsoBuster](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/isobuster_06.PNG?raw=true)
 
    * In the left pane, right-click on the Media icon. Under the option <Extract CD Image>, select “RAW (.bin, .iso)”.
 
-![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_02.png?raw=true) 
+![IsoBuster](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/isobuster_02.png?raw=true) 
  
    * A new window opens up, asking you where you want to save your image file. Select the project folder you have previously created. Title the disk image by entering the disk's identifier without spaces and by replacing any colons with underscores (e.g.: DR2008:0016:346 becomes DR2008_0016_346).
    * In the “Save as type” menu, select the .iso extension.
  
- ![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_03.PNG?raw=true)
+ ![IsoBuster](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/isobuster_03.PNG?raw=true)
    
    * Click on “Save”. A new window pops up, showing the progress of the disk image extraction.
    * Once the extraction is done, IsoBuster will create a MD5 Checksum file.
@@ -165,10 +164,10 @@ The detected media (CD/DVD, floppy disk) shows up at the top of the tree view. C
 Audio-CDs don’t contain any data and thus, they have no file system. There’s neither data files nor folders on an Audio-CD, but audio tracks listed on a Table of Content (TOC).
    * Follow Steps 1 and 2
    * Extract the content of each audio track in an uncompressed WAVE file.
-   * Right-click on the media icon (CD), then under Extract CD <Content>, select “Extract Audio to Wave File (*.wav).
-   * Once the extraction is completed, make sure the Wave files are in the current working folder and rename it/them using the media’s accession number (e.g. DR2008_0016_264.wav). If you have multiple tracks, add track number at the end of the title (e.g.: DR2008_0016_264_01; DR2008_0016_264_02). 
-   * Flag the Audio-CDs in the versement stabilization spreadsheet.
- 
+   * Right-click on the media icon (CD), then under Extract CD <Content>, select “Extract Audio to Wave File (\*.wav).
+   * Once the extraction is completed, make sure the Wave files are in the current working folder and rename it/them using the media’s accession number (e.g. DR2008_0016_264.wav). If you have multiple tracks, add track number at the end of the title (e.g.: DR2008_0016_264_01; DR2008_0016_264_02).  
+   * Flag the Audio-CDs in the versement stabilization spreadsheet.  
+
 #### Disk imaging a DVD
 
    * Go through Steps 1 and 2.
@@ -188,11 +187,11 @@ The following guidelines may be useful if you encounter difficulties reading and
    * In the left-side panel, right-click on the Media Icon (CD/DVD+R) and select “Perform a surface scan”.
    * After the scan is done, IsoBuster gives you more information on the state of your disk. If everything’s good, the message “No physical errors encountered. Your disc is still in good shape” will show up. Otherwise, IsoBuster generates a report showing you the readability of the disk (in percentage). 
    
-![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_07.PNG?raw=true)
+![IsoBuster](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/isobuster_07.PNG?raw=true)
 
    * You can launch a more detailed report by right-clicking on the File System Icon >  Folder tree and file information > List files with read errors (in Edit Window). Files with read errors are identified by a red X sign in the right-side panel. In the report, note “Files with read errors in [Identification number]:” and save the list in your working folder, using it’s identification number as a filename (e.g.: DR2008_0016_118_ErrorFileList). 
    
- ![IsoBuster](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/isobuster_10.PNG?raw=true)
+ ![IsoBuster](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/isobuster_10.PNG?raw=true)
  
    * Depending on the results from the two previous analysis, you can either proceed to the extraction of the disk image or identify that the disk cannot be disk imaged in the versement stabilization spreadsheet. Follow Step 3 and 4 to extract disk image.
    * Identify the damaged media in the versement stabilization spreadsheet, including as much details as you can about the actual condition of the media. Write the errors logs filenames in the “Note” column of the versement stabilization spreadsheet for further reference.
@@ -210,20 +209,20 @@ Before starting processing, you first need to insert the floppy disk in the FC50
 * **Disk Type:** Selects the disk format of the disk you are currently reading from the device. If the disk type is not accurate, the disk simply won’t be read correctly or will not read at all. In order to set the disk type, you can select an option from the drop-down menu and test it first. Examine the label first in order to find any information that indicates the disk type. E.g. If you have a 360KB 5.25” floppy disk created in a DOS environment, select 'MS-DOS 360k'.  
 After selecting the disk type, click on 'Browse Disk Contents'. A new window shows up. If the disk type corresponds, the disk is read correctly and the file listing appears in the dialogue window. 
 
-![FC5025](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/fc5025_03.JPG?raw=true)
+![FC5025](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/fc5025_03.JPG?raw=true)
 
 If the disk type does **not** correspond, a message indicates: “Unable to get file listing!”. Note that this feature is not available for all Disk Types.  
 
-![FC5025](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/fc5025_02.JPG?raw=true)
+![FC5025](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/fc5025_02.JPG?raw=true)
 
 * **Output Image Directory:** Copy the path to the directory which will contain the disk image file.
 * **Output Image Filename:** Select a location and a name that describes best the content you are disk imaging, such as the media's identifier.
 
-![FC5025](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/fc5025_01.JPG?raw=true)
+![FC5025](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/fc5025_01.JPG?raw=true)
 
 * **Capture Disk:** Click the 'Capture Disk Image File' button to begin operating the drive. Each read error is indicated in the progress display window. If there are multiple errors, they are usually displayed quickly on after the other, with each successive error erasing the one before it. This is one of the main inconveniences of using the GUI for disk-imaging. On the other side, we can keep track of the multiple read errors and keep a record of the disk-imaging process by using the command-line for disk imaging with FC5025. The following guidelines will show us how.
 
-![FC5025](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/fc5025_04.JPG?raw=true)
+![FC5025](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/fc5025_04.JPG?raw=true)
 
 
 #### Disk-imaging from the command-line
@@ -257,13 +256,13 @@ its format.
 1.	From the BitCurator03 work station, launch the KryoFlux GUI by double-clicking on the file called kryoflux-ui.jar located on the Desktop.
 2.	At the beginning of each imaging session, calibrate the floppy drive by selecting the correct drive from the *Drive* menu then selecting *Calibrate* from the same menu. The 5.25" drive corresponds to *Drive 0* and the 3.5" drive to *Drive 1*. You should only need to calibrate the drive once per imaging session and any time you switch between disk drives. 
 
-![Kryoflux](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/kryoflux_step2_calibrate.png)
+![Kryoflux](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/kryoflux_step2_calibrate.png)
 
 3.	Configure the KryoFlux GUI to select the output directory for your newly-created disk images and log files. To do so, select *File → Settings* and click on the *Output* tab. Browse to the appropriate path to storage. Ensure that the Logs button is checked, and then click *OK*.
 4.	For each disk, enter a unique identifier. Click on *Enter name…* and type in a unique ID associated with the disk. The text entered here will become the filename for any disk images and log files created. Do not include the extension of the file name.
 5.	Select the image format(s) for the disk image using the dropdown list below the filename field. 
 
-![Kryoflux](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/kryoflux_step5_selectformat_02.png)
+![Kryoflux](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/kryoflux_step5_selectformat_02.png)
 
 Use the tables below to select the right image format(s). In order to choose multiple outputs, hold down the *Control (Ctrl)* key while making your selections.  In most cases, selecting an image format to obtain a sector image requires that you know something about the media in hand (physical format, system format, density, etc.)
 
@@ -298,7 +297,7 @@ Use the tables below to select the right image format(s). In order to choose mul
 7.	Once you hear the read head returning to its starting point (0), the disk stops spinning and the drive’s indicator light goes off meaning that the capture is done. A log file will automatically be generated in the directory you selected at step 3.
 8.	To image another disk, go back to step 4 and go on from there. If you switch drive and have not calibrated the other drive, continue from step 3. 
 
-![Kryoflux](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/media/photos/kryoflux_step7_cells.png)
+![Kryoflux](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/kryoflux_step7_cells.png)
  
  *The coloured cells show that the chosen Image Profile was not appropriate for the disk. Whenever you see a result pattern alternating between Unknown and Good (+ Modified), you probably have a 40 tracks disk. Retry imaging with the MFM sector image [40 tracks] profile and compare results.* 
 

@@ -16,9 +16,9 @@ When an accession is to be processed, the Digital Archivist downloads the "raw" 
 <a name="analysis"></a>
 ## Analyzing disk images with Disk Image Processor
 
-*Note: This section is accurate as of Disk Image Processor v0.3.1.*
+*Note: This section is accurate as of Disk Image Processor v1.0.0.*
 
-[Disk Image Processor](https://github.com/timothyryanwalsh/cca-diskimageprocessor) is a GUI tool developed for BitCurator that sits above two Python 3 scripts: diskimageanalyzer.py and diskimageprocessor.py.
+[Disk Image Processor](https://github.com/CCA-Public/diskimageprocessor) is a GUI tool developed for BitCurator that sits above two Python 3 scripts: diskimageanalyzer.py and diskimageprocessor.py.
 
 Each of the two scripts/modes takes a directory of disk images and related files as input and creates consistent standardized outputs as well as a description CSV.
 
@@ -40,7 +40,7 @@ The tool additionally creats an "analysis.csv" file that contains the following 
 * Virus found (True/False)  
 * Sorted list of file formats  
 
-![diskimageprocessoranalysis](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/dip-analysis.png)
+![diskimageprocessoranalysis](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/dip-analysis.png)
 
 Use of the Analysis mode can help you understand crucial aspects of a collection of disk images, and begin to formulate a strategy for their arrangement, description, and any format normalization or other preservation work that might be necessary.
 
@@ -72,15 +72,15 @@ Steps:
 
 * Right-click on the disk image. From the Scripts menu, choose "Mount Disk Image".  
 
-![mountscript1](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/mountscript1.png)  
+![mountscript1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/mountscript1.png)  
 
 * If the script was able to successfully mount the disk image, you will see a new drive available on the Desktop and in the dock on the left-hand side of the screen.  
 
-![mountscript2](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/mountscript2.png)  
+![mountscript2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/mountscript2.png)  
 
 * Click on the drive icon on the dock (or the desktop). This will allow you access to the files on the disk through the graphical user interface. From here, copy and paste the root directory or any files into a new folder in your project folder on the desktop (named after the disk's identifier).  
 
-![mountscript3](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/mountscript3.png)  
+![mountscript3](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/mountscript3.png)  
 
 Note: As you can see from the terminal window in the screenshot below, the Mount Disk Image script works by mounting the disk in the /media directory. The image will remain mounted as a drive in this directory until you unmount the disk image. **Please be sure to unmount the disk image after you have finished copying all files.** In order to unmount the disk image, right-click on the disk image file. From the Scripts menu, choose "Unmount Disk Image". If you are unsure if the image has been unmounted, you can open a Terminal and enter the following command:  
 
@@ -88,34 +88,34 @@ Note: As you can see from the terminal window in the screenshot below, the Mount
 
 If you see the disk's identifier listed in the results, the disk image has not yet been unmounted.  
 
-![mountscript4](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/mountscript4.png)  
+![mountscript4](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/mountscript4.png)  
 
 <a name="ftkimagerfiles"></a>  
 ### Extracting files from disk images with FTK Imager  
 
 * From the File menu, select "Add Evidence Item..."  
 
-![ftkextract1](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/ftkextract1.jpg)  
+![ftkextract1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract1.jpg)  
 
 * In the Select Source menu, select "Image File" and then press "Next".  
 
-![ftkextract2](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/ftkextract2.jpg)  
+![ftkextract2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract2.jpg)  
 
 * In the Evidence Source Selection menu, click "Browse", find the disk image file you would like to extract files from, then press "Open" and "Finish".  
 
-![ftkextract3](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/ftkextract3.jpg)  
+![ftkextract3](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract3.jpg)  
 
 * You should now see the media listed in the Evidence Tree window. In the Evidence Tree (not the File List, as pictured below), right-click on the root folder you would like to extract and choose "Export Files...".  
 
-![ftkextract4](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/ftkextract4.jpg)  
+![ftkextract4](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract4.jpg)  
 
 * Select a Destination for the files that you are extracting.  
 
-![ftkextract5](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/ftkextract5.jpg)  
+![ftkextract5](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract5.jpg)  
 
 * If the process is successful, you should see an "Export Results" pop-up with details on the number of folders, files, and bytes copied. If the process was successful, press "OK" and visually verify through the file explorer that the files have been saved in the location you intended. If all looks good, note that files have been extracted in the versement stabilization spreadsheet, and move on to the next disk image. If there were any errors, make a note of this in the versement stabilization spreadsheet and consult the Digital Archivist.  
 
-![ftkextract6](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/ftkextract6.jpg)  
+![ftkextract6](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract6.jpg)  
 
 <a name="hfsfiles"></a>
 ### Extracting files from images of Hierarchical File System (HFS) disks   
@@ -138,7 +138,7 @@ At this point, ewfexport will ask you for some additional input. Enter the follo
 * **Start export at offset:** 0 (this should be the default; if so, just press enter)  
 * **Number of bytes to export:** maximum value in range (this should be the default; if so, just press enter)  
 
-At this point, ewfexport will tell you the process might take a few minutes and get started. When the process is completed, there should be a *.raw file in your target destination to match the E01 file you selected as the input.  
+At this point, ewfexport will tell you the process might take a few minutes and get started. When the process is completed, there should be a \*.raw file in your target destination to match the E01 file you selected as the input.  
 
 Once you have the raw disk image, open HFSExplorer (located in the 'Additional Tools' folder on the Desktop).  
 
@@ -166,7 +166,7 @@ The final step is to export these files from HFSExplorer to a desktop or network
 
 ![hfsexplorer5](http://wiki.bitcurator.net/images/0/0a/HFSextract3.png)  
 
-* If all goes well, you will get a message saying 'Extraction finished.' NOTE: It is common for HFSExplorer to run into an issue with invalid characters in file names during the export process, due to the differences in allowable file name characters between HFS and modern file systems. When HFSExplorer runs into files will such characters, a pop-up window will appear asking you to auto-rename or manually rename the files. You may select auto-rename, which will replace 'illegal' characters such as forward slashes ('/') and full stops ('.') with underscores ('_').
+* If all goes well, you will get a message saying 'Extraction finished.' NOTE: It is common for HFSExplorer to run into an issue with invalid characters in file names during the export process, due to the differences in allowable file name characters between HFS and modern file systems. When HFSExplorer runs into files will such characters, a pop-up window will appear asking you to auto-rename or manually rename the files. You may select auto-rename, which will replace 'illegal' characters such as forward slashes ('/') and full stops ('.') with underscores ('\_').
 
 
 <a name="reporting"></a>  
