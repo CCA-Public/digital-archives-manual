@@ -54,7 +54,7 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
   * Your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator machines  
   * All SIPs are named with the scheme [identifier]---[accession number]. If SIPs consist of unprocessed material, a disk image for example, only use its identifier to name it.
   * Data entry for all SIPs has been completed in TMS  
-2. Copy the SIPs to Pipeline 2 Transfer Source using the "send_to_archivematica.py" script with option "--pipeline 2":`python3 /path/to/send_to_archivematica.py --pipeline 2 '/path/to/transfer'`
+2. Copy the SIPs to Pipeline 2 Transfer Source using the "send_to_archivematica.py" script with option "--pipeline 2": `python3 /path/to/send_to_archivematica.py --pipeline 2 '/path/to/transfer'`
 3. Alert the Digital Archivist that your SIPs are ready for ingest.  
 4. When the pipeline is clear, the Digital Archivist will move the appropriate SIPs to the Automation Tools watched folder for ingest in batches of <50 SIPs at a time. Archivematica will then ingest each of the SIPs, one at a time.  
 5. QA the ingests, marking all information in an [Archivematica ingest spreadsheet](https://github.com/CCA-Public/digital-archives-manual/blob/master/forms/amatica_ingest_spreadsheet.xlsx):  
