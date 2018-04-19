@@ -87,9 +87,9 @@ Each storage location configured in the Storage Service is 5 TB in size (this wa
 Steps to start using a new AIP Store location:  
 
 1. Ensure directory to add is mounted on Storage Service VM (read/write) and pipeline VMs (read-only). Ask CCA sysadmin to configure this if not true.    
-2. Configure as a storage space in the Storage Service GUI.  
-3. Set as default value in appropriate pipelines.  
-4. Update defaultProcessingMCP files with new Store AIP location in Automation Tools.  
+2. Configure as a Space and AIP storage Location in the Storage Service GUI (or ask Artefactual support to do this for you).     
+3. Set new AIP storage location as the default value in appropriate pipelines.  
+4. Replace the defaultProcessingMCP.xml file used with Automation Tools transfers at `/opt/archivematica/automation-tools/transfers/pre-transfer/defaultProcessingMCP.xml` with an updated configuration.  
 5. (If new storage location will contain AIPs for which we want to generate DIPs) Modify the `--location-uuid` value in `/etc/archivematica/automation-tools/create_dips_job_script.sh` to the value for the new AIP Store location. If it is necessary to monitor and create DIPs for more than one AIP Store location, create a second script (e.g. `create_dips_job_script_1.sh`) and add this additional script to the crontab under user `archivematica` (to edit the crontab, use `sudo crontab -u archivematica -e`).  
 
 <a name="clearingspace"></a>
