@@ -73,9 +73,9 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
         * Download the AIP and upload the AIP METS file to [METSFlask](http://bitarchivist.pythonanywhere.com/) for examination. Verify that Dublin Core descriptive metadata was written to the METS file, and quickly confirm that the information about the original files, particularly format identification and last modified date, appears correct. Please remember to delete your METS file from the list when you have finished.
    * You may have also received a number of normalization failure report emails from Archivematica during ingest. In instances where the failed files have exit codes 0 or 2, these can be ignored. In instances where the failed files have exit code 1, it is worth confirming that the file type is actually normalized at CCA; if so, it may be worth investigating further, as these files may need to be [manually normalized](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/arrangement.md#mannorm) and reingested.
 6. When Ingest and QA is complete:
-  * Inform and send a copy of your ingest spreadsheet to the Digital Archivist  
-  * Save your ingest spreadsheet to the appropriate "Acquisition et traitement" folder  
-  * Delete the local copy of the SIPs from the BitCurator machine 
+       * Inform and send a copy of your ingest spreadsheet to the Digital Archivist  
+       * Save your ingest spreadsheet to the appropriate "Acquisition et traitement" folder  
+       * Delete the local copy of the SIPs from the BitCurator machine 
 7. Create an object package for the files in TMS corresponding to the SIPs. Send an email to Deplacement requesting that each of the files in the object package be localized with the location "Dark archive", CCing the Digital Archivist.  
 8. The Digital Archivist will delete the successfully ingested SIPs from `/mnt/incoming/auto-transfers` (in Pipeline 1, the `transfer.py` script has been amended to delete the transfer source automatically after successful ingest, but it is still necessary to manually delete transfer sources from Pipelines 2 and 3).  
 
