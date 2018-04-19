@@ -77,7 +77,7 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
   * Save your ingest spreadsheet to the appropriate "Acquisition et traitement" folder  
   * Delete the local copy of the SIPs from the BitCurator machine 
 7. Create an object package for the files in TMS corresponding to the SIPs. Send an email to Deplacement requesting that each of the files in the object package be localized with the location "Dark archive", CCing the Digital Archivist.  
-8. The Digital Archivist will delete the successfully ingested SIPs from /mnt/incoming/auto-transfers (in Pipeline 1, the `transfer.py` script has been amended to delete the transfer source automatically after successful ingest, but it is still necessary to manually delete transfer sources from Pipelines 2 and 3).  
+8. The Digital Archivist will delete the successfully ingested SIPs from `/mnt/incoming/auto-transfers` (in Pipeline 1, the `transfer.py` script has been amended to delete the transfer source automatically after successful ingest, but it is still necessary to manually delete transfer sources from Pipelines 2 and 3).  
 
 <a name="automationtoolsav"></a>  
 #### Procedure for Automation Tools ingest: digitized A/V  
