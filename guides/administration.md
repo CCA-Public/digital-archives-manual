@@ -1,5 +1,6 @@
 # Archivematica administration
 
+* [Archivematica server monitoring](#monitoring)  
 * [Fixity checking and repair](#fixity)  
 * [Dropping MySQL and ES data in pipelines](#flushing)  
 * [Reindexing AIPs in Archival Storage indexes](#reindexing)  
@@ -12,7 +13,7 @@
 * [Log of changes to default Archivematica FPR](#fprchanges)  
 * [Archivematica configuration settings](#configsettings)  
 
-<a name="monitoring"</a>  
+<a name="monitoring"></a>  
 ## Archivematica server monitoring
 
 [Server monitoring](https://vsp-prtg-01.int.cca/public/mapshow.htm?id=2636&mapid=archivematica)
