@@ -209,7 +209,7 @@ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator mac
 <a name="dcmetadata"></a>  
 ## Adding descriptive metadata to the AIP  
 
-CCA adds descriptive metadata to every AIP to aid in discoverability and re-use of data. In most cases, metadata will be entered automatically during the ingest process using [Automation Tools](https://github.com/artefactual/automation-tools) and [add-tms-metadata.py](https://github.com/CCA-Public/cca-scripts/blob/master/archivematica/add_tms_metadata.py). The `add-tms-metadata.py` script uses a minimal GET-only TMS API implemented by a former CCA programmer, based on similar work at MOMA. It can be accessed [here](http://api.tms.cca.qc.ca/API/Object/AP174), substituting AP174 for the appropriate Object Number in TMS.  
+CCA adds descriptive metadata to every AIP to aid in discoverability and re-use of data. In most cases, metadata will be entered automatically during the ingest process using [Automation Tools](https://github.com/artefactual/automation-tools) and [add-tms-metadata.py](https://github.com/CCA-Public/cca-scripts/blob/master/archivematica/add_tms_metadata.py). The `add-tms-metadata.py` script retrieves metadata using a minimal GET-only TMS API implemented by a former CCA programmer, based on similar work that was open sourced by MoMA. It can be accessed [here](http://api.tms.cca.qc.ca/API/Object/AP174). To retrieve some basic metadata (with limited fields) for a record in TMS, make a GET API call to `http://api.tms.cca.qc.ca/API/Object/<enter ObjectNumber here>`.
 
 CCA's local standards for metadata entry are as follows:  
 
