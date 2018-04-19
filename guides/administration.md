@@ -15,7 +15,7 @@
 <a name="monitoring"</a>  
 ## Archivematica server monitoring
 
-(Server monitoring)[https://vsp-prtg-01.int.cca/public/mapshow.htm?id=2636&mapid=archivematica]
+[Server monitoring](https://vsp-prtg-01.int.cca/public/mapshow.htm?id=2636&mapid=archivematica)
 
 <a name="fixity"></a>  
 ## Fixity checking and repair  
