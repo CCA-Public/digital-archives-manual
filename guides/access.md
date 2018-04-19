@@ -24,6 +24,14 @@ CCA-style DIPs can be created from AIPs registered in the Storage Service using 
 
 On Archivematica pipeline VSP-AMPL-02, the [create_dips_job.py](https://github.com/artefactual/automation-tools/blob/master/aips/create_dips_job.py) script is configured within Automation Tools to automatically generate a DIP for every AIP stored in appropriate AIP Stores (excluding those used for storing unprocessed "raw" AIPs).  
 
+A local version of Automation Tools has also been installed and configured on each of the dedicated BitCurator workstations to enable local creation of DIPs in BitCurator as need be - for instance, to help with filling a reference request. To create a DIP on one of the BitCurator stations:
+
+* Go look up and copy the UUID for the relevant AIP from the Storage Service  
+* Run the `create_dip_script.sh` script, passing the AIP UUID as the first argument:  
+`/mnt/1TB_RAID/dips/automation-tools/create_dip_script.sh <UUID>`  
+
+The DIP will be created in `/mnt/1TB_RAID/dips/dips`.  
+
 <a name="accessworkflow"></a>  
 ## Current access workflow 
 
