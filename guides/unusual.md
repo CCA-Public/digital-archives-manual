@@ -4,7 +4,11 @@ Certain file types require atypical processing workflows, often using specialize
 
 * [Email archives and ePADD](#email)
     * [Email formats](#emailformats)
-
+    * [Import and appraisal module](#emailappraisal)
+    * [Processing module](#emailprocessing)
+    * [Export, SIPs, AIPs, and DIPs](#emailexport)
+    * [Delivery module](#emaildelivery)
+    
 <a name="email"></a>  
 ## Email archives and ePADD
 
@@ -24,3 +28,12 @@ Confirm the following settings are selected in Emailchemy:
 SCREENSHOT HERE.
 
 Use the 
+
+<a name="emailappraisal"></a>  
+### Import and appraisal module
+<a name="emailprocessing"></a>  
+### Processing module
+<a name="emailexport"></a>  
+### Export, SIPs, AIPs, and DIPs
+<a name="emaildelivery"></a>  
+### Delivery module
