@@ -25,7 +25,7 @@ ePADD can be downloaded [here](https://library.stanford.edu/projects/epadd/downl
 ePADD only works with live email accounts (including IMAP) and email archives in the MBOX format. If your email archives are in a different email format, like Microsoft Outlook PST, they will need to be converted using [Emailchemy](https://weirdkid.com/emailchemy/), an email format converter located on the CD imaging workstation. The readpst command line utility is not recommended, as it throws errors in ePADD. 
 
 To use Emailchemy: 
-1.Confirm the following settings are selected in Emailchemy, under Tools > Options: 
+1. Confirm the following settings are selected in Emailchemy, under Tools > Options: 
     * > General, check: 
        * De-duplicate messages while converting
        * Automatically clear de-duplicator memory after conversions
