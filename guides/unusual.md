@@ -46,7 +46,7 @@ To use Emailchemy:
        * Translate Exchange-style email address to Internet-style (SMTP)
        * Extract all message object types
 2. Using the email conversion wizard, choose your source file type and click next. 
-3. On the next screen, find the file or folder containing your email archives files. If you are pointing to a folder of files, it needs to be in a single director, as Emailchemy does not recurse. Click next.
+3. On the next screen, find the file or folder containing your email archives files. **If you are pointing to a folder of files, it needs to be in a single directory**, as Emailchemy does not recurse. Click next.
 4. Ensure the "filter duplicate messages" box is checked, and all others are unchecked. Click covert. This may take some time. 
 5. Find the log file created during conversion and save it to a safe place. It will eventually be included in your SIP metadata.
 
@@ -74,6 +74,8 @@ For CCA's purposes, the appraisal module will typically only be used for its imp
 
 <a name="emailexport"></a>  
 ### Export, SIPs, AIPs, and DIPs
+
+include your emailchemy log, if you have one
 
 <a name="emaildelivery"></a>  
 ### Delivery module 
