@@ -8,6 +8,7 @@ Certain file types require atypical processing workflows, often using specialize
     * [Processing module](#emailprocessing)
     * [Export, SIPs, AIPs, and DIPs](#emailexport)
     * [Delivery module](#emaildelivery)
+    * [Cleaning up ePADD](#cleanupepadd)
     
 <a name="email"></a>  
 ## Email archives and ePADD
@@ -37,3 +38,5 @@ Use the
 ### Export, SIPs, AIPs, and DIPs
 <a name="emaildelivery"></a>  
 ### Delivery module
+<a name="cleanupepadd"></a>  
+### Cleaning up ePADD
