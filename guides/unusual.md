@@ -24,14 +24,50 @@ ePADD can be downloaded [here](https://library.stanford.edu/projects/epadd/downl
 
 ePADD only works with live email accounts (including IMAP) and email archives in the MBOX format. If your email archives are in a different email format, like Microsoft Outlook PST, they will need to be converted using [Emailchemy](https://weirdkid.com/emailchemy/), an email format converter located on the CD imaging workstation. The readpst command line utility is not recommended, as it throws errors in ePADD. 
 
-Confirm the following settings are selected in Emailchemy: 
-
-SCREENSHOT HERE.
-
+To use Emailchemy: 
+1.Confirm the following settings are selected in Emailchemy, under Tools > Options: 
+    * > General, check: 
+       * De-duplicate messages while converting
+       * Automatically clear de-duplicator memory after conversions
+    * > Files/Folders, check: 
+       * Preserve folder structure
+       * Allow non-English characters in new file and folder names
+       * Replace disallowed filename characters with a dash
+    * > Logging, check: 
+       * Write Conversion Log
+       * Use default log file location
+       * Log source file checksums before and after conversion
+    * > Headers, check: 
+       * Strict RFC-2822 compliance for parsing
+       * Preserve optional Extension and User-Defined header fields
+       * Standardize dates
+    * > Outlook (Win), check: 
+       * Save encrypted message text as attachment
+       * Translate Exchange-style email address to Internet-style (SMTP)
+       * Extract all message object types
+2. Using the email conversion wizard, choose your source file type and click next. 
+3. On the next screen, find the file or folder containing your email archives files. If you are pointing to a folder of files, it needs to be in a single director, as Emailchemy does not recurse. Click next.
+4. Ensure the "filter duplicate messages" box is checked, and all others are unchecked. Click covert. This may take some time. 
+5. Find the log file created during conversion and save it to a safe place. It will eventually be included in your SIP metadata.
 
 <a name="emailappraisal"></a>  
 ### Import and appraisal module
 **NOTE:** Before importing new archives into ePADD, ensure that the previous user properly [cleaned up ePADD](#cleanupepadd) from their session.
+
+The appraisal module is the default starting screen after launching ePADD. Appraisal is intended to be used by the donor to flag and annotate material without making any permanent changes to the collection. The “Do not transfer” and restriction flags are basically suggestions that are passed onto the next module. 
+
+For CCA's purposes, the appraisal module will typically only be used for its importer. Additional review and restriction will occur in the processing module. To import your MBOX files into ePADD: 
+1. Launch ePADD by clicking epadd.exe. By default, ePADD runs with 4GB of RAM, but additional RAM may be needed for larger collections. If this is the case, download epadd-standalone.jar, and launch ePADD using the code below, where # identifies the amount of RAM (in GB) you wish to allocate. 8 GB is typically sufficient.
+   ```
+   java -Xmx#g -jar /file/path/to/epadd-standalone.jar
+   ```
+2. Click "Import" at the top of the ePADD browser. 
+3. Enter as much metadata as possible. This can be added to and edited in the processing module. 
+4. Point ePADD to the emails to process:
+   * For public email accounts (e.g. Google, Yahoo), enter the email address and password for the account. 
+   * For private IMAP accounts (e.g. university emails), enter the IMAP server, email address, and password for the account. You may need to be in touch with the donor or their IT provider to access their server.
+   * For MBOX files, select the directory where the MBOX files are located. The files need to be in a single directory. You may also enter the name of the email source, which is an optional field.
+5. Click continue. 
 
 <a name="emailprocessing"></a>  
 ### Processing module
@@ -72,3 +108,5 @@ This can also be achieved by logging out of the workstation and logging in again
 For each module, ePADD save its contents to a corresponding directory in C:/Users/user. All of emails in those directories will display in the corresponding module, regardless of provenance, meaning that they must be deleted between processing projects so that materials are not accidentally mixed. In order to clean up ePADD:
 1. Go to C:/Users/user.
 2. There will be a number of directories whose titles begin with "epadd-." Delete all of these directories EXCEPT "epadd-settings." 
+
+ePADD can now be used to process a new group of emails.
