@@ -84,6 +84,8 @@ The archivist can begin reviewing, restricting, and assigning metadata in the pr
 1. Switch ePADD to the processing module by clicking the blue question mark in the top right corner. Click "ePADD Mode." Choose "PROCESSING" from the drop-down menu.
 2. Add your archives by clicking the Add tab. Next to "Accession folder," click Browse and choose the "Archive of (archive creator) folder" created in the previous module. Fill out as much metadata as possible. You can return to this later. Click "Import Accession." This may take some time.
 
+In order to thoroughly reda
+
 <a name="emailexport"></a>  
 ### Export, SIPs, AIPs, and DIPs
 
