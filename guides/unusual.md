@@ -73,10 +73,16 @@ For CCA's purposes, the appraisal module will typically only be used for its imp
 
 Because the appraisal module does not provide unique functionality, and because CCA's use case does not anticipate donor review, the next step is to export the appraisal module to the processing module. In order to do so: 
 
-1. Click the export tab at the top of the screen. 
+1. Click the Export tab at the top of the screen.
+2. Under "Export messages and attachments," click Browse, and choose C:/Users/user. Click Export (NOT Export to MBOX). This may take some time. It will save as "ePADD archive of (name of archive creator)." This folder is now ready to be imported into the processing module.
 
 <a name="emailprocessing"></a>  
 ### Processing module
+
+The archivist can begin reviewing, restricting, and assigning metadata in the processing module. To do so: 
+
+1. Switch ePADD to the processing module by clicking the blue question mark in the top right corner. Click "ePADD Mode." Choose "PROCESSING" from the drop-down menu.
+2. Add your archives by clicking the Add tab. Next to "Accession folder," click Browse and choose the "Archive of (archive creator) folder" created in the previous module. Fill out as much metadata as possible. You can return to this later. Click "Import Accession." This may take some time.
 
 <a name="emailexport"></a>  
 ### Export, SIPs, AIPs, and DIPs
