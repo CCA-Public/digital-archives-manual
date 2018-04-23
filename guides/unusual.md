@@ -67,7 +67,13 @@ For CCA's purposes, the appraisal module will typically only be used for its imp
    * For public email accounts (e.g. Google, Yahoo), enter the email address and password for the account. 
    * For private IMAP accounts (e.g. university emails), enter the IMAP server, email address, and password for the account. You may need to be in touch with the donor or their IT provider to access their server.
    * For MBOX files, select the directory where the MBOX files are located. The files need to be in a single directory. You may also enter the name of the email source, which is an optional field.
-5. Click continue. 
+      * **NOTE:** If you are importing a number of MBOX files, it may be worthwhile to ensure they have descriptive file names (if possible), as Emailchemy often changes the file titles and they may be difficult to distinguish during processing.
+5. Click continue. The next screen will load all of the MBOX files or IMAP folders in the designated location. This may take some time. Check the box next to the appropriate folder and click Continue. (It is not necessary to input the date range at this time.)
+6. ePADD will work to read the selected files. This may take some time, depending on how many emails total there are. When this process is complete, ePADD displays the emails in the appraisal module.
+
+Because the appraisal module does not provide unique functionality, and because CCA's use case does not anticipate donor review, the next step is to export the appraisal module to the processing module. In order to do so: 
+
+1. Click the export tab at the top of the screen. 
 
 <a name="emailprocessing"></a>  
 ### Processing module
