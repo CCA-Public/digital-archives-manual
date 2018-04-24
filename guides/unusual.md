@@ -84,7 +84,36 @@ The archivist can begin reviewing, restricting, and assigning metadata in the pr
 1. Switch ePADD to the processing module by clicking the blue question mark in the top right corner. Click "ePADD Mode." Choose "PROCESSING" from the drop-down menu.
 2. Add your archives by clicking the Add tab. Next to "Accession folder," click Browse and choose the "Archive of (archive creator) folder" created in the previous module. Fill out as much metadata as possible. You can return to this later. Click "Import Accession." This may take some time.
 
-In order to thoroughly reda
+**The Browse tab**
+
+Once ePADD has finished importing the accession, the archivist can begin processing the materials from the Browse screen which looks like: 
+
+**INSERT SCREENSHOT HERE**
+
+The majority of processing involves reviewing the email to ensure that it is within scope and does not contain sensitive material. While reviewing email, the Labels tab can be used to restrict materials. The labels "stick" until the archives is exported to the next module. The "Cleared for Release" and "Reviewed" flags disappear, and the emails marked "Do Not Transfer" are not moved to the next module, effectively restricting/deleting them from the collection. Emails can also be scheduled for temporary restriction; see the [User Guide](https://docs.google.com/document/d/1ZMuWU0z-IVsk80_lUEYMfVrwfCsS1bp0sjL28GBGcMU/edit) for more information.
+
+The review process need not occur in any particular order. ePADD provides the following tools:
+
+1. *Correspondents:* A list of all email addresses (to, from, mentioned) in the archive, and ePADD's best guess at the contact's name and other email addresses. 
+   * Edit correspondents list to correctly pair contacts with their email addresses and remove false positives.
+   * Delete correspondents whose emails are out of scope.
+2. *Person entities:* A list of all people recognized by ePADD. Mixed results; requires no further processing.
+3. *Other entities:* A list of all places and corporate names recognized by ePADD. Mixed results; requires no further processing.
+4. *Folder view:* All emails sorted by folder (e.g. Inbox, Sent, Drafts). 
+   * Determine whether all folders are within scope of the collection.
+   * Review "Deleted Items" folders to determine whether they should be kept. 
+5. *Image attachments:* A gallery of all images attached to emails. Requires no further processing.
+6. *Other attachments:* All other file types attached to emails, available for download. Requires no further processing.
+7. *Lexicon search:* **INSERT LINKS** Keyword searching based on defined lexicons to identify sensitive materials. Two lexicons, CCA.lex and German.lex, were developed for AP195, in order to collocate sensitive words relevant to CCA's use case and provide (limited) German-language functionality. Note that these lexicons should be considered in beta, and all lexicons should be considered in light of a collection's context.
+   * Use lexicon searching to identify potentially sensitive and out of scope material.
+8. *Labels:* Summary of labels used. You can add new labels here if needed.
+9. *Data:* Import log. It may be worth ensuring there were no major import error, but no further processing necessary.
+
+**The Search Tab**
+
+In addition to using the lexicons, the Search tab allows you to keyword search individually. You may want to do this if you notice out of scope email that is not flagged by lexicon searching. For example, in AP195, the archive creator used her personal email to find a new apartment. None of the relevant words were flagged by the lexicons, and keyword searching terms like "rent," "lease," and "flat" made it possible to screen out this material.
+
+**METADATA TAB???**
 
 <a name="emailexport"></a>  
 ### Export, SIPs, AIPs, and DIPs
