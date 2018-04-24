@@ -88,9 +88,11 @@ The archivist can begin reviewing, restricting, and assigning metadata in the pr
 
 Once ePADD has finished importing the accession, the archivist can begin processing the materials from the Browse screen which looks like: 
 
-**INSERT SCREENSHOT HERE**
+![Screenshot of ePADD Browse tab](../media/photos/epadd_screenshot.JPG)
 
 The majority of processing involves reviewing the email to ensure that it is within scope and does not contain sensitive material. While reviewing email, the Labels tab can be used to restrict materials. The labels "stick" until the archives is exported to the next module. The "Cleared for Release" and "Reviewed" flags disappear, and the emails marked "Do Not Transfer" are not moved to the next module, effectively restricting/deleting them from the collection. Emails can also be scheduled for temporary restriction; see the [User Guide](https://docs.google.com/document/d/1ZMuWU0z-IVsk80_lUEYMfVrwfCsS1bp0sjL28GBGcMU/edit) for more information.
+
+![Screenshot of ePADD labels](../media/photos/epadd_labels.JPG)
 
 The review process need not occur in any particular order. ePADD provides the following tools:
 
