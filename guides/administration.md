@@ -102,8 +102,8 @@ These AIP Store locations are already configured in the Archivematica Storage Se
 
 | AIP Store | Currently in Use? | Configured with Automation Tools DIP creation script? | Notes |  
 | :----: | :------------: | :---------: | :----: |  
-| DARK_ARCHIVE_001 | Yes | Yes | Current default AIP Store location on Pipeline 2 |  
-| DARK_ARCHIVE_002 | Yes | No | Current default AIP Store locationon Pipeline 1 |  
+| DARK_ARCHIVE_001 | Yes | Yes | Current default AIP Store location for Pipeline 2 (processed digital archives) |  
+| DARK_ARCHIVE_002 | Yes | No | Current default AIP Store location for Pipeline 1 (accessions and A/V) |  
 | DARK_ARCHIVE_003 | No | n/a | n/a |  
 | DARK_ARCHIVE_004 | No | n/a | n/a |  
 | DARK_ARCHIVE_005 | No | n/a | n/a |  
