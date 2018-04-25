@@ -60,7 +60,7 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
     * [Archivematica processing configurations](guides/ingest.md/#processingconfigs)
     * [Adding descriptive metadata to the AIP](guides/ingest.md/#dcmetadata)  
     * [CCA file format policies](guides/ingest.md/#fileformatpolicies)  
-* **[DIP generation and Access](guides/access.md)**  
+* **[Access](guides/access.md)**  
     * [Definition of CCA-style DIPs](guides/access.md/#dipdefinition)  
     * [Creating CCA-style DIPs](guides/access.md/#dipcreation)  
     * [Current access workflow](guides/access.md/#accessworkflow)  
