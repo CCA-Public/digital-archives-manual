@@ -22,7 +22,7 @@ ePADD can be downloaded [here](https://library.stanford.edu/projects/epadd/downl
 <a name="emailformats"></a>  
 ### Email formats 
 
-ePADD only works with live email accounts (including IMAP) and email archives in the MBOX format. If your email archives are in a different email format, like Microsoft Outlook PST, they will need to be converted using [Emailchemy](https://weirdkid.com/emailchemy/), an email format converter located on the CD imaging workstation. The readpst command line utility is not recommended, as it throws errors in ePADD. 
+ePADD only works with live email accounts (including IMAP) and email archives in the MBOX format. If your email archives are in a different email format, like Microsoft Outlook PST, they will need to be converted using [Emailchemy](https://weirdkid.com/emailchemy/), an email format converter located on the CD imaging workstation. Note that the readpst command line utility is not recommended, as it throws errors in ePADD. 
 
 To use Emailchemy: 
 1. Confirm the following settings are selected in Emailchemy, under Tools > Options >: 
@@ -46,9 +46,9 @@ To use Emailchemy:
        * Translate Exchange-style email address to Internet-style (SMTP)
        * Extract all message object types
 2. Using the email conversion wizard, choose your source file type and click next. 
-3. On the next screen, find the file or folder containing your email archives files. **If you are pointing to a folder of files, it needs to be in a single directory**, as Emailchemy does not recurse. Click next.
-4. Ensure the "filter duplicate messages" box is checked, and all others are unchecked. Click covert. This may take some time. 
-5. Find the log file created during conversion and save it to a safe place. It will eventually be included in your SIP metadata.
+3. On the next screen, find the file or folder containing your email archives files. **If you are pointing to a folder, the files need to be in a single directory**, as Emailchemy does not recurse. Click next.
+4. Ensure the "filter duplicate messages" box is checked, and all others are unchecked. Click convert. This may take some time. 
+5. Find the log file created during conversion and save it to a safe place. It will eventually be included in your SIP-level metadata.
 
 <a name="emailappraisal"></a>  
 ### Import and appraisal module
@@ -56,7 +56,7 @@ To use Emailchemy:
 
 The appraisal module is the default starting screen after launching ePADD. Appraisal is intended to be used by the donor to do initial review and restriction of their own email. Notably, the “Do not transfer” flag will effectively delete emails, preventing them from being moved to the processing module.
 
-For CCA's purposes, the appraisal module will typically only be used for its importer, as donors do not typically review their own materials. Additional review and restriction will occur in the processing module. To import your MBOX files into ePADD: 
+For CCA's purposes, the appraisal module will typically only be used for its importer, as donors do not usually review their own materials. Additional review and restriction will occur in the processing module. To import your MBOX files into ePADD: 
 1. Launch ePADD by clicking epadd.exe. By default, ePADD runs with 4GB of RAM, but additional RAM may be needed for larger collections. If this is the case, download epadd-standalone.jar, and launch ePADD using the code below, where # identifies the amount of RAM (in GB) you wish to allocate. 8 GB is typically sufficient.
    ```
    java -Xmx#g -jar /file/path/to/epadd-standalone.jar
@@ -64,17 +64,17 @@ For CCA's purposes, the appraisal module will typically only be used for its imp
 2. Click "Import" at the top of the ePADD browser. 
 3. Enter as much metadata as possible. This can be added to and edited in the processing module. 
 4. Point ePADD to the emails to process:
-   * For public email accounts (e.g. Google, Yahoo), enter the email address and password for the account. 
+   * For public email accounts (e.g. Google, Yahoo), enter the email address and password for the account. (Note that at the time of writing, we have not been able to successfully use this feature.) 
    * For private IMAP accounts (e.g. university emails), enter the IMAP server, email address, and password for the account. You may need to be in touch with the donor or their IT provider to access their server.
    * For MBOX files, select the directory where the MBOX files are located. The files need to be in a single directory. You may also enter the name of the email source, which is an optional field.
       * **NOTE:** If you are importing a number of MBOX files, it may be worthwhile to ensure they have descriptive file names (if possible), as Emailchemy often changes the file titles and they may be difficult to distinguish during processing.
 5. Click continue. The next screen will load all of the MBOX files or IMAP folders in the designated location. This may take some time. Check the box next to the appropriate folder and click Continue. (It is not necessary to input the date range at this time.)
 6. ePADD will work to read the selected files. This may take some time, depending on how many emails total there are. When this process is complete, ePADD displays the emails in the appraisal module.
 
-Because the appraisal module does not provide unique functionality, and because CCA's use case does not anticipate donor review, the next step is to export the appraisal module to the processing module. In order to do so: 
+Because the appraisal module does not provide unique functionality, and because CCA's use case does not anticipate donor review, the next step is to export the email from the appraisal module to the processing module. In order to do so: 
 
 1. Click the Export tab at the top of the screen.
-2. Under "Export messages and attachments," click Browse, and choose C:/Users/user. Click Export (NOT Export to MBOX). This may take some time. It will save as "ePADD archive of (name of archive creator)." This folder is now ready to be imported into the processing module.
+2. Under "Export messages and attachments," click Browse, and choose C:/Users/user. Click Export (NOT "Export to MBOX"). This may take some time. It will save as "ePADD archive of (name of archive creator)." This folder is now ready to be imported into the processing module.
 
 <a name="emailprocessing"></a>  
 ### Processing module
