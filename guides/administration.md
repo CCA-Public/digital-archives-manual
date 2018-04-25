@@ -98,7 +98,7 @@ Steps to start using a new AIP Store location:
 4. Replace the defaultProcessingMCP.xml file used with Automation Tools transfers at `/opt/archivematica/automation-tools/transfers/pre-transfer/defaultProcessingMCP.xml` with an updated configuration.  
 5. (If new storage location will contain AIPs for which we want to generate DIPs) Modify the `--location-uuid` value in `/etc/archivematica/automation-tools/create_dips_job_script.sh` to the value for the new AIP Store location. If it is necessary to monitor and create DIPs for more than one AIP Store location, create a second script (e.g. `create_dips_job_script_1.sh`) and add this additional script to the crontab under user `archivematica` (to edit the crontab, use `sudo crontab -u archivematica -e`).  
 
-These AIP Store locations are already configured for use (but will still require steps 3-5 to begin using with Automation Tools):  
+These AIP Store locations are already configured in the Archivematica Storage Service:  
 
 | AIP Store | Currently in Use? | Configured with Automation Tools DIP creation script? | Notes |  
 | :----: | :------------: | :---------: | :----: |  
