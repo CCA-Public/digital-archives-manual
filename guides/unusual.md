@@ -97,8 +97,8 @@ The majority of processing involves reviewing the email to ensure that it is wit
 **THROUGHOUT THIS PROCESSES YOU MUST SAVE YOUR WORK, USING THE SAVE TAB AT THE TOP OF THE SCREEN.** Your changes will not stick unless you save the archive. The review process need not occur in any particular order. ePADD provides the following tools:
 
 1. *Correspondents:* A list of all email addresses (to, from, mentioned) in the archive, and ePADD's best guess at the contact's name and other email addresses. 
-   * Edit correspondents list to correctly pair contacts with their email addresses and remove false positives.
-   * Delete correspondents whose emails are out of scope.
+   * Edit correspondents list to correctly pair contacts with their email addresses.
+   * Browse correspondents and label emails for out of scope correspondents (e.g. friends and family members) as "Do Not Transfer." When the processing module is exported, it will reindex the correspondents list, meaning that none of the out of scope correspondents will be included.
 2. *Person entities:* A list of all people recognized by ePADD. Mixed results; requires no further processing.
 3. *Other entities:* A list of all places and corporate names recognized by ePADD. Mixed results; requires no further processing.
 4. *Folder view:* All emails sorted by folder (e.g. Inbox, Sent, Drafts). 
@@ -117,10 +117,13 @@ In addition to using the lexicons, the Search tab allows you to keyword search i
 
 #### The Authorities Tab
 
+The Authorities tab can be used to assign name authorities from LCNAF, VIAF, FAST, and Wikipedia. Current descriptive practices at CCA do not involve in-depth subject analysis; however, assigning authorities at this phase might be useful for later description and access, particularly when populating the "Names" field for file-level description. 
+
 <a name="emailexport"></a>  
 ### Export, SIPs, AIPs, and DIPs
 
-include your emailchemy log, if you have one
+export MBOX, delivery module, authorities log, and subject line log
+include your emailchemy log in your SIP, if you have one
 
 <a name="emaildelivery"></a>  
 ### Delivery module 
