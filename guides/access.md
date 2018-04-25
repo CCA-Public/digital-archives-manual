@@ -1,4 +1,4 @@
-# DIP Generation and Access
+# Access
 
 * [Definition of CCA-style DIPs](#dipdefinition)  
 * [Creating CCA-style DIPs](#dipcreation)  
