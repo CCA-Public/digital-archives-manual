@@ -20,7 +20,7 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
     * [Original physical media](guides/stabilization.md/#originalphysicalmedia)  
     * [Ingesting "raw" accession data into digital repository](guides/stabilization.md/#rawingest)  
 * **[Disk imaging original physical media](guides/diskimaging.md)**
-   * [Disk imaging with Guymager (Bitcurator)](guides/diskimaging.md/#guymager)  
+   * [Disk imaging with Guymager (BitCurator)](guides/diskimaging.md/#guymager)  
    * [Disk imaging with FTK Imager](guides/diskimaging.md/#ftkimager)
    * [Disk imaging with IsoBuster](guides/diskimaging.md/#isobuster)
    * [Disk imaging 5.25" floppy disks with FC5025](guides/diskimaging.md/#fc5025)
