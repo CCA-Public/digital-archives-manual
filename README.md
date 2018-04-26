@@ -79,25 +79,6 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
     * [Log of changes to default Archivematica FPR](guides/administration.md/#fprchanges)  
     * [Archivematica configuration settings](guides/administration.md/#configsettings)  
 * **[CAD, BIM, and 3D modeling software/file formats](guides/cadformats.md)**  
-    * Vendor/software-specific formats  
-         * [AutoCAD (.dwg, .dxf, .dwf)](guides/cadformats.md/#autocad)  
-         * [Revit (.rvt)](guides/cadformats.md/#revit)  
-         * [3DS Max (.3ds, .max)](guides/cadformats.md/#3ds)  
-         * [Rhinoceros (.3dm)](guides/cadformats.md/#rhino)  
-         * [Microstation (.dgn)](guides/cadformats.md/#microstation)  
-         * [Maya (.ma, .mb)](guides/cadformats.md/#maya)  
-         * [Alias (.wire)](guides/cadformats.md/#alias)  
-         * [form·Z (.fmz)](guides/cadformats.md/#formz)  
-         * [CATIA (.CATPart, .CATProduct, others)](guides/cadformats.md/#catia)  
-         * [Digital Project (.CATPart, .CATProduct)](guides/cadformats.md/#digitalproject)  
-         * [SOLIDWORKS (.SLDPRT)](guides/cadformats.md/#solidworks)  
-         * [SketchUp (.skp)](guides/cadformats.md/#sketchup)  
-     * Vendor-neutral formats  
-         * [STL (.stl)](guides/cadformats.md/#stl)  
-         * [IGES (.iges, .igs)](guides/cadformats.md/#iges)  
-         * [STEP (.step)](guides/cadformats.md/#step)  
-         * [COLLADA (.dae)](guides/cadformats.md/#dae)  
-         * [IFC (.ifc)](guides/cadformats.md/#ifc) 
 * **[Additional resources](guides/resources.md)**  
    * [Reading material](guides/resources.md/#readings)  
    * [Digital storage media identification and information](guides/resources.md/#media)  
