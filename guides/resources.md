@@ -66,6 +66,9 @@ Helpful resources, including:
   ([Source](https://stackoverflow.com/a/30339287/9459120))
   
   The ZIPs must not have spaces in their filename, or else the command will fail. If needed, use [Detox](https://linux.die.net/man/1/detox) prior to unzipping.
+
+ for F in $(find . -name "*.rar"); do unrar x "$F" "${F%.*}/" && rm "$F"; done
+
   
 * **Identify all files with problematic timestamps in a directory and to modify that timestamp:**
   
