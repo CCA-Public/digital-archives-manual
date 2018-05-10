@@ -6,7 +6,8 @@
 * [Reindexing AIPs in Archival Storage indexes](#reindexing)  
 * [Deleting AIPs not indexed on a pipeline](#deletingaips)  
 * [Cleaning up after successful Automation Tools ingests](#autotoolssuccess)
-* [Responding to failed Automation Tools ingests](#autotoolsfailure)
+* [Responding to failed Automation Tools ingests](#autotoolsfailure)  
+* [Checking Automation Tools logs](#checkthelogs)  
 * [Adding and switching AIP Store locations](#locations)  
 * [Clearing space when local disk is nearly full](#clearingspace)  
 * [Restarting services](#restarting)  
@@ -92,6 +93,15 @@ The solution is to delete the `transfers.db` database and to manually re-start t
 You only need to manually call `transfer-script.sh` once - after that, the crontab will call the script every 5 minutes, per the recommended installation instructions.  
 
 **Note that deleting `transfers.db` means that the Automation Tools will no longer have a record of which transfers in the `/mnt/incoming/auto-transfers` directory have already been started, so you will want to make sure only transfers you intend to start are present in that directory before deleting the database.**
+
+<a name="checkthelogs"></a>  
+## Checking Automation Tools logs  
+
+If you run into unexpected behavior from Automation Tools (e.g. transfers not starting or not approving, DIPs not being created for new AIPs), the first place to check is the logs.  
+
+Relevant logs:  
+* Automation Tools transfers: `/var/log/archivematica/automation-tools/transfers.log`  
+* Create DIP Job: `/var/log/archivematica/automation-tools/create-dip-jobs.log`  
 
 <a name="locations"></a>  
 ## Adding and switching AIP Store locations  
