@@ -23,9 +23,17 @@
 
 Fixity checks of all AIPs are conducted on a quarterly basis using the [Fixity](https://github.com/artefactual/fixity) application. Fixity's `scanall` function is run via the [cca-fixity](https://github.com/CCA-Public/cca-fixity) scripts installed at `/var/archivematica/cca-fixity` on the Storage Service VM and called automatically on the second Friday of each January, April, July, and October via the crontab. Logs are saved on the Archivematica Storage Service server at `/var/log/cca-fixity`and results are emailed to the relevant administrators.
 
-If you must run a fixity check manually, use [nohup](https://en.wikipedia.org/wiki/Nohup) to ensure that the process runs to completion in the background, even if your terminal session ends, e.g.:  
+To manually conduct a fixity check of a single AIP:
 
-`nohup fixity scanall &`
+1. Connect to VSP-AMSS-01  
+2. Load environmental variables: `source /etc/profile.d/fixity.sh`
+3. Run fixity `scan` function: `fixity scan <AIP UUID>`  
+
+If you must run a `scanall` fixity check manually, use [nohup](https://en.wikipedia.org/wiki/Nohup) to ensure that the process runs to completion in the background, even if your terminal session ends
+
+1. Connect to VSP-AMSS-01  
+2. Load environmental variables: `source /etc/profile.d/fixity.sh`
+3. Run fixity `scan` function: `nohup fixity scanall &`
 
 When AIP corruption is detected, notify IT and restore the AIP from backups according to the Storage Service's [Recovery](https://www.archivematica.org/en/docs/storage-service-0.10/recovery/#recovery) procedures.  
 
