@@ -14,7 +14,7 @@ Except when circumstances require different solutions, CCA prefers raw disk imag
 
 **Note: In order to ensure that the source media is unchanged by the process of data capture and transfer, hard drives and removable media drives should always be connected to the capture workstation through a hardware write-blocker.**  
 
-We will typically use one of two tools for creating disk images of media: [Guymager](#guymager) or [FTK Imager](#ftkimager). Regardless of which tool you use, always complete the following step first:  
+We use the following tools to create disk images of media: [Kryoflux](#kryoflux) (default), [Guymager](#guymager), [FTK Imager](#ftkimager), [IsoBuster](#isobuster), or [FC5025](#fc5025). Regardless of which tool you use, always complete the following step first:  
 
 Give each piece of media an ARCH number identifier if it doesn't have one already, and create a corresponding "Record for Management Need" object record in TMS. The identifier should be written on the media or its case with a felt tip pen or (very lightly) in pencil, or affixed to the case using a label maker if available.
 
@@ -33,7 +33,7 @@ Steps for imaging physical media with Guymager:
   * Double-click on 'Scan a directory' from the 'Analysis' tab and then choose directory to scan.  
   * If there are no viruses, proceed with the next step. If ClamTK finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside, and consult the Digital Archivist.  
 * Open Guymager (from the 'Imaging Tools' folder on the Bitcurator desktop).  
-* Rick-click on the drive you wish to image and select 'Acquire image'. If the drive/device you wish to image does not appear, refresh the screen by clicking "Rescan" in the upper left hand corner of the Guymager interface.  
+* Right-click on the drive you wish to image and select 'Acquire image'. If the drive/device you wish to image does not appear, refresh the screen by clicking "Rescan" in the upper left hand corner of the Guymager interface.  
 
 ![Bitcurator1](http://wiki.bitcurator.net/images/4/45/Acquire_image_guymager.jpg)  
 
@@ -52,14 +52,14 @@ Steps for imaging physical media with Guymager:
 * Once settings have been confirmed, press 'Start' to start the disk imaging process.
 * Guymager will track its progress and give you color-coded indications when the process has been completed successfully or has failed. If it fails, make a note of this in the versement stabilization spreadsheet and set the disk aside for review by the Digital Archivist.  
 * If the image is successfully created, go to your project folder on the desktop and do a quick visual check that all looks good. You should see at two files: the disk image itself and a '.info' metadata file.  
-* If all looks good, repeat this process with the next disk until all media has been imaged.  Once all media has been imaged, copy the entire project folder from the Bitcurator desktop into the "Dépôts" folder and alert the Digital Archivist.  
+* If all looks good, repeat this process with the next disk until all media has been imaged.  Once all media has been imaged, alert the Digital Archivist.  
 
 <a name="ftkimager"></a>
 ### Disk imaging with FTK Imager  
 
-AccessData FTK Imager is a free but proprietary Windows-based disk imaging tool that forms part of the (very much not free) larger Forensics Toolkit software suite. At CCA we use FTK Imager to create disk images for media which Guymager is unable to image.  
+AccessData FTK Imager is a free but proprietary Windows-based disk imaging tool that forms part of the commercial larger Forensics Toolkit software suite. At CCA we use FTK Imager to create disk images for media which Guymager is unable to image.  
 
-Before starting to create disk images from an accession, create a folder in the "Depot numérique" network folder in which you will save your work.
+Before moving on to the disk imaging process, make sure you are using the disk-imaging workstation (DSK-065-14) in the CCA Digital Lab. Create a project folder in which you will save your work. Name this folder something memorable and meaningful, such as an accession or an identification number.
 
 Steps for imaging physical media with FTK Imager:  
 
