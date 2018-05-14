@@ -148,7 +148,7 @@ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator mac
 | Store AIP location | *appropriate AIP store* |
 | Store DIP location | "None" |   
 
-*Note: CCA creates DIPs from our AIPs through the [create_dip.py](https://github.com/artefactual/automation-tools/aips/create_dip.py) script rather than through the standard Archivematica "Normalization for access" option.*  
+*Note: CCA creates DIPs from our AIPs through the [create_dip.py](https://github.com/artefactual/automation-tools/blob/master/aips/create_dip.py) script rather than through the standard Archivematica "Normalization for access" option.*  
 
 <a name="reingestconfig"></a>  
 ### Configuration for re-ingest  
