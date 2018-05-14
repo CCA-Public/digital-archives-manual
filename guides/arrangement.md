@@ -110,7 +110,17 @@ In some cases, based on the factors listed above, it may make more sense not to 
 
 Once the content of your SIP has been decided, CCA workflow tools like [Folder Processor and Disk Image Processor](https://github.com/CCA-Public/cca-tools) will help you package each SIP so that it meets our local requirements for ingest into Archivematica. All SIPs should have one of the two following structures:  
 
-### Bagged SIP
+### Non-bagged SIP (preferred)  
+
+* Submission Information Package (SIP) : Named after identifier (typically, an AP or ARCH number)
+   * objects/ : folder for digital objects to be ingested  
+      * diskimage/ : (optional folder, use only when both disk image and files are ingested together)  
+      * files/ : (optional folder, use only when both disk image and files are ingested together)  
+   * metadata / : folder for metadata associated with digital objects  
+      * checksum.md5 : manifest containing checksums for each file in objects
+      * submissionDocumentation/ : folder containing any additional documentation related to the digital objects  
+      
+### Bagged SIP (just in case - there is ordinarily no reason to create a SIP in this form)  
 * Submission Information Package (SIP) : Named after identifier (typically, an AP or ARCH number)  
    * bag-info.txt : bagit file  
    * bagit.txt : bagit file  
@@ -122,16 +132,6 @@ Once the content of your SIP has been decided, CCA workflow tools like [Folder P
          * files/ : (optional folder, use only when both disk image and files are ingested together)  
       * metadata/ : folder for metadata associated with digital objects  
          * submissionDocumentation/ : folder containing any additional documentation related to the digital objects  
-
-### Non-bagged SIP (preferred)  
-
-* Submission Information Package (SIP) : Named after identifier (typically, an AP or ARCH number)
-   * objects/ : folder for digital objects to be ingested  
-      * diskimage/ : (optional folder, use only when both disk image and files are ingested together)  
-      * files/ : (optional folder, use only when both disk image and files are ingested together)  
-   * metadata / : folder for metadata associated with digital objects  
-      * checksum.md5 : manifest containing checksums for each file in objects
-      * submissionDocumentation/ : folder containing any additional documentation related to the digital objects  
  
 <a name="diskimageprocessor"></a>  
 ## Processing disk images with Disk Image Processor 
