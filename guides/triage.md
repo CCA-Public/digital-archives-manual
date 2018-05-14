@@ -29,10 +29,12 @@ In Analysis mode, the tool can be used to get a high-level understanding of the 
     * A DFXML file  
     * Text output from the disktype utility  
     * Brunnhilde reports (including logs and reports from clamAV and bulk_extractor)  
+* Optionally, creates a "files" directory containing reference copies of logical files exported from the disk image.
 
 The tool additionally creats an "analysis.csv" file that contains the following information for each disk that it was able to read:
 * Disk image name  
 * File system  
+* Date type  
 * Date statement  
 * Earliest date  
 * Latest date  
@@ -47,7 +49,7 @@ Use of the Analysis mode can help you understand crucial aspects of a collection
 <a name="diskimageextract"></a>
 ## Extracting files from packages and disk images  
 
-Another option is to use of one several tools to either carve files from disk images or to mount the disk image and copy files from the mounted drive. In either case, this will allow you to copy files onto the Catalogers drive and subsequently view them from any computer connected to the CCA network.  
+Another option is to use one of several tools to either carve files from disk images or to mount the disk image and copy files from the mounted drive. In either case, this will allow you to copy files onto the Catalogers drive and subsequently view them from any computer connected to the CCA network.  
 
 For extracting files from disk images outside of the reporting process, we typically use one of two tools for extracting files from disk images: [Bitcurator](#bitcuratorfiles) or [FTK Imager](#ftkimagerfiles).  
 
@@ -134,7 +136,7 @@ At this point, ewfexport will ask you for some additional input. Enter the follo
 
 * **Export to format:** raw (this should be the default; if so, just press enter)  
 * **Target path and filename without extension... :** ./FILENAME  
-* **Evidence segement file size in bytes:** 0 (this should be the default; if so, just press enter)  
+* **Evidence segment file size in bytes:** 0 (this should be the default; if so, just press enter)  
 * **Start export at offset:** 0 (this should be the default; if so, just press enter)  
 * **Number of bytes to export:** maximum value in range (this should be the default; if so, just press enter)  
 
@@ -172,7 +174,7 @@ The final step is to export these files from HFSExplorer to a desktop or network
 <a name="reporting"></a>  
 ## Extracting archives and reporting on logical files  
 
-Files can be extracted from archive packages via the use of the free and open source software such as 7zip (Windows/Linux) or The Unarchiver (Mac). Extracting files may not be necessary for reporting purposes, as tools like Brunnhilde are able to analyze the contents of common archive pcakages.
+Files can be extracted from archive packages via the use of the free and open source software such as 7zip (Windows/Linux) or The Unarchiver (Mac). Extracting files may not be necessary for reporting purposes, as tools like Brunnhilde are able to analyze the contents of common archive packages.
 
 The standard reporting tool for non-disk images at CCA is [Brunnhilde](https://github.com/timothyryanwalsh/brunnhilde). See the Brunnhilde Github repo for detailed usage information. A GUI wrapper for the program is also available.
 
@@ -203,4 +205,4 @@ If Brunnhilde returns unidentified file types, it can be useful to submit them t
     - If the zipped files are small enough to fit on an email, email David Clipsham (David.Clipsham@nationalarchives.gsi.gov.uk) and Paul Young (Paul.Young@nationalarchives.gsi.gov.uk) with the files.
     - If the zipped files are too big, you can share the folder through the Cloud by making a request with IT. The request form is [here](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/forms/cloud_share_request_form.pdf). Once it's filled out, it can be sent to IT (soutiens@cca.qc.ca).
 
-Once the request is processed, the file format will likely be included in a future PRONOM release.
+Once the request is processed, the file format will be considered for includsion in a future PRONOM release.
