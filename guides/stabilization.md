@@ -121,8 +121,14 @@ Steps:
 
 Once data from all of the network transfer, temporary media, and original media in an accession has been stabilized, the digital component of the accession is ingested into CCA's Archivematica-based digital repository.  The aim of this step is to retain and safely store a copy of the data exactly as it arrived at CCA in the digital repository.  **Note that all files from network transfers or temporary media must be packaged in some time of archive format (zip, tar, rar, etc.), or else Archivematica will change original filenames and timestamps, defeating part of the purpose of the "raw" ingest. At CCA, we typically prefer to package in tar files. Note also that this step may not be necessary if disk images are to be retained as part of the processed material.**  
 
-This SIP (Submission Information Package, in OAIS parlance) is composed of all files, archive packages, and disk images in the Shipping Space that correspond to an accession. It is named according to the convention "(versement number)\_raw".   
+This SIP (Submission Information Package, in OAIS parlance) is composed of all files, archive packages, and disk images in the Shipping Space that correspond to an accession. It is named according to the convention `<accession number>_raw`, with all punctuation replaced by underscores (e.g., `AR2018_0001_raw`).  
 
-For the ingest of raw unprocessed data, we use the csp-arch-02 processing pipeline. In this pipeline, Archivematica is set not to extract packages, examine contents, or normalize any files. An AIP is created and stored, but no DIP is created. These settings must be manually selected for now, but eventually these will be the default settings in a "raw ingest" watched directory that will process material through Archivematica using Automation Tools scripts.    
+For the ingest of raw unprocessed data, we use the VSP-AMPL-01 processing pipeline. In this pipeline, Archivematica is set by default not to extract packages, examine contents, or normalize any files.
 
-Once an accession has been ingested into Archivematica, the Digital Archivist deletes the temporary copies from the Shipping Space and notifies the Registrar. The Registrar then updates the location for the appropriate accession records to "Dark archive".  
+**Procedure:** 
+
+1. Create a SIP named `<accession number>_raw`, containing the files as sent by the donor and/or disk images. If an accession has not yet been created in TMS, temporarily store the SIP in the Digital Shipping Space until the accession number has been assigned and a record created in TMS.  
+2. Copy the SIP to the VSP-AMPL-01 pipeline using the `send_to_archivematica.py` script.  
+3. (Digital Archivist/Archivematica administrator) Move the SIP to the Automation Tools watched folder for ingest. Follow typical ingest and QA procedures.
+
+Once the accession has been ingested into Archivematica, delete any extraneous copies from the BitCurator machines, Digital Shipping Space, etc. and ask the Registrar to update the location for the appropriate accession records to "Dark archive".  
