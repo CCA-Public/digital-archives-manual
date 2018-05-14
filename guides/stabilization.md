@@ -16,26 +16,23 @@ In general, digital content arrives at CCA in one of three ways: as a network tr
 
 The following procedures describe how CCA accessions and stabilizes contents from each of these delivery methods, as well as how CCA ingests the total "raw" contents of an accession into its digital repository once all of the preparatory steps have been completed.  
 
-**Note: In order to keep track of all media and files, CCA has created a [versement stabilization spreadsheet](https://github.com/CCA-Public/digital-archives-manual/blob/master/forms/versement_stabilization.xlsx). This spreadsheet must be completed for every versement containing digital records in any form that arrives at CCA.** This file should be saved with the actual versement number in place of the word "versement", replacing any full stops or colons with underscores (e.g. "AR2014_0068_stabilization.xlsx"), and saved in the appropriate project folder in "Acquisitions et traitement". Please consult with the Digital Archivist on the proper use of this spreadsheet prior to your first digital processing project.  
-
 <a name="networktransfer"></a>
 ## Network transfers
 
 Steps:  
 
-* **Staff member who receives the transfer**  
-  * *Note: Who receives files and how should also be streamlined and better documented in future*
-  * Notify Registrar and Digital Archivist  
-  * Move files into a new folder in Digital Shipping Space (or, if staff member does not have access to Digital Shipping Space, into "Dépot numérique" network folder)  
+* **Staff member who receives the transfer (typically Digital Archivist or Registrar)**  
+  * Notify Registrar and Digital Archivist, as appropriate  
+  * Move files into a new folder in Digital Shipping Space if accession record has not yet been created.    
 * **Registrar: Create accession records**  
-  * For Archives, create only a versement record (no versement objet or ARCH records). Include a brief identifying note for the accession in "Description du contenu" (e.g. the name of the Dropbox folder)  
+  * For exclusively born-digital accessions in the archives, create only a versement record (no versement objet or ARCH records). Include a brief identifying note for the accession in "Description du contenu" (e.g. the name of the Dropbox folder)  
   * *For Photo/P&D, create groupe or pièce records as usual*  
 * **Digital Archivist: Ingest**  
   * Add brief descriptive note about content to versement "Description du contenu"  
   * If files were not already in an archive format, package them as a .tar file  
-  * Package content according to BagIt specification and ingest into Archivematica according to procedures for ingesting "raw" data  
+  * Package content as an Archivematica SIP and ingest into Archivematica, following the [procedures for ingesting "raw" data](#rawingest)  
   * Inform Registrar when ingest is completed  
-  * Delete copies of files from Digital Shipping Space/Dépot numérique  
+  * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.
 * **Registrar**  
   * Add "Dark archive" as location to accession (e.g. versement) record  
 
@@ -50,9 +47,9 @@ Steps:
 * **Digital Archivist: Ingest**  
   * Add brief descriptive note regarding content to versement "Description du contenu"  
   * If files were not already in an archive format, package them as a .tar file  
-  * Package content according to BagIt specification and ingest into Archivematica according to procedures for ingesting "raw" data  
+  * Package content as an Archivematica SIP and ingest into Archivematica, following the [procedures for ingesting "raw" data](#rawingest)  
   * Inform Registrar when ingest is completed  
-  * Delete extra copies of files on network shares
+  * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.  
   * Reformat (erase) media and return to donor or repurpose as appropriate
 * **Registrar**  
   * Add "Dark archive" as location to accession (versement) record  
@@ -71,27 +68,27 @@ Steps:
    * IF NO: Registrar makes note in the “Description du contenu“ field of versement objet records that they contain digital media that should be separated. This material will then be separated by a technician, archivist, or cataloguer at a later date.  
 * **Digital Archivist** 
   * *Note: These steps may occur after some delay*
-  * Oversee disk imaging of media and transfer of files to Digital Shipping Space  
-  * Ensure that all digital material related to an accession is located in a folder named after the accession in the Digital Shipping Space  
-  * Package the content according to the BagIt specification and ingests this material into Archivematica according to procedures for ingesting “raw” data  
+  * Oversee disk imaging of media  
+  * If archive is not immediately going to be processed, package all disk images as a single Archivematica SIP and ingest into Archivematica, following the [procedures for ingesting "raw" data](#rawingest)  
   * Inform Registrar when ingest is completed  
-  * Delete copy of files from Digital Shipping Space  
+  * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.  
 * **Registrar**
   * Add "Dark archive" as location to accession (versement) record  
 * **Digital Archivist, Archivist/Chef/Curator, Associate Director**  
+  * **Note: The policies for this step are being reviewed by Adria Seccareccia, Archivist, in relation to the general weeding policies of CCA**  
   * During or after processing, Digital Archivist and either the Archivist or appropriate Curator/Chef assess media for artefactual value and confirm with Associate Director, Collection. There are three possible results to this assessment:  
     * Media have artefactual value and will be kept permanently at CCA in their entirety  
     * Media have artefactual value and a sample will be kept permanently at CCA  
     * Media do not have artefactual value and will be destroyed or returned to the donor  
   * Any media that are kept at CCA are retained solely for their artefactual value, not as storage media or “backups” of digital files in the CCA collection. The description and arrangement of these objects should be discussed with the Digital Archivist and appropriate Archivist/Head/Cataloguer  
 * **Registrar**
-  * Any time media are returned or destroyed, the Registrar will make a note of the action taken in the appropriate accession (e.g. versement) record. Please consult Digital Archivist on how to responsibly destroy digital media  
+  * Any time media are returned or destroyed, make a note of this in the "Appraisal-destruction" text entry field in TMS at the fonds-level.   
 
 
 <a name="idandremoval"></a>
 ### Identifying and separating physical media in Collection
 
-**Note: For digital media that will be disk imaged and accessioned immediately, a more steamlined procedure may be followed. Nonetheless, removal sheets should always be used to track where digital media were originally located.**
+**Note: For digital media that will be disk imaged and/or processed immediately, a more steamlined procedure may be followed. This procedure covers cases where digital storage media are being separated but not immediately disk imaged or processed.**  
 
 Steps:  
 
