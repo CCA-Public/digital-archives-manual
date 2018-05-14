@@ -121,13 +121,13 @@ In addition to using the lexicons, the Search tab allows you to keyword search i
 The Authorities tab can be used to assign name authorities from LCNAF, VIAF, FAST, and Wikipedia. Current descriptive practices at CCA do not involve in-depth subject analysis; however, assigning authorities at this phase might be useful for later description and access, particularly when populating the "Names" field for file-level description. 
 
 <a name="emailexport"></a>  
-#### Export, SIPs, AIPs, and DIPs
+#### Export to the Delivery module
 
 When you have finished reviewing all emails, you can export the emails to the next ePADD modules, Discovery and Delivery. To do so: 
 
 1. Click the Export tab at the top of the screen.
 2. Under "Export messages and attachments," click Browse, and choose C:/Users/user. Click Export (NOT "Export to MBOX"). This may take some time. It will save two module folders: "ePADD archive of (archive creator) - delivery" and "ePADD archive of (archive creator) - discovery." The discovery folder is not used at CCA and can be deleted. More information about the delivery module is in the next section.
-3. You may also wish to export just the email attachments, or CSV files of the assigned authorities or email subject lines based on the processing needs for a particular collection; these options are also available on this screen.
+3. You may also wish to export just the email attachments, or CSV files of the assigned authorities or email subject lines based on the processing needs for a particular collection; these options are also available on this screen. Note that they will export EVERYTHING from the Appraisal module, including the materials flagged "Do Not Transfer."
 
 Note that the final MBOX file should not be exported from the Appraisal module, as it will include all of the restricted material. 
 
@@ -144,10 +144,12 @@ In order to export a preservation copy in the MBOX format:
 
 1. Navigate to the Search tab. 
 2. Without entering anything in the search bar, click "Search." This should return all of the emails in the collection.
-3. Click the "Export these messages as MBOX" button. ePADD will prepare your MBOX file. This may take some time.
-**INSERT SCREENSHOT!!** 
+3. Click the "Export these messages as MBOX" button (the down arrow). ePADD will prepare your MBOX file. This may take some time.
+
+![Screenshot of Export button](../media/photos/epadd_export.JPG)
+
 4. On the next screen, click "Download MBOX file." This may take some time and often fails. Internet Explorer has been marginally better at not failing during this phase. 
-5. This MBOX is ready to be processed using SIP Creator. **INSERT LINK** After the SIP is packaged, be sure to include your Emailchemy log, as well as any additional CSV reports, in the metadata folder of your SIP.
+5. This MBOX is ready to be processed using [SIP Creator](https://github.com/CCA-Public/sipcreator). After the SIP is packaged, be sure to include your Emailchemy log, as well as any additional CSV reports, in the metadata folder of your SIP.
 
 For AP195, we also kept the original files as well as the appraisal module in recognition of the fact that email processing technology and workflows are rapidly improving and we may want to return to these files as they appeared originally and at the time restriction was completed. These files were packaged into their own SIP and are restricted from user access.
 
@@ -173,9 +175,9 @@ This can also be achieved by logging out of the workstation and logging in again
 <a name="emailaccess"></a>
 ### Accessing email
 
-**From an access perspective, the researcher can now navigate within the email archives. They can flag and annotate material, much like in the appraisal and delivery modules, and save a marked-up version of the email archive for their personal use.
+In order to provide access to these files, the MBOX file in the SIP can be re-imported into ePADD and walked through each export phase to the Delivery module. The researcher can now navigate within the email archives using many of the same tools as were available to the archivist during processing. They can flag and annotate material, much like in the appraisal and delivery modules, and save a marked-up version of the email archive for their personal use.
 
-
+MBOX files can also be opened using other email tools, like [Thunderbird](https://www.thunderbird.net/), or in a text editor.
 
 
 <a name="cleanupepadd"></a>
