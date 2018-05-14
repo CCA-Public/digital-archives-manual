@@ -113,25 +113,25 @@ Once the content of your SIP has been decided, CCA workflow tools like [Folder P
 ### Non-bagged SIP (preferred)  
 
 * Submission Information Package (SIP) : Named after identifier (typically, an AP or ARCH number)
-   * objects/ : folder for digital objects to be ingested  
-      * diskimage/ : (optional folder, use only when both disk image and files are ingested together)  
-      * files/ : (optional folder, use only when both disk image and files are ingested together)  
-   * metadata / : folder for metadata associated with digital objects  
-      * checksum.md5 : manifest containing checksums for each file in objects
-      * submissionDocumentation/ : folder containing any additional documentation related to the digital objects  
+   * `objects/` : folder for digital objects to be ingested  
+      * `diskimage/` : (optional folder, use only when both disk image and files are ingested together)  
+      * `files/` : (optional folder, use only when both disk image and files are ingested together)  
+   * `metadata/` : folder for metadata associated with digital objects  
+      * `checksum.md5` : manifest containing checksums for each file in objects
+      * `submissionDocumentation/` : folder containing any additional documentation related to the digital objects  
       
 ### Bagged SIP (just in case - there is ordinarily no reason to create a SIP in this form)  
 * Submission Information Package (SIP) : Named after identifier (typically, an AP or ARCH number)  
-   * bag-info.txt : bagit file  
-   * bagit.txt : bagit file  
-   * manifest-md5.txt : bagit file  
-   * tagmanifest-md5.txt : bagit file  
-   * data : bagit folder containing contents of transfer
-      * objects/ : folder for digital objects to be ingested  
-         * diskimage/ : (optional folder, use only when both disk image and files are ingested together)  
-         * files/ : (optional folder, use only when both disk image and files are ingested together)  
-      * metadata/ : folder for metadata associated with digital objects  
-         * submissionDocumentation/ : folder containing any additional documentation related to the digital objects  
+   * `bag-info.txt` : bagit file  
+   * `bagit.txt` : bagit file  
+   * `manifest-md5.txt` : bagit file  
+   * `tagmanifest-md5.txt` : bagit file  
+   * `data` : bagit folder containing contents of transfer
+      * `objects/` : folder for digital objects to be ingested  
+         * `diskimage/` : (optional folder, use only when both disk image and files are ingested together)  
+         * `files/` : (optional folder, use only when both disk image and files are ingested together)  
+      * `metadata/` : folder for metadata associated with digital objects  
+         * `submissionDocumentation/` : folder containing any additional documentation related to the digital objects  
  
 <a name="diskimageprocessor"></a>  
 ## Processing disk images with Disk Image Processor 
