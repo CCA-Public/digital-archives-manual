@@ -106,7 +106,7 @@ Relevant logs:
 <a name="locations"></a>  
 ## Adding and switching AIP Store locations  
 
-Each storage location configured in the Storage Service is 5 TB in size (this was done in order to make backups manageable for IT). As storage locations will, new locations will need to be added to the Storage Service and assigned as the default values for pipelines. **Locations should contain only AIPs for which DIPs will be produced (e.g. processed digital archives) or AIPs for which DIPs will not be produced (e.g. digitization masters), not mixed.**
+Each storage location configured in the Storage Service is 5 TB in size (this was done in order to make backups manageable for IT). As storage locations fill, new locations will need to be added to the Storage Service and assigned as the default values for pipelines. **Locations should contain only AIPs for which DIPs will be produced (e.g. processed digital archives) or AIPs for which DIPs will not be produced (e.g. digitization masters), not mixed.**
 
 Steps to start using a new AIP Store location:  
 
@@ -129,7 +129,7 @@ These AIP Store locations are already configured in the Archivematica Storage Se
 <a name="clearingspace"></a>
 ## Clearing space when local disk is nearly full  
 
-When local disk space on one of the Archivematica pipelines is almost full, IT will send an alert. To clear space, you may delete some logs and well as older MySQL and Elasticsearch backups, namely:  
+When local disk space on one of the Archivematica pipelines is almost full, IT will send an alert. To clear space, you may delete some logs as well as older MySQL and Elasticsearch backups, namely:  
 
 * `/srv/am-db-backups`: Keep latest backup; all others can be deleted  
 * `/srv/am-es-backups`: Keep latest backup (check file size to ensure it's a real backup); all others can be deleted  
