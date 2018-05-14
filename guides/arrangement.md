@@ -138,7 +138,9 @@ Once the content of your SIP has been decided, CCA workflow tools like [Folder P
 
 *Instructions valid for Disk Image Processor v1.0.0*
 
-[Disk Image Processor](https://github.com/CCA-Public/diskimageprocessor) takes a folder of disk images and turns each into a ready-to-ingest SIP packaged for Archivematica. The tool also writes a pre-populated description spreadsheet including information for each SIP. SIPs include an md5deep-generated checksum.md5 file in the "metadata" directory by default, but can optionally be bagged instead. The tool populates each "objects" directory with a raw disk image (even if the source disk image is EWF/E01) and logical files carved with either tsk_recover or the HFSExplorer command line utility unhfs. Files in the source directory that are not disk images are ignored (the exception to this is files that share the same basename, such as .info sidecar metadata files for disk images, which will be copied into the "objects/diskimage" file at the end of processing.)  
+[Disk Image Processor](https://github.com/CCA-Public/diskimageprocessor) takes a folder of disk images and turns each into a ready-to-ingest SIP packaged for Archivematica. The tool also writes a pre-populated description spreadsheet including information for each SIP. SIPs include an md5deep-generated checksum.md5 file in the "metadata" directory by default, but can optionally be bagged instead. The tool populates each "objects" directory by default with logical files carved from the disk image by tsk_recover, HFSExplorer, or a mount-and-copy routine, depending on the file system detected. 
+
+Optionally, SIPs can be created that also contain both a raw disk image (even if the source disk image is EWF/E01) and the exported logical files. Files in the source directory that are not disk images are ignored (the exception to this is files that share the same basename, such as .info sidecar metadata files for disk images, which will be copied into the "objects/diskimage" file at the end of processing if the user has selected the option to retain disk images in the SIP.)  
 
 This workflow assumes that each piece of storage media in an accession will be assigned a file-level description. If the contents of media are to be split into multiple files, a different approach is required.  
 
@@ -249,9 +251,9 @@ A corresponding description record needs to be added in TMS. It should be arrang
 * Reference code (ISAD(G) 3.1.1)/Object Number:
    * Duplicate original file reference number and add “FM”: e.g.:  AP222.S2.002.FM
 * Title (ISAD(G) 3.1.2)/Title:
-   * Follow titling guidelines for File-level description. Title must indicate the nature of files (i.e. they are forward-migrated versions). Title should include some level of detail about the formats whenever possible as to increase access to records. e.g. "Forward-migrated formZ 6 and 7 files for 3 of RUR digital working files"
+   * Follow titling guidelines for File-level description. Title must indicate the nature of files (i.e. they are forward-migrated versions). Title should include some level of detail about the formats whenever possible as to increase access to records. e.g. "Forward-migrated form\*Z 6 and 7 files for 3 of RUR digital working files"
 * Scope and content note (ISAD(G) 3.3.1)/Description du contenu:
-   * Detail and contextualize files which were migrated: list file paths of original file and indicate any specificity to new file versions if they do not appear in the processing spreadsheet. Refer to the original’s file description identification number.Add information about the migration process, if known: who, how, when and why.
+   * Detail and contextualize files which were migrated: list file paths of original file and indicate any specificity to new file versions if they do not appear in the processing spreadsheet. Refer to the original’s file description identification number. Add information about the migration process, if known: who, how, when and why.
    e.g. "Files were migrated by a CCA collaborator in 2014 as part of the preparation for the Archeology of the Digital Complexity and Convention exhibit."
 * Physical characteristics and technical requirements (ISAD(G) 3.4.4)/Physical Description field:
    * Indicate designated software for file access. e.g. “Files may be accessed using form\*Z version 6 to 8.”
