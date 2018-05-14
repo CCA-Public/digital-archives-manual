@@ -124,7 +124,7 @@ For the ingest of raw unprocessed data, we use the VSP-AMPL-01 processing pipeli
 
 **Procedure:** 
 
-1. Create a SIP named `<accession number>_raw`, containing the files as sent by the donor and/or disk images. If an accession has not yet been created in TMS, temporarily store the SIP in the Digital Shipping Space until the accession number has been assigned and a record created in TMS.  
+1. Create a SIP named `<accession number>_raw`, containing the files as sent by the donor (packaged as a single .tar file) and/or disk images. If an accession has not yet been created in TMS, temporarily store the SIP in the Digital Shipping Space until the accession number has been assigned and a record created in TMS.  
 2. Copy the SIP to the VSP-AMPL-01 pipeline using the `send_to_archivematica.py` script.  
 3. (Digital Archivist/Archivematica administrator) Move the SIP to the Automation Tools watched folder for ingest. Follow typical ingest and QA procedures.
 
