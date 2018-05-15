@@ -64,7 +64,7 @@ One of these factors is how the material arrived at CCA: as one or a few large t
 <a name="existingorganization"></a>  
 ### Existing organization  
 
-Another factor to consider is the existing organization of the material. Does the existing order appear to be meaningful? Is there evidence that this constitutes an original order, as used by the records creator? Does the existing order reflect a conscious management approach or is it just the result of material contraints of storage media (e.g. a backup split between many floppy disks or CDs due to limited storage space on each disk)? Documentation from the record creators and/or donation sources can greatly help in making these determinations.  
+Another factor to consider is the existing organization of the material. Does the existing order appear to be meaningful? Is there evidence that this constitutes an original order, as used by the records creator? Does the existing order reflect a conscious management approach or is it just the result of material constraints of storage media (e.g. a backup split between many floppy disks or CDs due to limited storage space on each disk)? Documentation from the record creators and/or donation sources can greatly help in making these determinations.  
 
 The original order of material must also be balanced against user needs. Is the existing order self-evident or accessible for researchers? Can it be made accessible through your fonds, series, and file-level descriptions? If the answer to both of these questions is no, the situation may call for rearrangement or an alternative processing approach.  
 
@@ -98,7 +98,7 @@ Transfers of more than 15-20,000 files or so must be split into multiple AIPs. T
 
 Once consultation copies of files, reports, and other documentation have been placed in the Catalogers network share for consultation, the processor should spend 1-2 weeks becoming familiar with the material. This takes place during or just following the Survey phase, and involves analyzing the organizational structure of the records, reading through documentation, and browsing through files on their own computer and/or one of the CAD workstations.  
 
-Following this period, the Processor, Digital Archivist, Conservation, Archivist/Associate Director, and stakeholders from other CCA divisions will hold a pre-processing meeting. As part of this meeting, the participants will collectively analyze reports, draft an arrangement plan, set descriptive standards for the project (if they are to differ from typical practice), identify preservation concerns and manual file format normalization work plans (if necessary), discuss how original physical storage media will be handled, and set dates for project milestones. During the meeting, decisions will be formalized through the creation of a Processing Plan document that will live in the project "Acquisition et traitment" folder.  
+Following this period, the Processor, Digital Archivist, Conservation, Archivist/Associate Director, and stakeholders from other CCA divisions will hold a pre-processing meeting. As part of this meeting, the participants will collectively analyze reports, draft an arrangement plan, set descriptive standards for the project (if they are to differ from typical practice), identify preservation concerns and manual file format normalization work plans (if necessary), discuss how original physical storage media will be handled, and set dates for project milestones. During the meeting, decisions will be formalized through the creation of a Processing Plan document that will live in the project "Acquisition et traitement" folder.  
 
 <a name="extensible"></a>  
 ## The exception: Extensible processing of born-digital records  
@@ -108,63 +108,65 @@ In some cases, based on the factors listed above, it may make more sense not to 
 <a name="sippackaging"></a>  
 ## Packaging SIPs for Archivematica  
 
-Once the content of your SIP has been decided, CCA workflow tools like [Folder Processor and Disk Image Processor](https://github.com/timothyryanwalsh/cca-tools) will help you package each SIP so that it meets our local requirements for ingest into Archivematica. All SIPs should have one of the two following structures:  
-
-### Bagged SIP
-* Submission Information Package (SIP) : Named after identifier (typically, an AP or ARCH number)  
-   * bag-info.txt : bagit file  
-   * bagit.txt : bagit file  
-   * manifest-md5.txt : bagit file  
-   * tagmanifest-md5.txt : bagit file  
-   * data : bagit folder containing contents of transfer
-      * objects/ : folder for digital objects to be ingested  
-         * diskimage/ : (optional folder, use only when both disk image and files are ingested together)  
-         * files/ : (optional folder, use only when both disk image and files are ingested together)  
-      * metadata/ : folder for metadata associated with digital objects  
-         * submissionDocumentation/ : folder containing any additional documentation related to the digital objects  
+Once the content of your SIP has been decided, CCA workflow tools like [Folder Processor and Disk Image Processor](https://github.com/CCA-Public/cca-tools) will help you package each SIP so that it meets our local requirements for ingest into Archivematica. All SIPs should have one of the two following structures:  
 
 ### Non-bagged SIP (preferred)  
 
 * Submission Information Package (SIP) : Named after identifier (typically, an AP or ARCH number)
-   * objects/ : folder for digital objects to be ingested  
-      * diskimage/ : (optional folder, use only when both disk image and files are ingested together)  
-      * files/ : (optional folder, use only when both disk image and files are ingested together)  
-   * metadata / : folder for metadata associated with digital objects  
-      * checksum.md5 : manifest containing checksums for each file in objects
-      * submissionDocumentation/ : folder containing any additional documentation related to the digital objects  
+   * `objects/` : folder for digital objects to be ingested  
+      * `diskimage/` : (optional folder, use only when both disk image and files are ingested together)  
+      * `files/` : (optional folder, use only when both disk image and files are ingested together)  
+   * `metadata/` : folder for metadata associated with digital objects  
+      * `checksum.md5` : manifest containing checksums for each file in objects
+      * `submissionDocumentation/` : folder containing any additional documentation related to the digital objects  
+      
+### Bagged SIP (just in case - there is ordinarily no reason to create a SIP in this form)  
+* Submission Information Package (SIP) : Named after identifier (typically, an AP or ARCH number)  
+   * `bag-info.txt` : bagit file  
+   * `bagit.txt` : bagit file  
+   * `manifest-md5.txt` : bagit file  
+   * `tagmanifest-md5.txt` : bagit file  
+   * `data` : bagit folder containing contents of transfer
+      * `objects/` : folder for digital objects to be ingested  
+         * `diskimage/` : (optional folder, use only when both disk image and files are ingested together)  
+         * `files/` : (optional folder, use only when both disk image and files are ingested together)  
+      * `metadata/` : folder for metadata associated with digital objects  
+         * `submissionDocumentation/` : folder containing any additional documentation related to the digital objects  
  
 <a name="diskimageprocessor"></a>  
 ## Processing disk images with Disk Image Processor 
 
-*Instructions valid for Disk Image Processor v0.3.1*
+*Instructions valid for Disk Image Processor v1.0.0*
 
-[Disk Image Processor](https://github.com/timothyryanwalsh/cca-diskimageprocessor) takes a folder of disk images and turns each into a ready-to-ingest SIP packaged for Archivematica. The tool also writes a pre-populated description spreadsheet including information for each SIP. SIPs include an md5deep-generated checksum.md5 file in the "metadata" directory by default, but can optionally be bagged instead. The tool populates each "objects" directory with a raw disk image (even if the source disk image is EWF/E01) and logical files carved with either tsk_recover or the HFSExplorer command line utility unhfs. Files in the source directory that are not disk images are ignored (the exception to this is files that share the same basename, such as .info sidecar metadata files for disk images, which will be copied into the "objects/diskimage" file at the end of processing.)  
+[Disk Image Processor](https://github.com/CCA-Public/diskimageprocessor) takes a folder of disk images and turns each into a ready-to-ingest SIP packaged for Archivematica. The tool also writes a pre-populated description spreadsheet including information for each SIP. SIPs include an md5deep-generated checksum.md5 file in the "metadata" directory by default, but can optionally be bagged instead. The tool populates each "objects" directory by default with logical files carved from the disk image by tsk_recover, HFSExplorer, or a mount-and-copy routine, depending on the file system detected. 
+
+Optionally, SIPs can be created that also contain both a raw disk image (even if the source disk image is EWF/E01) and the exported logical files. Files in the source directory that are not disk images are ignored (the exception to this is files that share the same basename, such as .info sidecar metadata files for disk images, which will be copied into the "objects/diskimage" file at the end of processing if the user has selected the option to retain disk images in the SIP.)  
 
 This workflow assumes that each piece of storage media in an accession will be assigned a file-level description. If the contents of media are to be split into multiple files, a different approach is required.  
 
 For this walkthrough we will start with an example directory containing 4 disk images:  
 
-![diskimage1](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/diskimage1.png)  
+![diskimage1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/diskimage1.png)  
 
 Steps:  
 
 * Double-click on the "Disk Image Processor" icon in the "CCA Tools" folder on the Bitcurator desktop.  
 
-![diskimage2](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/diskimage2.png)  
+![diskimage2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/diskimage2.png)  
 
-* Enter the path of the source folder containing the disk images in "Source" (or select using the "Browse" button) and the path of a new folder for the outputs in "Destination". Choose between the two toolsets (standard usage: default to "mount-copy and walk_to_dfxml.py" and use other toolset only if unsuccessful) and any desired options. Press the "Process Disk Images" button to begin processing.  
+* Enter the path of the source folder containing the disk images in "Source" (or select using the "Browse" button) and the path of a new folder for the outputs in "Destination". Choose between your desired options. Press the "Start" button to begin processing.  
 
-![diskimage3](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/diskimage3.png)  
+![diskimage3](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/diskimage3.png)  
 
-* While the tool is processing, you will see some output in the "Detailed output" field and the Status will read "Started". When the tool has finished, Status will read "Finished". In the Destination folder, you will now see the following: a CSV file containing pre-populated archival description for each disk image, a log file for the Disk Image Processor tool, and a folder containing each processed SIP.  
+* When the tool has finished processing, in the Destination folder you will now see the following: a CSV file containing pre-populated archival description for each disk image, a log file for the Disk Image Processor tool, and a folder containing each processed SIP.  
 
-![diskimage6](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/diskimage6.png)  
+![diskimage6](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/diskimage6.png)  
 
-![diskimage7](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/diskimage7.png)  
+![diskimage7](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/diskimage7.png)  
 
 * Each individual SIP contains a standard structure, as demonstrated in the picture below. At the highest level, the SIP contains "object" and "metadata" folders. The "object" folder is further subdivided to contain a copy of a raw disk image for the disk, and a copy of all of the logical files carved from the disk image. The "metadata" folder contains a checksum.md5 file that can later be used by Archivematica to ensure file fixity and a "submissionDocumentation" folder, which contains a Brunnhilde report for the SIP, a DFXML file for the disk image, and a text file containing the disktype output for the raw disk image.  
 
-![diskimage8](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/diskimage8.png)  
+![diskimage8](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/diskimage8.png)  
 
 * From here, simply continue to describe the SIPs in the spreadsheet and rename the SIP directories with the following scheme: [identifier]---[accession number].    
 
@@ -172,9 +174,9 @@ Steps:
 <a name="folderprocessor"></a>  
 ## Processing directories of files with Folder Processor  
 
-[Folder Processor](https://github.com/timothyryanwalsh/cca-folderprocessor) allows users to create consistently-packaged SIPs from each of any number of selected input directories. Each SIP is packaged for Archivematica and contains a copy of the files, an md5 manifest, a DFXML file, and Brunnhilde reports.
+[Folder Processor](https://github.com/CCA-Public/folderprocessor) allows users to create consistently-packaged SIPs from each of any number of selected input directories. Each SIP is packaged for Archivematica and contains a copy of the files, an md5 manifest, a DFXML file, and Brunnhilde reports.
 
-![folderprocessor](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/folderprocessor.png)
+![folderprocessor](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/folderprocessor.png)
 
 To create SIPs with Folder Processor:
 
@@ -188,9 +190,9 @@ To create SIPs with Folder Processor:
 <a name="sipcreator"></a>  
 ## Creating single SIPs from directories and files with SIP Creator  
 
-[SIP Creator](https://github.com/timothyryanwalsh/cca-sipcreator) allows users to create a single SIP from any number of input directories and files. The resulting SIP is packaged for Archivematica and contains a copy of the files, an md5 manifest, a DFXML file, and Brunnhilde reports.
+[SIP Creator](https://github.com/CCA-Public/sipcreator) allows users to create a single SIP from any number of input directories and files. The resulting SIP is packaged for Archivematica and contains a copy of the files, an md5 manifest, a DFXML file, and Brunnhilde reports.
 
-![sipcreator](https://github.com/timothyryanwalsh/cca-digitalprocessingmanual/blob/master/media/photos/sipcreator.png)
+![sipcreator](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/sipcreator.png)
 
 To create SIPs with SIP Creator:
 
@@ -249,12 +251,12 @@ A corresponding description record needs to be added in TMS. It should be arrang
 * Reference code (ISAD(G) 3.1.1)/Object Number:
    * Duplicate original file reference number and add “FM”: e.g.:  AP222.S2.002.FM
 * Title (ISAD(G) 3.1.2)/Title:
-   * Follow titling guidelines for File-level description. Title must indicate the nature of files (i.e. they are forward-migrated versions). Title should include some level of detail about the formats whenever possible as to increase access to records. e.g. "Forward-migrated formZ 6 and 7 files for 3 of RUR digital working files"
+   * Follow titling guidelines for File-level description. Title must indicate the nature of files (i.e. they are forward-migrated versions). Title should include some level of detail about the formats whenever possible as to increase access to records. e.g. "Forward-migrated form\*Z 6 and 7 files for 3 of RUR digital working files"
 * Scope and content note (ISAD(G) 3.3.1)/Description du contenu:
-   * Detail and contextualize files which were migrated: list file paths of original file and indicate any specificity to new file versions if they do not appear in the processing spreadsheet. Refer to the original’s file description identification number.Add information about the migration process, if known: who, how, when and why.
+   * Detail and contextualize files which were migrated: list file paths of original file and indicate any specificity to new file versions if they do not appear in the processing spreadsheet. Refer to the original’s file description identification number. Add information about the migration process, if known: who, how, when and why.
    e.g. "Files were migrated by a CCA collaborator in 2014 as part of the preparation for the Archeology of the Digital Complexity and Convention exhibit."
 * Physical characteristics and technical requirements (ISAD(G) 3.4.4)/Physical Description field:
-   * Indicate designated software for file access. e.g. “Files may be accessed using form*Z version 6 to 8.”
+   * Indicate designated software for file access. e.g. “Files may be accessed using form\*Z version 6 to 8.”
    
 Finally, in the scope and content note for the folder with the original files (e.g. AP222.S2.002), indicate that the files have been migrated to a more recent software version and provide the folder titles for the forward-migrated files (e.g. AP222.S2.002.FM). List the forward-migrated files and their file paths, and indicate their software version.
 

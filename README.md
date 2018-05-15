@@ -20,7 +20,7 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
     * [Original physical media](guides/stabilization.md/#originalphysicalmedia)  
     * [Ingesting "raw" accession data into digital repository](guides/stabilization.md/#rawingest)  
 * **[Disk imaging original physical media](guides/diskimaging.md)**
-   * [Disk imaging with Guymager (Bitcurator)](guides/diskimaging.md/#guymager)  
+   * [Disk imaging with Guymager (BitCurator)](guides/diskimaging.md/#guymager)  
    * [Disk imaging with FTK Imager](guides/diskimaging.md/#ftkimager)
    * [Disk imaging with IsoBuster](guides/diskimaging.md/#isobuster)
    * [Disk imaging 5.25" floppy disks with FC5025](guides/diskimaging.md/#fc5025)
@@ -36,6 +36,8 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
    * [Extracting archives and reporting on logical files](guides/triage.md/#reporting)  
    * [Moving files to processing location](guides/triage.md/#moving)  
    * [Submitting files to PRONOM](guides/triage.md/#pronom)
+* **[Processing unusual file types](guides/unusual.md)**
+   * [Email archives and ePADD](guides/unusual.md/#email)  
 * **[Arrangement](guides/arrangement.md)**  
     * [Arrangement of born-digital archives in principle](guides/arrangement.md/#arrprinciple)  
     * [Factors affecting the arrangement of born-digital records](guides/arrangement.md/#arrfactors)   
@@ -58,18 +60,20 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
     * [Archivematica processing configurations](guides/ingest.md/#processingconfigs)
     * [Adding descriptive metadata to the AIP](guides/ingest.md/#dcmetadata)  
     * [CCA file format policies](guides/ingest.md/#fileformatpolicies)  
-* **[DIP generation and Access](guides/access.md)**  
+* **[Access](guides/access.md)**  
     * [Definition of CCA-style DIPs](guides/access.md/#dipdefinition)  
     * [Creating CCA-style DIPs](guides/access.md/#dipcreation)  
     * [Current access workflow](guides/access.md/#accessworkflow)  
     * [Access plans](guides/access.md/#accessplans)  
 * **[Archivematica administration](guides/administration.md)**  
+    * [Archivematica server monitoring](guides/administration.md/#monitoring)  
     * [Fixity checking and repair](guides/administration.md/#fixity)   
     * [Dropping MySQL and ES data in pipelines](guides/administration.md/#flushing)  
     * [Reindexing AIPs in Archival Storage indexes](guides/administration.md/#reindexing)  
     * [Deleting AIPs not indexed on a pipeline](guides/administration.md/#deletingaips) 
     * [Cleaning up after successful Automation Tools ingests](guides/administration.md/#autotoolssuccess)  
-    * [Responding to failed Automation Tools ingests](guides/administration.md/#autotoolsfailure) 
+    * [Responding to failed Automation Tools ingests](guides/administration.md/#autotoolsfailure)  
+    * [Checking Automation Tools logs](guides/administration.md/#checkthelogs)  
     * [Adding and switching AIP Store locations](guides/administration.md/#locations)  
     * [Clearing space when local disk is nearly full](guides/administration.md/#clearingspace)  
     * [Restarting services](guides/administration.md/#restarting)  
@@ -112,13 +116,13 @@ A few general principles to keep in mind when processing born-digital materials:
 2. Pre-processing triage and evaluation:  
    * Digital Archivist or Processing Archivist downloads AIPs containing raw data of all accessions to be processed.  
    * Digital Archivist or Processing Archivist extracts files from archive packages as necessary.  
-   * Digital Archivist or Processing Archivist triages and evaluates content using tools like [Brunnhilde](https://github.com/timothyryanwalsh/brunnhilde) and [Disk Image Processor](https://github.com/timothyryanwalsh/cca-diskimageprocessor).
+   * Digital Archivist or Processing Archivist triages and evaluates content using tools like [Brunnhilde](https://github.com/timothyryanwalsh/brunnhilde) and [Disk Image Processor](https://github.com/CCA-Public/diskimageprocessor).
    * A working "reference" copy of files can be moved onto network drives, where the files can be consulted from CAD workstations during processing.
    * Processing Archivist develops proposed processing plan for accession(s).
    * Digital Archivist, Processing Archivist, Conservation, and potentially others have consultation meeting to discuss processing plan.
 3. Arrangement and description:
    * Processing Archivist conducts manual file format normalizations and other preservation actions and explores contents of files in Bitcurator and CAD workstations as needed.
-   * Processing Archivist uses tools like [Folder Processor, SIP Creator, and/or Disk Image Processor](https://github.com/timothyryanwalsh/cca-tools) to create processed SIPs from raw accession data and begin the file-level processing spreadsheet.
+   * Processing Archivist uses tools like [Folder Processor, SIP Creator, and/or Disk Image Processor](https://github.com/CCA-Public/cca-tools) to create processed SIPs from raw accession data and begin the file-level processing spreadsheet.
    * Processing Archivist supplements and finishes file-level description in standard processing spreadsheet generated by Folder Processor or Disk Image Processor.
    * Processing Archivist drafts fonds, series, and project-level descriptions in plain text files.
    * Descriptions are reviewed with Digital Archivist and approved for entry into TMS.

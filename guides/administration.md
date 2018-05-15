@@ -1,32 +1,47 @@
 # Archivematica administration
 
+* [Archivematica server monitoring](#monitoring)  
 * [Fixity checking and repair](#fixity)  
 * [Dropping MySQL and ES data in pipelines](#flushing)  
 * [Reindexing AIPs in Archival Storage indexes](#reindexing)  
 * [Deleting AIPs not indexed on a pipeline](#deletingaips)  
 * [Cleaning up after successful Automation Tools ingests](#autotoolssuccess)
-* [Responding to failed Automation Tools ingests](#autotoolsfailure)
+* [Responding to failed Automation Tools ingests](#autotoolsfailure)  
+* [Checking Automation Tools logs](#checkthelogs)  
 * [Adding and switching AIP Store locations](#locations)  
 * [Clearing space when local disk is nearly full](#clearingspace)  
 * [Restarting services](#restarting)  
 * [Log of changes to default Archivematica FPR](#fprchanges)  
 * [Archivematica configuration settings](#configsettings)  
 
+<a name="monitoring"></a>  
+## Archivematica server monitoring
+
+[Server monitoring](https://vsp-prtg-01.int.cca/public/mapshow.htm?id=2636&mapid=archivematica)
+
 <a name="fixity"></a>  
 ## Fixity checking and repair  
 
-Fixity checks of all AIPs are conducted on a quarterly basis using the [Fixity](https://github.com/artefactual/fixity) application. Fixity's `scanall` function is run via the [cca-fixity](https://github.com/timothyryanwalsh/cca-fixity) scripts installed at `/var/archivematica/cca-fixity` on the Storage Service VM and called automatically on the second Friday of each January, April, July, and October via the crontab. Logs are saved on the Archivematica Storage Service server at `/var/log/cca-fixity`and results are emailed to the relevant administrators.
+Fixity checks of all AIPs are conducted on a quarterly basis using the [Fixity](https://github.com/artefactual/fixity) application. Fixity's `scanall` function is run via the [cca-fixity](https://github.com/CCA-Public/cca-fixity) scripts installed at `/var/archivematica/cca-fixity` on the Storage Service VM and called automatically on the second Friday of each January, April, July, and October via the crontab. Logs are saved on the Archivematica Storage Service server at `/var/log/cca-fixity`and results are emailed to the relevant administrators.
 
-If you must run a fixity check manually, use [nohup](https://en.wikipedia.org/wiki/Nohup) to ensure that the process runs to completion in the background, even if your terminal session ends, e.g.:  
+To manually conduct a fixity check of a single AIP:
 
-`nohup fixity scanall &`
+1. Connect to VSP-AMSS-01  
+2. Load environmental variables: `source /etc/profile.d/fixity.sh`
+3. Run fixity `scan` function: `fixity scan <AIP UUID>`  
+
+If you must run a `scanall` fixity check manually, use [nohup](https://en.wikipedia.org/wiki/Nohup) to ensure that the process runs to completion in the background, even if your terminal session ends
+
+1. Connect to VSP-AMSS-01  
+2. Load environmental variables: `source /etc/profile.d/fixity.sh`
+3. Run fixity `scan` function: `nohup fixity scanall &`
 
 When AIP corruption is detected, notify IT and restore the AIP from backups according to the Storage Service's [Recovery](https://www.archivematica.org/en/docs/storage-service-0.10/recovery/#recovery) procedures.  
 
 <a name="flushing"></a>
 ## Dropping MySQL and ES data in pipelines  
 
-We will periodically drop the Elasticsearch indexes and rows from the MySQL databases on each of the processing pipelines to minimize resource drain and keep performance quick. This should be done every few months and only after all ingests have been successfully QAed.  
+We will periodically drop the Elasticsearch indexes and rows from the MySQL databases on each of the processing pipelines to minimize resource drain and keep performance quick. This should be done every few months and only after all ingests have been successfully QAed. Artefactual Support has been asked to create an estimate for a script to do this cleanup.    
 
 When the ES index is dropped, backups and logs from `/srv/am-est-backups` and `/var/log/elasticsearch` may also be deleted. This will help to save space on the local disk.
 
@@ -37,7 +52,7 @@ To drop the ES index on a pipeline:
 <a name="reindexing"></a>
 ## Reindexing AIPs Archival Storage indexes  
 
-To re-index an AIP in an Archival Storage index on a given pipeline, you can use the `rebuild-aip-index.py` and `reindex-aip.sh` scripts from the Archivematica folder of the [CCA scripts repo](https://github.com/timothyryanwalsh/cca-scripts/tree/master/archivematica) on the pipeline where you would like the AIPs to be re-indexed.
+To re-index an AIP in an Archival Storage index on a given pipeline, you can use the `rebuild-aip-index.py` and `reindex-aip.sh` scripts from the Archivematica folder of the [CCA scripts repo](https://github.com/CCA-Public/cca-scripts/tree/master/archivematica) on the pipeline where you would like the AIPs to be re-indexed.
 
 The bash script `reindex-aip.sh` reindexes an AIP using the [Archivematica devtools](https://github.com/artefactual/archivematica-devtools).
 
@@ -79,23 +94,42 @@ You only need to manually call `transfer-script.sh` once - after that, the cront
 
 **Note that deleting `transfers.db` means that the Automation Tools will no longer have a record of which transfers in the `/mnt/incoming/auto-transfers` directory have already been started, so you will want to make sure only transfers you intend to start are present in that directory before deleting the database.**
 
+<a name="checkthelogs"></a>  
+## Checking Automation Tools logs  
+
+If you run into unexpected behavior from Automation Tools (e.g. transfers not starting or not approving, DIPs not being created for new AIPs), the first place to check is the logs.  
+
+Relevant logs:  
+* Automation Tools transfers: `/var/log/archivematica/automation-tools/transfers.log`  
+* Create DIP Job: `/var/log/archivematica/automation-tools/create-dip-jobs.log`  
+
 <a name="locations"></a>  
 ## Adding and switching AIP Store locations  
 
-Each storage location configured in the Storage Service is 5 TB in size (this was done in order to make backups manageable for IT). As storage locations will, new locations will need to be added to the Storage Service and assigned as the default values for pipelines. **Locations should contain only AIPs for which DIPs will be produced (e.g. processed digital archives) or AIPs for which DIPs will not be produced (e.g. digitization masters), not mixed.**
+Each storage location configured in the Storage Service is 5 TB in size (this was done in order to make backups manageable for IT). As storage locations fill, new locations will need to be added to the Storage Service and assigned as the default values for pipelines. **Locations should contain only AIPs for which DIPs will be produced (e.g. processed digital archives) or AIPs for which DIPs will not be produced (e.g. digitization masters), not mixed.**
 
 Steps to start using a new AIP Store location:  
 
 1. Ensure directory to add is mounted on Storage Service VM (read/write) and pipeline VMs (read-only). Ask CCA sysadmin to configure this if not true.    
-2. Configure as a storage space in the Storage Service GUI.  
-3. Set as default value in appropriate pipelines.  
-4. Update defaultProcessingMCP files with new Store AIP location in Automation Tools.  
+2. Configure as a Space and AIP storage Location in the Storage Service GUI (or ask Artefactual support to do this for you).     
+3. Set new AIP storage location as the default value in appropriate pipelines.  
+4. Replace the defaultProcessingMCP.xml file used with Automation Tools transfers at `/opt/archivematica/automation-tools/transfers/pre-transfer/defaultProcessingMCP.xml` with an updated configuration.  
 5. (If new storage location will contain AIPs for which we want to generate DIPs) Modify the `--location-uuid` value in `/etc/archivematica/automation-tools/create_dips_job_script.sh` to the value for the new AIP Store location. If it is necessary to monitor and create DIPs for more than one AIP Store location, create a second script (e.g. `create_dips_job_script_1.sh`) and add this additional script to the crontab under user `archivematica` (to edit the crontab, use `sudo crontab -u archivematica -e`).  
+
+These AIP Store locations are already configured in the Archivematica Storage Service:  
+
+| AIP Store | Currently in Use? | Configured with Automation Tools DIP creation script? | Notes |  
+| :----: | :------------: | :---------: | :----: |  
+| DARK_ARCHIVE_001 | Yes | Yes | Current default AIP Store location for Pipeline 2 (processed digital archives) |  
+| DARK_ARCHIVE_002 | Yes | No | Current default AIP Store location for Pipeline 1 (accessions and A/V) |  
+| DARK_ARCHIVE_003 | No | n/a | n/a |  
+| DARK_ARCHIVE_004 | No | n/a | n/a |  
+| DARK_ARCHIVE_005 | No | n/a | n/a |  
 
 <a name="clearingspace"></a>
 ## Clearing space when local disk is nearly full  
 
-When local disk space on one of the Archivematica pipelines is almost full, IT will send an alert. To clear space, you may delete some logs and well as older MySQL and Elasticsearch backups, namely:  
+When local disk space on one of the Archivematica pipelines is almost full, IT will send an alert. To clear space, you may delete some logs as well as older MySQL and Elasticsearch backups, namely:  
 
 * `/srv/am-db-backups`: Keep latest backup; all others can be deleted  
 * `/srv/am-es-backups`: Keep latest backup (check file size to ensure it's a real backup); all others can be deleted  

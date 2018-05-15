@@ -162,10 +162,6 @@ StereoLitho (.STL)
 Motion Analysis TRC File (.TRC) VRML (.WRL, WRZ)  
 VIZ Material XML (.XML)  
 
-#### Features of note  
-
-lorem ipsum  
-
 #### Navigation and use 
 
 There are many ways to view and navigate 3D space in 3ds Max. For a good introduction, see [this guide](https://knowledge.autodesk.com/support/3ds-max/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/3DSMax/files/GUID-CDA67D65-73D5-4F91-9378-D00B85ED6898-htm.html).  
@@ -286,15 +282,7 @@ Can refer to either Alias Studio, etc. (set of industrial design tools) or Power
 
 #### How to view files on CCA CAD workstations  
 
-lorem ipsum  
-
-#### Features of note  
-
-lorem ipsum  
-
-#### Navigation and use  
-
-lorem ipsum  
+The CCA CAD workstations are equipped with three versions of Alias, as part of the Autodesk 2014 suite. They should be able to open any Alias .wire files.    
 
 <a name="formz"></a>  
 ## form·Z   

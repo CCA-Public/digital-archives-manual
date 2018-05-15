@@ -65,7 +65,13 @@ Helpful resources, including:
   
   ([Source](https://stackoverflow.com/a/30339287/9459120))
   
-  The ZIPs must not have spaces in their filename, or else the command will fail. If needed, use [Detox](https://linux.die.net/man/1/detox) prior to unzipping.
+  For the same result with .rar files use:
+      
+      cd topDirectory
+      for F in $(find . -name "*.rar"); do unrar x "$F" "${F%.*}/" && rm "$F"; done
+  
+  
+  Both formats must not have spaces in their filename, or else the command will fail. If needed, use [Detox](https://linux.die.net/man/1/detox) prior to extracting files.
   
 * **Identify all files with problematic timestamps in a directory and to modify that timestamp:**
   
@@ -99,8 +105,14 @@ Helpful resources, including:
     
     To delete empty directories: 
             
-            find . -type d -empty -delete
-            
+            find . -type d -empty -delete  
+
+* **Print checksum mismatches between checksum.md5 file and objects directory to terminal**  
+
+        cd /path/to/metadata/directory 
+        md5deep -rlX checksum.md5 ../objects
+
+    (the -X flag displays the hash and filename for each file in the objects directory that does not match the list of known hashes in  the checksum.md5 file)          
 
 <a name="cadpres"></a>  
 ## Preservation of computer-aided design  

@@ -54,10 +54,10 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
   * Your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator machines  
   * All SIPs are named with the scheme [identifier]---[accession number]. If SIPs consist of unprocessed material, a disk image for example, only use its identifier to name it.
   * Data entry for all SIPs has been completed in TMS  
-2. Copy the SIPs to Pipeline 2 Transfer Source using the "send_to_archivematica.py" script with option "--pipeline 2":`python3 /path/to/send_to_archivematica.py --pipeline 2 '/path/to/transfer'`
+2. Copy the SIPs to Pipeline 2 Transfer Source using the "send_to_archivematica.py" script with option "--pipeline 2": `python3 /path/to/send_to_archivematica.py --pipeline 2 '/path/to/transfer'`
 3. Alert the Digital Archivist that your SIPs are ready for ingest.  
 4. When the pipeline is clear, the Digital Archivist will move the appropriate SIPs to the Automation Tools watched folder for ingest in batches of <50 SIPs at a time. Archivematica will then ingest each of the SIPs, one at a time.  
-5. QA the ingests, marking all information in an [Archivematica ingest spreadsheet](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/forms/amatica_ingest_spreadsheet.xlsx):  
+5. QA the ingests, marking all information in an [Archivematica ingest spreadsheet](https://github.com/CCA-Public/digital-archives-manual/blob/master/forms/amatica_ingest_spreadsheet.xlsx):  
     * For each SIP, ensure that Transfer and Ingest completed successfully and that the AIP was stored. Click “Archival storage” at the top of the Archivematica page, and ensure all of your SIPs are there. If they are listed, then they have successfully completed. 
     * For each SIP, add the following information to your Ingest spreadsheet:  
         * Identifier  
@@ -70,14 +70,14 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
         * Standard QA (True/False)  
     * For every 5th SIP, conduct a more complete QA check. Verify the following and then put "True" in the Full QA column of the Ingest spreadsheet:  
         * Look at the normalization report and ensure that no files that should have been normalized for preservation failed.  
-        * Download the AIP and upload the AIP METS file to <a href="http://bitarchivist.pythonanywhere.com/">METSFlask</a> for examination. Verify that Dublin Core descriptive metadata was written to the METS file, and quickly confirm that the information about the original files, particularly format identification and last modified date, appears correct. Please remember to delete your METS file from the list when you have finished.
-   * You may have also received a number of normalization failure report emails from Archivematica during ingest. In instances where the failed files have exit codes 0 or 2, these can be ignored. In instances where the failed files have exit code 1, it is worth confirming that the file type is actually normalized at CCA; if so, it may be worth investigating further, as these files may need to be <a href="https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/guides/arrangement.md#mannorm">manually normalized</a> and reingested.
+        * Download the AIP and upload the AIP METS file to [METSFlask](http://bitarchivist.pythonanywhere.com/) for examination. Verify that Dublin Core descriptive metadata was written to the METS file, and quickly confirm that the information about the original files, particularly format identification and last modified date, appears correct. Please remember to delete your METS file from the list when you have finished.
+   * You may have also received a number of normalization failure report emails from Archivematica during ingest. In instances where the failed files have exit codes 0 or 2, these can be ignored. In instances where the failed files have exit code 1, it is worth confirming that the file type is actually normalized at CCA; if so, it may be worth investigating further, as these files may need to be [manually normalized](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/arrangement.md#mannorm) and reingested.
 6. When Ingest and QA is complete:
-  * Inform and send a copy of your ingest spreadsheet to the Digital Archivist  
-  * Save your ingest spreadsheet to the appropriate "Acquisition et traitement" folder  
-  * Delete the local copy of the SIPs from the BitCurator machine 
+       * Inform and send a copy of your ingest spreadsheet to the Digital Archivist  
+       * Save your ingest spreadsheet to the appropriate "Acquisition et traitement" folder  
+       * Delete the local copy of the SIPs from the BitCurator machine 
 7. Create an object package for the files in TMS corresponding to the SIPs. Send an email to Deplacement requesting that each of the files in the object package be localized with the location "Dark archive", CCing the Digital Archivist.  
-8. The Digital Archivist will delete the successfully ingested SIPs from /mnt/incoming/auto-transfers (in Pipeline 1, the `transfer.py` script has been amended to delete the transfer source automatically after successful ingest, but it is still necessary to manually delete transfer sources from Pipelines 2 and 3).  
+8. The Digital Archivist will delete the successfully ingested SIPs from `/mnt/incoming/auto-transfers` (in Pipeline 1, the `transfer.py` script has been amended to delete the transfer source automatically after successful ingest, but it is still necessary to manually delete transfer sources from Pipelines 2 and 3).  
 
 <a name="automationtoolsav"></a>  
 #### Procedure for Automation Tools ingest: digitized A/V  
@@ -148,7 +148,7 @@ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator mac
 | Store AIP location | *appropriate AIP store* |
 | Store DIP location | "None" |   
 
-*Note: CCA creates DIPs from our AIPs through the [create_dip.py](https://github.com/artefactual/automation-tools/blob/dev/aip2dip/aips/create_dip.py) script rather than through the standard Archivematica "Normalization for access" option.*  
+*Note: CCA creates DIPs from our AIPs through the [create_dip.py](https://github.com/artefactual/automation-tools/blob/master/aips/create_dip.py) script rather than through the standard Archivematica "Normalization for access" option.*  
 
 <a name="reingestconfig"></a>  
 ### Configuration for re-ingest  
@@ -209,7 +209,9 @@ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator mac
 <a name="dcmetadata"></a>  
 ## Adding descriptive metadata to the AIP  
 
-CCA adds descriptive metadata to every AIP to aid in discoverability and re-use of data. In most cases, metadata will be entered automatically during the ingest process using [Automation Tools](https://github.com/artefactual/automation-tools) and [add-tms-metadata.py](https://github.com/timothyryanwalsh/cca-scripts/blob/master/archivematica/add_tms_metadata.py). CCA's local standards for metadata entry are as follows:  
+CCA adds descriptive metadata to every AIP to aid in discoverability and re-use of data. In most cases, metadata will be entered automatically during the ingest process using [Automation Tools](https://github.com/artefactual/automation-tools) and [add-tms-metadata.py](https://github.com/CCA-Public/cca-scripts/blob/master/archivematica/add_tms_metadata.py). The `add-tms-metadata.py` script retrieves metadata using a minimal GET-only TMS API implemented by a former CCA programmer, based on similar work that was open sourced by MoMA. To retrieve some basic metadata (with limited fields) for a record in TMS, make a GET API call to `http://api.tms.cca.qc.ca/API/Object/<enter ObjectNumber here>`. For example, information for the fonds-level record for the Testa & Weiser project records (AP174) can be accessed at [http://api.tms.cca.qc.ca/API/Object/AP174](http://api.tms.cca.qc.ca/API/Object/AP174). 
+
+CCA's local standards for metadata entry are as follows:  
 
 | Field | Value |  
 | ----- | ----- |  
@@ -232,4 +234,4 @@ CCA adds descriptive metadata to every AIP to aid in discoverability and re-use 
 <a name="fileformatpolicies"></a>
 ## CCA file format policies  
 
-Current version: [Format Policy Registry, version 2](https://github.com/timothyryanwalsh/cca-digitalarchivesmanual/blob/master/guides/CCA%20Format%20Policy%20Registry%20v2%20201804.pdf) 
+Current version: [Format Policy Registry, version 2](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/CCA%20Format%20Policy%20Registry%20v2%20201804.pdf) 
