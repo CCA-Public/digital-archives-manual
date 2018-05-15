@@ -111,9 +111,9 @@ Helpful resources, including:
 
 ```
 cd /path/to/metadata/directory 
-md5deep -rX checksum.md5 ../objects/
+md5deep -rlX checksum.md5 ../objects
 ```
-            
+(the -X flag displays the hash and filename for each file in the objects directory that does not match the list of known hashes in the checksum.md5 file)          
 
 <a name="cadpres"></a>  
 ## Preservation of computer-aided design  
