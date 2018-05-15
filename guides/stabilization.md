@@ -124,9 +124,8 @@ For the ingest of raw unprocessed data, we use the VSP-AMPL-01 processing pipeli
 
 **Procedure:** 
 
-1. If files are as received by donor and not disk images or archive packages (e.g., a .zip or .tar file): Create a .tar version of the files with the following command on a Linux or Mac computer: `tar -cvf <file-to-create>.tar <directory-to-package>`.  
-2. Create a SIP named `<accession number>_raw`, containing the packaged files and/or disk images. If an accession has not yet been created in TMS, temporarily store the SIP in the Digital Shipping Space until the accession number has been assigned and a record created in TMS.  
-3. Copy the SIP to the VSP-AMPL-01 pipeline using the `send_to_archivematica.py` script.  
-4. (Digital Archivist/Archivematica administrator) Move the SIP to the Automation Tools watched folder for ingest. Follow typical ingest and QA procedures.
+1. Create a SIP named `<accession number>_raw`, containing the files as sent by the donor and/or disk images. If an accession has not yet been created in TMS, temporarily store the SIP in the Digital Shipping Space until the accession number has been assigned and a record created in TMS.  
+2. Copy the SIP to the VSP-AMPL-01 pipeline using the `send_to_archivematica.py` script.  
+3. (Digital Archivist/Archivematica administrator) Move the SIP to the Automation Tools watched folder for ingest. Follow typical ingest and QA procedures.
 
 Once the accession has been ingested into Archivematica, delete any extraneous copies from the BitCurator machines, Digital Shipping Space, etc. and ask the Registrar to update the location for the appropriate accession records to "Dark archive".  
