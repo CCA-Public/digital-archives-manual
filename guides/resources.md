@@ -109,8 +109,10 @@ Helpful resources, including:
 
 * **Print checksum mismatches between checksum.md5 file and objects directory to terminal**  
 
-`cd /path/to/metadata/directory`  
-`md5deep -rX checksum.md5 ../objects/`  
+```
+cd /path/to/metadata/directory 
+md5deep -rX checksum.md5 ../objects/
+```
             
 
 <a name="cadpres"></a>  
