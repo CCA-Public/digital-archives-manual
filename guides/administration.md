@@ -34,7 +34,7 @@ If you must run a `scanall` fixity check manually, use [nohup](https://en.wikipe
 
 1. Connect to VSP-AMSS-01  
 2. Load environmental variables: `source /etc/profile.d/fixity.sh`
-3. Run fixity `scan` function: `nohup fixity scanall &`
+3. Run fixity `scanall` function: `nohup fixity scanall &`
 
 When AIP corruption is detected, notify IT and restore the AIP from backups according to the Storage Service's [Recovery](https://www.archivematica.org/en/docs/storage-service-0.10/recovery/#recovery) procedures.  
 
