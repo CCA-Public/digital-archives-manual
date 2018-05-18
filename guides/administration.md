@@ -41,13 +41,15 @@ When AIP corruption is detected, notify IT and restore the AIP from backups acco
 <a name="flushing"></a>
 ## Dropping MySQL and ES data in pipelines  
 
-We will periodically drop the Elasticsearch indexes and rows from the MySQL databases on each of the processing pipelines to minimize resource drain and keep performance quick. This should be done every few months and only after all ingests have been successfully QAed. Artefactual Support has been asked to create an estimate for a script to do this cleanup.    
+We will periodically drop the Elasticsearch indexes and rows from the MySQL databases on each of the processing pipelines to minimize resource drain and keep performance quick. This should be done every few months and only after all ingests have been successfully QAed. 
 
-When the ES index is dropped, backups and logs from `/srv/am-est-backups` and `/var/log/elasticsearch` may also be deleted. This will help to save space on the local disk.
+Artefactual Support has been asked to create an estimate for a script to do this cleanup for pipeline MySQL databases.   
 
 To drop the ES index on a pipeline:
 
 `curl -XDELETE http://<pipeline.ip.address>:9200/aips`
+
+When the ES index is dropped, backups and logs from `/srv/am-est-backups` and `/var/log/elasticsearch` may also be deleted. This will help to save space on the local disk.
 
 <a name="reindexing"></a>
 ## Reindexing AIPs Archival Storage indexes  
