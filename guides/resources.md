@@ -73,6 +73,19 @@ Helpful resources, including:
   
   Both formats must not have spaces in their filename, or else the command will fail. If needed, use [Detox](https://linux.die.net/man/1/detox) prior to extracting files.
   
+* **Identify duplicate directories across a collection:**
+     
+     Run the following scripts in the command line individually. (Replace topDirectory with the file path for the highest level directory.) 
+            
+            cd topDirectory/
+            find . -type d >> /home/bcadmin/Desktop/directories.csv
+            for D in $(find . -type d); do du -sh $D >> /home/bcadmin/Desktop/filesize.csv; done
+            for D in $(find . -type d); do find $D -type f -exec md5sum {} + | awk '{print $1}' | sort | md5sum >> /home/bcadmin/Desktop/checksums.csv; done
+
+     This final command may take some time depending on the size of the collection. Together, these commands will create three CSV spreadsheets on the Bitcurator desktop, containing the list of directories, their human-readable size, and their checksums respectively. Move the columns into one spreadsheet, being mindful that the columns will require some light data clean up in order to get them to line up. It may be easier to have the TOPDIRECTORY be a subdirectory and combine all the spreadsheets at the end if you have more than a few thousand directories total.
+     
+     Once you've ensured that they match up correctly, create headers for each column and insert filters (Data/Filters or Donnees/Filtrer). Highlight the checksum column and do Home/Conditional formatting/Rules for highlighting cells/Duplicates or Accueil/Mise en forme conditionnelle/Regles de mise en surbrillance des cellules/Valeurs en double. This will change the color of all duplicate checksums, allowing you to identify and delete duplicate directories.
+
 * **Identify all files with problematic timestamps in a directory and to modify that timestamp:**
   
       cd topDirectory
