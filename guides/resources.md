@@ -75,6 +75,8 @@ Helpful resources, including:
   
 * **Identify duplicate directories across a collection:**
      
+     Trying using [direct-dedupe](https://github.com/stefanabreitwieser/direct-dedupe) and then follow the Excel instructions below. It was built off of the following commands: 
+     
      Run the following scripts in the command line individually. (Replace topDirectory with the file path for the highest level directory.) 
             
             cd topDirectory/
