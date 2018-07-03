@@ -129,6 +129,14 @@ Helpful resources, including:
 
     (the -X flag displays the hash and filename for each file in the objects directory that does not match the list of known hashes in  the checksum.md5 file)          
 
+* **Batch remove commas from file names and replace with underscores**  
+
+        cd /path/to/directory
+        for f in $(find . -name "*,*"); do rename -v 's/,/_/' $f; done
+        
+    Note that this will only change the first comma in every file name. For example, if a file name contains five commas, you will have to run the command five times to replace every comma. 
+    
+    
 <a name="cadpres"></a>  
 ## Preservation of computer-aided design  
 
