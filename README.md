@@ -37,6 +37,7 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
    * [Moving files to processing location](guides/triage.md/#moving)  
    * [Submitting files to PRONOM](guides/triage.md/#pronom)
 * **[Processing email archives with ePADD](guides/email.md)**
+* **[Capturing web archives with Archive-It](guides/web.md)**
 * **[Arrangement](guides/arrangement.md)**  
     * [Arrangement of born-digital archives in principle](guides/arrangement.md/#arrprinciple)  
     * [Factors affecting the arrangement of born-digital records](guides/arrangement.md/#arrfactors)   
