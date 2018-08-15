@@ -1,18 +1,4 @@
-# Processing unusual file types
-
-Certain file types require atypical processing workflows, often using specialized software. This guide documents CCA's workflows for processing unusual file types and their related software, which include:  
-
-* [Email archives and ePADD](#email)
-    * [Email formats](#emailformats)
-    * [Import and appraisal module](#emailappraisal)
-    * [Processing module](#emailprocessing)
-    * [Export, SIPs, AIPs, and DIPs](#emailexport)
-    * [Delivery module](#emaildelivery)
-    * [Accessing email](#emailaccess)
-    * [Cleaning up ePADD](#cleanupepadd)
-    
-<a name="email"></a>  
-## Email archives and ePADD
+# Email archives and ePADD
 
 Email formats require additional processing, as they often contain sensitive or personal information, and as a format, are difficult to access by an end-user. [ePADD](https://library.stanford.edu/projects/epadd), developed by Stanford University Libraries, allows the processing archivist to search through email, restrict possibly sensitive materials, create access and preservation copies, and provide a user-friendly access interface.
 
@@ -22,8 +8,17 @@ ePADD can be downloaded [here](https://library.stanford.edu/projects/epadd/downl
 
 This documentation is up-to-date as of ePADD v5.0 (May 2018).
 
+* [Email formats](#emailformats)
+* [Import and appraisal module](#emailappraisal)
+* [Processing module](#emailprocessing)
+* [Export, SIPs, AIPs, and DIPs](#emailexport)
+* [Delivery module](#emaildelivery)
+* [Accessing email](#emailaccess)
+* [Cleaning up ePADD](#cleanupepadd) 
+
+
 <a name="emailformats"></a>  
-### Email formats 
+## Email formats 
 
 ePADD works with live email accounts (including IMAP) and email archives in the MBOX format. If your email archives are in a different email format, they will need to be converted using [Emailchemy](https://weirdkid.com/emailchemy/), an email format converter located on the CD imaging workstation. Note that the readpst command line utility is not recommended.
 
@@ -54,7 +49,7 @@ To use Emailchemy:
 5. Find the log file created during conversion and save it. It will eventually be included in your SIP-level metadata.
 
 <a name="emailappraisal"></a>  
-### Import and appraisal module
+## Import and appraisal module
 **NOTE:** Before importing new archives into ePADD, ensure that the previous user properly [cleaned up ePADD](#cleanupepadd) from their session.
 
 The Appraisal module is the default starting screen after launching ePADD. Appraisal is intended to be used by the donor to do initial review and restriction of their own email. Notably, the “Do not transfer” flag will effectively delete emails, preventing them from being moved to the processing module.
@@ -79,14 +74,14 @@ Because the appraisal module does not provide any unique functionality, and beca
 2. Under "Export messages and attachments," click Browse, and choose C:/Users/user. Click Export (NOT "Export to MBOX"). This may take some time. It will save as "ePADD archive of (name of archive creator)." This folder is now ready to be imported into the processing module.
 
 <a name="emailprocessing"></a>  
-### Processing module
+## Processing module
 
 The archivist can begin reviewing, restricting, and assigning metadata in the processing module. To do so: 
 
 1. Switch ePADD to the processing module by clicking the blue question mark in the top right corner. Click "ePADD Mode." Choose "PROCESSING" from the drop-down menu.
 2. Add your archives by clicking the Add tab. Next to "Accession folder," click Browse and choose the "Archive of (archive creator) folder" created in the previous module. Fill out as much metadata as possible. You can return to this later. Click "Import Accession." This may take some time.
 
-#### The Browse tab
+### The Browse tab
 
 Once ePADD has finished importing the accession, the archivist can begin processing the materials from the Browse screen which looks like: 
 
@@ -116,16 +111,16 @@ The review process need not occur in any particular order. ePADD provides the fo
 9. *Data:* Import log. 
    * Ensure there were no major import errors.
 
-#### The Search Tab
+### The Search Tab
 
 In addition to using the lexicons, the Search tab allows for keyword searching. You may want to do this if you notice out of scope email that is not flagged by lexicon searching. For example, in AP195, the archive creator used her personal email to find a new apartment. None of the relevant words were flagged by the lexicons, and keyword searching terms like "rent," "lease," and "flat" made it possible to screen out this material.
 
-#### The Authorities Tab
+### The Authorities Tab
 
 The Authorities tab can be used to assign name authorities from LCNAF, VIAF, FAST, and Wikipedia. Current descriptive practices at CCA do not involve in-depth subject analysis; however, assigning authorities at this phase might be useful for later description and access, particularly when populating the "Names" field for file-level description. 
 
 <a name="emailexport"></a>  
-#### Export to the Delivery module
+### Export to the Delivery module
 
 When you have finished reviewing all emails, you can export the emails to the next ePADD modules, Discovery and Delivery. To do so: 
 
@@ -136,7 +131,7 @@ When you have finished reviewing all emails, you can export the emails to the ne
 Note that the final MBOX file should not be exported from the Appraisal module, as it will include all of the restricted material. 
 
 <a name="emaildelivery"></a>  
-### Delivery module 
+## Delivery module 
 
 The delivery module is the access interface intended for researchers. For CCA's current use case, it is also used to create a final preservation copy of the files. It can be opened in the "ePADD mode" tab, like with the other modules. To launch the delivery module: 
 
@@ -157,7 +152,7 @@ In order to export a preservation copy in the MBOX format:
 
 For AP195, the original files and the Appraisal module were kept, in recognition of the fact that email processing technology and workflows are rapidly improving. It is possible that we may want to return to these files as they appeared originally and at the time restriction was completed. These files were packaged into their own SIP and are restricted from user access.
 
-#### Leaving the Delivery module
+### Leaving the Delivery module
 
 Once you are in the ePADD delivery module, you cannot easily return to the previous modules. This is to prevent researcher interference with collections in process. (This is also true for the discovery module.) To return to previous modules: 
 
@@ -177,7 +172,7 @@ Once you are in the ePADD delivery module, you cannot easily return to the previ
 This can also be achieved by logging out of the workstation and logging in again.
 
 <a name="emailaccess"></a>
-### Accessing email
+## Accessing email
 
 In order to provide access to these files, the MBOX file in the SIP can be re-imported into ePADD and walked through each export phase to the Delivery module. The researcher can use the Delivery module to navigate within the email archives using many of the same tools as were available to the archivist during processing. They can flag and annotate material, much like in the appraisal and delivery modules, and save and download a marked-up version of the email archive for their personal use.
 
@@ -185,7 +180,7 @@ MBOX files can also be opened using other email tools, like [Thunderbird](https:
 
 
 <a name="cleanupepadd"></a>
-### Cleaning up ePADD
+## Cleaning up ePADD
 For each module, ePADD saves its contents to a corresponding directory in C:/Users/user. All of emails in those directories will display in the corresponding module, regardless of provenance, meaning that they must be deleted between processing projects so that materials are not accidentally mixed. In order to clean up ePADD:
 1. Go to C:/Users/user.
 2. There will be a number of directories whose titles begin with "epadd-." Delete all of these directories EXCEPT "epadd-settings." 
