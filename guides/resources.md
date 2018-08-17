@@ -71,7 +71,7 @@ Helpful resources, including:
       for F in $(find . -name "*.rar"); do unrar x "$F" "${F%.*}/" && rm "$F"; done
   
   
-  Both formats must not have spaces in their filename, or else the command will fail. If needed, use [Detox](https://linux.die.net/man/1/detox) prior to extracting files.
+  Note that the find command is case-sensitive, and will have to be changed according to the case of your zip or rar filenames. Both formats must not have spaces in their filename, or else the command will fail. If needed, use [Detox](https://linux.die.net/man/1/detox) prior to extracting files.
   
 * **Identify duplicate directories across a collection:**
      
