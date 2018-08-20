@@ -17,7 +17,9 @@ Archive-It has a [Help Center](https://support.archive-it.org/hc/en-us), [User G
 
 <a name="scoping"></a> 
 ## Scoping and running crawls
+Add a seed to a collection and scope it using the [Archive-It Guidelines](https://support.archive-it.org/hc/en-us/sections/201864583-Scoping). Note that social media sites, like Facebook, Instagram, and Youtube, require [specific scoping rules](https://support.archive-it.org/hc/en-us/articles/208001336-Scoping-guidance-for-specific-types-of-sites).
 
+Note that every time you add a new seed, you **MUST** run a test crawl.
 
 <a name="webrecorder"></a> 
 ### Using WebRecorder to capture dynamic content
