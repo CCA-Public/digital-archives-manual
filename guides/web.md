@@ -6,16 +6,27 @@ CCA uses the web app [Archive-It](https://archive-it.org/) to capture certain ty
 
 Archive-It has a [Help Center](https://support.archive-it.org/hc/en-us), [User Guide](https://support.archive-it.org/hc/en-us/categories/201179946-Archive-It-User-Guide), and [Community Forum](https://support.archive-it.org/hc/en-us/community/topics), which should serve as primary documentation and a resource for troubleshooting. 
  
-## Workflow
+### Workflow
 
-- consult web archiving seeds list 
-- run crawls
+- Consult web archiving seeds list.
+- [Set scoping rules and run crawl.](#scoping)
+   - [Using WebRecorder to capture dynamic content.](#webrecorder)
 - complete QA
 - [Add metadata to each seed.](#metadata)
 - update crawl log
 
+<a name="scoping"></a> 
+## Scoping and running crawls
+
+
+<a name="webrecorder"></a> 
+### Using WebRecorder to capture dynamic content
+One [known issue](https://support.archive-it.org/hc/en-us/articles/209637043-Known-Web-Archiving-Challenges#dynamic) with Archive-It is capturing dynamic content, i.e. content that requires human interaction to render properly. This includes Flash, which is used by many old CCA exhibition sites. In instances where content cannot be captured by Archive-It, [WebRecorder](https://webrecorder.io/) will be used. 
+
+Follow the instructions in [WebRecorder's User Guide](https://guide.webrecorder.io/) to create and download a WARC file of the desired website. Upload it to Archive-It using the instructions [here](https://support.archive-it.org/hc/en-us/articles/360000651246-Integrate-external-W-ARC-files-into-Archive-It-collections). 
+
 <a name="metadata"></a>  
-### Metadata
+## Metadata
 Metadata can be added to individual seeds by clicking a seed URL and navigating to the "Metadata" tab. Click "Edit" to begin entering metadata in fields; you must click "Add" for the changes to save. The following fields are required for all seeds: 
 - **Title:** Use the "Grab title" feature when possible. Feel free to edit the "Grab title" results if they are especially long or do not represent an appropriate title. If the "Grab title" feature does not work for a particular seed, generate the title of the website using your best judgment. 
 - **Creator:** The organizition or individual behind a particular website. This will frequently be "Canadian Centre for Architecture."
