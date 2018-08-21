@@ -19,7 +19,7 @@ Archive-It has a [Help Center](https://support.archive-it.org/hc/en-us), [User G
 ## Scoping and running crawls
 Add a seed to a collection and scope it using the [Archive-It Guidelines](https://support.archive-it.org/hc/en-us/sections/201864583-Scoping). Note that social media sites, like Facebook, Instagram, and Youtube, require [specific scoping rules](https://support.archive-it.org/hc/en-us/articles/208001336-Scoping-guidance-for-specific-types-of-sites).
 
-Note that every time you add a new seed, you **MUST** run a [test crawl](https://support.archive-it.org/hc/en-us/articles/208001226-Run-monitor-and-save-a-test-crawl). This ensures that the final production crawl saved to the archive is properly scoped. Production crawls cannot be deleted, 
+Note that every time you add a new seed, you **MUST** run a [test crawl](https://support.archive-it.org/hc/en-us/articles/208001226-Run-monitor-and-save-a-test-crawl). This ensures that the final production crawl saved to the archive is properly scoped. Production crawls cannot be deleted, meaning that an incorrectly scoped crawl can eat up a large amount of the data budget. However, test crawls can be saved, and this is the preferred starting point, especially for seeds being crawled for the first time. 
 
 The CCA websites (French/English) are both scheduled to do a shallow crawl weekly. A quarterly full crawl is also recommended, but needs to be kicked off manually. As of writing, all other seeds were scheduled for a one-time crawl.
 
