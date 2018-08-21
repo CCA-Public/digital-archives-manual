@@ -11,12 +11,12 @@ Archive-It has a [Help Center](https://support.archive-it.org/hc/en-us), [User G
 1. Consult web archiving seeds list to see what seeds need to be crawled. It lives here: H:\Archives\Archives numériques\Systems Development\Web Archiving. 
 2. [Set scoping rules and run test and production crawls.](#scoping)
    - [Using WebRecorder to capture dynamic content.](#webrecorder)
-3. complete QA
-- [Add metadata to each seed.](#metadata)
-- update crawl log
+3. [Complete QA](https://support.archive-it.org/hc/en-us/sections/115000624306-Quality-Assurance-QA-)
+4. [Add metadata to each seed.](#metadata)
+5. Update crawl log to reflect each SAVED crawl. It's found in the same folder as step 1. 
 
 <a name="scoping"></a> 
-### Scoping and running crawls
+## Scoping and running crawls
 Add a seed to a collection and scope it using the [Archive-It Guidelines](https://support.archive-it.org/hc/en-us/sections/201864583-Scoping). Note that social media sites, like Facebook, Instagram, and Youtube, require [specific scoping rules](https://support.archive-it.org/hc/en-us/articles/208001336-Scoping-guidance-for-specific-types-of-sites).
 
 Note that every time you add a new seed, you **MUST** run a [test crawl](https://support.archive-it.org/hc/en-us/articles/208001226-Run-monitor-and-save-a-test-crawl). This ensures that the final production crawl saved to the archive is properly scoped. Production crawls cannot be deleted, 
@@ -24,13 +24,13 @@ Note that every time you add a new seed, you **MUST** run a [test crawl](https:/
 The CCA websites (French/English) are both scheduled to do a shallow crawl weekly. A quarterly full crawl is also recommended, but needs to be kicked off manually. As of writing, all other seeds were scheduled for a one-time crawl.
 
 <a name="webrecorder"></a> 
-#### Using WebRecorder to capture dynamic content
+### Using WebRecorder to capture dynamic content
 One [known issue](https://support.archive-it.org/hc/en-us/articles/209637043-Known-Web-Archiving-Challenges#dynamic) with Archive-It is capturing dynamic content, i.e. content that requires human interaction to render properly. This includes Flash, which is used by many old CCA exhibition sites. In instances where content cannot be captured by Archive-It, [WebRecorder](https://webrecorder.io/) will be used. 
 
 Follow the instructions in [WebRecorder's User Guide](https://guide.webrecorder.io/) to create and download a WARC file of the desired website. Upload it to Archive-It using the instructions [here](https://support.archive-it.org/hc/en-us/articles/360000651246-Integrate-external-W-ARC-files-into-Archive-It-collections). 
 
 <a name="metadata"></a>  
-### Metadata
+## Metadata
 Metadata can be added to individual seeds by clicking a seed URL and navigating to the "Metadata" tab. Click "Edit" to begin entering metadata in fields; you must click "Add" for the changes to save. The following fields are required for all seeds: 
 - **Title:** Use the "Grab title" feature when possible. Feel free to edit the "Grab title" results if they are especially long or do not represent an appropriate title. If the "Grab title" feature does not work for a particular seed, generate the title of the website using your best judgment. 
 - **Creator:** The organizition or individual behind a particular website. This will frequently be "Canadian Centre for Architecture."
