@@ -58,13 +58,13 @@ Helpful resources, including:
 <a name="scripting"></a>  
 ## Useful command line scripts
 
-* **Batch convert files in a directory and subdirectories using LibreOffice.**
-    '''
+*  **Batch convert files in a directory and subdirectories using LibreOffice.**
+    ```
     cd topDirectory
-    for f in $(find . -type f -name "*mcw"); do libreoffice --convert-to doc $f --outdir $(dirname $f); done
-    '''
+    for f in $(find . -type f -name "*EXT"); do libreoffice --convert-to doc $f --outdir $(dirname $f); done
+    ```
     
-  Change "mcw" to the file extension of the original files. Change "doc" to the extension of the converted files.
+  Change "EXT" to the file extension of the original files; note that it is case-sensitive. Change "doc" to the extension that the files should convert to. See ["Supported File Formats"](https://en.wikipedia.org/wiki/LibreOffice) for more information.
 
 * **Recursively unzip files into a new folder with the title of the zip file into their current place in the directory, and then delete the original zip file when it's done:**
     
