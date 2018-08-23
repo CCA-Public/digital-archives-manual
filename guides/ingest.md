@@ -27,7 +27,7 @@ In addition to supporting fileservers, CCA's Archivematica infrastructure runs o
 | -------- | -------- | -------- |
 | VSP-AMPL-01 | Pipeline 1 | Pipeline 1 is used for assets that are described in TMS and for which no extraction or format normalization is desired. Sample use cases: ingest a .tar of files as received by a donor which have not yet been processed, ingesting digitized A/V materials that are described in TMS. |
 | VSP-AMPL-02 | Pipeline 2 | Pipeline 2 is used for assets that are described in TMS and which will be fully processed by Archivematica. This is the pipeline that should be used for processed digital archives. |
-| VSP-AMPL-03 | Pipeline 3 | Pipeline 3 is used for assets that are described in Horizon. There is not yet a protocol for ingest of library materials. |
+| VSP-AMPL-03 | Pipeline 3 | Pipeline 3 is used for assets that are described in Horizon. There is not yet a protocol for ingest of library materials. Access copies are temporarily being stored at \\SVRDATA\ResearchMaterial$\01 - Library Access Copies. |
 | VSP-AMSS-01 | Storage Service | The Storage Service manages storage, indexing, and retrieval of Archival Information Packages (AIPs) and conducts fixity checks of the AIP store. |
 
 <a name="ingestmethods"></a>  
