@@ -40,8 +40,9 @@ Metadata can be added to individual seeds by clicking a seed URL and navigating 
 - **Creator:** The organizition or individual responsible for the creating the content of a website.
 - **Contributor:** Includes any "meaningful but secondary" contributors to a resource not covered by other fields. 
 - **Date:** Year values related to the website. This minimally should include the year of the crawl, and can also include exhibition dates. Each year should be entered seperately and contextualized. Examples:
- -Exhibition date 2012
- -Exhibition date 2013
+  -2012-2016 (published)
+  -2013-2014 (exhibition dates)
+  -2018 (captured)
  -Captured 2018
  - **Type:** This will always be "web archives" for archived content (i.e. one-time crawls) and "websites" for lives sites (i.e. ongoing, scheduled crawls). 
 - **Format:** Entered in the "Format" field. This will always be "1 archived website." 
