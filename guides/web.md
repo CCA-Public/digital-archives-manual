@@ -32,7 +32,7 @@ Follow the instructions in [WebRecorder's User Guide](https://guide.webrecorder.
 <a name="metadata"></a>  
 
 ## Metadata
-The seeds should be described in three places: in Archive-It, CCA's library catalog, and TMS.
+Description should live in three places: seed-level metadata should be in Archive-It and CCA's library catalog, and fonds-level metadata should be in TMS.
 
 ### Archive-It description
 Metadata can be added to individual seeds by clicking a seed URL and navigating to the "Metadata" tab. Click "Edit" to begin entering metadata in fields; you must click "Add" for the changes to save. The following fields are required for all seeds: 
