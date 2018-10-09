@@ -65,7 +65,9 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
     * [Creating CCA-style DIPs](guides/access.md/#dipcreation)  
     * [Current access workflow](guides/access.md/#accessworkflow)  
     * [Access plans](guides/access.md/#accessplans)  
-* **[Archivematica administration](guides/administration.md)**  
+* **[Archivematica administration](guides/administration.md)**
+    * [Logging in](guides/administration.md/#monitoring)
+    * [Starting an ingest](guides/administration.md/#startingest)
     * [Archivematica server monitoring](guides/administration.md/#monitoring)  
     * [Fixity checking and repair](guides/administration.md/#fixity)   
     * [Dropping MySQL and ES data in pipelines](guides/administration.md/#flushing)  
