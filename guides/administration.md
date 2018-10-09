@@ -1,5 +1,7 @@
 # Archivematica administration
 
+* [Logging in](#login)
+* [Start an ingest](#startingest)
 * [Archivematica server monitoring](#monitoring)  
 * [Fixity checking and repair](#fixity)  
 * [Dropping MySQL and ES data in pipelines](#flushing)  
@@ -13,6 +15,26 @@
 * [Restarting services](#restarting)  
 * [Log of changes to default Archivematica FPR](#fprchanges)  
 * [Archivematica configuration settings](#configsettings)  
+
+<a name="login"></a>
+## Logging in
+
+For administrators to log into the Archivematica servers, they will need to ask IT to make them an account. The command to access the server is `ssh user@172.17.50.71` where the string of numbers should be changed based on whether you're trying to access a particular pipline or the Storage Service. Enter your password when prompted.
+
+To log out, use `Ctrl+D`. 
+
+<a name="startingest"></a>
+## Starting an ingest
+
+Confirm that the digital processing archivists have uploaded their SIPs to the appropriate pipeline. Once you've logged into the server for that pipeline, do:
+
+    cd /mnt/incoming/transfers/UPLOADED_SIP_FOLDER
+    sudo mv * /mnt/incoming/auto-transfers/
+
+This moves the SIPs into a watched folder. Archivematica will start ingesting these SIPs at the next five minute interval. Next confirm the folder is empty using the `ls` command. Then delete the empty folder:
+
+    cd ..
+    rm -rf  /UPLOADED_SIP_FOLDER/
 
 <a name="monitoring"></a>  
 ## Archivematica server monitoring
