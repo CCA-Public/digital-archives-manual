@@ -148,7 +148,7 @@ Helpful resources, including:
 
     This script copies or syncs a source folder with a destination folder. This is particularly useful if you have a copy of your files on a RAID and on Processing, and would like to update one to reflect processing with out having to copy-and-paste the whole thing. For large archives, this will be much faster as it keeps all files that stay the same.
     
-    This script will copy a folder with the same name as the source folder in the destination directory. If that folder title already exists, it will sync the files. '-qam' is for quiet, archival, and trims empty directories. --delete deletes any files at the destination that do not exist at the source.
+    This script will copy a folder with the same name as the source folder in the destination directory. If that folder title already exists, it will sync the files. `-qam` is for quiet (i.e. error messages only), archival copy, and trims empty directories. `--delete` deletes any files at the destination that do not exist at the source.
     
     Note that this script **overwrites, deletes, and uses sudo** meaning that it is **very powerful.** It's not recommended that you use it without having some rsync experience.
 
