@@ -35,11 +35,13 @@ The DIP will be created in `/mnt/1TB_RAID/dips/dips`.
 <a name="accessworkflow"></a>  
 ## Current access workflow 
 
-All access to born-digital content happens on a by-request basis through Reference. For now, when Reference receives a request they contact the Digital Archivist, who creates a DIP from each of the requested AIPs and copies them to the Research Material folder, where they are made available to the researcher on CCA's Study Room CAD workstation and virtualization workstation.  
+After the first phase of [SCOPE](https://github.com/CCA-Public/dip-access-interface) development, all access to born-digital content happens on a by-request basis through Reference. For now, when Reference receives a request they contact the Digital Processing Archivists, who create a DIP from each of the requested AIPs and upload them to SCOPE, where they are made available to the researcher on CCA's Study Room CAD workstation and virtualization workstation.
 
-The Study Room CAD workstation and virtualization workstation have no internet access and USB ports are blocked. For now, researchers may not make copies of files for their personal use off of the Study Room machines. They are welcome, however, to use their own phones or cameras to take photos of the screen.  
+The Study Room CAD workstation and virtualization workstation have no internet access and USB ports are blocked. Researchers can take screenshots of material as needed, and reference will package them into a low-resolution PDF file and email them to the researcher.
+
+SCOPE is only available on the workstations, at the reference desk, and for digital processing archivists and reference staff. Research access is limited to the reading room only, including for all other CCA staff.
 
 <a name="accessplans"></a>  
 ## Access plans  
 
-A project to build a free and open-source DIP access interface web application for discovery and access to CCA's DIPs is currently in the planning stage.  
+After the second phase of development, SCOPE will automatically point to Archivematica's Media Server (DIP storage) in order to reduce the workload of linking DIPs manually. At this time, all processed digital collection material will be made available via SCOPE, which will be continually added to as new collections are processed.
