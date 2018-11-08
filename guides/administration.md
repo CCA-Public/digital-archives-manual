@@ -6,7 +6,7 @@
 * [Fixity checking and repair](#fixity)  
 * [Dropping MySQL and ES data in pipelines](#flushing)  
 * [Reindexing AIPs in Archival Storage indexes](#reindexing)  
-* [Deleting AIPs not indexed on a pipeline](#deletingaips)  
+* [Deleting AIPs](#deletingaips)  
 * [Cleaning up after successful Automation Tools ingests](#autotoolssuccess)
 * [Responding to failed Automation Tools ingests](#autotoolsfailure)  
 * [Checking Automation Tools logs](#checkthelogs)  
@@ -87,8 +87,10 @@ Before using the scripts:
 * Change paths in the scripts to point to correct locations  
 
 <a name="deletingaips"></a>  
-## Deleting AIPs not indexed on a pipeline
+## Deleting AIPs
          
+To send a deletion request for an AIP that is indexed on an Archivematica pipeline, follow [these instructions](https://www.archivematica.org/en/docs/archivematica-1.7/user-manual/archival-storage/archival-storage/#delete-aip). 
+
 To send a deletion request for an AIP that is not currently indexed on an Archivematica pipeline, ssh into the Storage Service VM and run the following curl command, replacing all values in < > with the appropriate information:
 
 ```
