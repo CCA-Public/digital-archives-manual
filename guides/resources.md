@@ -96,14 +96,16 @@ Helpful resources, including:
      
      Once you've ensured that they match up correctly, create headers for each column and insert filters (Data/Filters or Donnees/Filtrer). Highlight the checksum column and do Home/Conditional formatting/Rules for highlighting cells/Duplicates or Accueil/Mise en forme conditionnelle/Regles de mise en surbrillance des cellules/Valeurs en double. This will change the color of all duplicate checksums, allowing you to identify and delete duplicate directories.
 
-* **Identify all files with problematic timestamps in a directory and to modify that timestamp:**
+* **Identify all files with problematic timestamps in a directory and modify the timestamps:**
   
       cd topDirectory
       find .  -type f -newermt "YYYY-MM-DD" ! -newermt "YYYY-MM-DD" -exec touch -t "YYYYMMDDHHMM" {} +
   
   ([Source 1](https://askubuntu.com/questions/191044/how-to-find-files-between-two-dates-using-find) and [Source 2](https://stackoverflow.com/questions/3718645/unix-shell-script-update-timestamp-on-all-sub-directories-and-sub-files-includ))
   
-  If the modification is required by an issue in timestamp's interpretation by UNIX time system, the new date should be "197001010000" which correspond to time 0 in UNIX time system.
+  In which, the script will look for files (-type f) in a certain range of dates (-newermt "YYYY-MM-DD" ! -newermt "YYYY-MM-DD") and then it will change those dates to the one specified by "YYYYMMDDHHMM".
+  
+  Prior to December 2018, it was determined that if the modification was required by an issue in timestamp's interpretation by UNIX time system, the new date should be "197001010000" which correspond to time 0 in UNIX time system. This strategy was reassessed, and the new date should be derived from the content of the archive being processed. Confirm replacement date with Digital Archivist.
   
 * **Detox utility cleans file and directory names by removing spaces and translating/cleaning up Latin-1 (ISO 8859-1) characters encoded in 8-bit ASCII, Unicode characters encoded in UTF-8, and CGI escaped characters.**
      
