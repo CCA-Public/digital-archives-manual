@@ -5,6 +5,7 @@
   * [Disk imaging with IsoBuster](#isobuster)
   * [Disk imaging 5.25" floppy disks with FC5025](#fc5025)
   * [Disk imaging with the Kryoflux](#kryoflux)
+  * [Disk imaging with the Nimbie and ImgBurn](#nimbiex)
   
 ## Disk imaging original physical media  
 
@@ -325,3 +326,80 @@ Here are the steps to output new encoded image files out of Kryoflux stream file
 2. For each disk, enter a unique identifier. Click on *Enter name…* and type in a unique ID associated with the disk. The text entered here will become the filename for any disk images and log files created. Do not include the extension of the file name.
 3.	Select the image format(s) for the disk image using the dropdown list below the filename field.
 4. Click on *Start* and select the folder containing the stream files you want to process. Click on *Open* and the disk image file creation will start right away. The results will show up in the cells of the GUI, as usual.
+
+<a name="nimbie"></a>
+### Disk imaging with the Nimbie and ImgBurn
+
+**Disk Imaging with Nimbie USB Plus Autoloader using ImgBurn**
+
+The Nimbie is an autoloader device used to read, write, and disk image many CDs or DVDs at a time with minimal user input. Please read the <a href="http://www.acronova.com/file/2/download.html">Nimbie operation manual</a> to learn how to set up the Nimbie unit. The software that can be used in conjunction with the Nimbie is ImgBurn. To create disk images using the Nimbie and ImgBurn, the following system requirements must be met:
+
+* Windows XP/Vista/ 7 or Apple OS X 10.6 / 10.7  (for QQGetTray only) 
+* 1 GB RAM or higher
+* USB port 3.0 (backward compatible with USB 2.0)
+* ImgBurn version 2.5.8.0 (including <a href="http://www.acronova.com/files/BSRobots_2.2.0.333.zip"> BSRobots Upgrade pack</a>) or later
+* Nimbie USB Plus unit with proper <a href="http://www.acronova.com/file/51/download.html">drivers installed</a>
+
+**How To Set Up The Nimbie For Disk Imaging**
+<ol>
+<li> Make sure that the Nimbie unit is plugged into a wall outlet and the USB cord is connected to the computer.
+<li> Secure the finished disk bin in front of the unit. When the Nimbie finishes processing a disc, it will eject it out of the front slot into the disk bin. If the Nimbie cannot process a disk (due to dirt or a scratched disk, among other possibilities), the disk will be ejected out of the bottom of the unit. Make sure that there is nothing underneath the unit for ample space for rejected discs.
+<li> Open the lid of the unit. There are 4 LED lights at the front of the machine that tell you its status. There is a pictorial guide on the inside of the lid that tells you what the light configurations mean.
+<li> Insert discs into the machine, label side facing up. The Nimbie can handle 20 discs at a time, unless you attach the 3 included extender rods, in which case the Nimbie can process up to 100 discs. The rods screw in in three places in the lip under the lid, and are meant to hold the lid open and keep the stack of discs from toppling. If you do wish to process many discs at a time, it is necessary to prop the Nimbie up at least 96 mm high to account for the disks once the Nimbie is finished processing them. Once the discs are in the Nimbie, the unit is then set up for disk imaging. </ol>
+
+**How to Set Up ImgBurn to work with Nimbie USB Plus**
+<ol>
+<li> Connect the Nimbie USB to the PC and switch it on.
+<li> Make sure the autoloader drivers are installed properly.
+<li> Download and install <a href="http://www.imgburn.com/index.php?act=download"> ImgBurn</a>.
+<li> Download the BSRobots Upgrade Pack and extract the files to where you installed ImgBurn (i.e. C:\Program Files\ImgBurn).
+<li> Run ImgBurn, go to Tools > Settings
+
+![nimbie](http://www.acronova.com/images/howto/howto_imgburn_setup_screenshot1.png)
+
+<li> Go to *I/O tab*. Under *Enumerate Devices*, check *Auto Loaders* and *Acronova - BSRobots20.dll.*
+
+![nimbie](http://www.acronova.com/images/howto/howto_imgburn_setup_screenshot2.png)
+
+<li> Click *OK* to close the Settings window, and close ImgBurn to finish the installation. </ol>
+
+*(These instructions were taken from <a href="http://www.acronova.com/howto/article/24/review.html">here</a>)*
+
+**To create disk images from CDs and DVDs**		
+<ol>
+<li> Make sure that the Nimbie is connected and turned on
+<li> Start ImgBurn and wait until the autoloader finished its robotic initiation.
+<li> Select the Create image file from disc
+
+![nimbie](http://www.acronova.com/images/howto/imgburn-create-image-1.jpg)
+				
+<li> Check *Batch Mode*
+
+![nimbie](http://www.acronova.com/images/howto/imgburn-create-image-2.jpg)
+				
+<li> Click on the icon to begin disc loading.
+
+![nimbie](http://www.acronova.com/images/howto/imgburn-create-image-3.jpg)
+				
+<li> Once the first disc is loaded, ImgBurn would ask user to set the destination folder for storing ISOs. (The prompt would only appear for the first disc.)
+<li> All discs will be processed one by one until the loader is empty. </ol>
+
+You can find a full rundown of ImgBurn’s settings <a href="https://forum.imgburn.com/index.php?/topic/6232-the-imgburn-settings/"> here</a>
+
+*(These instructions were taken from <a href="http://www.acronova.com/howto/article/23/review.html#ancher-imgburn"> here</a>
+)*
+
+**If you want ImgBurn to create checksum files for each disk image made**
+<ol>
+<li> Go to Tools>settings
+<li> Within tools, go to the “Read” tab
+<li> Select “Create MD5 File” 
+</ol>
+
+**Troubleshooting**
+
+**Issue:** 
+An issue that I found when using the Nimbie is that not all CDs that were disk imaged yielded .iso files like I wanted. Instead, ImgBurn sometimes gave .bin files. Apparently, this is caused by the type of sector mode that the CD uses to store data. CD’s using Mode 1 will yield .iso image files, while CDs using Mode 2/type 1 will yield .bin files. More information can be found <a href="http://www.multimediadirector.com/help/technology/cd-rom/cdrom_spec.htm"> here</a>.
+
+**Solution:** 
+The best solution that I could find, found <a href="http://forum.imgburn.com/index.php?/topic/19845-image-from-disk-results-in-bin-file-instead-of-iso-file/">here</a> was to simply change the file extension in file explorer from “filename.bin” to “filename.iso”. This seemed to have no effect on the image file, as I was still able to extract files from the image file without issue.
