@@ -5,7 +5,7 @@
   * [Disk imaging with IsoBuster](#isobuster)
   * [Disk imaging 5.25" floppy disks with FC5025](#fc5025)
   * [Disk imaging with the Kryoflux](#kryoflux)
-  * [Disk imaging with the Nimbie and ImgBurn](#nimbiex)
+  * [Disk imaging with the Nimbie and ImgBurn](#nimbie)
   
 ## Disk imaging original physical media  
 
