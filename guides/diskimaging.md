@@ -371,7 +371,7 @@ The Nimbie is an autoloader device used to read, write, and disk image many CDs 
 
 ![nimbie](http://www.acronova.com/images/howto/imgburn-create-image-1.jpg)
 				
-<li> Check *Batch Mode*
+<li> Check **Batch Mode**
 
 ![nimbie](http://www.acronova.com/images/howto/imgburn-create-image-2.jpg)
 				
@@ -382,9 +382,9 @@ The Nimbie is an autoloader device used to read, write, and disk image many CDs 
 <li> Once the first disc is loaded, ImgBurn would ask user to set the destination folder for storing ISOs. (The prompt would only appear for the first disc.)
 <li> All discs will be processed one by one until the loader is empty. </ol>
 
-You can find a full rundown of ImgBurn’s settings <a href="https://forum.imgburn.com/index.php?/topic/6232-the-imgburn-settings/"> here</a>
+You can find a full rundown of ImgBurn’s settings <a href="https://forum.imgburn.com/index.php?/topic/6232-the-imgburn-settings/" target="blank"> here</a>
 
-*(These instructions were taken from <a href="http://www.acronova.com/howto/article/23/review.html#ancher-imgburn"> here</a>
+*(These instructions were taken from <a href="http://www.acronova.com/howto/article/23/review.html#ancher-imgburn" target="blank"> here</a>
 )*
 
 **If you want ImgBurn to create checksum files for each disk image made**
@@ -397,7 +397,7 @@ You can find a full rundown of ImgBurn’s settings <a href="https://forum.imgbu
 **Troubleshooting**
 
 **Issue:** 
-An issue that I found when using the Nimbie is that not all CDs that were disk imaged yielded .iso files like I wanted. Instead, ImgBurn sometimes gave .bin files. Apparently, this is caused by the type of sector mode that the CD uses to store data. CD’s using Mode 1 will yield .iso image files, while CDs using Mode 2/type 1 will yield .bin files. More information can be found <a href="http://www.multimediadirector.com/help/technology/cd-rom/cdrom_spec.htm"> here</a>.
+An issue that I found when using the Nimbie is that not all CDs that were disk imaged yielded .iso files like I wanted. Instead, ImgBurn sometimes gave .bin files. Apparently, this is caused by the type of sector mode that the CD uses to store data. CD’s using Mode 1 will yield .iso image files, while CDs using Mode 2/type 1 will yield .bin files. More information can be found <a href="http://www.multimediadirector.com/help/technology/cd-rom/cdrom_spec.htm" target="blank"> here</a>.
 
 **Solution:** 
-The best solution that I could find, found <a href="http://forum.imgburn.com/index.php?/topic/19845-image-from-disk-results-in-bin-file-instead-of-iso-file/">here</a> was to simply change the file extension in file explorer from “filename.bin” to “filename.iso”. This seemed to have no effect on the image file, as I was still able to extract files from the image file without issue.
+The best solution that I could find, found <a href="http://forum.imgburn.com/index.php?/topic/19845-image-from-disk-results-in-bin-file-instead-of-iso-file/" target="blank">here</a> was to simply change the file extension in file explorer from “filename.bin” to “filename.iso”. This seemed to have no effect on the image file, as I was still able to extract files from the image file without issue.
