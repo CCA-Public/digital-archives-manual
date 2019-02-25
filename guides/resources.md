@@ -99,7 +99,7 @@ Helpful resources, including:
 * **Identify all files with problematic timestamps in a directory and modify the timestamps:**
   
       cd topDirectory
-      find .  -type f -newermt "YYYY-MM-DD" ! -newermt "YYYY-MM-DD" -exec touch -t "YYYYMMDDHHMM" {} +
+      find . -type f -newermt "YYYY-MM-DD" ! -newermt "YYYY-MM-DD" -exec touch -t "YYYYMMDDHHMM" {} +
   
   ([Source 1](https://askubuntu.com/questions/191044/how-to-find-files-between-two-dates-using-find) and [Source 2](https://stackoverflow.com/questions/3718645/unix-shell-script-update-timestamp-on-all-sub-directories-and-sub-files-includ))
   
