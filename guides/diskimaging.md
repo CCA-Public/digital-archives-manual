@@ -355,11 +355,11 @@ The Nimbie is an autoloader device used to read, write, and disk image many CDs 
 
 ![nimbie](http://www.acronova.com/images/howto/howto_imgburn_setup_screenshot1.png)
 
-<li> Go to *I/O tab*. Under *Enumerate Devices*, check *Auto Loaders* and *Acronova - BSRobots20.dll.*
+<li> Go to <b>I/O</b>. Under <b>Enumerate Devices</b>, check <b>Auto Loaders</b> and <b>Acronova - BSRobots20.dll.</b>
 
 ![nimbie](http://www.acronova.com/images/howto/howto_imgburn_setup_screenshot2.png)
 
-<li> Click *OK* to close the Settings window, and close ImgBurn to finish the installation. </ol>
+<li> Click <b>OK</b> to close the Settings window, and close ImgBurn to finish the installation. </ol>
 
 *(These instructions were taken from <a href="http://www.acronova.com/howto/article/24/review.html">here</a>)*
 
@@ -371,7 +371,7 @@ The Nimbie is an autoloader device used to read, write, and disk image many CDs 
 
 ![nimbie](http://www.acronova.com/images/howto/imgburn-create-image-1.jpg)
 				
-<li> Check **Batch Mode**
+<li> Check <b>Batch Mode</b>
 
 ![nimbie](http://www.acronova.com/images/howto/imgburn-create-image-2.jpg)
 				
