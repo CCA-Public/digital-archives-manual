@@ -394,6 +394,10 @@ You can find a full rundown of ImgBurn’s settings <a href="https://forum.imgbu
 <li> Select “Create MD5 File” 
 </ol>
 
+**If you want to see the log file of what you have been disk imaging**
+
+ImgBurn automatically generates a log file that lists all of the actions that it has recently performed. To view this file, you can go to <b> View </b> and click <b> Log </b>. This will bring up the log file in a separate window. To save this file, go to <b> File </b> and click Save As.
+
 **Troubleshooting**
 
 **Issue:** 
