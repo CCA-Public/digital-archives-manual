@@ -199,7 +199,7 @@ Once the files are ready to be arranged and described and preliminary reporting 
 
 If Brunnhilde returns unidentified file types, it can be useful to submit them to [PRONOM](http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatSearch.aspx?status=new), the file format registry that supports Siegfried. In order to do so: 
 
-1. Fill out a new line on the internal tracking sheet for CCA submissions to PRONOM. All fields are optional, as the amount of information you will have about each type of format will vary. The spreadsheet lives here: svrdata/CollectionCCA$/Archives/Archives numériques/Systems Development/PRONOM/PRONOM_FileFormatsSubmissions.xlsx
+1. Fill out a new line on the internal tracking sheet for CCA submissions to PRONOM. All fields are optional, as the amount of information you will have about each type of format will vary. The spreadsheet lives here: \\int.cca\Divisions\Collection\06_Archives\Archives numériques\Systems Development\PRONOM\PRONOM_FileFormatsSubmissions.xlsx
 2. Use the information from the spreadsheet to fill out the [PRONOM submission form](https://www.nationalarchives.gov.uk/contact-us/submit-information-for-pronom/pronom-request-form/). Be sure to tick the box stating that you have file samples, and include the hex signature for the new file type if you were able to identify one.
 3. Next, zip your file samples (2-3 total if possible) and submit them to PRONOM. This can be done in one of two ways:
     - If the zipped files are small enough to fit on an email, email David Clipsham (David.Clipsham@nationalarchives.gsi.gov.uk) and Paul Young (Paul.Young@nationalarchives.gsi.gov.uk) with the files.
