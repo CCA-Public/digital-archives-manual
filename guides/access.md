@@ -33,15 +33,12 @@ A local version of Automation Tools has also been installed and configured on ea
 The DIP will be created in `/mnt/1TB_RAID/dips/dips`.  
 
 <a name="accessworkflow"></a>  
-## Current access workflow 
+## Access workflow 
 
-After the first phase of [SCOPE](https://github.com/CCA-Public/dip-access-interface) development, all access to born-digital content happens on a by-request basis through Reference. For now, when Reference receives a request they contact the Digital Processing Archivists, who create a DIP from each of the requested AIPs and upload them to SCOPE, where they are made available to the researcher on CCA's Study Room CAD workstation and virtualization workstation.
+[SCOPE](https://github.com/CCA-Public/dip-access-interface) is a born-digital archives access inteface developed by the CCA and Artefactual Systems. When new material is ingested through Pipeline 2 in Archivematica, a DIP is automatically created and pulled into SCOPE. When a researcher requests access to proccessed born-digital material, Reference makes them a login to SCOPE and the researcher can access the material in a self-directed manner. 
 
-The Study Room CAD workstation and virtualization workstation have no internet access and USB ports are blocked. Researchers can take screenshots of material as needed, and reference will package them into a low-resolution PDF file and email them to the researcher.
+SCOPE is only available to the researcher on CCA's Study Room CAD workstation and virtualization workstation. The Study Room CAD workstation and virtualization workstation have no internet access and USB ports are blocked. Researchers can take screenshots of material as needed, and reference will package them into a low-resolution PDF file and email them to the researcher. 
 
-SCOPE is only available on the workstations, at the reference desk, and for digital processing archivists and reference staff. Research access is limited to the reading room only, including for all other CCA staff.
+CCA archives staff (not internal researchers) can access SCOPE via the BitCurator machines and at the reference desk.Research access is limited to the reading room only, including for all other CCA staff.
 
-<a name="accessplans"></a>  
-## Access plans  
-
-After the second phase of development, SCOPE will automatically point to Archivematica's Media Server (DIP storage) in order to reduce the workload of linking DIPs manually. At this time, all processed digital collection material will be made available via SCOPE, which will be continually added to as new collections are processed.
+Unprocessed digital collection material can be made available on a case-by-case basis. Reference staff should make the Digital Archivist aware of the request. Then the Digital Archivist will create a DIP based on the workflow [above](#dipcreation) and move the files to the researcher's Research Materials folder. The researcher can then access the files via the locked down Study Room workstations. 
