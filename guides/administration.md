@@ -15,6 +15,7 @@
 * [Restarting services](#restarting)  
 * [Log of changes to default Archivematica FPR](#fprchanges)  
 * [Archivematica configuration settings](#configsettings)  
+* [Archivematica updates and dependencies](#update)  
 
 <a name="login"></a>
 ## Logging in
@@ -215,3 +216,14 @@ Artefactual also documented more atypical aspects of the CCA's Archivematica set
 * The script located at /etc/archivematica/automation-tools/transfer-script.sh runs each 5 minutes as system user archivematica, and uses the Archivematica user autobot.
 * The configuration file at /etc/archivematica/automation-tools/transfers.confdefines logfile and database are at /var/log/archivematica/automation-tools/ , and the lock file at /var/archivematica/automation-tools/transfers-pid.lck. This file might need to be removed in the automation-tools stop working.
 * Automated ingests use folder /mnt/incoming/auto-transfers as transfer source, and the AIPs are stored in DARK_ARCHIVE_002 aipstore for VSP-AMPL1, and DARK_ARCHIVE_001 for VSP-AMPL2
+
+<a name="update"></a>
+## Archivematica updates and dependencies   
+
+Version updates for Archivematica should be done by Artefactual, and are covered by our service contract with them. However, because Archivematica has a number of dependencies, the Digital Archivist should assess the capacity of both local IT and Artefactual support prior to upgrading. 
+
+Dependencies which may affect the success of upgrades include:
+
+* **Automation tools on the BitCurator machines:** Any change that results in a change to the Archivematica Pipeline server security keys will result in the create_dip.sh script failing. The script needs to be updated to reflect the new key.
+* **TMS API:** The TMS API was affected by the upgrade to the 2019 version of Archivematica. More details forthcoming. 
+* **SCOPE** 
