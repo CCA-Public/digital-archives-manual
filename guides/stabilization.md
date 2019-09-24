@@ -23,17 +23,16 @@ Steps:
 
 * **Staff member who receives the transfer (typically Digital Archivist or Registrar)**  
   * Notify Registrar and Digital Archivist, as appropriate  
-  * Move files into a new folder in Digital Shipping Space if accession record has not yet been created.    
-* **Registrar: Create accession records**  
+  * Zip files and move zip file into a new folder in Processing if accession record has not yet been created.    
+* **GesCo: Create accession records**  
   * For exclusively born-digital accessions in the archives, create only a versement record (no versement objet or ARCH records). Include a brief identifying note for the accession in "Description du contenu" (e.g. the name of the Dropbox folder)  
   * *For Photo/P&D, create groupe or pièce records as usual*  
 * **Digital Archivist: Ingest**  
   * Add brief descriptive note about content to versement "Description du contenu"  
-  * If files were not already in an archive format, package them as a .tar file  
-  * Package content as an Archivematica SIP and ingest into Archivematica, following the [procedures for ingesting "raw" data](#rawingest)  
-  * Inform Registrar when ingest is completed  
+  * Package content as an Archivematica SIP and ingest into Archivematica, following the [procedures for ingesting "raw" data](#rawingest). Files should be unzipped on a BitCurator machine prior to ingest.  
+  * Place a Déplacement request for the files to be localized to Dark Archive.
   * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.
-* **Registrar**  
+* **GesCo**  
   * Add "Dark archive" as location to accession (e.g. versement) record  
 
 <a name="temporarymedia"></a>
@@ -41,17 +40,16 @@ Steps:
 
 Steps:  
 
-* **Registrar: Create accession records**  
+* **GesCo: Create accession records**  
   * For Archives, create only a versement record (no versement objet or ARCH records). Include a brief note in "Description du contenu" indicating how the files arrived (e.g. "Files arrived at CCA on a 64GB USB thumb drive")  
   * *For Photo/P&D, create groupe or pièce records as usual*  
 * **Digital Archivist: Ingest**  
   * Add brief descriptive note regarding content to versement "Description du contenu"  
-  * If files were not already in an archive format, package them as a .tar file  
   * Package content as an Archivematica SIP and ingest into Archivematica, following the [procedures for ingesting "raw" data](#rawingest)  
-  * Inform Registrar when ingest is completed  
+  * Place a Déplacement request for the files to be localized to Dark Archive.
   * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.  
-  * Reformat (erase) media and return to donor or repurpose as appropriate
-* **Registrar**  
+  * Reformat (erase) media and return to donor, repurpose, or weed as appropriate
+* **GesCo**  
   * Add "Dark archive" as location to accession (versement) record  
 
 <a name="originalphysicalmedia"></a>
