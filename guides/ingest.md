@@ -23,12 +23,12 @@ This page describes the configurations and policies utilized by Archivematica du
 
 In addition to supporting fileservers, CCA's Archivematica infrastructure runs on four virtual machines (VMs):
 
-| VM | Name | Usage |
-| -------- | -------- | -------- |
-| VSP-AMPL-01 | Pipeline 1 | Pipeline 1 is used for assets that are described in TMS and for which no extraction or format normalization is desired. Sample use cases: ingest a .tar of files as received by a donor which have not yet been processed, ingesting digitized A/V materials that are described in TMS. |
-| VSP-AMPL-02 | Pipeline 2 | Pipeline 2 is used for assets that are described in TMS and which will be fully processed by Archivematica. This is the pipeline that should be used for processed digital archives. |
-| VSP-AMPL-03 | Pipeline 3 | Pipeline 3 is used for assets that are described in Horizon. There is not yet a protocol for ingest of library materials. Access copies are temporarily being stored at \\SVRDATA\ResearchMaterial$\01 - Library Access Copies. |
-| VSP-AMSS-01 | Storage Service | The Storage Service manages storage, indexing, and retrieval of Archival Information Packages (AIPs) and conducts fixity checks of the AIP store. |
+| VM | Name | Features | Materials to be ingested |
+| -------- | -------- | -------- | -------- |
+| VSP-AMPL-01 | Pipeline 1 | Pipeline 1 is used for assets that are described in TMS and for which no extraction or format normalization is desired. This pipeline does not create access copies in SCOPE.  | Unprocessed archives, restricted material, material that is otherwise not public-facing  |
+| VSP-AMPL-02 | Pipeline 2 | Pipeline 2 is used for assets that are described in TMS and which will be fully processed by Archivematica. This is the pipeline that should be used for processed digital archives. A DIP is created and sent to SCOPE. | Processed digital archives |
+| VSP-AMPL-03 | Pipeline 3 | Pipeline 3 is used for assets that are described in Horizon. There is not yet a protocol for ingest of library materials. Access is presumed to be through the library, and no access copies are sent to SCOPE. Access copies are temporarily being stored at \\SVRDATA\ResearchMaterial$\01 - Library Access Copies. | Library materials (TBD) |
+| VSP-AMSS-01 | Storage Service | The Storage Service manages storage, indexing, and retrieval of Archival Information Packages (AIPs) and conducts fixity checks of the AIP store. | (not a pipeline, no ingest) |
 
 <a name="ingestmethods"></a>  
 ## Archivematica ingest workflows 
@@ -52,8 +52,9 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
 
 1. Verify that all of the following are true:  
   * Your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator machines  
-  * All SIPs are named with the scheme [identifier]---[accession number]. If SIPs consist of unprocessed material, a disk image for example, only use its identifier to name it.
+  * All SIPs are named with the scheme [identifier]---[accession number]. If SIPs consist of unprocessed material, a disk image for example, only use its identifier to name it. The TMS API call will not work if there aren't exactly three dashes between the identifier and accession number.
   * Data entry for all SIPs has been completed in TMS  
+  * Collection-level description is entered in SCOPE (if not already present).
 2. Copy the SIPs to Pipeline 2 Transfer Source using the "send_to_archivematica.py" script with option "--pipeline 2": `python3 /path/to/send_to_archivematica.py --pipeline 2 '/path/to/transfer'`
 3. Alert the Digital Archivist that your SIPs are ready for ingest.  
 4. When the pipeline is clear, the Digital Archivist will move the appropriate SIPs to the Automation Tools watched folder for ingest in batches of <50 SIPs at a time. Archivematica will then ingest each of the SIPs, one at a time.  
@@ -67,16 +68,17 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
         * Ingest successful? (True/False)  
         * Notes  
         * AIP UUID  
-        * Standard QA (True/False)  
+        * Standard QA (True/False)
+    * Login to SCOPE and ensure the expected number of SIPs are present. Check "Orphan Folders" if there are SIPs missing from their Collection. If certain SIPs are not present at all, notify the Digital Archivist what is missing, and they will queue them for reingest. 
     * For every 5th SIP, conduct a more complete QA check. Verify the following and then put "True" in the Full QA column of the Ingest spreadsheet:  
         * Look at the normalization report and ensure that no files that should have been normalized for preservation failed.  
-        * Download the AIP and upload the AIP METS file to [METSFlask](http://bitarchivist.pythonanywhere.com/) for examination. Verify that Dublin Core descriptive metadata was written to the METS file, and quickly confirm that the information about the original files, particularly format identification and last modified date, appears correct. Please remember to delete your METS file from the list when you have finished.
+        * Login to SCOPE and ensure that the Dublin Core Folder-level metadata and additional File-level metadata are present.
    * You may have also received a number of normalization failure report emails from Archivematica during ingest. In instances where the failed files have exit codes 0 or 2, these can be ignored. In instances where the failed files have exit code 1, it is worth confirming that the file type is actually normalized at CCA; if so, it may be worth investigating further, as these files may need to be [manually normalized](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/arrangement.md#mannorm) and reingested.
 6. When Ingest and QA is complete:
        * Inform and send a copy of your ingest spreadsheet to the Digital Archivist  
        * Save your ingest spreadsheet to the appropriate "Acquisition et traitement" folder  
-       * Delete the local copy of the SIPs from the BitCurator machine 
-7. Create an object package for the files in TMS corresponding to the SIPs. Send an email to Deplacement requesting that each of the files in the object package be localized with the location "Dark archive", CCing the Digital Archivist.  
+       * Delete the local copy of the SIPs from the BitCurator machine and any other locations you may have copies of the material
+7. Create an object package for the files in TMS corresponding to the SIPs. Send an email to Déplacement requesting that each of the files in the object package be localized with the location "Dark archive", CCing the Digital Archivist.  
 8. The Digital Archivist will delete the successfully ingested SIPs from `/mnt/incoming/auto-transfers` (in Pipeline 1, the `transfer.py` script has been amended to delete the transfer source automatically after successful ingest, but it is still necessary to manually delete transfer sources from Pipelines 2 and 3).  
 
 <a name="automationtoolsav"></a>  
@@ -88,6 +90,8 @@ Procedures to come.
 ### Using the Archivematica Web UI  
 
 Alternatively, transfers may be started and monitored from within the web dashboard. Before starting, verify that the transfer type for the material you're ingesting is correct and amend the processing configuration so that it pauses the process when metadata must be entered. You will need to manually enter metadata according to the schema outlined in [Adding descriptive metadata to the AIP](#dcmetadata).  
+
+**Do not do this without consulting the Digital Archivist first, because this method can result in loss of necessary metadata.*
 
 When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator machines, all SIPs are named with the scheme [identifier]---[accession number], and data entry for all SIPs has been completed in TMS, advise the Digital Archivist that you are ready to move on to the Ingest phase of the project and then copy the SIPs to /mnt/incoming/transfers on the appropriate Pipeline using the "send_to_archivematica.py" script. If SIPs consist of unprocessed material, a disk image for example, only use its identifier to name it.
 
