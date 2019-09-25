@@ -9,11 +9,9 @@ The first step of processing archives (whether in digital or analog formats) is 
          * [Spread across smaller storage media](#spreadtransfers)
     * [Existing organization](#existingorganization)
     * [Context of creation and active use](#context)  
-    * [Archivematica requirements](#archivematicarequirements)
     * [Nature of archival collection to which they belong](#nature)
     * [Institutional priorities](#institutionalpriorities)
 * [Developing a processing plan](#processingplan)
-* [The exception: Extensible processing of born-digital records](#extensible)
 * [Packaging SIPs for Archivematica](#sippackaging)
 * [Processing disk images with Disk Image Processor](#diskimageprocessor)  
 * [Processing directories of files with Folder Processor](#folderprocessor)  
@@ -80,12 +78,7 @@ What are the relationships between the files in the accession? Do the files link
 <a name="nature"></a>
 ### Nature of archival collection to which they belong    
 
-Another factor to consider when thinking about arrangement is the nature of the archive to which the records belong. Did the CCA acquire the full fonds of this creator, or do the records belong to a project archive/assembled collection? Does CCA expect to receive additional accessions that will need to be integrated into the archive at a later date?  
-
-<a name="archivematicarequirements"></a>  
-### Archivematica requirements  
-
-Transfers of more than 15-20,000 files or so must be split into multiple AIPs. These can then be recombined in Archivematica in an Archival Information Collection (AIC). Future versions of Archivematica should address the scaling issues that necessitate splitting large collections across multiple transfers.   
+Another factor to consider when thinking about arrangement is the nature of the archive to which the records belong. Did the CCA acquire the full fonds of this creator, or do the records belong to a project archive/assembled collection? Does CCA expect to receive additional accessions that will need to be integrated into the archive at a later date?    
 
 <a name="institutionalpriorities"></a>
 ### Institutional priorities  
@@ -96,14 +89,9 @@ Transfers of more than 15-20,000 files or so must be split into multiple AIPs. T
 <a name="processingplan"></a>
 ## Developing a processing plan  
 
-Once consultation copies of files, reports, and other documentation have been placed in the Catalogers network share for consultation, the processor should spend 1-2 weeks becoming familiar with the material. This takes place during or just following the Survey phase, and involves analyzing the organizational structure of the records, reading through documentation, and browsing through files on their own computer and/or one of the CAD workstations.  
+Once consultation copies of files, reports, and other documentation have been placed in the Catalogers network share for consultation, the Processing Archivist should spend 1-2 weeks becoming familiar with the material. This takes place during or just following the Survey phase, and involves analyzing the organizational structure of the records, reading through documentation, and browsing through files on their own computer and/or one of the CAD workstations.  
 
-Following this period, the Processor, Digital Archivist, Conservation, Archivist/Associate Director, and stakeholders from other CCA divisions will hold a pre-processing meeting. As part of this meeting, the participants will collectively analyze reports, draft an arrangement plan, set descriptive standards for the project (if they are to differ from typical practice), identify preservation concerns and manual file format normalization work plans (if necessary), discuss how original physical storage media will be handled, and set dates for project milestones. During the meeting, decisions will be formalized through the creation of a Processing Plan document that will live in the project "Acquisition et traitement" folder.  
-
-<a name="extensible"></a>  
-## The exception: Extensible processing of born-digital records  
-
-In some cases, based on the factors listed above, it may make more sense not to arrange born-digital records and to provide only minimal higher-level description (e.g. just a fonds or series-level record). In cases where no arrangement is done (once our Archivematica installation has been upgraded to 1.6), we will simply ingest the "raw" SIP in the "processed" pipeline, allowing Archivematica to normalize, characterize, and create AIPs and DIPs, and name the re-ingested package according to the material's processed identifier.  
+Following this period, the Processing Archivist, Digital Archivist, Conservation, Archivist/Associate Director, and stakeholders from other CCA divisions will hold a pre-processing meeting. As part of this meeting, the participants will collectively analyze reports, draft an arrangement plan, set descriptive standards for the project (if they are to differ from typical practice), identify preservation concerns and manual file format normalization work plans (if necessary), discuss how original physical storage media will be handled, and set dates for project milestones. During the meeting, decisions will be formalized through the creation of a Processing Plan document that will live in the project "Acquisition et traitement" folder.  
 
 <a name="sippackaging"></a>  
 ## Packaging SIPs for Archivematica  
@@ -206,7 +194,7 @@ To create SIPs with SIP Creator:
 <a name="mannorm"></a>
 ## Manual normalization for Archivematica
 
-There are instances where Archivematica will not automatically normalize files into their preservation formats. This primarily occurs in instances where a file type is not up to specification and not recognized by Siegfried, but still has the expected playback. (See the MP3s manipulated by Virtools software in AP167: ONL NSA Muscle project records for an example.) When this occurs, these file types will have to be manually normalized for preservation.
+There are instances where Archivematica will not automatically normalize files into their preservation formats. This primarily occurs in instances where a file type is not up to specification and not recognized by Siegfried, but still has the expected playback. (See the MP3s manipulated by Virtools software in AP167: ONL NSA Muscle project records for an example.) When this occurs, these file types may need to be manually normalized for preservation. This should only be done in instances when the files can easily be normalized in batch by software or a script OR when certain files of high value can be selected. 
 
 * Create the SIP as usual.
 * In the *objects* folder, create a folder titled *manualNormalization*. 
