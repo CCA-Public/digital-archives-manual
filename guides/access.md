@@ -20,7 +20,7 @@ The zip file in the `objects` directory contains a copy of all original files in
 <a name="dipcreation"></a>  
 ## Creating CCA-style DIPs  
 
-CCA-style DIPs can be created from AIPs registered in the Storage Service using the [create_dip.py](https://github.com/artefactual/automation-tools/blob/master/aips/create_dip.py) script included as part of Artefactual's Automation Tools. Best practice to generate a DIP on demand from a stored AIP is to call the Python script with all necessary parameters using the [create_dip_script.sh](https://github.com/artefactual/automation-tools/blob/master/etc/create_dip_script.sh) shell script. See the [Automation Tools repo](https://github.com/artefactual/automation-tools#dip-creation) for more details.  
+CCA-style DIPs can be created from AIPs registered in the Storage Service using the [create_dip.py](https://github.com/artefactual/automation-tools/blob/master/aips/create_dip.py) script included as part of Artefactual's Automation Tools. Best practice (without using SCOPE) is to generate a DIP on demand from a stored AIP is to call the Python script with all necessary parameters using the [create_dip_script.sh](https://github.com/artefactual/automation-tools/blob/master/etc/create_dip_script.sh) shell script. See the [Automation Tools repo](https://github.com/artefactual/automation-tools#dip-creation) for more details.  
 
 On Archivematica pipeline VSP-AMPL-02, the [create_dips_job.py](https://github.com/artefactual/automation-tools/blob/master/aips/create_dips_job.py) script is configured within Automation Tools to automatically generate a DIP for every AIP stored in appropriate AIP Stores (excluding those used for storing unprocessed "raw" AIPs).  
 
@@ -39,6 +39,6 @@ The DIP will be created in `/mnt/1TB_RAID/dips/dips`.
 
 SCOPE is only available to the researcher on CCA's Study Room CAD workstation and virtualization workstation. The Study Room CAD workstation and virtualization workstation have no internet access and USB ports are blocked. Researchers can take screenshots of material as needed, and reference will package them into a low-resolution PDF file and email them to the researcher. 
 
-CCA archives staff (not internal researchers) can access SCOPE via the BitCurator machines and at the reference desk.Research access is limited to the reading room only, including for all other CCA staff.
+CCA archives staff (not internal researchers) can access SCOPE via the BitCurator machines and at the reference desk. Research access is limited to the reading room only, including for all other CCA staff.
 
-Unprocessed digital collection material can be made available on a case-by-case basis. Reference staff should make the Digital Archivist aware of the request. Then the Digital Archivist will create a DIP based on the workflow [above](#dipcreation) and move the files to the researcher's Research Materials folder. The researcher can then access the files via the locked down Study Room workstations. 
+Unprocessed digital collection material can be made available on a case-by-case basis. Reference staff should make the Digital Archivist aware of the request. Then the Digital Archivist will create a DIP based on the workflow [above](#dipcreation) and move the files to the researcher's Research Materials folder. The researcher can then access the files via the Study Room workstations. 
