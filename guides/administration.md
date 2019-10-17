@@ -11,10 +11,11 @@
 * [Responding to failed Automation Tools ingests](#autotoolsfailure)  
 * [Checking Automation Tools logs](#checkthelogs)  
 * [Adding and switching AIP Store locations](#locations)  
+* [Updating Automation Tools processing configuration](#updateconfig)
 * [Clearing space when local disk is nearly full](#clearingspace)  
 * [Restarting services](#restarting)  
 * [Log of changes to default Archivematica FPR](#fprchanges)  
-* [Archivematica configuration settings](#configsettings)  
+* [Archivematica custom settings](#customsettings)  
 * [Archivematica updates and dependencies](#update)  
 
 <a name="login"></a>
@@ -153,6 +154,14 @@ These AIP Store locations are already configured in the Archivematica Storage Se
 | DARK_ARCHIVE_004 | No | n/a | n/a |  
 | DARK_ARCHIVE_005 | No | n/a | n/a |  
 
+<a name="updateconfig"></a>
+## Updating Automation Tools processing configuration
+
+When updating the processing configuration 
+
+WRITE DOCUMENTATION HERE!!
+
+
 <a name="clearingspace"></a>
 ## Clearing space when local disk is nearly full  
 
@@ -204,8 +213,8 @@ To restart only the Archivematica server/client/dashboard:
 * Normalization rules for Adobe Flash, Macromedia Flash, and Generic SWF are disabled (by default, Archivematica attempts to normalize these formats to ffv1/Matroska video, which failed nearly 100% of the time)  
 * Libreoffice and commands for transcoding to docx, odt, xlsx, ods, and pptx added   
 
-<a name="configsettings"></a>
-## Custom Archivematica configuration settings  
+<a name="customsettings"></a>
+## Custom Archivematica settings  
 
 * Elasticsearch request_timeout value changed from 10 to 60 seconds  
 * Storage Service will be set to use all available cores for bagit-python fixity checking (default is 1; should be user-configurable in SS/0.11)  
