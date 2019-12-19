@@ -103,26 +103,35 @@ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator mac
 
 | Type | Value |
 | -------- | -------- |
+| Assign UUIDs to directories | "Yes" |
 | Send transfer to quarantine | "No" |
-| Approve normalization | "Yes" |
-| Store AIP | "Yes" |
-| Transcribe files (OCR) | "No" |
+| Remove from quarantine after | n/a (any answer can be put here) |
 | Generate transfer structure report | "Yes" |
-| Remove from quarantine after | n/a |
-| Create SIP(s) | "Create single SIP and continue processing" |
+| Perform file format identification (Transfer) | "Yes" |
 | Extract packages | "No" |
-| Normalize | "Do not normalize" |
-| Reminder: add metadata if desired | "Continue" |
+| Delete packages after extraction |  n/a (any answer can be put here) |
+| Perform policy checks on originals | "None" |
 | Examine contents | "Skip examine contents" |
-| Select file format identification command (Transfer) | "Siegfried" |
-| Select file format identification command (Ingest) | "Use existing data" |
-| Select file format identification command (Submission documentation & metadata) | "Siegfried" |
-| Delete packages after extraction | "No" |
+| Create SIP(s) | "Create single SIP and continue processing" |
+| Perform file format identification (Ingest) | "No, use existing data" |
+| Normalize | "Do not normalize" |
+| Approve normalization | "Yes" |
+| Generate thumbnails | "No" |
+| Perform policy checks on preservation derivatives | "No" |
+| Perform policy checks on access derivatives | "No" |
+| Bind PIDs | "No" |
+| Document empty directories | "Yes" |
+| Reminder: add metadata if desired | "Continue" |
+| Transcribe files (OCR) | "No" |
+| Perform file format identification (Submission documentation and metadata) | "No" |
 | Select compression algorithm | "Uncompressed" |
-| Select compression level | "5 - normal compression mode" |
+| Select compression level | n/a (any answer can be put here) |
 | Store AIP | "Yes" |
 | Store AIP location | *appropriate AIP store* |
+| Upload DIP | "Do not upload DIP" |
+| Store DIP | "Do not store" |
 | Store DIP location | "None" |  
+
 
 *Note: Each AIP Store location is 5TB in size. These locations are filled sequentially. For easier integration with Automation Tools, each AIP store should be used for only one of: AIPs for which DIPs are being generated, or AIPs with no corresponding DIP.*
 
