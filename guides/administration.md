@@ -157,10 +157,9 @@ These AIP Store locations are already configured in the Archivematica Storage Se
 <a name="updateconfig"></a>
 ## Updating Automation Tools processing configuration
 
-When updating the processing configuration 
+When updating the processing configuration, go to the "Administration" tab of the appropriate pipeline dashboard, select the "Default" configuration, and adjust settings as needed. Then click "Save" and download the updated congfiguration file from the following page. 
 
-WRITE DOCUMENTATION HERE!!
-
+This must then be put into Automation Tools in Archivematica. Send the configuration file to the appropriate pipeline using the "send_to_archivematica.py" script on the BitCurator machines. Then move the file from /mnt/incoming/transfer to Automation Tools.
 
 <a name="clearingspace"></a>
 ## Clearing space when local disk is nearly full  
