@@ -1,6 +1,6 @@
 # Ingest in Archivematica
 
-*Current version of Archivematica: 1.6.1*  
+*Current version of Archivematica: 1.9.2 as of May 2019*  
 
 This page describes the configurations and policies utilized by Archivematica during ingest. It includes:  
 
