@@ -103,11 +103,11 @@ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator mac
 
 | Type | Value |
 | -------- | -------- |
-| Assign UUIDs to directories | "Yes" |
+| Assign UUIDs to directories | "None" |
 | Send transfer to quarantine | "No" |
 | Remove from quarantine after | n/a (any answer can be put here) |
 | Generate transfer structure report | "Yes" |
-| Perform file format identification (Transfer) | "Yes" |
+| Perform file format identification (Transfer) | "None" |
 | Extract packages | "No" |
 | Delete packages after extraction |  n/a (any answer can be put here) |
 | Perform policy checks on originals | "None" |
@@ -116,14 +116,14 @@ When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator mac
 | Perform file format identification (Ingest) | "No, use existing data" |
 | Normalize | "Do not normalize" |
 | Approve normalization | "Yes" |
-| Generate thumbnails | "No" |
-| Perform policy checks on preservation derivatives | "No" |
-| Perform policy checks on access derivatives | "No" |
-| Bind PIDs | "No" |
-| Document empty directories | "Yes" |
+| Generate thumbnails | "None" |
+| Perform policy checks on preservation derivatives | "None" |
+| Perform policy checks on access derivatives | "None" |
+| Bind PIDs | "None" |
+| Document empty directories | "None" |
 | Reminder: add metadata if desired | "Continue" |
 | Transcribe files (OCR) | "No" |
-| Perform file format identification (Submission documentation and metadata) | "No" |
+| Perform file format identification (Submission documentation and metadata) | "None" |
 | Select compression algorithm | "Uncompressed" |
 | Select compression level | n/a (any answer can be put here) |
 | Store AIP | "Yes" |
