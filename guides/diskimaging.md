@@ -104,7 +104,9 @@ Steps for imaging physical media with FTK Imager:
 
 * A progress window will not appear and keep you informed of how the disk imaging is progressing. If disk imaging fails or seems to get hung up on a large number of bad sectors, make note of this in the versement stabilization spreadsheet and set the disk aside for review by the Digital Archivist.  
 * If the image is successfully created, go to your project folder in the Depot numérique folder and do a quick visual check that all looks good. You should see at least two files: the disk image(s) themselves (potentially split into several files with the same file name but extensions of .001, .002, etc.) and a '.txt' metadata file.  
-* If all looks good, repeat this process with the next disk until all media has been imaged.  Once all media has been imaged, alert the Digital Archivist.    
+* If all looks good, repeat this process with the next disk until all media has been imaged.  Once all media has been imaged, alert the Digital Archivist. 
+
+* *Note* The FTK Imager disk imaging process is very persistent. If the disk that you want to image is taking a long time to process, it may not necessarily be faulty. The imager will continue to try to image the disks sectors until it is done. It is still possible to extract a usable image from a disk after 30 or more hours of attempts, so keep this in mind. 
 
 <a name="isobuster"></a>
 
