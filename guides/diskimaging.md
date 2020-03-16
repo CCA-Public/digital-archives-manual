@@ -405,8 +405,17 @@ ImgBurn automatically generates a log file that lists all of the actions that it
 
 **Troubleshooting**
 
-**Issue:** 
+* **Issue:** 
 An issue that I found when using the Nimbie is that not all CDs that were disk imaged yielded .iso files like I wanted. Instead, ImgBurn sometimes gave .bin files. Apparently, this is caused by the type of sector mode that the CD uses to store data. CD’s using Mode 1 will yield .iso image files, while CDs using Mode 2/type 1 will yield .bin files. More information can be found <a href="http://www.multimediadirector.com/help/technology/cd-rom/cdrom_spec.htm" target="blank"> here</a>.
 
-**Solution:** 
+	* **Solution:** 
 The best solution that I could find, found <a href="http://forum.imgburn.com/index.php?/topic/19845-image-from-disk-results-in-bin-file-instead-of-iso-file/" target="blank">here</a> was to simply change the file extension in file explorer from “filename.bin” to “filename.iso”. This seemed to have no effect on the image file, as I was still able to extract files from the image file without issue.
+
+* **Issue**
+The Nimbie autoloader device does not show up as a usable drive in ImgBurn
+
+	* **Solution*
+There are a few possible causes for this, as this has happened in the lab several times. Here are the solutions that I used:
+		* Change the cable connecting the Nimbie to the computer. The required cable is USB 2.0 type-B to USB 2.0 or 3.0 Type-A 
+		* Re-install the device drivers (requires admin priviledges)
+		* Double check that the driver is installed in the proper location, which is the location where ImgBurn is installed (i.e. C:\Program Files\ImgBurn)
