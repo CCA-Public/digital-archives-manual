@@ -1,5 +1,6 @@
 # Disk imaging original physical media
 
+  * [Media Types](#media)
   * [Disk imaging with Guymager (Bitcurator)](#guymager)  
   * [Disk imaging with FTK Imager](#ftkimager)
   * [Disk imaging with IsoBuster](#isobuster)
@@ -19,6 +20,17 @@ Except when circumstances require different solutions, CCA prefers raw disk imag
 We use the following tools to create disk images of media: [Kryoflux](#kryoflux) (default), [Guymager](#guymager), [FTK Imager](#ftkimager), [IsoBuster](#isobuster), or [FC5025](#fc5025). Regardless of which tool you use, always complete the following step first:  
 
 Give each piece of media an ARCH number identifier if it doesn't have one already, and create a corresponding "Record for Management Need" object record in TMS. The identifier should be written on the media or its case with a felt tip pen or (very lightly) in pencil, or affixed to the case using a label maker if available.
+
+### Media Types
+Here is a list of the types of media that are imaged in the digital lab.
+
+| Media type  | Example |
+| :-------------: | :-------------: |
+| 3.5” floppy disks   | ![3.5 floppy](https://accuprint.ca/wp-content/uploads/hdfloppy5-324x324.jpg)  |
+| 5.25” floppy disks| ![5.25 floppy](https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/5.25-inch_floppy_disk.jpg/239px-5.25-inch_floppy_disk.jpg)  |
+| Optical media (CD, CD-ROM, DVD)  | ![cd](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/CD-ROM.png/240px-CD-ROM.png)  |
+| Hard drives  | ![hard drive](https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Hard_disk_WD_400.jpg/320px-Hard_disk_WD_400.jpg)  |
+| Zip Disks  | ![zip disk](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Iomega_Zip_drive_-_disc-7773.jpg/320px-Iomega_Zip_drive_-_disc-7773.jpg)  |
 
 <a name="guymager"></a>
 ### Disk imaging with Guymager (Bitcurator)  
