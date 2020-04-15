@@ -23,6 +23,9 @@ Give each piece of media an ARCH number identifier if it doesn't have one alread
 
 <a name="media"></a>
 ### Media Types
+
+The types of media that are predominantly found in the collection and that are imaged are floppy disks, both 3.5” and 5.25”. The CCA also has other media formats such as data tapes and 8” floppy disks, among others. However, only the media that are listed below can be imaged in the digital lab. Any other media formats are either imaged elsewhere, or cannot be imaged due to lack of necessary equipment.
+
 Here is a list of the types of media that are imaged in the digital lab.
 
 | Media type  | Example |
