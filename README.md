@@ -154,4 +154,5 @@ CCA takes a number of steps with all digital files in its Collection that help t
 * "Fingerprinted" through the use of cryptographic hashes (also known as checksums) and routinely audited to ensure their ongoing authenticity; and  
 * Stored and backed up in a redundant and geographically distributed system according to industry best practices.
 
-All actions that take place on files once they are ingested into CCA's digital repository are documented through an implementation of the PREMIS (PREservation Metadata: Implementation Strategies) metadata standard.  
+All actions that take place on files once they are ingested into CCA's digital repository are documented through an implementation of the PREMIS (PREservation Metadata: Implementation Strategies) metadata standard. 
+
