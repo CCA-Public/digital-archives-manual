@@ -21,6 +21,7 @@ We use the following tools to create disk images of media: [Kryoflux](#kryoflux)
 
 Give each piece of media an ARCH number identifier if it doesn't have one already, and create a corresponding "Record for Management Need" object record in TMS. The identifier should be written on the media or its case with a felt tip pen or (very lightly) in pencil, or affixed to the case using a label maker if available.
 
+<a name="media"></a>
 ### Media Types
 Here is a list of the types of media that are imaged in the digital lab.
 
