@@ -22,37 +22,6 @@ We use the following tools to create disk images of media: [Kryoflux](#kryoflux)
 
 Give each piece of media an ARCH number identifier if it doesn't have one already, and create a corresponding "Record for Management Need" object record in TMS. The identifier should be written on the media or its case with a felt tip pen or (very lightly) in pencil, or affixed to the case using a label maker if available.
 
-<a name="media"></a>
-### Media Types
-
-The types of media that are predominantly found in the collection and that are imaged are floppy disks, both 3.5” and 5.25”. The CCA also has other media formats such as data tapes and 8” floppy disks, among others. However, only the media that are listed below can be imaged in the digital lab. Any other media formats are either imaged elsewhere, or cannot be imaged due to lack of necessary equipment.
-
-Here is a list of the types of media that are imaged in the digital lab.
-
-| Media type  | Example |
-| :-------------: | :-------------: |
-| 3.5” floppy disks   | ![3.5 floppy](https://accuprint.ca/wp-content/uploads/hdfloppy5-324x324.jpg)  |
-| 5.25” floppy disks| ![5.25 floppy](https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/5.25-inch_floppy_disk.jpg/239px-5.25-inch_floppy_disk.jpg)  |
-| Optical media (CD, CD-ROM, DVD)  | ![cd](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/CD-ROM.png/240px-CD-ROM.png)  |
-| Hard drives  | ![hard drive](https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Hard_disk_WD_400.jpg/320px-Hard_disk_WD_400.jpg)  |
-| Zip Disks  | ![zip disk](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Iomega_Zip_drive_-_disc-7773.jpg/320px-Iomega_Zip_drive_-_disc-7773.jpg)  |
-
-<a name="filetypes"></a>
-#### File Types
-The most common file formats for disk images are:
-* .ISO
-* .dd (or raw)
-* .img
-* .bin
-
-The prefered formats are ISO and raw, but .img is also acceptable. You may run into .bin files when disk imaging optical media. .bin files are not considered a preservation format, and need to be converted to .ISO. You can do this by simply changing the file extension. To convert .bin files to iso files, do the following:
-
-1. Select the image file that you wish to convert
-2. Right-click, select rename (or just press F2)
-3. Delete the file extension that you see next to the files name
-4. Enter .iso, the press Enter.
-You will receive an alert saying that doing this may change the file. Just click OK. This process does not harm the image file, and files can still be extracted from the disk image file afterwards.
-
 <a name="guymager"></a>
 ### Disk imaging with Guymager (Bitcurator)  
 
