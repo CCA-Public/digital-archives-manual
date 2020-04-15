@@ -1,6 +1,7 @@
 # Disk imaging original physical media
 
   * [Media Types](#media)
+  * [File Types](#filetypes)
   * [Disk imaging with Guymager (Bitcurator)](#guymager)  
   * [Disk imaging with FTK Imager](#ftkimager)
   * [Disk imaging with IsoBuster](#isobuster)
@@ -35,6 +36,22 @@ Here is a list of the types of media that are imaged in the digital lab.
 | Optical media (CD, CD-ROM, DVD)  | ![cd](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/CD-ROM.png/240px-CD-ROM.png)  |
 | Hard drives  | ![hard drive](https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Hard_disk_WD_400.jpg/320px-Hard_disk_WD_400.jpg)  |
 | Zip Disks  | ![zip disk](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Iomega_Zip_drive_-_disc-7773.jpg/320px-Iomega_Zip_drive_-_disc-7773.jpg)  |
+
+<a name="filetypes"></a>
+#### File Types
+The most common file formats for disk images are:
+* .ISO
+* .dd (or raw)
+* .img
+* .bin
+
+The prefered formats are ISO and raw, but .img is also acceptable. You may run into .bin files when disk imaging optical media. .bin files are not considered a preservation format, and need to be converted to .ISO. You can do this by simply changing the file extension. To convert .bin files to iso files, do the following:
+
+1. Select the image file that you wish to convert
+2. Right-click, select rename (or just press F2)
+3. Delete the file extension that you see next to the files name
+4. Enter .iso, the press Enter.
+You will receive an alert saying that doing this may change the file. Just click OK. This process does not harm the image file, and files can still be extracted from the disk image file afterwards.
 
 <a name="guymager"></a>
 ### Disk imaging with Guymager (Bitcurator)  
