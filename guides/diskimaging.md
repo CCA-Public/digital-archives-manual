@@ -6,6 +6,7 @@
   * [Disk imaging 5.25" floppy disks with FC5025](#fc5025)
   * [Disk imaging with the Kryoflux](#kryoflux)
   * [Disk imaging with the Nimbie and ImgBurn](#nimbie)
+  * [Troubleshooting](#troubleshooting)
   
 ## Disk imaging original physical media  
 
@@ -403,7 +404,14 @@ You can find a full rundown of ImgBurn’s settings <a href="https://forum.imgbu
 
 ImgBurn automatically generates a log file that lists all of the actions that it has recently performed. To view this file, you can go to <b> View </b> and click <b> Log </b>. This will bring up the log file in a separate window. To save this file, go to <b> File </b> and click Save As.
 
-**Troubleshooting**
+### Troubleshooting
+
+* **Issue:** 
+A disk was not imaged correctly. You may notice that some items can be difficult to image properly. This can happen because it may take a long time for the hardware to process it or the imaging interface shows a low number of disk sectors that have been successfully imaged. If a disk image is not made properly, it may not be possible to actually extract the files that it contains.
+* **Solution:** 
+	* If a disk was having trouble being imaged, check if the resulting file is viable in the first place by using Disk Image Processor to try and extract files from the image file. In the past, I have had lots of issues with imaging disks that still turned out to be viable, so you may be surprised.
+		* If no files are retrievable from the image, then try to re-image on another device or using another tool (this option is only useful if the media you are trying to image is not a 3.5” floppy, since we only have one machine that can handle that kind of media, so you do not have any other options). If Guymager does not work when imaging a CD, try FTK Imager. In the past, FTK Imager has taken upwards of 24 hours of processing time to make a disk image, so you may need to be patient.
+
 
 * **Issue:** 
 An issue that I found when using the Nimbie is that not all CDs that were disk imaged yielded .iso files like I wanted. Instead, ImgBurn sometimes gave .bin files. Apparently, this is caused by the type of sector mode that the CD uses to store data. CD’s using Mode 1 will yield .iso image files, while CDs using Mode 2/type 1 will yield .bin files. More information can be found <a href="http://www.multimediadirector.com/help/technology/cd-rom/cdrom_spec.htm" target="blank"> here</a>.
