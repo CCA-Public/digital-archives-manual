@@ -1,7 +1,6 @@
 # Disk imaging original physical media
 
   * [Media Types](#media)
-  * [File Types](#filetypes)
   * [Disk imaging with Guymager (Bitcurator)](#guymager)  
   * [Disk imaging with FTK Imager](#ftkimager)
   * [Disk imaging with IsoBuster](#isobuster)
