@@ -104,7 +104,7 @@ curl -X POST -H "Content-Type: application/json" -H "Authorization: ApiKey <SS u
 
 After ingests started via Automation Tools finish successfully, they must be deleted from the Transfer Source (in this case, `/mnt/incoming/auto-transfers/`) manually. This must be done by a user with `sudo` permissions, e.g. `sudo rm -rf /path/to/transfer/`. **Be careful when deleting files with sudo, as it is very easy to accidentally delete files you did not intend to delete**.
 
-Tim wrote some code for the Automation Tools repository that will automatically delete transfer source files after a successful ingest if the `transfer-script.sh` script is run with a `--delete` flag. This code is [currently being reviewed](https://github.com/artefactual/automation-tools/pull/44) - if the pull request is accepted and merged, it would remove the need for manually cleaning up after successful Automation Tools ingests. 
+Tessa wrote some code for the Automation Tools repository that will automatically delete transfer source files after a successful ingest if the `transfer-script.sh` script is run with a `--delete` flag. This code is [currently being reviewed](https://github.com/artefactual/automation-tools/pull/44) - if the pull request is accepted and merged, it would remove the need for manually cleaning up after successful Automation Tools ingests. 
 
 <a name="autotoolsfailure"></a>  
 ## Responding to failed Automation Tools ingests  
