@@ -37,7 +37,9 @@ Steps for imaging physical media with Guymager:
 * Open Guymager (from the 'Imaging Tools' folder on the Bitcurator desktop).
 * Right-click on the drive you wish to image and select 'Acquire image'. If the drive/device you wish to image does not appear, refresh the screen by clicking "Rescan" in the upper left hand corner of the Guymager interface.  
 
-![Bitcurator1](http://wiki.bitcurator.net/images/4/45/Acquire_image_guymager.jpg)  
+![Bitcurator1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/guymager1_AcquireImage.png)  
+
+*(This image was taken from <a href="https://confluence.educopia.org/display/BC/Imaging+with+Guymager">here</a>)*
 
 * Choose the 'Linux dd raw image' (file extension .dd or .xxx) file format.  
 * Make sure split size is unchecked.  
