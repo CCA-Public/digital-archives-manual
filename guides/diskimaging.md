@@ -338,8 +338,8 @@ The Nimbie is an autoloader device that is used to read, write, and disk image m
 * Windows XP/Vista/ 7 or Apple OS X 10.6 / 10.7  (for QQGetTray only) 
 * 1 GB RAM or higher
 * USB port 3.0 (backward compatible with USB 2.0)
-* ImgBurn version 2.5.8.0 (including <a href="http://www.acronova.com/files/BSRobots_2.2.0.333.zip"> BSRobots Upgrade pack</a>) or later
-* Nimbie USB Plus unit with proper <a href="http://www.acronova.com/file/51/download.html">drivers installed</a>
+* ImgBurn version 2.5.8.0 (including <a href="https://disc.acronova.com/files/BSRobots_2.2.0.333.zip"> BSRobots Upgrade pack</a>) or later
+* Nimbie USB Plus unit with proper <a href="https://disc.acronova.com/file/51/download.html">drivers installed</a>
 
 **How To Set Up The Nimbie For Disk Imaging**
 <ol>
@@ -359,7 +359,7 @@ The rods screw in in three places in the lip under the lid, and are meant to hol
 <li> Download the BSRobots Upgrade Pack and extract the files to where you installed ImgBurn (i.e. C:\Program Files\ImgBurn).
 <li> Run ImgBurn, go to Tools > Settings
 
-![nimbie](http://www.acronova.com/images/howto/howto_imgburn_setup_screenshot1.png)
+![nimbie](https://disc.acronova.com/images/howto/howto_imgburn_setup_screenshot1.png)
 
 <li> Go to <b>I/O</b>. Under <b>Enumerate Devices</b>, check <b>Auto Loaders</b> and <b>Acronova - BSRobots20.dll.</b>
 
@@ -367,7 +367,7 @@ The rods screw in in three places in the lip under the lid, and are meant to hol
 
 <li> Click <b>OK</b> to close the Settings window, and close ImgBurn to finish the installation. </ol>
 
-*(These instructions were taken from <a href="http://www.acronova.com/howto/article/24/review.html">here</a>)*
+*(These instructions were taken from <a href="https://disc.acronova.com/howto/article/24/review.html">here</a>)*
 
 **To create disk images from CDs and DVDs**		
 <ol>
