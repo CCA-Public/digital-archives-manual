@@ -34,12 +34,16 @@ Steps for imaging physical media with Guymager:
   * Ensure that settings are correct: Double-click on 'Settings', and ensure that everything except 'Scan for PUAs' is selected.    
   * Double-click on 'Scan a directory' from the 'Analysis' tab and then choose directory to scan.  
   * If there are no viruses, proceed with the next step. If ClamTK finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside, and consult the Digital Archivist.  
+
 * Open Guymager (from the 'Imaging Tools' folder on the Bitcurator desktop).
+
+![Bitcurator1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/guymager_open.png)
+  
 * Right-click on the drive you wish to image and select 'Acquire image'. If the drive/device you wish to image does not appear, refresh the screen by clicking "Rescan" in the upper left hand corner of the Guymager interface.  
 
-![Bitcurator1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/guymager1_AcquireImage.png)  
+![Bitcurator2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/guymager1_AcquireImage.png)  
 
-*(This image was taken from <a href="https://confluence.educopia.org/display/BC/Imaging+with+Guymager">here</a>)*
+*(These images were taken from <a href="https://confluence.educopia.org/display/BC/Imaging+with+Guymager">here</a>)*
 
 * Choose the 'Linux dd raw image' (file extension .dd or .xxx) file format.  
 * Make sure split size is unchecked.  
@@ -51,7 +55,7 @@ Steps for imaging physical media with Guymager:
     * Check "Calculate MD5", "Calculate SHA-1", and "Verify image after acquisition" 
     * Keep other options unchecked   
   
-![Bitcurator2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/guymager_settings.png)  
+![Bitcurator3](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/guymager_settings.png)  
 
 * Once settings have been confirmed, press 'Start' to start the disk imaging process.
 * Guymager will track its progress and give you color-coded indications when the process has been completed successfully or has failed. If it fails, make a note of this in the versement stabilization spreadsheet and set the disk aside for review by the Digital Archivist.  
