@@ -333,7 +333,7 @@ Here are the steps to output new encoded image files out of Kryoflux stream file
 <a name="nimbie"></a>
 ### Disk imaging with the Nimbie and ImgBurn
 
-The Nimbie is an autoloader device that is used to read, write, and disk image many CDs or DVDs at a time with minimal user input. Please read the <a href="http://www.acronova.com/file/2/download.html">Nimbie operation manual</a> to learn how to set up the Nimbie unit. The software that can be used in conjunction with the Nimbie is ImgBurn. To create disk images using the Nimbie and ImgBurn, you will need the following:
+The Nimbie is an autoloader device that is used to read, write, and disk image many CDs or DVDs at a time with minimal user input. Please read the <a href="https://disc.acronova.com/file/2/download.html">Nimbie operation manual</a> to learn how to set up the Nimbie unit. The software that can be used in conjunction with the Nimbie is ImgBurn. To create disk images using the Nimbie and ImgBurn, you will need the following:
 
 * Windows XP/Vista/ 7 or Apple OS X 10.6 / 10.7  (for QQGetTray only) 
 * 1 GB RAM or higher
