@@ -416,7 +416,7 @@ The best solution that I could find, found <a href="http://forum.imgburn.com/ind
 * **Issue**
 The Nimbie autoloader device does not show up as a usable drive in ImgBurn
 
-	* **Solution*
+	* **Solution:**
 There are a few possible causes for this, as this has happened in the lab several times. Here are the solutions that I used:
 		* Change the cable connecting the Nimbie to the computer. The required cable is USB 2.0 type-B to USB 2.0 or 3.0 Type-A 
 		* Re-install the device drivers (requires admin priviledges)
