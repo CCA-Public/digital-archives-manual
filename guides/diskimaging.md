@@ -419,7 +419,7 @@ An issue that I found when using the Nimbie is that not all CDs that were disk i
 	* **Solution:** 
 The best solution that I could find, found <a href="http://forum.imgburn.com/index.php?/topic/19845-image-from-disk-results-in-bin-file-instead-of-iso-file/" target="blank">here</a> was to simply change the file extension in file explorer from “filename.bin” to “filename.iso”. This seemed to have no effect on the image file, as I was still able to extract files from the image file without issue.
 
-* **Issue**
+* **Issue:**
 The Nimbie autoloader device does not show up as a usable drive in ImgBurn
 
 	* **Solution:**
