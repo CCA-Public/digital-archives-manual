@@ -134,7 +134,7 @@ Steps:
  
 2. Settings
 * Prior to disk imaging, go through the following settings. You may need to change some settings, depending on your needs for your digital preservation project.
-   * **Image File Size** - Under the Options menu, go to **Image files**, go to *Image File Creation* and **uncheck** the *Split large Image Files to specified size* option.
+   * **Image File Size** - Under the Options menu, go to **Image files**. Under *Image File Creation*, **uncheck** the *Split large Image Files to specified size* option.
    * **Cuesheet file** - Still under **Image files**. Under *Select when a cuesheet file will be created*, select **Always after a CD, DVD or BD image is created**.
    * **MD5 Checksum file** - Still under **Image files**, go to *Select when an MD5 checksum file will be created* and select **Always after an image is created**.
    
