@@ -339,6 +339,7 @@ Here are the steps to output new encoded image files out of Kryoflux stream file
 3.	Select the image format(s) for the disk image using the dropdown list below the filename field.
 4. Click on *Start* and select the folder containing the stream files you want to process. Click on *Open* and the disk image file creation will start right away. The results will show up in the cells of the GUI, as usual.
 
+
 <a name="nimbie"></a>
 ### Disk imaging with the Nimbie and ImgBurn
 
@@ -397,11 +398,6 @@ The rods screw in in three places in the lip under the lid, and are meant to hol
 <li> Once the first disc is loaded, ImgBurn would ask user to set the destination folder for storing ISOs. (The prompt would only appear for the first disc.)
 <li> All discs will be processed one by one until the loader is empty. </ol>
 
-You can find a full rundown of ImgBurn’s settings <a href="https://forum.imgburn.com/index.php?/topic/6232-the-imgburn-settings/" target="blank"> here</a>
-
-*(These instructions were taken from <a href="http://www.acronova.com/howto/article/23/review.html#ancher-imgburn" target="blank"> here</a>
-)*
-
 **If you want ImgBurn to create checksum files for each disk image made**
 <ol>
 <li> Go to Tools>settings
@@ -412,6 +408,11 @@ You can find a full rundown of ImgBurn’s settings <a href="https://forum.imgbu
 **If you want to see the log file of what you have been disk imaging**
 
 ImgBurn automatically generates a log file that lists all of the actions that it has recently performed. To view this file, you can go to <b> View </b> and click <b>Log</b>. This will bring up the log file in a separate window. To save this file, go to <b> File </b> and click Save As.
+
+You can find a full rundown of ImgBurn’s settings <a href="https://forum.imgburn.com/index.php?/topic/6232-the-imgburn-settings/" target="blank"> here</a>
+
+*(These instructions were taken from <a href="http://www.acronova.com/howto/article/23/review.html#ancher-imgburn" target="blank"> here</a>)*
+
 
 <a name="troubleshooting"></a>
 ### Troubleshooting
