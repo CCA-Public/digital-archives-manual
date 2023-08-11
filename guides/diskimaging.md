@@ -74,22 +74,25 @@ Steps for imaging physical media with FTK Imager:
 * Prior to creating a disk image, virus scan the media using ESET:  
  * Open ESET Endpoint Antivirus.  
  * From the 'Analyse de l'ordinateur' menu, click 'Analyse personnalisée' and then select the media to begin virus scanning.  
- * If there are no viruses, proceed with the next step. If ESET finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside, and consult the Digital Archivist.  
- * Open FTK Imager.  
+ * If there are no viruses, proceed with the next step. If ESET finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside, and consult the Digital Archivist.
 
-![FTK1](https://blogs.sans.org/computer-forensics/files/2009/06/ftkimager.png)  
+Open FTK Imager.
 
-* From the File menu, select Create a Disk Image and choose the appropriate source and drive.  
-  * **Source:** For full hard drives, the appropriate source will be 'Physical drive'. For most other media types (including CDs, DVDs, and floppy disks), the source will be 'Logical drive'.  
-  * **Drive:** Select the appropriate drive from the list.  
+* From the File menu, select Create a Disk Image
   
-![FTK2](https://blogs.sans.org/computer-forensics/files/2009/06/select-source.png)  
+![FTK1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture1-2.PNG)  
 
-![FTK3](https://blogs.sans.org/computer-forensics/files/2009/06/select-device.png)  
+* Choose the appropriate source and drive.  
+  * **Source:** For full hard drives, the appropriate source will be 'Physical drive'. For most other media types (including CDs, DVDs, and floppy disks), the source will be 'Logical drive'.
+  * **Drive:** Select the appropriate drive from the list.  
 
+![FTK2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture2-1.PNG).
+
+![FTK3](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture3.PNG) 
+  
 * Select 'Add' to add the image destination. Check 'Verify images after they are created', but leave 'Create directory listings...' unchecked.  
 
-![FTK4](https://blogs.sans.org/computer-forensics/files/2009/06/device-selected.png)  
+![FTK4](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture4.PNG)
 
 * Select Image type 'raw (dd)'.  
 * FTK Imager will prompt you to add metadata for your disk image. Enter the following metadata:  
@@ -99,17 +102,17 @@ Steps for imaging physical media with FTK Imager:
   * **Examiner:** Your name  
   * **Notes:** Leave this blank  
 
-![FTK5](https://blogs.sans.org/computer-forensics/files/2009/06/select-image-type.png)
-![FTK6](https://blogs.sans.org/computer-forensics/files/2009/06/evidence-info.png)
-
 * FTK Imager will now ask you for information about where to save the resulting disk image and metadata files. Enter the following and then select 'Finish':
   * **Image destination folder:** Enter the network location of your current work folder in the Catalogers drive.
-  * **Image filename:** Enter the disk's identifier with no spaces. Replace any colons (':') with underscores ('_').  
-* Double-check to make sure that the Image Destination and settings appear correct and then select 'Start' to begin the disk imaging process.  
+  * **Image filename:** Enter the disk's identifier with no spaces. Replace any colons (':') with underscores ('_').
 
-![FTK7](https://blogs.sans.org/computer-forensics/files/2009/06/ready-to-create.png)  
+![FTK5](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture5.PNG)
 
-* A progress window will not appear and keep you informed of how the disk imaging is progressing. If disk imaging fails or seems to get hung up on a large number of bad sectors, make note of this in the versement stabilization spreadsheet and set the disk aside for review by the Digital Archivist.  
+* Double-check to make sure that the Image Destination and settings appear correct and then select 'Start' to begin the disk imaging process.
+
+![FTK6](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture6.PNG)
+
+* A progress window will now appear and keep you informed of how the disk imaging is progressing. If disk imaging fails or seems to get hung up on a large number of bad sectors, make note of this in the versement stabilization spreadsheet and set the disk aside for review by the Digital Archivist.  
 * If the image is successfully created, go to your project folder in the Depot numérique folder and do a quick visual check that all looks good. You should see at least two files: the disk image(s) themselves (potentially split into several files with the same file name but extensions of .001, .002, etc.) and a '.txt' metadata file.  
 * If all looks good, repeat this process with the next disk until all media has been imaged.  Once all media has been imaged, alert the Digital Archivist. 
 
