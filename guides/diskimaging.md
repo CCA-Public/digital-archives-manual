@@ -82,11 +82,11 @@ Open FTK Imager.
   
 ![FTK1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture1-2.PNG)  
 
-* Choose the appropriate source and drive.  
-  * **Source:** For full hard drives, the appropriate source will be 'Physical drive'. For most other media types (including CDs, DVDs, and floppy disks), the source will be 'Logical drive'.
-  * **Drive:** Select the appropriate drive from the list.  
+* Choose the appropriate source: For full hard drives, the appropriate source will be 'Physical drive'. For most other media types (including CDs, DVDs, and floppy disks), the source will be 'Logical drive'.
 
 ![FTK2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture2-1.PNG).
+
+ * Choose the appropriate drive from the dropdown list.  
 
 ![FTK3](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture3.PNG) 
   
