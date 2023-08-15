@@ -69,14 +69,12 @@ AccessData FTK Imager is a free but proprietary Windows-based disk imaging tool 
 
 Before moving on to the disk imaging process, make sure you are using the disk-imaging workstation (DSK-065-14) in the CCA Digital Lab. Create a project folder in which you will save your work. Name this folder something memorable and meaningful, such as an accession or an identification number.
 
-Virus scan:  
-
-* Prior to creating a disk image, virus scan the media using ESET:  
- * Open ESET Endpoint Antivirus.  
- * From the 'Analyse de l'ordinateur' menu, click 'Analyse personnalisée' and then select the media to begin virus scanning.  
- * If there are no viruses, proceed with the next step. If ESET finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside, and consult the Digital Archivist.
-
 Steps for imaging physical media with FTK Imager:  
+
+* Prior to creating a disk image, virus scan the media using ESET:
+  * Open ESET Endpoint Antivirus.  
+  * From the 'Analyse de l'ordinateur' menu, click 'Analyse personnalisée' and then select the media to begin virus scanning.  
+  * If there are no viruses, proceed with the next step. If ESET finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside, and consult the Digital Archivist.
 
 * Open FTK Imager.
 * From the File menu, select Create a Disk Image.
