@@ -71,10 +71,9 @@ Before moving on to the disk imaging process, make sure you are using the disk-i
 
 Steps for imaging physical media with FTK Imager:  
 
-* Prior to creating a disk image, virus scan the media using ESET:
-  * Open ESET Endpoint Antivirus.  
-  * From the 'Analyse de l'ordinateur' menu, click 'Analyse personnalisée' and then select the media to begin virus scanning.  
-  * If there are no viruses, proceed with the next step. If ESET finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside, and consult the Digital Archivist.
+* Prior to creating a disk image, virus scan the media using SentinelOne antivirus:
+   * Right click on the file or folder you wish to scan, and select "Scan for threats" in the dropdown menu.
+   * If there are no viruses, proceed with the next step. If SentinelOne finds viruses, stop, note the virus(es) encountered in the versement_stabilization spreadsheet, set the media aside and consult the Digital Archivist.
 
 * Open FTK Imager.
 * From the File menu, select Create a Disk Image.
