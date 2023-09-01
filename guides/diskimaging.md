@@ -158,7 +158,7 @@ The detected media (CD/DVD, floppy disk) shows up at the top of the tree view. C
    * Click on “Save”. A new window pops up, showing the progress of the disk image extraction.
    * Once the extraction is done, IsoBuster will create a MD5 Checksum file.
  
- 4. Verify disk image's contents
+* Verify disk image's contents
  
    * Once you've created a disk image, open your project folder and make sure you have all the right components. You should have at least three files: the disk image file (.iso), a cuesheet file (.cue) and a checksum file (.md5)
    * In order to verify the integrity of the disk image file, go back to IsoBuster and select Open Image File in the “File” toolbar menu. Then double-click on the cuesheet file (.cue) associated with your image file (.iso). 
