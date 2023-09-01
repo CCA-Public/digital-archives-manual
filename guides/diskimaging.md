@@ -125,22 +125,17 @@ Steps for imaging physical media with FTK Imager:
 
 Before moving on to the disk imaging process, make sure you are using the disk-imaging workstation (DSK-065-14) in the CCA Digital Lab. Create a project folder in which you will save your work. Name this folder something memorable and meaningful, such as an accession or an identification number.
 
-#### Disk imaging 
+Steps for imaging physical media with IsoBuster:   
 
-Steps:
-1. Virus scan 
-* Prior to creating the disk image, virus scan the media using ESET Endpoint Antivirus.
-   * Open ESET Endpoint Antivirus from the Start menu.
-   * From the left side menu, select “Computer scan”, click on “Custom scan” and then select the media to begin the virus scan.
-   * If there are no viruses, proceed with the next step. If ESET finds viruses, stop, note the virus(es) encountered in the versement   stabilization spreadsheet, set the media aside and consult the Digital Archivist.
- 
-2. Settings
+* Prior to creating the disk image, virus scan the media using SentinelOne Antivirus.
+   * Right click on the file or folder you wish to scan, and select "Scan for threats" in the dropdown menu.
+   * If there are no viruses, proceed with the next step. If SentinelOne finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside and consult the Digital Archivist.
+
 * Prior to disk imaging, go through the following settings. You may need to change some settings, depending on your needs for your digital preservation project.
    * **Image File Size** - Under the Options menu, go to **Image files**. Under *Image File Creation*, **uncheck** the *Split large Image Files to specified size* option.
    * **Cuesheet file** - Still under **Image files**. Under *Select when a cuesheet file will be created*, select **Always after a CD, DVD or BD image is created**.
    * **MD5 Checksum file** - Still under **Image files**, go to *Select when an MD5 checksum file will be created* and select **Always after an image is created**.
-   
-3. Create a disk image
+
 * Start IsoBuster from the Start Menu.
 
 IsoBuster automatically reads the entire content of the disk and displays a tree view of the repositories and files on the left side column. If not, select the right option drive in the drop-down box below the menu. The message “No media present” shows up if there is no disk mounted to the drive. 
