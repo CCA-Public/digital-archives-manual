@@ -21,7 +21,7 @@ The following procedures describe how CCA accessions and stabilizes contents fro
 Steps:  
 
 * **Staff member who receives the transfer (typically Digital Archivist or the collection management team (GesCo))**  
-  * Notify Registrar and Digital Archivist, as appropriate  
+  * Notify GesCo and Digital Archivist, as appropriate  
   * Zip files and move zip file into a new folder in Processing if accession record has not yet been created.    
 * **GesCo: Create accession records**  
   * For exclusively born-digital accessions in the archives, create only a versement record (no versement objet or ARCH records). Include a brief identifying note for the accession in "Description du contenu" (e.g. the name of the Dropbox folder)  
