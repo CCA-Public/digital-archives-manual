@@ -61,8 +61,8 @@ Steps:
 * **GesCo**  
   * Create accession records as described below  
   * Determine if it is possible to separate digital media on arrival
-   * IF YES: Registrar separates digital media from physical materials upon arrival (stored in cool vault shelving) and creates separate versement-objets for the container(s) of digital media.
-   * IF NO: Registrar makes note in the “Description du contenu“ field of versement objet records that they contain digital media. This material will then be stabilized according to Media Backlog workflows by the Digital Archives Technician as part of their regular work, or at the moment of processing.   
+   * IF YES: GesCo separates digital media from physical materials upon arrival (stored in cool vault shelving) and creates separate versement-objets for the container(s) of digital media.
+   * IF NO: GesCo makes note in the “Description du contenu“ field of versement objet records that they contain digital media. This material will then be stabilized according to Media Backlog workflows by the Digital Archives Technician as part of their regular work, or at the moment of processing.   
 * **Digital Archivist** 
   * *Note: These steps may occur after some delay*
   * Oversee disk imaging of media  
