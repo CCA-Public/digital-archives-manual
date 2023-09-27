@@ -72,7 +72,6 @@ Steps:
 * **GesCo**
   * Add "Dark archive" as location to accession (versement) record  
 * **Digital Archivist, Archivist/Chef/Curator, Associate Director**  
-  * **Note: The policies for this step are being reviewed by Adria Seccareccia, Archivist, in relation to the general weeding policies of CCA**  
   * During or after processing, Digital Archivist and either the Archivist or appropriate Curator/Chef assess media for artefactual value and confirm with Associate Director, Collection. There are three possible results to this assessment:  
     * Media have artefactual value and will be kept permanently at CCA in their entirety  
     * Media have artefactual value and a sample will be kept permanently at CCA  
