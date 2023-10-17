@@ -30,7 +30,7 @@ Helpful resources, including:
 <a name="media"></a>  
 ## Digital storage media identification and information  
 
-* [Know Your Digital Storage Media](http://lib.utsa.edu/knowyourmedia/)  
+* [Know Your Media](http://lib.utsa.edu/knowyourmedia/)  
 
 <a name="formats"></a>  
 ## File format identification and information  
