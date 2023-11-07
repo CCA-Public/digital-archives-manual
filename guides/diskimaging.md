@@ -126,16 +126,16 @@ Before moving on to the disk imaging process, make sure you are using the disk-i
 
 Steps for imaging physical media with IsoBuster:   
 
-* Prior to creating the disk image, virus scan the media using SentinelOne Antivirus.
+* Step 1: Prior to creating the disk image, virus scan the media using SentinelOne Antivirus.
    * Right click on the file or folder you wish to scan, and select "Scan for threats" in the dropdown menu.
    * If there are no viruses, proceed with the next step. If SentinelOne finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside and consult the Digital Archivist.
 
-* Prior to disk imaging, go through the following settings. You may need to change some settings, depending on your needs for your digital preservation project.
+* Step 2: Start IsoBuster from the Start Menu and go through the following settings. You may need to change some settings, depending on your needs for your digital preservation project.
    * **Image File Size** - Under the Options menu, go to **Image files**. Under *Image File Creation*, **uncheck** the *Split large Image Files to specified size* option.
    * **Cuesheet file** - Still under **Image files**. Under *Select when a cuesheet file will be created*, select **Always after a CD, DVD or BD image is created**.
    * **MD5 Checksum file** - Still under **Image files**, go to *Select when an MD5 checksum file will be created* and select **Always after an image is created**.
 
-* Start IsoBuster from the Start Menu.
+
 
 IsoBuster automatically reads the entire content of the disk and displays a tree view of the repositories and files on the left side column. If not, select the right option drive in the drop-down box below the menu. The message “No media present” shows up if there is no disk mounted to the drive. 
 
