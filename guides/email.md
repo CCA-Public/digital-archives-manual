@@ -2,11 +2,11 @@
 
 Email formats require additional processing, as they often contain sensitive or personal information, and as a format, are difficult to access by an end-user. [ePADD](https://library.stanford.edu/projects/epadd), developed by Stanford University Libraries, allows the processing archivist to search through email, restrict possibly sensitive materials, create access and preservation copies, and provide a user-friendly access interface.
 
-Full documentation on ePADD can be found in their [User Guide](https://docs.google.com/document/d/1ZMuWU0z-IVsk80_lUEYMfVrwfCsS1bp0sjL28GBGcMU/edit) and the [Community Forum](https://epadd.nimeyo.com/). 
+Full documentation on ePADD can be found in their [User Guide](https://docs.google.com/document/d/1PWzKyonRdogAChtHOQs-CVjCTMuQi00pLsHZRJateKw/edit) and the [Community Forum](https://epadd.nimeyo.com/). 
 
 ePADD can be downloaded [here](https://library.stanford.edu/projects/epadd/download), and installation instructions can be found in the User Guide. CCA recommends installing ePADD into Mac or Windows environments.
 
-This documentation is up-to-date as of ePADD v5.0 (May 2018).
+This documentation is up-to-date as of ePADD v10 (January 2023).
 
 * [Email formats](#emailformats)
 * [Import and appraisal module](#emailappraisal)
@@ -44,7 +44,7 @@ To use Emailchemy:
        * Translate Exchange-style email address to Internet-style (SMTP)
        * Extract all message object types
 2. Using the email conversion wizard, choose your source file type and click next. 
-3. On the next screen, find the file or folder containing your email archives files. **If you are pointing to a folder, the files need to be in a single directory.** Emailchemy does not recurse. Click next.
+3. On the next screen, find the file or folder containing your email archives files. Click next.
 4. Ensure the "filter duplicate messages" box is checked, and all others are unchecked. Click convert. This may take some time. 
 5. Find the log file created during conversion and save it. It will eventually be included in your SIP-level metadata.
 
@@ -87,7 +87,7 @@ Once ePADD has finished importing the accession, the archivist can begin process
 
 ![Screenshot of ePADD Browse tab](../media/photos/epadd_screenshot.JPG)
 
-The majority of this processing involves reviewing the email to ensure that it is within scope and does not contain sensitive material. While reviewing email, the Labels tab can be used to restrict materials. The labels "stick" when the archives is exported to the next module. The "Cleared for Release" and "Reviewed" flags are carried forward with their labels, and the emails marked "Do Not Transfer" are not moved to the next module, effectively restricting/deleting them from the preservation and access copy. Emails can also be scheduled for temporary restriction; see the [User Guide](https://docs.google.com/document/d/1ZMuWU0z-IVsk80_lUEYMfVrwfCsS1bp0sjL28GBGcMU/edit) for more information.
+The majority of this processing involves reviewing the email to ensure that it is within scope and does not contain sensitive material. While reviewing email, the Labels tab can be used to restrict materials. The labels "stick" when the archives is exported to the next module. The "Cleared for Release" and "Reviewed" flags are carried forward with their labels, and the emails marked "Do Not Transfer" are not moved to the next module, effectively restricting/deleting them from the preservation and access copy. Emails can also be scheduled for temporary restriction; see the [User Guide](https://docs.google.com/document/d/1PWzKyonRdogAChtHOQs-CVjCTMuQi00pLsHZRJateKw/edit) for more information.
 
 ![Screenshot of ePADD labels](../media/photos/epadd_labels.JPG)
 
@@ -106,7 +106,7 @@ The review process need not occur in any particular order. ePADD provides the fo
 5. *Image attachments:* A gallery of all images attached to emails.
 6. *Other attachments:* All other file types attached to emails, available for download.
 7. *Lexicon search:* Keyword searching based on defined lexicons to identify sensitive materials. A [CCA lexicon](../media/cca_lexicon) was created based on existing ePADD lexicons in order to collocate sensitive words relevant to CCA's use case. A [German lexicon](../media/german_lexicon) and [French lexicon](../media/french_lexicon.txt) were developed to provide additional (limited) language functionalities. Note that these lexicons should be considered in beta, and all lexicons should be considered in light of a collection's particular context.
-   * Use lexicon searching to identify potentially sensitive and out of scope material. Lexicons can be added manually or installed directly; see the [Lexicon ReadMe file](https://docs.google.com/document/d/1RWU1kXUPa1kEf5_mEaNP_veQ8IX-Sw1J0mBJ8rRhS3Q/edit) and the [User Guide](https://docs.google.com/document/d/1ZMuWU0z-IVsk80_lUEYMfVrwfCsS1bp0sjL28GBGcMU/edit) for more information.
+   * Use lexicon searching to identify potentially sensitive and out of scope material. Lexicons can be added manually or installed directly; see the [Lexicon ReadMe file](https://docs.google.com/document/d/1RWU1kXUPa1kEf5_mEaNP_veQ8IX-Sw1J0mBJ8rRhS3Q/edit) and the [User Guide](https://docs.google.com/document/d/1PWzKyonRdogAChtHOQs-CVjCTMuQi00pLsHZRJateKw/edit) for more information.
 8. *Labels:* Summary of labels used. New labels can be added here if needed.
 9. *Data:* Import log. 
    * Ensure there were no major import errors.
