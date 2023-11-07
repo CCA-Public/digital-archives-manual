@@ -426,7 +426,13 @@ There are a few possible causes for this, as this has happened in the lab severa
 		* Double check that the driver is installed in the proper location, which is the location where ImgBurn is installed (i.e. C:\Program Files\ImgBurn)
 
 * **Issue:**
-The CD doesn't show up on Bitcurators
+The CD doesn't show up on the Bitcurators
 
 	* **Solution:**
 Try ejecting and re-inserting the CD. The CD sometimes doesn't show up if the virus program (Clam TK) is open already.
+
+* **Issue:**
+After using Disk Image Processor or Folder Processor, the logical folder name seems off (e.g. characters or syntax not like other material, abbreviations)
+
+	* **Solution:**
+Try mounting the disk image and compare the folder titles. If there is a discrepancy copy the folder from the mounted disk image into your SIP.
