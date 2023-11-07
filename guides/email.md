@@ -1,6 +1,6 @@
 # Email archives and ePADD
 
-Email formats require additional processing, as they often contain sensitive or personal information, and as a format, are difficult to access by an end-user. [ePADD](https://library.stanford.edu/projects/epadd), developed by Stanford University Libraries, allows the processing archivist to search through email, restrict possibly sensitive materials, create access and preservation copies, and provide a user-friendly access interface.
+Email formats require additional processing, as they often contain sensitive or personal information, and as a format, are difficult to access by an end-user. [ePADD](https://www.epaddproject.org/). developed by Stanford University Libraries, allows the processing archivist to search through email, restrict possibly sensitive materials, create access and preservation copies, and provide a user-friendly access interface.
 
 Full documentation on ePADD can be found in their [User Guide](https://docs.google.com/document/d/1PWzKyonRdogAChtHOQs-CVjCTMuQi00pLsHZRJateKw/edit) and the [Community Forum](https://epadd.nimeyo.com/). 
 
