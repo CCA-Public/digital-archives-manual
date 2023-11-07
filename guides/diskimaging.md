@@ -424,3 +424,9 @@ There are a few possible causes for this, as this has happened in the lab severa
 		* Change the cable connecting the Nimbie to the computer. The required cable is USB 2.0 type-B to USB 2.0 or 3.0 Type-A 
 		* Re-install the device drivers (requires admin priviledges)
 		* Double check that the driver is installed in the proper location, which is the location where ImgBurn is installed (i.e. C:\Program Files\ImgBurn)
+
+* **Issue:**
+The CD doesn't show up on Bitcurators
+
+	* **Solution:**
+Try ejecting and re-inserting the CD. The CD sometimes doesn't show up if the virus program (Clam TK) is open already.
