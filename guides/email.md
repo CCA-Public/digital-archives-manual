@@ -4,7 +4,7 @@ Email formats require additional processing, as they often contain sensitive or 
 
 Full documentation on ePADD can be found in their [User Guide](https://docs.google.com/document/d/1PWzKyonRdogAChtHOQs-CVjCTMuQi00pLsHZRJateKw/edit) and the [Community Forum](https://epadd.nimeyo.com/). 
 
-ePADD can be downloaded [here](https://library.stanford.edu/projects/epadd/download), and installation instructions can be found in the User Guide. CCA recommends installing ePADD into Mac or Windows environments.
+ePADD can be downloaded [here](https://www.epaddproject.org/using-epadd/download-and-install), and installation instructions can be found in the User Guide. CCA recommends installing ePADD into Mac or Windows environments.
 
 This documentation is up-to-date as of ePADD v10 (January 2023).
 
