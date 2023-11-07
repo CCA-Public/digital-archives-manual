@@ -155,7 +155,14 @@ Helpful resources, including:
     Note that this script **overwrites, deletes, and uses sudo** meaning that it is **very powerful.** It's not recommended that you use it without having some rsync experience.
 
         sudo rsync -qam --delete "/PATH/TO/SIPs/" "/PATH/TO/PARENT_OF_SIPs/"
-        
+  
+* **Unlock folders**
+
+    This script unlocks a folder's contents using sudo.
+    
+  Often when disk imaging, a file may be created in a locked mode. If you need to unlock a folder change the * to the folder path.
+    
+           sudo chmod 777 *    
         
 <a name="cadpres"></a>  
 ## Preservation of computer-aided design  
