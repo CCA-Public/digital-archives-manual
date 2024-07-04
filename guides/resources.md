@@ -164,10 +164,10 @@ Helpful resources, including:
     
            sudo chmod 777 *
 
-  * **Virus scan**
+* **Virus scan**
 
     This command uses clamAV to scan files for viruses.
-    
+
            clamscan -r /path/to/staging --max-filesize=Xm --max-scansize=Ym > collection.log
 
     X is the largest filesize (in megabytes) you want to scan, and Y is the largest number of megabytes you want to extract from a single compressed file.
