@@ -65,7 +65,8 @@ Helpful resources, including:
     for f in $(find . -type f -name "*EXT"); do libreoffice --convert-to doc $f --outdir $(dirname $f); done
     ```
     
-  Change "EXT" to the file extension of the original files; note that it is case-sensitive. Change "doc" to the extension that the files should convert to. See ["Supported File Formats"](https://en.wikipedia.org/wiki/LibreOffice) for more information.
+   Change "EXT" to the file extension of the original files; note that it is case-sensitive. Change "doc" to the extension that the files should convert to.
+   See ["Supported File Formats"](https://en.wikipedia.org/wiki/LibreOffice) for more information.
 
 * **Recursively unzip files into a new folder with the title of the zip file into their current place in the directory, and then delete the original zip file when it's done:**
     
