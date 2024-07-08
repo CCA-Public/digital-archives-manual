@@ -29,11 +29,7 @@ Before starting to create disk images from an accession, create a folder in the 
 
 Steps for imaging physical media with Guymager:  
 
-* Prior to creating a disk image, virus scan the media using ClamTK:  
-  * Open ClamTK (from the 'Additional Tools' folder on the Bitcurator desktop).  
-  * Ensure that settings are correct: Double-click on 'Settings', and ensure that everything except 'Scan for PUAs' is selected.    
-  * Double-click on 'Scan a directory' from the 'Analysis' tab and then choose directory to scan.  
-  * If there are no viruses, proceed with the next step. If ClamTK finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside, and consult the Digital Archivist.  
+* Prior to creating a disk image, virus scan the media using the ClamAv command. If there are no viruses, proceed with the next step. If ClamAv finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside, and consult the Digital Archivist.  
 
 * Open Guymager (from the 'Imaging Tools' folder on the Bitcurator desktop).
 
