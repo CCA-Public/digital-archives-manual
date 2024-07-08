@@ -7,6 +7,7 @@ Helpful resources, including:
 * [File format identification and information](#formats)  
 * [Digital preservation tools](#tools)  
 * [Scripting resources](#scripting)
+* [Useful command line scripts](#command)
 * [Preservation of computer-aided design](#cadpres)  
 * [General resources](#general)  
 
@@ -55,7 +56,7 @@ Helpful resources, including:
 * [Script Ahoy](http://dd388.github.io/crals/): "Our community resource is intended to provide helpful one-liners and script code specifically drawn from real-life examples in archives and libraries."  
 * [Command Line Crash Course](https://learnpythonthehardway.org/book/appendixa.html): From *Learn Python the Hard Way*  
 
-<a name="scripting"></a>  
+<a name="command"></a>  
 ## Useful command line scripts
 
 *  **Batch convert files in a directory and subdirectories using LibreOffice.**
