@@ -163,14 +163,14 @@ Helpful resources, including:
     This script unlocks a folder's contents using sudo.
     
   Often when disk imaging, a file may be created in a locked mode. If you need to unlock a folder change the * to the folder path.
-    
-           sudo chmod 777 *
+  
+        sudo chmod 777 *
 
 * **Virus scan**
 
     This command uses clamAV to scan files for viruses.
 
-           clamscan -r /path/to/staging --max-filesize=Xm --max-scansize=Ym > collection.log
+        clamscan -r /path/to/staging --max-filesize=Xm --max-scansize=Ym > collection.log
 
     X is the largest filesize (in megabytes) you want to scan, and Y is the largest number of megabytes you want to extract from a single compressed file.
         
