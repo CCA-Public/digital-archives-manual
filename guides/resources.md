@@ -146,7 +146,7 @@ Helpful resources, including:
         cd /path/to/directory
         for f in $(find . -name "*,*"); do rename -v 's/,/_/' $f; done
         
-    Note that this will only change the first comma in every file name. For example, if a file name contains five commas, you will have to run the command five times to replace every comma. 
+    Note that this will only change the first comma in every file name. For example, if a file name contains five commas, you will have to run the command five times to replace every comma. *This will only work if you run detox prior to this command to get rid of all the spaces in the file name.
 
 * **Sync folders**
 
