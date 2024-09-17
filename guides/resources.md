@@ -166,6 +166,11 @@ Helpful resources, including:
   
         sudo chmod 777 *
 
+  or use it recursevely, to unlock all subfolders.
+
+        sudo chmod -R 777 *
+  
+
 * **Virus scan**
 
     This command uses clamAV to scan files for viruses.
