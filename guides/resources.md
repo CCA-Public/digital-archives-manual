@@ -178,6 +178,15 @@ Helpful resources, including:
         clamscan -r /path/to/staging --max-filesize=Xm --max-scansize=Ym > collection.log
 
     X is the largest filesize (in megabytes) you want to scan, and Y is the largest number of megabytes you want to extract from a single compressed file.
+
+
+* **For adding prefix and suffix for files (directories)**
+
+    For adding prefix or suffix for files(directories):
+
+        ls | xargs -I {} mv {} PRE_{}
+        ls | xargs -I {} mv {} {}_SUFclamscan -r /path/to/staging --max-filesize=Xm --max-scansize=Ym > collection.log
+
         
 <a name="cadpres"></a>  
 ## Preservation of computer-aided design  
