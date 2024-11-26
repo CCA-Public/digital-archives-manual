@@ -111,49 +111,49 @@ Helpful resources, including:
   
 * **Detox utility cleans file and directory names by removing spaces and translating/cleaning up Latin-1 (ISO 8859-1) characters encoded in 8-bit ASCII, Unicode characters encoded in UTF-8, and CGI escaped characters.**
      
-     To do a test run (i.e. see proposed file name changes without actually making the changes): 
+     To do a test run (i.e. see proposed file name changes without actually making the changes):
+
+      detox -rn topDirectory
             
-            detox -rn topDirectory
-            
-     To make the changes: 
-     
-            detox -r topDirectory
+     To make the changes:
+
+      detox -r topDirectory
 
 * **List and delete empty files and directories.**
 
     To list all empty files and directories: 
-            
-            cd [topDirectory]
-            find . -empty
+
+      cd [topDirectory]
+      find . -empty
             
     To delete empty files: 
-    
-            find . -type f -empty -delete
+
+      find . -type f -empty -delete
     
     To delete empty directories: 
-            
-            find . -type d -empty -delete
+
+      find . -type d -empty -delete
 
 * **To remove hidden files**
 
-            rm -rf .*
+      rm -rf .*
 
-            find , and rename _ 
-            for f in $(find . -name "*,*"); do rename -v 's/,/_/' $f; done^C
+      find , and rename _ 
+      for f in $(find . -name "*,*"); do rename -v 's/,/_/' $f; done^C
 
-            find -type f -name "*.db" -delete
+      find -type f -name "*.db" -delete
 
 * **Print checksum mismatches between checksum.md5 file and objects directory to terminal**  
 
-        cd /path/to/metadata/directory 
-        md5deep -rlX checksum.md5 ../objects
+      cd /path/to/metadata/directory 
+      md5deep -rlX checksum.md5 ../objects
 
     (the -X flag displays the hash and filename for each file in the objects directory that does not match the list of known hashes in  the checksum.md5 file)          
 
 * **Batch remove commas from file names and replace with underscores**  
 
-        cd /path/to/directory
-        for f in $(find . -name "*,*"); do rename -v 's/,/_/' $f; done
+      cd /path/to/directory
+      for f in $(find . -name "*,*"); do rename -v 's/,/_/' $f; done
         
     Note that this will only change the first comma in every file name. For example, if a file name contains five commas, you will have to run the command five times to replace every comma. *This command will only work if you run detox prior to get rid of all the spaces in the file name. Or else, the command will not find the files.
 
@@ -165,34 +165,34 @@ Helpful resources, including:
     
     Note that this script **overwrites, deletes, and uses sudo** meaning that it is **very powerful.** It's not recommended that you use it without having some rsync experience.
 
-        sudo rsync -qam --delete "/PATH/TO/SIPs/" "/PATH/TO/PARENT_OF_SIPs/"
+      sudo rsync -qam --delete "/PATH/TO/SIPs/" "/PATH/TO/PARENT_OF_SIPs/"
   
 * **Unlock folders**
 
-    This script unlocks a folder's contents using sudo.
+      This script unlocks a folder's contents using sudo.
     
   Often when disk imaging, a file may be created in a locked mode. If you need to unlock a folder change the * to the folder path.
   
-        sudo chmod 777 *
+      sudo chmod 777 *
 
   or use it recursevely, to unlock all subfolders.
 
-        sudo chmod -R 777 *
+      sudo chmod -R 777 *
   
 
 * **Virus scan**
 
     This command uses clamAV to scan files for viruses.
 
-        clamscan -r /path/to/staging --max-filesize=Xm --max-scansize=Ym > collection.log
+      clamscan -r /path/to/staging --max-filesize=Xm --max-scansize=Ym > collection.log
 
     X is the largest filesize (in megabytes) you want to scan, and Y is the largest number of megabytes you want to extract from a single compressed file.
 
 
 * **For adding prefix and suffix for files (directories)**
 
-        ls | xargs -I {} mv {} PRE_{}
-        ls | xargs -I {} mv {} {}_SUF
+      ls | xargs -I {} mv {} PRE_{}
+      ls | xargs -I {} mv {} {}_SUF
 
         
 <a name="cadpres"></a>  
