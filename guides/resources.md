@@ -134,14 +134,14 @@ Helpful resources, including:
             
             find . -type d -empty -delete
 
-  * **To remove hidden files**
+* **To remove hidden files**
 
-        rm -rf .*
+            rm -rf .*
 
-        find , and rename _ 
-        for f in $(find . -name "*,*"); do rename -v 's/,/_/' $f; done^C
+            find , and rename _ 
+            for f in $(find . -name "*,*"); do rename -v 's/,/_/' $f; done^C
 
-        find -type f -name "*.db" -delete
+            find -type f -name "*.db" -delete
 
 * **Print checksum mismatches between checksum.md5 file and objects directory to terminal**  
 
