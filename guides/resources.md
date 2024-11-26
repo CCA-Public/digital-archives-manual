@@ -89,10 +89,10 @@ Helpful resources, including:
      
      Run the following scripts in the command line individually. (Replace topDirectory with the file path for the highest level directory.) 
             
-            cd topDirectory/
-            find . -type d >> /home/bcadmin/Desktop/directories.csv
-            for D in $(find . -type d); do du -sh $D >> /home/bcadmin/Desktop/filesize.csv; done
-            for D in $(find . -type d); do find $D -type f -exec md5sum {} + | awk '{print $1}' | sort | md5sum >> /home/bcadmin/Desktop/checksums.csv; done
+      cd topDirectory/
+      find . -type d >> /home/bcadmin/Desktop/directories.csv
+      for D in $(find . -type d); do du -sh $D >> /home/bcadmin/Desktop/filesize.csv; done
+      for D in $(find . -type d); do find $D -type f -exec md5sum {} + | awk '{print $1}' | sort | md5sum >> /home/bcadmin/Desktop/checksums.csv; done
 
      This final command may take some time depending on the size of the collection. Together, these commands will create three CSV spreadsheets on the Bitcurator desktop, containing the list of directories, their human-readable size, and their checksums respectively. Move the columns into one spreadsheet, being mindful that the columns will require some light data clean up in order to get them to line up. It may be easier to have the TOPDIRECTORY be a subdirectory and combine all the spreadsheets at the end if you have more than a few thousand directories total.
      
