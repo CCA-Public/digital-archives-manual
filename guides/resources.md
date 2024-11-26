@@ -183,7 +183,7 @@ Helpful resources, including:
 * **For adding prefix and suffix for files (directories)**
 
         ls | xargs -I {} mv {} PRE_{}
-        ls | xargs -I {} mv {} {}_SUFclamscan -r /path/to/staging --max-filesize=Xm --max-scansize=Ym > collection.log
+        ls | xargs -I {} mv {} {}_SUF
 
         
 <a name="cadpres"></a>  
