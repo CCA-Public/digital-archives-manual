@@ -132,7 +132,16 @@ Helpful resources, including:
     
     To delete empty directories: 
             
-            find . -type d -empty -delete  
+            find . -type d -empty -delete
+
+  * **To remove hidden files**
+
+        rm -rf .*
+
+        find , and rename _ 
+        for f in $(find . -name "*,*"); do rename -v 's/,/_/' $f; done^C
+
+        find -type f -name "*.db" -delete
 
 * **Print checksum mismatches between checksum.md5 file and objects directory to terminal**  
 
