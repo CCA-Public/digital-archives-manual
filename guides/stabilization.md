@@ -20,7 +20,7 @@ The following procedures describe how CCA accessions and stabilizes contents fro
 
 Steps:  
 
-* **Staff member who receives the transfer (typically Digital Archivist or the collection management team (GesCo))**  
+* **Staff member who receives the transfer (typically Digital Archivist or the Collection Management team (GesCo))**  
   * Notify GesCo and Digital Archivist, as appropriate  
   * Zip files and move zip file into a new folder in Processing if accession record has not yet been created.    
 * **GesCo: Create accession records**  
