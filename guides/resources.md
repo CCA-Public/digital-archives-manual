@@ -134,14 +134,16 @@ Helpful resources, including:
 
       find . -type d -empty -delete
 
-* **To remove hidden files**
+* **To find and remove hidden files**
 
-      rm -rf .*
-
-      find , and rename _ 
-      for f in $(find . -name "*,*"); do rename -v 's/,/_/' $f; done^C
+      cd filepath/to/directory find -type f -name '.*' (#to find all files that begin with .)
+      cd filepath/to/directory find -type f -name '.*' -delete (#to delete all files that begin with .)
 
       find -type f -name "*.db" -delete
+
+      find -type f -name "~*" -delete
+
+      find -type f -name "*.DS_Store" -delete
 
 * **Print checksum mismatches between checksum.md5 file and objects directory to terminal**  
 
