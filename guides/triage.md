@@ -144,11 +144,11 @@ At this point, ewfexport will tell you the process might take a few minutes and 
 
 Once you have the raw disk image, open HFSExplorer (located in the 'Additional Tools' folder on the Desktop).  
 
-![hfsexplorer1](http://wiki.bitcurator.net/images/c/c2/HFS1.png)  
+![hfsexplorer1]([https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs1.png)  
 
 From the 'File' menu, select 'Load file system from file' and then select the raw disk image file.  
 
-![hfsexplorer2](http://wiki.bitcurator.net/images/3/30/HFS2.png)  
+![hfsexplorer2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs2.png)  
 
 If attempting to load the raw image results in an error, the media probably wasn't formatted as an HFS disk. At this point, make a note in your versement stabilization spreadsheet and consult with the Digital Archivist.  
 
@@ -158,15 +158,13 @@ The final step is to export these files from HFSExplorer to a desktop or network
 
 * Select all files to be exported (at this stage, this should be everything - including system files) and press the 'Extract' button.  
 
-![hfsexplorer3](http://wiki.bitcurator.net/images/8/88/HFSextract1.png)  
+![hfsexplorer3](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs3.png)  
 
 * Choose your destination location and select 'Extract Here'.  
 
-![hfsexplorer4](http://wiki.bitcurator.net/images/6/61/HFSextract2.png)  
-
 * A pop-up window will appear asking if you want to follow symbolic links while extracting. Select 'Yes'.  
 
-![hfsexplorer5](http://wiki.bitcurator.net/images/0/0a/HFSextract3.png)  
+![hfsexplorer5](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs4.png)
 
 * If all goes well, you will get a message saying 'Extraction finished.' NOTE: It is common for HFSExplorer to run into an issue with invalid characters in file names during the export process, due to the differences in allowable file name characters between HFS and modern file systems. When HFSExplorer runs into files will such characters, a pop-up window will appear asking you to auto-rename or manually rename the files. You may select auto-rename, which will replace 'illegal' characters such as forward slashes ('/') and full stops ('.') with underscores ('\_').
 
