@@ -432,3 +432,9 @@ After using Disk Image Processor or Folder Processor, the logical folder name se
 
 	* **Solution:**
 Try mounting the disk image and compare the folder titles. If there is a discrepancy copy the folder from the mounted disk image into your SIP.
+
+* **Issue:**
+When trying to extract the logical WAVE files on a audio-CD using IsoBuster on the Windows machines, and the computer automatically ejects the CD. 
+
+	* **Solution:**
+This can happen when the audio tracks on a CD appear as "locked" on the BitCurator computer. Some also refer to them as hidden files or files that are just harder to access. In that case you can use cdparanoia to rip the locked audio tracks on one of the BitCurator workstations. The workflow we follow comes from the blog [Bitsgalore](https://bitsgalore.org/2015/11/13/preserving-optical-media-from-the-command-line.html).  
