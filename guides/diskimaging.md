@@ -437,4 +437,4 @@ Try mounting the disk image and compare the folder titles. If there is a discrep
 When inserting an audio-CD in the Windows machine and the computer automatically ejects it. 
 
 	* **Solution:**
-This can happen when the audio tracks on a CD appear as "locked" on the BitCurator computer. In that case you can use cdparanoia to rip the locked audio tracks on one of the BitCurator workstations. The workflow we follow comes from the blog [Bitsgalore](https://bitsgalore.org/2015/11/13/preserving-optical-media-from-the-command-line.html).  
+This can happen when the audio tracks on a CD appear as "locked" on the BitCurator computer. In that case you can use [cdparanoia](https://linux.die.net/man/1/cdparanoia) to rip the locked audio tracks on one of the BitCurator workstations. The workflow we follow comes from the blog [Bitsgalore](https://bitsgalore.org/2015/11/13/preserving-optical-media-from-the-command-line.html).  
