@@ -6,6 +6,7 @@
   * [Disk imaging 5.25" floppy disks with FC5025](#fc5025)
   * [Disk imaging with the Kryoflux](#kryoflux)
   * [Disk imaging with the Nimbie and ImgBurn](#nimbie)
+  * [Ripping an audio-CD with cdparanoia](#cdparanoia)
   * [Troubleshooting](#troubleshooting)
   
 ## Disk imaging original physical media  
@@ -402,6 +403,29 @@ You can find a full rundown of ImgBurn’s settings <a href="https://forum.imgbu
 
 *(These instructions were taken from <a href="http://www.acronova.com/howto/article/23/review.html#ancher-imgburn" target="blank"> here</a>)*
 
+<a name="cdparanoia"></a>
+### Ripping an audio-CD with cdparanoia (Bitcurator)  
+cdparanoia is a command line audio CD reading utility that retrieves audio tracks from a compact disc digital audio (CD-DA). At CCA, we use cdparanoia when IsoBuster cannot be used to rip audio tracks (see how to rip an audio-cd with IsoBuster [here](#disk-imaging-an-audio-cd) and the troubleshooting section [here](#Troubleshooting)). 
+Before starting the extraction process, create a folder in the /mnt/1TB_RAID directory in which you will save your work. Name this folder something memorable and meaningful, such as an accession number or other identifier.
+
+To rip an audio-CD with cdparanoia, follow the steps below.   
+1. Insert the disc to be imaged in one of the drives on any BitCurator workstation.
+2. Virus scan the media using the ClamAv command. If there are no viruses, proceed with the next step. 
+3. Run an analysis on the optical disc:
+	* Open the terminal and type the “lsblk” command and press enter. The lsblk command (list block devices) will print all the available block devices. This is where you will find the name given by Linux for your optical drive. The name of the optical drive should look like “sr#”, such as sr0 or sr1. If the name of your mount is sr0, then the file path for your drive will be “/dev/sr0”.
+	* Type “sudo disktype /dev/sr0 > filename-disktype.txt” and press enter. For more information about the disktype command, click here.
+	* Type “sudo cd-info /dev/sr0 > filename-cdinfo.txt” and press enter.
+This will create two textual documents in your Home location that you will be able to use to analyze your physical media. If your **disc mode** is listed as “CD-DA”, continue following the procedures below. 
+4. Extract the audio tracks
+	* Open the terminal, if not yet opened.
+	* Type in “cdparanoia -B -L” and press enter. This will rip the CD and each track will be stored as a separate WAVE file. This should only take a few minutes to complete. The -L in the command will generate a detailed log file. 
+	* When done, eject the CD. You will find the WAVE file format in the Home location of the BitCurator, along with the log file that you should be keeping for reference.
+	* QA the audio tracks to make sure that everything works as they should. You may want to transfer the files temporarily from the BitCurator to a Windows computer if you’re having trouble listening to the audio recording.
+5. Finalize: 
+	* Move all the related files from the Home folder to your working folder located on the RAID
+	* Rename the tracks with their unique identifier, as explained [here](#disk-imaging-an-audio-cd)
+
+*(_These instructions were taken from_ <a href="https://www.tate.org.uk/documents/3/sbapp_disk_imaging_guide_01_00.pdf" target="blank">here</a> and <a href="https://bitsgalore.org/2015/11/13/preserving-optical-media-from-the-command-line.html" target="blank"> here</a>)*
 
 <a name="troubleshooting"></a>
 ### Troubleshooting
