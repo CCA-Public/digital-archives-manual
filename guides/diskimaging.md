@@ -406,20 +406,21 @@ You can find a full rundown of ImgBurn’s settings <a href="https://forum.imgbu
 <a name="cdparanoia"></a>
 ### Ripping an audio-CD with cdparanoia (Bitcurator)  
 cdparanoia is a command line audio CD reading utility that retrieves audio tracks from a compact disc digital audio (CD-DA). At CCA, we use cdparanoia when IsoBuster cannot be used to rip audio tracks (see how to rip an audio-cd with IsoBuster [here](#disk-imaging-an-audio-cd) and the troubleshooting section [here](#Troubleshooting)). 
+
 Before starting the extraction process, create a folder in the /mnt/1TB_RAID directory in which you will save your work. Name this folder something memorable and meaningful, such as an accession number or other identifier.
 
 To rip an audio-CD with cdparanoia, follow the steps below.   
 1. Insert the disc to be imaged in one of the drives on any BitCurator workstation.
-2. Virus scan the media using the ClamAv command. If there are no viruses, proceed with the next step. 
+2. Virus scan the media using the ClamAv command. If there are no viruses, proceed with the next step.
 3. Run an analysis on the optical disc:
 	* Open the terminal and type the “lsblk” command and press enter. The lsblk command (list block devices) will print all the available block devices. This is where you will find the name given by Linux for your optical drive. The name of the optical drive should look like “sr#”, such as sr0 or sr1. If the name of your mount is sr0, then the file path for your drive will be “/dev/sr0”.
-	* Type “sudo disktype /dev/sr0 > filename-disktype.txt” and press enter. For more information about the disktype command, click here.
-	* Type “sudo cd-info /dev/sr0 > filename-cdinfo.txt” and press enter.
+	* Type “sudo disktype /dev/sr# > filename-disktype.txt” and press enter. For more information about the disktype command, click here.
+	* Type “sudo cd-info /dev/sr# > filename-cdinfo.txt” and press enter.
 This will create two textual documents in your Home location that you will be able to use to analyze your physical media. If your **disc mode** is listed as “CD-DA”, continue following the procedures below. 
 4. Extract the audio tracks
-	* Open the terminal, if not yet opened.
-	* Type in “cdparanoia -B -L” and press enter. This will rip the CD and each track will be stored as a separate WAVE file. This should only take a few minutes to complete. The -L in the command will generate a detailed log file. 
-	* When done, eject the CD. You will find the WAVE file format in the Home location of the BitCurator, along with the log file that you should be keeping for reference.
+	* Open the terminal if not yet opened.
+	* Type in “cdparanoia -B -L” and press enter. This will rip the CD and each track will be stored as a separate WAVE file. This should only take a few minutes to complete. The -B option (batch) will split the output into multiple files at track boundaries and the -L (Log-debug) will generate a detailed log file. 
+	* When done, eject the CD. You will find the WAVE file in the Home folder along with the log files that you could keep for reference.
 	* QA the audio tracks to make sure that everything works as they should. You may want to transfer the files temporarily from the BitCurator to a Windows computer if you’re having trouble listening to the audio recording.
 5. Finalize: 
 	* Move all the related files from the Home folder to your working folder located on the RAID
