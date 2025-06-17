@@ -405,7 +405,7 @@ You can find a full rundown of ImgBurn’s settings <a href="https://forum.imgbu
 
 <a name="cdparanoia"></a>
 ### Ripping an audio-CD with cdparanoia (Bitcurator)  
-cdparanoia is a command line audio CD reading utility that retrieves audio tracks from a compact disc digital audio (CD-DA). At CCA, we use cdparanoia when IsoBuster cannot be used to rip audio tracks (see how to rip an audio-cd with IsoBuster [here](#disk-imaging-an-audio-cd) and the troubleshooting section [here](#Troubleshooting)). 
+cdparanoia is a command line audio CD reading utility that retrieves audio tracks from a compact disc digital audio (CD-DA). At CCA, we use cdparanoia when IsoBuster cannot be used to rip audio tracks. See how to rip an audio-cd with IsoBuster [here](#disk-imaging-an-audio-cd) and click [here](#Troubleshooting) for information on the issue we encountered and that prompted this new workflow. 
 
 Before starting the extraction process, create a folder in the /mnt/1TB_RAID directory in which you will save your work. Name this folder something memorable and meaningful, such as an accession number or other identifier.
 
