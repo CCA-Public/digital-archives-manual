@@ -27,6 +27,7 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
    * [Disk imaging 5.25" floppy disks with FC5025](guides/diskimaging.md/#fc5025)
    * [Disk imaging with the Kryoflux](guides/diskimaging.md/#kryoflux)
    * [Disk imaging with the Nimbie](guides/diskimaging.md/#nimbie)
+   * [Ripping an audio-CD with cdparanoia](guides/diskimaging.md/#cdparanoia)
    * [Troubleshooting](guides/diskimaging.md/#troubleshooting)
 * **[Pre-processing: Triage and evaluation](guides/triage.md)**  
     * [Analyzing disk images with Disk Image Processor](guides/triage.md/#analysis)
