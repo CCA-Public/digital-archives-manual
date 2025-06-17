@@ -417,7 +417,7 @@ To rip an audio-CD with cdparanoia, follow the steps below.
 	* Type “sudo disktype /dev/sr# > filename-disktype.txt” and press enter. For more information about the disktype command, click here.
 	* Type “sudo cd-info /dev/sr# > filename-cdinfo.txt” and press enter.
 This will create two textual documents in your Home location that you will be able to use to analyze your physical media. If your **disc mode** is listed as “CD-DA”, continue following the procedures below. 
-4. Extract the audio tracks
+4. Extract the audio tracks:
 	* Open the terminal if not yet opened.
 	* Type in “cdparanoia -B -L” and press enter. This will rip the CD and each track will be stored as a separate WAVE file. This should only take a few minutes to complete. The -B option (batch) will split the output into multiple files at track boundaries and the -L (Log-debug) will generate a detailed log file. 
 	* When done, eject the CD. You will find the WAVE file in the Home folder along with the log files that you could keep for reference.
