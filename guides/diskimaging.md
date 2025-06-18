@@ -460,7 +460,7 @@ After using Disk Image Processor or Folder Processor, the logical folder name se
 Try mounting the disk image and compare the folder titles. If there is a discrepancy copy the folder from the mounted disk image into your SIP.
 
 * **Issue:**
-When inserting an audio-CD in the Windows machine and the computer automatically ejects it. 
+The Windows computer automatically ejects the CD, but when you insert it in a BitCurator machine the CD shows locked audio files. 
 
 	* **Solution:**
 	This can happen when the audio tracks on a CD appear as "locked" on the BitCurator computer. In that case you can use [cdparanoia](https://xiph.org/paranoia/index.html) to rip the locked audio tracks on one of the BitCurator workstations. The [workflow we follow](#ripping-an-audio-cd-with-cdparanoia-Bitcurator) comes from the blog [Bitsgalore](https://bitsgalore.org/2015/11/13/preserving-optical-media-from-the-command-line.html) and the [Tate's Disk Imaging Guide](https://www.tate.org.uk/documents/3/sbapp_disk_imaging_guide_01_00.pdf).  
