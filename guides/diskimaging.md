@@ -421,10 +421,10 @@ These two commands will create two textual documents in your Home folder that yo
 4. Extract the audio tracks:
 	* Open the terminal if not yet opened.
 	* Type in “cdparanoia -B -L” and press enter. This will rip the CD and each track will be stored as a separate WAVE file. The -B option (batch) will split the output into multiple files at track boundaries and the -L (Log-debug) will generate a detailed log file. 
-	* When done, eject the CD. You will find the WAVE file in the Home folder along with the log files that you could keep for reference.
+	* When done, eject the CD. You will find the WAVE file(s) in the Home folder along with the log file(s).
 	* QA the audio tracks to make sure that everything works as they should. You may want to transfer the files temporarily from the BitCurator to a Windows computer if you’re having trouble listening to the audio recording.
 5. Finalize: 
-	* Move all the related files from the Home folder to your working folder located on the RAID
+	* Move all the related files from the Home folder to your working folder located on the RAID.
 	* Rename the tracks with their unique identifier, as explained [here](#disk-imaging-an-audio-cd)
 
 *(_These instructions were taken from_ <a href="https://www.tate.org.uk/documents/3/sbapp_disk_imaging_guide_01_00.pdf" target="blank">here</a> and <a href="https://bitsgalore.org/2015/11/13/preserving-optical-media-from-the-command-line.html" target="blank"> here</a>)*
