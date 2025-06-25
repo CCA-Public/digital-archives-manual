@@ -411,7 +411,7 @@ Before starting the extraction process, create a folder in the /mnt/1TB_RAID dir
 
 To rip an audio-CD with cdparanoia, follow the steps below.   
 1. Insert the disc to be imaged in one of the drives on any BitCurator workstation.
-2. Virus scan the media using the ClamAv command. If there are no viruses, proceed with the next step.
+2. Virus scan the media using the ClamAV command. If there are no viruses, proceed with the next step.
 3. Run an analysis on the optical disc:
 	* Open the terminal and type the “lsblk” command and press enter. The lsblk command (list block devices) will print all the available block devices. This is where you will find the name given by Linux for your optical drive. The name of the optical drive should look like “sr#”, such as sr0 or sr1. If the name of your mount is sr0, then the file path for your drive will be “/dev/sr0”.
 	* Type “sudo disktype /dev/sr# > filename-disktype.txt” and press enter. 
@@ -434,13 +434,11 @@ These two commands will create two textual documents in your Home folder that yo
 
 * **Issue:** 
 An issue that I found when using the Nimbie is that not all CDs that were disk imaged yielded .iso files like I wanted. Instead, ImgBurn sometimes gave .bin files. Apparently, this is caused by the type of sector mode that the CD uses to store data. CD’s using Mode 1 will yield .iso image files, while CDs using Mode 2/type 1 will yield .bin files. 
-
 	* **Solution:** 
 The best solution that I could find, found <a href="http://forum.imgburn.com/index.php?/topic/19845-image-from-disk-results-in-bin-file-instead-of-iso-file/" target="blank">here</a> was to simply change the file extension in file explorer from “filename.bin” to “filename.iso”. This seemed to have no effect on the image file, as I was still able to extract files from the image file without issue.
 
 * **Issue:**
 The Nimbie autoloader device does not show up as a usable drive in ImgBurn
-
 	* **Solution:**
 There are a few possible causes for this, as this has happened in the lab several times. Here are the solutions that I used:
 		* Change the cable connecting the Nimbie to the computer. The required cable is USB 2.0 type-B to USB 2.0 or 3.0 Type-A 
@@ -449,18 +447,15 @@ There are a few possible causes for this, as this has happened in the lab severa
 
 * **Issue:**
 The CD doesn't show up on the Bitcurators
-
 	* **Solution:**
 Try ejecting and re-inserting the CD. The CD sometimes doesn't show up if the virus program (Clam TK) is open already.
 
 * **Issue:**
 After using Disk Image Processor or Folder Processor, the logical folder name seems off (e.g. characters or syntax not like other material, abbreviations)
-
 	* **Solution:**
 Try mounting the disk image and compare the folder titles. If there is a discrepancy copy the folder from the mounted disk image into your SIP.
 
 * **Issue:**
-The Windows computer automatically ejects the CD, but when you insert it in a BitCurator machine the CD shows locked audio files. 
-
+The Windows computer automatically ejects the audio CD, but when you insert it in a BitCurator machine the CD shows locked audio files. 
 	* **Solution:**
-	This can happen when the audio tracks on a CD appear as "locked" on the BitCurator computer. In that case you can use [cdparanoia](https://xiph.org/paranoia/index.html) to rip the locked audio tracks on one of the BitCurator workstations. The [workflow we follow](#ripping-an-audio-cd-with-cdparanoia-Bitcurator) comes from the blog [Bitsgalore](https://bitsgalore.org/2015/11/13/preserving-optical-media-from-the-command-line.html) and the [Tate's Disk Imaging Guide](https://www.tate.org.uk/documents/3/sbapp_disk_imaging_guide_01_00.pdf).  
+In that case you can use [cdparanoia](https://xiph.org/paranoia/index.html) to rip the locked audio tracks on one of the BitCurator workstations. The [workflow we follow](#ripping-an-audio-cd-with-cdparanoia-Bitcurator) comes from the blog [Bitsgalore](https://bitsgalore.org/2015/11/13/preserving-optical-media-from-the-command-line.html) and the [Tate's Disk Imaging Guide](https://www.tate.org.uk/documents/3/sbapp_disk_imaging_guide_01_00.pdf).  
