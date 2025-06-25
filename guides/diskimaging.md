@@ -19,7 +19,7 @@ Except when circumstances require different solutions, CCA prefers raw disk imag
 
 We use the following tools to create disk images of media: [Kryoflux](#kryoflux) (default), [Guymager](#guymager), [FTK Imager](#ftkimager), [IsoBuster](#isobuster), or [FC5025](#fc5025). Regardless of which tool you use, always complete the following step first:  
 
-Give each piece of media an ARCH number identifier if it doesn't have one already, and create a corresponding "Record for Management Need" object record in TMS. The identifier should be written on the media or its case with a felt tip pen or (very lightly) in pencil, or affixed to the case using a label maker if available.
+Give each piece of media an AS (ArchivesSpace) number identifier if it doesn't have one already. The identifier should be written on the media and on its case with a felt tip pen or (very lightly) in pencil, or affixed to the case using a label maker if available. For more information on how to create an AS number/ identifier, please refer to the "New Numbering Scheme for ArchivesSpace item-level records" document located on the server.
 
 <a name="guymager"></a>
 ### Disk imaging with Guymager (Bitcurator)  
@@ -30,7 +30,7 @@ Before starting to create disk images from an accession, create a folder in the 
 
 Steps for imaging physical media with Guymager:  
 
-* Prior to creating a disk image, virus scan the media using the ClamAv command. If there are no viruses, proceed with the next step. If ClamAv finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside, and consult the Digital Archivist.  
+* Prior to creating a disk image, virus scan the media using the ClamAV command. If there are no viruses, proceed with the next step. If ClamAV finds viruses, stop, note the virus(es) encountered in the versement stabilization spreadsheet, set the media aside, and consult the Digital Archivist.  
 
 * Open Guymager (from the 'Imaging Tools' folder on the Bitcurator desktop).
 
