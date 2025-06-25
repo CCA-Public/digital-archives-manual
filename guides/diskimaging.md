@@ -26,7 +26,7 @@ Give each piece of media an ARCH number identifier if it doesn't have one alread
 
 Guymager is an open source disk imaging utility found in the Bitcurator environment, and one of the preferred tools for disk imaging at CCA. At CCA we use Guymager to create disk images in the raw (dd) format.  
 
-Before starting to create disk images from an accession, create a folder in the /mnt/1TB_RAID directory in which you will save your work. Name this folder something memorable and meaningful, such as an accession number or other identifier.  
+Before starting to create disk images from an accession, create a folder in the `/mnt/1TB_RAID` directory in which you will save your work. Name this folder something memorable and meaningful, such as an accession number or other identifier.  
 
 Steps for imaging physical media with Guymager:  
 
@@ -407,7 +407,7 @@ You can find a full rundown of ImgBurn’s settings <a href="https://forum.imgbu
 ### Ripping an audio-CD with cdparanoia (Bitcurator)  
 cdparanoia is a command line audio CD reading utility that retrieves audio tracks from a compact disc digital audio (CD-DA). At CCA, we use cdparanoia when IsoBuster cannot be used to rip audio tracks. See how to rip an audio-cd with IsoBuster [here](#disk-imaging-an-audio-cd) and click [here](#Troubleshooting) for information on the issue we encountered and that prompted this new workflow. 
 
-Before starting the extraction process, create a folder in the /mnt/1TB_RAID directory in which you will save your work. Name this folder something memorable and meaningful, such as an accession number or other identifier.
+Before starting the extraction process, create a folder in the `/mnt/1TB_RAID` directory in which you will save your work. Name this folder something memorable and meaningful, such as an accession number or other identifier.
 
 To rip an audio-CD with cdparanoia, follow the steps below.   
 1. Insert the disc to be imaged in one of the drives on any BitCurator workstation.
