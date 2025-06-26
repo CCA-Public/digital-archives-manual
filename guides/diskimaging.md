@@ -40,7 +40,7 @@ Steps for imaging physical media with Guymager:
 
 ![Bitcurator2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/guymager1_AcquireImage.png)  
 
-*(These images were taken from <a href="https://bitcurator.github.io/documentation/All%20Step-by-Step%20Guides/Imaging%20and%20Recovery%20Guides/Imaging%20with%20Guymager/">here</a>)*
+*(These images were taken from the older version of this website <a href="https://bitcurator.github.io/documentation/All%20Step-by-Step%20Guides/Imaging%20and%20Recovery%20Guides/Imaging%20with%20Guymager/">here</a>)*
 
 * Choose the 'Linux dd raw image' (file extension .dd or .xxx) file format.  
 * Make sure split size is unchecked.  
