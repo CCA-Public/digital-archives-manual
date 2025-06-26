@@ -202,12 +202,13 @@ Helpful resources, including:
 
 * Ball, Alex. "[Preserving Computer-Aided Design (CAD)](http://dx.doi.org/10.7207/twr13-02)," DPC Technology Watch Report 13-02, April 2013.  
 * Barrett, Anne. "[Born-digital Architectural Records: Defining the Archivable Record](https://cdr.lib.unc.edu/indexablecontent/uuid:4b813f81-387f-4fb7-9f5e-daa7f7b764f1)," UNC Master's Thesis, 2012.  
-* Smith, MacKenzie. "[Curating Architectural 3D CAD Models](http://www.ijdc.net/index.php/ijdc/article/viewFile/105/80)," The International Journal of Digital Curation 1, vol. 4, 2008.  
+* Smith, MacKenzie. "[Curating Architectural 3D CAD Models](https://ijdc.net/index.php/ijdc/article/view/81)," The International Journal of Digital Curation 1, vol. 4, 2008.  
 
 <a name="general"></a>  
 ## General resources  
 
-* [Digital Curation Google group](https://groups.google.com/forum/?fromgroups#!forum/digital-curation)  
+* [Digital Curation Google group](https://groups.google.com/forum/?fromgroups#!forum/digital-curation)
+* [BitCurator Users Google group](https://groups.google.com/g/bitcurator-users)
 * [DPC Digital Preservation Handbook](www.dpconline.org/advice/preservationhandbook/contents): Revised handbook by the UK's Digital Preservation Coalition.  
 * [The Signal](http://blogs.loc.gov/digitalpreservation/): Library of Congress digital preservation blog.  
 * [DSHR's blog](http://blog.dshr.org/): Blog of David S. Rosenthal, digital preservation veteran and developer of LOCKSS.  
