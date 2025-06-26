@@ -46,9 +46,9 @@ Helpful resources, including:
 
 * [COPTR](http://coptr.digipres.org/Main_Page): The Community Owned digital Preservation Tool Registry. Includes the helpful Tools Grid, which categorizes digital preservation tools by function.  
 * [BagIt 0.97 Specification](http://www.digitalpreservation.gov/documents/bagitspec.pdf): The specifications for the widely used packaging and validation scheme developed by the Library of Congress.  
-* [Bitcurator wiki](http://wiki.bitcurator.net/index.php?title=Main_Page)  
-* [Archivematica documentation](https://www.archivematica.org/en/docs/archivematica-1.4/)  
-* [Preserving optical media from the command line](http://blog.kbresearch.nl/2015/11/13/preserving-optical-media-from-the-command-line/)  
+* [Bitcurator Docs](https://bitcurator.github.io/documentation/)  
+* [Archivematica documentation](https://www.archivematica.org/en/docs/)  
+* [Preserving optical media from the command line](https://bitsgalore.org/2015/11/13/preserving-optical-media-from-the-command-line.html)  
 
 <a name="scripting"></a>  
 ## Scripting resources
