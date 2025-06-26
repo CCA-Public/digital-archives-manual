@@ -4,7 +4,7 @@ Web archiving is the practice of using capture tools to crawl websites and save 
 
 CCA uses the web app [Archive-It](https://archive-it.org/) to capture certain types of web content related to our collecting interests. The web collections can be accessed through the [CCA microsite](https://archive-it.org/home/Canadian-Centre-for-Architecture). Metadata is controlled locally, and playback is mediated through the [Wayback Machine](https://archive.org/web/). 
 
-Archive-It has a [Help Center](https://support.archive-it.org/hc/en-us), [User Guide](https://support.archive-it.org/hc/en-us/categories/201179946-Archive-It-User-Guide), and [Community Forum](https://support.archive-it.org/hc/en-us/community/topics), which should serve as primary documentation and a resource for troubleshooting. 
+Archive-It has a [Help Center](https://support.archive-it.org/hc/en-us), [User Guide](https://support.archive-it.org/hc/en-us/articles/360041250172-Guide-for-new-Archive-It-users), and [Community Forum](https://support.archive-it.org/hc/en-us/community/topics), which should serve as primary documentation and a resource for troubleshooting. 
  
 ## Workflow
 
