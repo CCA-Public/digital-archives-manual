@@ -2,7 +2,7 @@
 
 Email formats require additional processing, as they often contain sensitive or personal information, and as a format, are difficult to access by an end-user. [ePADD](https://www.epaddproject.org/). developed by Stanford University Libraries, allows the processing archivist to search through email, restrict possibly sensitive materials, create access and preservation copies, and provide a user-friendly access interface.
 
-Full documentation on ePADD can be found in their [User Guide](https://docs.google.com/document/d/1PWzKyonRdogAChtHOQs-CVjCTMuQi00pLsHZRJateKw/edit) and the [Community Forum](https://epadd.nimeyo.com/). 
+Full documentation on ePADD can be found in their [User Guide](https://docs.google.com/document/d/1PWzKyonRdogAChtHOQs-CVjCTMuQi00pLsHZRJateKw/edit) and the [Community Forum](https://groups.google.com/g/epaddusers). 
 
 ePADD can be downloaded [here](https://www.epaddproject.org/using-epadd/download-and-install), and installation instructions can be found in the User Guide. CCA recommends installing ePADD into Mac or Windows environments.
 
