@@ -144,8 +144,6 @@ At this point, ewfexport will tell you the process might take a few minutes and 
 
 Once you have the raw disk image, open HFSExplorer (located in the 'Additional Tools' folder on the Desktop).  
 
-![hfsexplorer1]([https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs1.png)  
-
 From the 'File' menu, select 'Load file system from file' and then select the raw disk image file.  
 
 ![hfsexplorer2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs2.png)  
