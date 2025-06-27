@@ -146,11 +146,13 @@ Once you have the raw disk image, open HFSExplorer (located in the 'Additional T
 
 From the 'File' menu, select 'Load file system from file' and then select the raw disk image file.  
 
-![hfsexplorer2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs2.png)  
+![hfsexplorer2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs1.png)  
 
 If attempting to load the raw image results in an error, the media probably wasn't formatted as an HFS disk. At this point, make a note in your versement stabilization spreadsheet and consult with the Digital Archivist.  
 
 If HFSExplorer can read the disk it will give you an option of which partition to read. Typically you will want to choose HFS (if this is not an option or you are not sure here, consult the Digital Archivist). You should now see a list of files.  
+
+![hfsexplorer2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs2.png)  
 
 The final step is to export these files from HFSExplorer to a desktop or network location. To export files:
 
