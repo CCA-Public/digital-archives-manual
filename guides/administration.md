@@ -21,7 +21,7 @@
 <a name="login"></a>
 ## Logging in
 
-For administrators to log into the Archivematica servers, they will need to ask IT to make them an account. The command to access the server is `ssh user@172.17.50.71` where `user` is your username and the string of numbers is the URL for the pipeline or Storage Service. Enter your password when prompted.
+For administrators to log into the Archivematica servers, they will need to ask IT to make them an account. The command to access the server is `ssh user@172.17.50.68` where `user` is your username and the string of numbers is the URL for the pipeline or Storage Service. Enter your password when prompted.
 
 To log out, use `Ctrl+D`. 
 
