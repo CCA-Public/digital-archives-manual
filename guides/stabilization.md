@@ -13,7 +13,7 @@ This guide describes CCA standards for accessioning and stabilizing born-digital
 
 In general, digital content arrives at CCA in one of three ways: as a network transfer (e.g. FTP, Dropbox, WeTransfer), on temporary physical transfer media (e.g. USB thumb drive, external hard drive), or on original physical storage media. A single accession (versement) may contain digital files that arrived at CCA via any or all of these methods.    
 
-The following procedures describe how CCA accessions and stabilizes contents from each of these delivery methods, as well as how CCA ingests the total "raw" contents of an accession into its digital repository once all of the preparatory steps have been completed.  
+The following procedures describe how CCA accessions and stabilizes contents from each of these delivery methods, as well as how CCA ingests the total "raw" contents of an accession into its digital repository once all of the preparatory steps have been completed. 
 
 <a name="networktransfer"></a>
 ## Network transfers
@@ -21,11 +21,16 @@ The following procedures describe how CCA accessions and stabilizes contents fro
 Steps:  
 
 * **Staff member who receives the transfer (typically Digital Archivist or the Collection Management team (GesCo))**  
-  * Notify GesCo and Digital Archivist, as appropriate  
-  * Zip files and move zip file into a new folder in Processing if accession record has not yet been created.    
+  * Notify GesCo and Digital Archivist, as appropriate
+  * Send the transfer to the Digital Archives Technician  
 * **GesCo: Create accession records**  
-  * For exclusively born-digital accessions in the archives, create only a versement record (no versement objet or ARCH records). Include a brief identifying note for the accession in "Description du contenu" (e.g. the name of the Dropbox folder)  
-  * *For Photo/P&D, create groupe or pièce records as usual*  
+  * For exclusively born-digital accessions in the archives, create only a versement record (no versement objet or ARCH records) in TMS. Include a brief identifying note for the accession in "Description du contenu" (e.g. the name of the Dropbox folder)  
+  * *For Photo/P&D, create groupe or pièce records as usual*
+* **Digital archives technician**
+  * Download and save file to AP/CD folder on Shipping Space server
+  * Run a virus scan on the entire accession
+  * Verify the metadata, specifically the last date modified to make sure that nothing was modified during the transfer
+  * Zip the file if not zipped
 * **Digital Archivist: Ingest**  
   * Add brief descriptive note about content to versement "Description du contenu"  
   * Package content as an Archivematica SIP and ingest into Archivematica, following the [procedures for ingesting "raw" data](#rawingest).
