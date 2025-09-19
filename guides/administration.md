@@ -176,25 +176,25 @@ When local disk space on one of the Archivematica pipelines is almost full, IT w
 To stop services:  
 
 ```
-sudo stop archivematica-mcp-server
-sudo stop archivematica-mcp-client
-sudo stop archivematica-dashboard
+sudo service archivematica-mcp-server stop
+sudo service archivematica-mcp-client stop
+sudo sevice archivematica-dashboard stop
 sudo service nginx stop
-sudo /etc/init.d/gearman-job-server stop
+sudo service gearman-job-server stop
 sudo service mysql stop
-sudo /etc/init.d/elasticsearch stop
+sudo service elasticsearch stop
 ```
 
 To start services:  
 
 ```
-sudo /etc/init.d/elasticsearch start
-sudo service mysql start
-sudo /etc/init.d/gearman-job-server start
-sudo start archivematica-dashboard
+sudo service archivematica-mcp-server start
+sudo service archivematica-mcp-client start
+sudo sevice archivematica-dashboard start
 sudo service nginx start
-sudo start archivematica-mcp-server
-sudo start archivematica-mcp-client
+sudo service gearman-job-server start
+sudo service mysql start
+sudo service elasticsearch start
 ```
 
 To restart only the Archivematica server/client/dashboard:  
