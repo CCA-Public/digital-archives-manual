@@ -50,13 +50,13 @@ Fixity checks of all AIPs are conducted on a quarterly basis using the [Fixity](
 
 To manually conduct a fixity check of a single AIP:
 
-1. Connect to VSP-AMSS-01  
+1. Connect to VSP-AMSS-02  
 2. Load environmental variables: `source /etc/profile.d/fixity.sh`
 3. Run fixity `scan` function: `fixity scan <AIP UUID>`  
 
 If you must run a `scanall` fixity check manually, use [nohup](https://en.wikipedia.org/wiki/Nohup) to ensure that the process runs to completion in the background, even if your terminal session ends
 
-1. Connect to VSP-AMSS-01  
+1. Connect to VSP-AMSS-02  
 2. Load environmental variables: `source /etc/profile.d/fixity.sh`
 3. Run fixity `scanall` function: `nohup fixity scanall &`
 
