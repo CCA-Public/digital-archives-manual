@@ -79,21 +79,33 @@ Steps:
 
 Steps:  
 
-* **GesCo**  
-  * Create accession records as described below  
+* **Collection management staff member (GesCo): Receive**  
+  * Create accession records  
   * Determine if it is possible to separate digital media on arrival
     * IF YES: GesCo separates digital media from physical materials upon arrival (stored in cool vault shelving) and creates separate versement-objets for the container(s) of digital media.
     * IF NO: GesCo makes note in the “Description du contenu“ field of versement objet records that they contain digital media. This material will then be stabilized according to Media Backlog workflows by the Digital Archives Technician as part of their regular work, or at the moment of processing.   
-* **Digital Archivist** 
+* **Digital Archives Technician: Stabilize** 
   * *Note: These steps may occur after some delay*
-  * Oversee disk imaging of media  
-  * If archive is not immediately going to be processed, package all disk images as a single Archivematica SIP and ingest into Archivematica, following the [procedures for ingesting "raw" data](#rawingest)  
-  * Place a Déplacement request for the files to be localized to Dark Archive. 
-  * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.  
-* **GesCo**
+  * Consult the Media Backlog Excel spreadsheet and select stabilization project by priority
+  * Note current location of the selected accession, physically retrieve it and bring it to the digital lab
+  * Update location of accession in ArchivesSpace  
+  * Stabilize physical media according to workflow found [here](#guymager)
+  * Physically identify each physical media with an AS identifier, with a pencil or pen
+  * Track your work in the Versement_Stabilization Excel spreadsheet located on the server
+  * Run a virus scan on the entire accession 
+  * If archive is not immediately going to be processed, package raw content as an Archivematica SIP by zipping the files in some kind of archive format (zip, tar, rar, etc.), save it on the RAID on one of the BitCurator machines and name the SIP as per the [procedures for ingesting "raw" data](#rawingest)
+  * Otherwise, you can package each individual physical media in their own SIP, using the CCA tools. Save it on the RAID on one of the BitCurator machines and name the folder by the identifier of the fonds followed by a short version of the name of the fonds (e.g. AP149_MCHG)
+  * Let Digital Archivist know that the SIP is ready for ingest
+* **Digital Archivist: Ingest** 
+  * Ensure administration documents related to acquisition and shipment are in the appropriate folders on the server (ex. Deed of gift, pro forma, inventories, correspondence, shipping docs, etc.)
+  * If accession was packaged as a single Archivematica SIP, ingest into Archivematica following the [procedures for ingesting "raw" data](#rawingest)
+  * QA the newly ingested SIP to make sure everything went smoothly and that there are no encountered errors
+  * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.
+  * Send request to Digital Archives Technician for the files to be localized to Dark Archive 
+* **Digital Archives Technician: Update location**
   * Add "Dark archive" as location to accession (versement) record  
-* **Digital Archivist, Archivist/Chef/Curator, Associate Director**  
-  * During or after processing, Digital Archivist and either the Archivist or appropriate Curator/Chef assess media for artefactual value and confirm with Associate Director, Collection. There are three possible results to this assessment:  
+* **Digital Archivist: Assess**  
+  * During or after processing, Digital Archivist assess media for artefactual value and confirm with Associate Director, Collection. There are three possible results to this assessment:  
     * Media have artefactual value and will be kept permanently at CCA in their entirety  
     * Media have artefactual value and a sample will be kept permanently at CCA  
     * Media do not have artefactual value and will be destroyed or returned to the donor  
