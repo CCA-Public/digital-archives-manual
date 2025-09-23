@@ -2,10 +2,11 @@
 
 This guide describes CCA standards for accessioning and stabilizing born-digital archival material in whatever form it might arrive at CCA.  It includes:  
 
-* [General overview](#triageoverview)  
-* [Network transfers](#networktransfer)  
-* [Temporary physical media](#temporarymedia)  
-* [Original physical media](#originalphysicalmedia)  
+* [General overview](#triageoverview)
+* [Stabilization](#stabilization)  
+  * [Network transfers](#networktransfer)  
+  * [Temporary physical media](#temporarymedia)  
+  * [Original physical media](#originalphysicalmedia)  
 * [Ingesting "raw" versement data into digital repository](#rawingest)  
 
 <a name="triageoverview"></a>  
@@ -15,8 +16,10 @@ In general, digital content arrives at CCA in one of three ways: as a network tr
 
 The following procedures describe how CCA accessions and stabilizes contents from each of these delivery methods, as well as how CCA ingests the total "raw" contents of an accession into its digital repository once all of the preparatory steps have been completed. 
 
+<a name="stabilization"></a>
+## Stabilization
 <a name="networktransfer"></a>
-## Network transfers
+### Network transfers
 
 Steps:  
 
@@ -40,7 +43,7 @@ Steps:
   * Add "Dark archive" as location to accession (e.g. versement) record  
 
 <a name="temporarymedia"></a>
-## Temporary physical media
+### Temporary physical media
 
 Steps:  
 
@@ -57,7 +60,7 @@ Steps:
   * Add "Dark archive" as location to accession (versement) record  
 
 <a name="originalphysicalmedia"></a>
-## Original physical media  
+### Original physical media  
 
 *Note: This is a broad category that might include, e.g., floppy disks, optical media (CDs/DVDs), computers, internal hard drives, backup tape formats such as LTO, etc. For assistance in correctly identifying media types, please see the [Computer Media Identification Guide](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/mediaIDGuide.docx) or the UTSA Libraries' [Know Your Media](http://lib.utsa.edu/knowyourmedia/) page.*  
 
