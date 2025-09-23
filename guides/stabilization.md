@@ -51,17 +51,26 @@ Steps:
 
 Steps:  
 
-* **GesCo: Create accession records**  
-  * For Archives, create only a versement record (no versement objet or ARCH records). Include a brief note in "Description du contenu" indicating how the files arrived (e.g. "Files arrived at CCA on a 64GB USB thumb drive")  
-  * *For Photo/P&D, create groupe or pièce records as usual*  
+* **Staff member who received the temporary physical media (typically Digital Archivist)**  
+  * Create accession record in ArchivesSpace 
+  * Ensure administration documents related to acquisition and shipment are in the appropriate folders on the server (ex. Deed of gift, pro forma, inventories, correspondence, shipping docs, etc.).
+  * Give temporary physical media to Digital Archives Technician for stabilizing
+* **Digital Archives Technician:**
+  * Use the write blocker and disk image the temporary physical media using Guymager on one of the BitCurator workstations
+  * Run a virus scan on the entire accession 
+  * Verify the metadata, specifically the last date modified to make sure that nothing was modified during stabilization
+  * Verify the donor provided inventory against the contents of the material, if available
+  * Package content as an Archivematica SIP by zipping the files in some kind of archive format (zip, tar, rar, etc.). 
+  * Name the SIP as per the [procedures for ingesting "raw" data](#rawingest)
+  * Transfer SIP to the to AP/CD folder on Shipping Space server.
+  * Let Digital Archivist know that the SIP is ready for ingest
 * **Digital Archivist: Ingest**  
-  * Add brief descriptive note regarding content to versement "Description du contenu"  
-  * Package content as an Archivematica SIP and ingest into Archivematica, following the [procedures for ingesting "raw" data](#rawingest)  
-  * Place a Déplacement request for the files to be localized to Dark Archive.
-  * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.  
+  * Ingest the SIP into Archivematica, following the [procedures for ingesting "raw" data](#rawingest)  
+  * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.
+  * Send request to Digital Archives Technician for the files to be localized to Dark Archive.
   * Reformat (erase) media and return to donor, repurpose, or weed as appropriate
-* **GesCo**  
-  * Add "Dark archive" as location to accession (versement) record  
+* **Digital Archives Technician**  
+  * Add "Dark archive" as location to accession record in ArchivesSpace
 
 <a name="originalphysicalmedia"></a>
 ### Original physical media  
