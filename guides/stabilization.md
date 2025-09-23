@@ -27,11 +27,11 @@ This guide is currently being updated following the implementation of ArchivesSp
 
 Steps:  
 
-* **Staff member who receives the transfer (typically Digital Archivist)**  
+* **Staff member who receives the transfer (typically Digital Archivist): Receive**  
   * Create accession record in ArchivesSpace
   * Ensure administration documents related to acquisition and shipment are in the appropriate folders on the server (ex. Deed of gift, pro forma, inventories, correspondence, shipping docs, etc.).
   * Send the transfer to the Digital Archives Technician  
-* **Digital archives technician**
+* **Digital archives technician: Stabilize**
   * Download and save file to AP/CD folder on the Shipping Space server
   * Run a virus scan on the entire accession
   * Verify the metadata, specifically the last date modified to make sure that nothing was modified during the transfer
@@ -43,7 +43,7 @@ Steps:
   * Ingest the SIP into Archivematica, following the [procedures for ingesting "raw" data](#rawingest).
   * Send a request to the Digital Archives Technician for the files to be localized to Dark Archive.
   * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.
-* **Digital Archives Technician**  
+* **Digital Archives Technician: Update location**  
   * Add "Dark archive" as a location to accession record in ArchivesSpace  
 
 <a name="temporarymedia"></a>
@@ -51,11 +51,11 @@ Steps:
 
 Steps:  
 
-* **Staff member who received the temporary physical media (typically Digital Archivist)**  
+* **Staff member who received the temporary physical media (typically Digital Archivist): Receive**  
   * Create accession record in ArchivesSpace 
   * Ensure administration documents related to acquisition and shipment are in the appropriate folders on the server (ex. Deed of gift, pro forma, inventories, correspondence, shipping docs, etc.).
   * Give temporary physical media to Digital Archives Technician for stabilizing
-* **Digital Archives Technician:**
+* **Digital Archives Technician: Stabilize**
   * Use the write blocker and disk image the temporary physical media using Guymager on one of the BitCurator workstations
   * Run a virus scan on the entire accession 
   * Verify the metadata, specifically the last date modified to make sure that nothing was modified during stabilization
@@ -69,7 +69,7 @@ Steps:
   * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.
   * Send request to Digital Archives Technician for the files to be localized to Dark Archive.
   * Reformat (erase) media and return to donor, repurpose, or weed as appropriate
-* **Digital Archives Technician**  
+* **Digital Archives Technician: Update location**  
   * Add "Dark archive" as location to accession record in ArchivesSpace
 
 <a name="originalphysicalmedia"></a>
