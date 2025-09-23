@@ -27,24 +27,24 @@ This guide is currently being updated following the implementation of ArchivesSp
 
 Steps:  
 
-* **Staff member who receives the transfer (typically Digital Archivist or the Collection Management team (GesCo))**  
-  * Notify GesCo and Digital Archivist, as appropriate
+* **Staff member who receives the transfer (typically Digital Archivist)**  
+  * Create accession record in ArchivesSpace
+  * Ensure administration documents related to acquisition and shipment are in the appropriate folders on the server (ex. Deed of gift, pro forma, inventories, correspondence, shipping docs, etc.).
   * Send the transfer to the Digital Archives Technician  
-* **GesCo: Create accession records**  
-  * For exclusively born-digital accessions in the archives, create only a versement record (no versement objet or ARCH records) in TMS. Include a brief identifying note for the accession in "Description du contenu" (e.g. the name of the Dropbox folder)  
-  * *For Photo/P&D, create groupe or pièce records as usual*
 * **Digital archives technician**
-  * Download and save file to AP/CD folder on Shipping Space server
+  * Download and save file to AP/CD folder on the Shipping Space server
   * Run a virus scan on the entire accession
   * Verify the metadata, specifically the last date modified to make sure that nothing was modified during the transfer
-  * Zip the file if not zipped
+  * Verify the donor provided inventory against the contents of the material, if available
+  * Package content as an Archivematica SIP by zipping the files in some kind of archive format (zip, tar, rar, etc.). 
+  * Name the SIP as per the [procedures for ingesting "raw" data](#rawingest)
+  * Let Digital Archivist know that the SIP is ready for ingest
 * **Digital Archivist: Ingest**  
-  * Add brief descriptive note about content to versement "Description du contenu"  
-  * Package content as an Archivematica SIP and ingest into Archivematica, following the [procedures for ingesting "raw" data](#rawingest).
-  * Place a Déplacement request for the files to be localized to Dark Archive.
+  * Ingest the SIP into Archivematica, following the [procedures for ingesting "raw" data](#rawingest).
+  * Send a request to the Digital Archives Technician for the files to be localized to Dark Archive.
   * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.
-* **GesCo**  
-  * Add "Dark archive" as location to accession (e.g. versement) record  
+* **Digital Archives Technician**  
+  * Add "Dark archive" as a location to accession record in ArchivesSpace  
 
 <a name="temporarymedia"></a>
 ### Temporary physical media
