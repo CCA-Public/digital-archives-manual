@@ -89,7 +89,7 @@ Steps:
   * Consult the Media Backlog Excel spreadsheet and select stabilization project by priority
   * Note current location of the selected accession, physically retrieve it and bring it to the digital lab
   * Update location of accession in ArchivesSpace  
-  * Stabilize physical media according to workflow found [here](#/guides/diskimaging.md)
+  * Stabilize physical media according to workflow found [here](#/diskimaging.md)
   * Physically identify each physical media with an AS identifier, with a pencil or pen
   * Track your work in the Versement_Stabilization Excel spreadsheet located on the server
   * Run a virus scan on the entire accession 
