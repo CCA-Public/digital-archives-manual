@@ -61,11 +61,11 @@ Steps:
   * Verify the metadata, specifically the last date modified to make sure that nothing was modified during stabilization.
   * Verify the donor provided inventory against the contents of the material, if available.
   * Package content as an Archivematica SIP by zipping the files in some kind of archive format (zip, tar, rar, etc.). 
-  * Name the SIP as per the [procedures for ingesting "raw" data](#rawingest)
+  * Name the SIP as per the [procedures for ingesting "raw" data](#rawingest).
   * Transfer SIP to the to AP/CD folder on Shipping Space server.
   * Let Digital Archivist know that the SIP is ready for ingest.
 * **Digital Archivist: Ingest**  
-  * Ingest the SIP into Archivematica, following the [procedures for ingesting "raw" data](#rawingest)  
+  * Ingest the SIP into Archivematica, following the [procedures for ingesting "raw" data](#rawingest)  .
   * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.
   * Send request to Digital Archives Technician for the files to be localized to Dark Archive.
   * Reformat (erase) media and return to donor, repurpose, or weed as appropriate.
