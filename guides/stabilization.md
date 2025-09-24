@@ -99,7 +99,6 @@ Steps:
 * **Digital Archivist: Ingest** 
   * Ensure administration documents related to acquisition and shipment are in the appropriate folders on the server (ex. Deed of gift, pro forma, inventories, correspondence, shipping docs, etc.).
   * If accession was packaged as a single Archivematica SIP, ingest into Archivematica following the [procedures for ingesting "raw" data](#rawingest).
-  * QA the newly ingested SIP to make sure everything went smoothly and that there are no encountered errors.
   * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.
   * Send request to Digital Archives Technician for the files to be localized to Dark Archive. 
 * **Digital Archives Technician: Update location**
