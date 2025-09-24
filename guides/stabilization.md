@@ -91,7 +91,7 @@ Steps:
   * Update location of accession in ArchivesSpace.  
   * Stabilize physical media according to type of media by following the workflow found [here](diskimaging.md).
   * Physically identify each physical media with an AS identifier, with a pencil or pen.
-  * Track your work in the [Versement_Stabilization Excel spreadsheet](https://github.com/CCA-Public/digital-archives-manual/blob/master/forms/versement_stabilization.xlsx).
+  * Track your work in the [versement stabilization Excel spreadsheet](https://github.com/CCA-Public/digital-archives-manual/blob/master/forms/versement_stabilization.xlsx).
   * Run a virus scan on the entire accession. 
   * If archive is not immediately going to be processed, package raw content as an Archivematica SIP by zipping the files in some kind of archive format (zip, tar, rar, etc.), save it on the RAID on one of the BitCurator machines and name the SIP as per the [procedures for ingesting "raw" data](#rawingest).
   * Otherwise, you can package each individual physical media in their own SIP, using the CCA tools. Save it on the RAID on one of the BitCurator machines and name the folder by the identifier of the fonds followed by a short version of the name of the fonds (e.g. AP149_MCHG).
