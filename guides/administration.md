@@ -178,7 +178,7 @@ To stop services:
 ```
 sudo service archivematica-mcp-server stop
 sudo service archivematica-mcp-client stop
-sudo sevice archivematica-dashboard stop
+sudo service archivematica-dashboard stop
 sudo service nginx stop
 sudo service gearman-job-server stop
 sudo service mysql stop
@@ -190,7 +190,7 @@ To start services:
 ```
 sudo service archivematica-mcp-server start
 sudo service archivematica-mcp-client start
-sudo sevice archivematica-dashboard start
+sudo service archivematica-dashboard start
 sudo service nginx start
 sudo service gearman-job-server start
 sudo service mysql start
