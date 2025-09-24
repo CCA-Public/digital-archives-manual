@@ -16,7 +16,7 @@ In general, digital content arrives at CCA in one of three ways: as a network tr
 
 The following procedures describe how CCA accessions and stabilizes contents from each of these delivery methods, as well as how CCA ingests the total "raw" contents of an accession into its digital repository once all of the preparatory steps have been completed. This guide is meant to complement the accessioning checklist located on the server.  
 
-Please note that prior to receiving born-digital material, the CCA send outs two questionnaires to the donor to gather information on the context of creation and use of the digital files.
+Please note that prior to receiving born-digital material, the CCA sends out two questionnaires to the donor to gather information on the context of creation and the use of the digital files.
 
 This guide is currently being updated following the implementation of ArchivesSpace in our workflow.
 
