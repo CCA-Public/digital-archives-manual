@@ -44,7 +44,7 @@ Steps:
   * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.
   * Send a request to the Digital Archives Technician for the files to be localized to Dark Archive.
 * **Digital Archives Technician: Update location**  
-  * Add "Dark archive" as a location to accession record in ArchivesSpace.
+  * Add "Dark archive" as a container to the accession record in ArchivesSpace.
 
 <a name="temporarymedia"></a>
 ### Temporary physical media
@@ -70,7 +70,7 @@ Steps:
   * Send request to Digital Archives Technician for the files to be localized to Dark Archive.
   * Reformat (erase) media and return to donor, repurpose, or weed as appropriate.
 * **Digital Archives Technician: Update location**  
-  * Add "Dark archive" as location to accession record in ArchivesSpace.
+  * Add "Dark archive" as a container to the accession record in ArchivesSpace.
 
 <a name="originalphysicalmedia"></a>
 ### Original physical media  
@@ -103,7 +103,7 @@ Steps:
   * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.
   * Send request to Digital Archives Technician for the files to be localized to Dark Archive. 
 * **Digital Archives Technician: Update location**
-  * Add "Dark archive" as location to accession (versement) record.  
+  * Add "Dark archive" as a container to the accession record in ArchivesSpace.  
 * **Digital Archivist: Assess**  
   * During or after processing, Digital Archivist assess media for artefactual value and confirm with Associate Director, Collection. There are three possible results to this assessment:  
     * Media have artefactual value and will be kept permanently at CCA in their entirety.  
