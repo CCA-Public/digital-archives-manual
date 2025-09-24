@@ -15,6 +15,7 @@ This is the CCA's processing manual for born-digital archives. It is a living, c
 ### Detailed guides  
 
 * **[Accession and stabilization](guides/stabilization.md)**
+    * [General overview](guides/stabilization.md/#triageoverview)
     * [Stabilization](guides/stabilization.md/#stabilization) 
       * [Network transfers](guides/stabilization.md/#networktransfer)
       * [Temporary physical media](guides/stabilization.md/#temporarymedia)
