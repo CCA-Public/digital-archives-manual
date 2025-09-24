@@ -41,8 +41,8 @@ Steps:
   * Let Digital Archivist know that the SIP is ready for ingest.
 * **Digital Archivist: Ingest**  
   * Ingest the SIP into Archivematica, following the [procedures for ingesting "raw" data](#rawingest).
-  * Send a request to the Digital Archives Technician for the files to be localized to Dark Archive.
   * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.
+  * Send a request to the Digital Archives Technician for the files to be localized to Dark Archive.
 * **Digital Archives Technician: Update location**  
   * Add "Dark archive" as a location to accession record in ArchivesSpace.
 
