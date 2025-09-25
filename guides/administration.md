@@ -223,7 +223,7 @@ Artefactual also documented more atypical aspects of the CCA's Archivematica set
 * The automation tools are installed in /usr/lib/archivematica/automation-tools/
 * The script located at /etc/archivematica/automation-tools/transfer-script.sh runs each 5 minutes as system user archivematica, and uses the Archivematica user autobot.
 * The configuration file at /etc/archivematica/automation-tools/transfers.confdefines logfile and database are at /var/log/archivematica/automation-tools/ , and the lock file at /var/archivematica/automation-tools/transfers-pid.lck. This file might need to be removed in the automation-tools stop working.
-* Automated ingests use folder /mnt/incoming/auto-transfers as transfer source, and the AIPs are stored in DARK_ARCHIVE_002 aipstore for VSP-AMPL1, and DARK_ARCHIVE_001 for VSP-AMPL2
+* Automated ingests use folder /mnt/incoming/auto-transfers as transfer source, and the AIPs are stored in DARK_ARCHIVE_002 aipstore for VSP-AMPL-04, and DARK_ARCHIVE_001 for VSP-AMPL-05
 
 <a name="update"></a>
 ## Archivematica updates and dependencies   
