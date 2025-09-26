@@ -25,10 +25,10 @@ In addition to supporting fileservers, CCA's Archivematica infrastructure runs o
 
 | VM | Name | Features | Materials to be ingested |
 | -------- | -------- | -------- | -------- |
-| VSP-AMPL-01 | Pipeline 1 | Pipeline 1 is used for assets that are described in TMS and for which no extraction or format normalization is desired. This pipeline does not create access copies in SCOPE.  | Unprocessed archives, restricted material, material that is otherwise not public-facing  |
-| VSP-AMPL-02 | Pipeline 2 | Pipeline 2 is used for assets that are described in TMS and which will be fully processed by Archivematica. This is the pipeline that should be used for processed digital archives. A DIP is created and sent to SCOPE. | Processed digital archives |
-| VSP-AMPL-03 | Pipeline 3 | Pipeline 3 is used for assets that are described in Horizon. There is not yet a protocol for ingest of library materials. Access is presumed to be through the library, and no access copies are sent to SCOPE. Access copies are temporarily being stored at \\SVRDATA\ResearchMaterial$\01 - Library Access Copies. | Library materials (TBD) |
-| VSP-AMSS-01 | Storage Service | The Storage Service manages storage, indexing, and retrieval of Archival Information Packages (AIPs) and conducts fixity checks of the AIP store. | (not a pipeline, no ingest) |
+| VSP-AMPL-04 | Pipeline 1 | Pipeline 1 is used for assets that are described in TMS and for which no extraction or format normalization is desired. This pipeline does not create access copies in SCOPE.  | Unprocessed archives, restricted material, material that is otherwise not public-facing  |
+| VSP-AMPL-05 | Pipeline 2 | Pipeline 2 is used for assets that are described in TMS and which will be fully processed by Archivematica. This is the pipeline that should be used for processed digital archives. A DIP is created and sent to SCOPE. | Processed digital archives |
+| VSP-AMPL-06 | Pipeline 3 | Pipeline 3 is used for assets that are described in Horizon. There is not yet a protocol for ingest of library materials. Access is presumed to be through the library, and no access copies are sent to SCOPE. Access copies are temporarily being stored at \\SVRDATA\ResearchMaterial$\01 - Library Access Copies. | Library materials (TBD) |
+| VSP-AMSS-02 | Storage Service | The Storage Service manages storage, indexing, and retrieval of Archival Information Packages (AIPs) and conducts fixity checks of the AIP store. | (not a pipeline, no ingest) |
 
 <a name="ingestmethods"></a>  
 ## Archivematica ingest workflows 
@@ -64,7 +64,7 @@ Here is the procedure for conducting ingests of processed SIPs with Automation T
         * Identifier  
         * Accession  
         * Fonds number  
-        * Pipeline (VSP-AMPL-01 or VSP-AMPL-02 or VSP-AMPL-03)  
+        * Pipeline (VSP-AMPL-04 or VSP-AMPL-05 or VSP-AMPL-06)  
         * Ingest successful? (True/False)  
         * Notes  
         * AIP UUID  
