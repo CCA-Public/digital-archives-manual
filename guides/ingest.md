@@ -51,7 +51,7 @@ It is the responsibility of the archivist processing digital materials to QA the
 Here is the procedure for conducting ingests of processed SIPs with Automation Tools:  
 
 1. Verify that all of the following are true:  
-  * Your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator machines  
+  * Your processed SIPs are ready in /mnt/raid on one of the BitCurator machines  
   * All SIPs are named with the scheme [identifier]---[accession number]. If SIPs consist of unprocessed material, a disk image for example, only use its identifier to name it. The TMS API call will not work if there aren't exactly three dashes between the identifier and accession number.
   * Data entry for all SIPs has been completed in TMS  
   * Collection-level description is entered in SCOPE (if not already present).
@@ -93,7 +93,7 @@ Alternatively, transfers may be started and monitored from within the web dashbo
 
 **Do not do this without consulting the Digital Archivist first, because this method can result in loss of necessary metadata.*
 
-When your processed SIPs are ready in /mnt/1TB_RAID on one of the BitCurator machines, all SIPs are named with the scheme [identifier]---[accession number], and data entry for all SIPs has been completed in TMS, advise the Digital Archivist that you are ready to move on to the Ingest phase of the project and then copy the SIPs to /mnt/incoming/transfers on the appropriate Pipeline using the "send_to_archivematica.py" script. If SIPs consist of unprocessed material, a disk image for example, only use its identifier to name it.
+When your processed SIPs are ready in /mnt/raid on one of the BitCurator machines, all SIPs are named with the scheme [identifier]---[accession number], and data entry for all SIPs has been completed in TMS, advise the Digital Archivist that you are ready to move on to the Ingest phase of the project and then copy the SIPs to /mnt/incoming/transfers on the appropriate Pipeline using the "send_to_archivematica.py" script. If SIPs consist of unprocessed material, a disk image for example, only use its identifier to name it.
 
 <a name="processingconfigs"></a>
 ## Archivematica processing configurations  
