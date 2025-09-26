@@ -28,9 +28,9 @@ A local version of Automation Tools has also been installed and configured on ea
 
 * Go look up and copy the UUID for the relevant AIP from the Storage Service  
 * Run the `create_dip_script.sh` script, passing the AIP UUID as the first argument:  
-`/mnt/1TB_RAID/dips/automation-tools/create_dip_script.sh <UUID>`  
+`/mnt/raid/dips/automation-tools/create_dip_script.sh <UUID>`  
 
-The DIP will be created in `/mnt/1TB_RAID/dips/dips`.  
+The DIP will be created in `/mnt/raid/dips/dips`.  
 
 <a name="accessworkflow"></a>  
 ## Access workflow 
