@@ -83,6 +83,7 @@ Helpful resources, including:
   Note that the find command is case-sensitive, and will have to be changed according to the case of your zip or rar filenames. Both formats must not have spaces in their filename, or else the command will fail. If needed, use [Detox](https://linux.die.net/man/1/detox) prior to extracting files.
 
   For similar result with .7z files use:
+
       7z x -r "*.7z" -o*
 
   Note that you will have to manually delete zip folders once the above command has been completed.
