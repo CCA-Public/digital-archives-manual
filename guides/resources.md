@@ -71,7 +71,7 @@ Helpful resources, including:
 * **Recursively unzip files into a new folder with the title of the zip file into their current place in the directory, and then delete the original zip file when it's done:**
     
       cd topDirectory
-      for F in $(find . -type f -name *.zip); do unzip "$F" -d "${F%.*}/" && rm "$F"; done
+      for F in $(find . -type f -name "*.zip"); do unzip "$F" -d "${F%.*}/" && rm "$F"; done
   
   ([Source](https://stackoverflow.com/a/30339287/9459120))
   
@@ -80,9 +80,13 @@ Helpful resources, including:
       cd topDirectory
       for F in $(find . -name "*.rar"); do unrar x "$F" "${F%.*}/" && rm "$F"; done
   
-  
   Note that the find command is case-sensitive, and will have to be changed according to the case of your zip or rar filenames. Both formats must not have spaces in their filename, or else the command will fail. If needed, use [Detox](https://linux.die.net/man/1/detox) prior to extracting files.
-  
+
+  For similar result with .7z files use:
+      7z x -r "*.7z" -o*
+
+  Note that you will have to manually delete zip folders once the above command has been completed.
+
 * **Identify duplicate directories across a collection:**
      
      Trying using [direct-dedupe](https://github.com/stefanabreitwieser/direct-dedupe) and then follow the Excel instructions below. It was built off of the following commands: 
