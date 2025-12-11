@@ -191,7 +191,7 @@ Helpful resources, including:
 
     This command uses clamAV to scan files for viruses.
 
-      clamscan -r
+      clamscan -r /path/to/staging
 
 
 * **For adding prefix and suffix for files (directories)**
