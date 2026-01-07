@@ -168,7 +168,19 @@ When local disk space on one of the Archivematica pipelines is almost full, IT w
 
 * `/srv/am-db-backups`: Keep latest backup; all others can be deleted  
 * `/srv/am-es-backups`: Keep latest backup (check file size to ensure it's a real backup); all others can be deleted  
-* `/var/log/elasticsearch`: Delete any logs more than a month old  
+* `/var/log/elasticsearch`: Delete any logs more than a month old
+
+You may also delete temporary files:
+
+cd /tmp
+
+sudo systemctl stop archivematica-mcp-server
+sudo systemctl stop archivematica-dashboard
+ 
+sudo rm * -rf
+
+sudo systemctl start archivematica-mcp-server
+sudo systemctl start archivematica-dashboard
 
 <a name="restarting"></a>  
 ## Restarting services
