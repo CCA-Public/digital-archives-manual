@@ -172,15 +172,12 @@ When local disk space on one of the Archivematica pipelines is almost full, IT w
 
 You may also delete temporary files:
 
-cd /tmp
-
-sudo systemctl stop archivematica-mcp-server
-sudo systemctl stop archivematica-dashboard
- 
-sudo rm * -rf
-
-sudo systemctl start archivematica-mcp-server
-sudo systemctl start archivematica-dashboard
+* `cd /tmp`
+* `sudo systemctl stop archivematica-mcp-server`
+* `sudo systemctl stop archivematica-dashboard`
+* `sudo rm * -rf`
+* `sudo systemctl start archivematica-mcp-server`
+* `sudo systemctl start archivematica-dashboard`
 
 <a name="restarting"></a>  
 ## Restarting services
